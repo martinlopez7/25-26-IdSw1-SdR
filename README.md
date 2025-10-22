@@ -8,12 +8,12 @@ Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta d
 
 | |Coordinador|Cliente|Estadísticas|
 |-|-|-|:-:|
-1|@Camila-Lesly|Lucía Terán|👁️ / 📒
-2|@31diego|Mar Pacheco|👁️ / 📒
-3|@martinlopez7|Jorge Crespo|👁️ / 📒
-4|@Sergiorl2|Jose Breñosa|👁️ / 📒
-5|@Alejandrojuarez0105|David García|👁️ / 📒
-6|@enmabry|Jose Breñosa|👁️ / 📒
+1|@Camila-Lesly|Lucía Terán|[👁️](https://github.com/Camila/25-26-IdSw1-SdR) / 📒
+2|@31diego|Mar Pacheco|[👁️](https://github.com/31diego/25-26-IdSw1-SdR) / 📒
+3|@martinlopez7|Jorge Crespo|[👁️](https://github.com/martinlopez7/25-26-IdSw1-SdR) / 📒
+4|@Sergiorl2|Jose Breñosa|[👁️](https://github.com/Sergiorl2/25-26-IdSw1-SdR) / 📒
+5|@Alejandrojuarez0105|David García|[👁️](https://github.com/Alejandrojuarez0105/25-26-IdSw1-SdR) / 📒
+6|@enmabry|Jose Breñosa|[👁️](https://github.com/enmabry/25-26-IdSw1-SdR) / 📒
 
 </div>
 
