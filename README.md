@@ -4,6 +4,8 @@ Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeni
 
 Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
 
+Se evalúa de acuerdo a la [rúbrica](l'Rubrica.md) indicada.
+
 <div align=center>
 
 | |Coordinador|Cliente|Estadísticas|
