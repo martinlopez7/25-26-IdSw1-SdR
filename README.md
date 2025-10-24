@@ -1,5 +1,12 @@
 # Sesiones de requisitado
 
+<div align=right>
+
+|<sub><i>Se ha demostrado, empírica y académicamente,<br>que un porcentaje no menor de proyectos de software que fracasan<br>lo hacen porque está mal llevada la fase de captura de los requisitos.</i></sub>
+|-:
+
+</div>
+
 Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO.
 
 Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
@@ -18,8 +25,6 @@ Se evalúa de acuerdo a la [rúbrica](documents/l'Rubrica.md) indicada.
 6|@enmabry|Jose Breñosa|[👁️](https://github.com/enmabry/25-26-IdSw1-SdR) / 📒
 
 </div>
-
-> Se ha demostrado, empírica y académicamente, que un porcentaje no menor de proyectos de software que fracasan lo hacen porque está mal llevada esta fase.
 
 <div align=center>
 
