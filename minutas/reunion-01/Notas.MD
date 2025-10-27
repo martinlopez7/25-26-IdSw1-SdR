@@ -25,22 +25,18 @@ Cada universidad puede comprar un determinado número de licencias (cuantos prof
 **Actores en cada parte:**
 
 - App en local para el usuario final:
-
   - Administrador institucional
-
   - Usuario final (docente)
 
-      -    Gestor de licencias:
-
-                 -     Administrador general
-
-                 -     Técnico
+- Gestor de licencias:
+  - Administrador general
+  - Técnico
 
 Podría darse el caso de que el administrador institucional sea también un profesor de esta institución (usuario final). En este caso, tiene privilegios compartidos.
 
 **Casos de uso de cada actor:**
 
-Administrador institucional: 
+ <u>Administrador institucional</u>
 
 Módulo usuarios de docentes:
 
@@ -50,7 +46,7 @@ Módulo gestión licencias
 
 - Adquirir licencia, leer licencia, actualizar licencia y eliminar licencia (CRUD)
 
-Usuario final:
+<u>Usuario final</u>
 
 Módulo de asignación (triangulación para combinación única)
 
