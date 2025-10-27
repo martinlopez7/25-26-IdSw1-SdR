@@ -1,13 +1,6 @@
 **NOTAS DE LA REUNIÓN:**
 
-
-
-
-
-
 **Problema:**
-
- 
 
 El proceso de realización y corrección de los exámenes tipo test dirigidos a una gran cantidad de alumnos se debe adaptar a la modernidad, es decir, al uso de inteligencia artificial para evitar fraudes y para ahorrar tiempo al docente.
 
@@ -96,9 +89,6 @@ Módulo corrección
 - Corregir exámenes: El docente proporciona al sistema un pdf con las hojas de respuestas para que detecte mediante inteligencia artificial (reconocimiento de imagen) si las respuestas estaban bien o mal en función de la clave alfanumérica (que guarda la referencia al modelo de corrección) de la parte inferior de la hoja que el sistema ha leído previamente y almacena los resultados. Por último, genera un pdf o varios (descarga individual o fichero único con todo) prácticamente igual en el que sobrescribe cada hoja de respuestas con un tick o una cruz al lado de la respuesta en función si está bien o mal. 
 
 **EL SISTEMA NO CALIFICA, SOLO CORRIGE, ES EL PROFESOR EL QUE PONE LA NOTA (Ley Europea).** 
-
-
-
 
 **PREGUNTAS PARA JORGE:**
 
