@@ -84,8 +84,6 @@ Módulo examen
 
 Módulo corrección
 
-- Aquí tienes la modificación:
-
 - Corregir exámenes: El docente proporciona al sistema un pdf con las hojas de respuestas. El sistema utiliza inteligencia artificial (reconocimiento de imagen) para detectar la posición de las respuestas marcadas por el alumno. Luego, mediante un sistema basado en reglas tradicional, comprueba si estas respuestas estaban bien o mal en función de la clave alfanumérica (que guarda la referencia al modelo de corrección) de la parte inferior de la hoja, que el sistema ha leído previamente. Finalmente, almacena los resultados y genera un pdf o varios (descarga individual o fichero único con todo) prácticamente igual en el que sobrescribe cada hoja de respuestas con un tick o una cruz al lado de la respuesta en función si está bien o mal. 
 
 **EL SISTEMA NO CALIFICA, SOLO CORRIGE, ES EL PROFESOR EL QUE PONE LA NOTA (Ley Europea).** 
