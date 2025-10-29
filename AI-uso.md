@@ -2,7 +2,7 @@
 
 ## Herramientas utilizadas
 - Nombres de los modelos/herramientas: Gemini 2.5
-- Fechas de uso: 26/10/2025
+- Fechas de uso: 26/10/2025, 29/10/2025
 
 ## Contexto de uso
 
@@ -18,7 +18,7 @@
 
 ### Para documentación
 **¿Se usó?** Sí
-**¿Para qué?** Escribir documentación de convenciones
+**¿Para qué?** Escribir documentación de convenciones, reescribir sin faltas de ortografía.
 
 ## Enlaces a conversaciones
 
