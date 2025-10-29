@@ -33,6 +33,17 @@
 
 **Archivo(s) afectado(s)**: `CONVENCIONES.md`
 
+### Conversación 2: Reescribir texto
+**URL completa**: Conversación con Gemini (Google) - Interfaz no exportable
+
+**Fecha**: 2025-10-29
+
+**Qué se obtuvo**: Un parrafo bien escrito sin faltas de ortografía y signos de puntuación correctos.
+
+**Qué se hizo con ello**: Se usó como ayuda para escribir los parrafos correctamente.
+
+**Archivo(s) afectado(s)**: `/minutas/reunion-01/Notas.md`
+
 
 ## Validación humana
 
