@@ -1,0 +1,29 @@
+# 1. Archivos temporales del sistema operativo
+###################################
+.DS_Store       # macOS
+Thumbs.db       # Windows
+.Spotlight-V100 # macOS
+.TemporaryItems # macOS
+
+# 2. Archivos de respaldo y editores comunes
+###################################
+*~              # Archivos de respaldo de editores (Vim/Emacs)
+*.swp           # Archivos de intercambio de Vim
+*.bak           # Backups genéricos
+
+
+# 3. Archivos de office y procesadores de texto (Si usáis)
+###################################
+# Recomendación: Usar Markdown, pero por si acaso.
+*.docx
+*.pptx
+*.xlsx
+*.odt
+*.ods
+
+# 4. Archivos de entornos de desarrollo integrado (IDE)
+###################################
+# Si alguno usa VS Code, IntelliJ, etc., estas carpetas/archivos son locales
+.idea/          # IntelliJ IDEA
+.vscode/        # VS Code (solo si no contienen configuraciones de equipo)
+*.iml           # Archivos de módulo de IntelliJ
