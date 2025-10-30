@@ -50,9 +50,9 @@ Módulo gestión licencias
 
 Módulo de asignación (triangulación para combinación única)
 
-- Crear asignatura, leer asignatura, actualizar asignatura, eliminar asignatura (CRUD)
-
 - Crear grado, leer grado, actualizar grado, eliminar grado (CRUD)
+
+- Crear asignatura, leer asignatura, actualizar asignatura, eliminar asignatura (CRUD)
 
 - Crear alumno, leer alumno, actualizar alumno, eliminar alumno (CRUD)
 
@@ -61,6 +61,8 @@ Módulo de asignación (triangulación para combinación única)
 - Asignar grado a una asignatura, desasignar grado de una asignatura
 
 - Asignar alumno a una asignatura (especificando curso académico), desasignar alumno de una asignatura
+
+- Importar listado de alumnos
 
 Módulo gestión de preguntas (batería de preguntas)
 
@@ -82,10 +84,12 @@ Módulo examen
 
 Módulo corrección
 
-- Corregir exámenes: El docente proporciona al sistema un pdf con las hojas de respuestas para que detecte mediante inteligencia artificial (reconocimiento de imagen) si las respuestas estaban bien o mal en función de la clave alfanumérica (que guarda la referencia al modelo de corrección) de la parte inferior de la hoja que el sistema ha leído previamente y almacena los resultados. Por último, genera un pdf o varios (descarga individual o fichero único con todo) prácticamente igual en el que sobrescribe cada hoja de respuestas con un tick o una cruz al lado de la respuesta en función si está bien o mal. 
+- Corregir exámenes: El docente proporciona al sistema un pdf con las hojas de respuestas. El sistema utiliza inteligencia artificial (reconocimiento de imagen) para detectar la posición de las respuestas marcadas por el alumno. Luego, mediante un sistema basado en reglas tradicional, comprueba si estas respuestas estaban bien o mal en función de la clave alfanumérica (que guarda la referencia al modelo de corrección) de la parte inferior de la hoja, que el sistema ha leído previamente. Finalmente, almacena los resultados y genera un pdf o varios (descarga individual o fichero único con todo) prácticamente igual en el que sobrescribe cada hoja de respuestas con un tick o una cruz al lado de la respuesta en función si está bien o mal. 
 
 **EL SISTEMA NO CALIFICA, SOLO CORRIGE, ES EL PROFESOR EL QUE PONE LA NOTA (Ley Europea).** 
 
 **PREGUNTAS PARA JORGE:**
 
 1. En la anterior reunión nos dijiste que un profesor puede generar un examen y seleccionar que solo quiere un único tipo de examen, es decir, que todos los exámenes tendrán el mismo contenido de preguntas pero en distinto orden. De tal forma que todas las hojas de respuesta tendrán la misma clave que referencia al mismo modelo de corrección. ¿Cómo corregirá las respuestas el sistema si las respuestas de todas las hojas del pdf están en distinto orden pero todas se corrigen con el mismo modelo?
+
+**Respuesta:** Los exámenes, aunque contengan las mismas preguntas, son distintos porque cambia el orden de las mismas y cada ordenación de preguntas lleva una clave de calificación diferente. Eso implica que el hash de cada alumno siempre será distinto.

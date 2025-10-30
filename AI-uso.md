@@ -2,7 +2,7 @@
 
 ## Herramientas utilizadas
 - Nombres de los modelos/herramientas: Gemini 2.5
-- Fechas de uso: 26/10/2025
+- Fechas de uso: 26/10/2025, 29/10/2025
 
 ## Contexto de uso
 
@@ -18,7 +18,7 @@
 
 ### Para documentación
 **¿Se usó?** Sí
-**¿Para qué?** Escribir documentación de convenciones
+**¿Para qué?** Escribir documentación de convenciones, reescribir sin faltas de ortografía.
 
 ## Enlaces a conversaciones
 
@@ -32,6 +32,17 @@
 **Qué se hizo con ello**: Se usó como ayuda para documentar las convenciones que se usarán en este repositorio.
 
 **Archivo(s) afectado(s)**: `CONVENCIONES.md`
+
+### Conversación 2: Reescribir texto
+**URL completa**: Conversación con Gemini (Google) - Interfaz no exportable
+
+**Fecha**: 2025-10-29
+
+**Qué se obtuvo**: Un parrafo bien escrito sin faltas de ortografía y signos de puntuación correctos.
+
+**Qué se hizo con ello**: Se usó como ayuda para escribir los parrafos correctamente.
+
+**Archivo(s) afectado(s)**: `/minutas/reunion-01/Notas.md`
 
 
 ## Validación humana
