@@ -1,0 +1,30 @@
+@startuml
+class Universidad 
+class Profesor
+class Grado
+class Asignatura
+class Alumno
+class Pregunta
+class Evaluacion
+class Examen
+class Tema
+class BateriaDePreguntas
+Class ModeloCorrección
+class Dificultad
+
+Universidad "1" *-- "many" Grado : tiene
+Universidad "many" o-- "many" Profesor : contrata
+Grado "1" o-- "many" Alumno : matricula
+Grado "many" *-- "many" Asignatura : contiene
+Asignatura "many" o-- "1" Profesor : tiene asignado
+Asignatura "many" o-- "many" Alumno : cursa
+Asignatura "1" *-- "many" Evaluacion : tiene
+Evaluacion o-- Examen : es un
+Examen "many" o-- "many" Pregunta : contiene
+Asignatura "1" *-- "many" Tema : contiene
+Tema "1" *-- "many" Pregunta : forma parte
+Alumno "many" *-- "many" Evaluacion : tiene
+BateriaDePreguntas "1" *-- "many" Pregunta : forma parte
+Pregunta "many" *-- "1" Dificultad : tiene
+Examen "1" *-- "1" ModeloCorrección : tiene
+@enduml
