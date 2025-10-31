@@ -1,29 +1,27 @@
-# 📘 GLOSARIO
+📘 Glosario
 
----
-- Profesor: Persona encargada de guiar el aprendizaje de los estudiantes.  
+- Profesor: Persona encargada de crear y corregir los exámenes tipo test. Usa la aplicación para generar preguntas, preparar los exámenes en papel y corregirlos mediante el sistema.
 
-- Alumno: Estudiante que recibe enseñanza y participa en el proceso educativo.
-  
-- Grado: Carrera universitaria que forma a los estudiantes en un área específica del conocimiento.  
+- Alumno: Persona que realiza el examen en formato papel.
 
-- Asignatura: Materia o tema específico que forma parte del plan de estudios de un grado.
+- Grado: Programa universitario al que pertenecen los alumnos y las asignaturas. Sirve para organizar los cursos y exámenes dentro de la aplicación.
 
-- Código hash: Es una combinación de letras y números que sirve para identificar algo de forma única.  
+- Asignatura: Materia concreta dentro de un grado. Cada asignatura tiene sus propios temas, preguntas y exámenes.
 
-- Datos sensibles: Información personal que debe protegerse porque puede afectar la privacidad o seguridad de una persona. 
+- Código hash: Es una combinación de letras y números que sirve para identificar algo de forma única.
 
-- Universidad: Es el lugar donde las personas van a estudiar una carrera y prepararse como profesionales.
+- Datos sensibles: Información que debe protegerse por privacidad, como los datos de los alumnos (nombre, DNI, grado).
 
-- Cliente: Es la persona o empresa que nos ha encargado hacer el proyecto.  
+- Universidad: Institución que adquiere licencias del sistema para que su profesorado pueda usar la aplicación en sus exámenes.
 
-- Gestor de licencias: Comprueba si un usuario está dado de alta en esa universidad y si la universidad en ese momento tiene una licencia disponible 
+- Cliente: Persona que ha encargado el desarrollo del sistema.
 
-- Importar: Acción de traer información o datos desde otro sistema o archivo.  
+- Gestor de licencias: Parte del sistema que controla si una universidad o profesor puede usar la aplicación en ese momento, comprobando que haya licencias disponibles.
 
-- Exportar: Acción de enviar o sacar información de un sistema hacia otro.  
+- Importar: Cargar datos al sistema desde un archivo, como listados de alumnos o preguntas de examen.
 
-- Escáner: Dispositivo que convierte documentos físicos en imágenes o archivos digitales.  
+- Exportar: Guardar o sacar datos del sistema a un archivo, como configuraciones o preguntas encriptadas.
 
-- Sistema: Conjunto de elementos que trabajan juntos para cumplir un objetivo común. 
+- Escáner: Dispositivo que digitaliza las hojas de respuesta de los alumnos para que el sistema pueda leerlas y corregirlas automáticamente.
 
+- Sistema: Conjunto de herramientas que permiten crear, gestionar y corregir exámenes tipo test de manera más rápida y segura mediante inteligencia artificial.
