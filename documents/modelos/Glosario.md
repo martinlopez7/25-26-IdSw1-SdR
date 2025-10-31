@@ -1,27 +1,23 @@
 📘 Glosario
 
-- Profesor: Persona encargada de crear y corregir los exámenes tipo test. Usa la aplicación para generar preguntas, preparar los exámenes en papel y corregirlos mediante el sistema.
+- Profesor: Persona encargada de crear y corregir los exámenes tipo test.
 
 - Alumno: Persona que realiza el examen en formato papel.
 
-- Grado: Programa universitario al que pertenecen los alumnos y las asignaturas. Sirve para organizar los cursos y exámenes dentro de la aplicación.
+- Grado: Programa universitario al que pertenecen los alumnos y las asignaturas. Sirve para organizar los cursos y exámenes.
 
 - Asignatura: Materia concreta dentro de un grado. Cada asignatura tiene sus propios temas, preguntas y exámenes.
 
-- Código hash: Es una combinación de letras y números que sirve para identificar algo de forma única.
-
 - Datos sensibles: Información que debe protegerse por privacidad, como los datos de los alumnos (nombre, DNI, grado).
 
-- Universidad: Institución que adquiere licencias del sistema para que su profesorado pueda usar la aplicación en sus exámenes.
+- Universidad: Institucion que tiene grados y asignaturas.
+  
+- Importar: Cargar datos como listados de alumnos o preguntas de examen.
 
-- Cliente: Persona que ha encargado el desarrollo del sistema.
+- Exportar: Guardar o sacar datos como configuraciones o preguntas.
 
-- Gestor de licencias: Parte del sistema que controla si una universidad o profesor puede usar la aplicación en ese momento, comprobando que haya licencias disponibles.
+- Escáner: Dispositivo que digitaliza las hojas de respuesta de los alumnos para poder leerlas y corregirlas.
 
-- Importar: Cargar datos al sistema desde un archivo, como listados de alumnos o preguntas de examen.
+- Examen: Documento de evaluación tipo test que un docente genera a partir de una batería de preguntas previamente preparada.
 
-- Exportar: Guardar o sacar datos del sistema a un archivo, como configuraciones o preguntas encriptadas.
-
-- Escáner: Dispositivo que digitaliza las hojas de respuesta de los alumnos para que el sistema pueda leerlas y corregirlas automáticamente.
-
-- Sistema: Conjunto de herramientas que permiten crear, gestionar y corregir exámenes tipo test de manera más rápida y segura mediante inteligencia artificial.
+- Bateria de preguntas: Conjunto de preguntas preparadas por un docente para generar examenes tipo test.
