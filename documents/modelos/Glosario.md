@@ -21,3 +21,12 @@
 - Examen: Documento de evaluación tipo test que un docente genera a partir de una batería de preguntas previamente preparada.
 
 - Bateria de preguntas: Conjunto de preguntas preparadas por un docente para generar examenes tipo test.
+
+- Pregunta: Elemento básico del examen tipo test creado por el profesor. Cada pregunta tiene un enunciado, cuatro opciones de respuesta, una correcta, y está asociada a una asignatura, tema y nivel de dificultad.
+
+- Evaluación: Proceso mediante el cual el profesor revisa los resultados de los exámenes corregidos para valorar el aprendizaje del alumno.
+
+- Tema: Parte o unidad dentro de una asignatura que agrupa varias preguntas relacionadas. Sirve para organizar la batería de preguntas del profesor.
+
+- Modelo de corrección: Conjunto de respuestas correctas asociadas a un examen concreto.
+
