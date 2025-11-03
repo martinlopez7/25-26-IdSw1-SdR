@@ -1,0 +1,16 @@
+| Relación | Tipo y Cardinalidad | Justificación |
+|-----------|---------------------|----------------|
+| Universidad – Grado | Composición (1 *-- many) | Una universidad tiene varios grados y un un grado solo puede pertenecer a una universidad. Si la universidad desaparece, los grados también.  |
+| Universidad – Profesor | Agregación (many o-- many) | Una universidad tiene varios profesores y un profesor puede trabajar en una o varias universidades. Si la universidad desaparece, los profesores no tiene porque.|
+| Grado – Alumno | Agregación (1 o-- many) | Un grado tiene muchos alumnos matriculados pero un alumno solo puede estar matriculado a un grado. Si el grado desaparece el alumno se puede matricular a otro grado distinto |
+| Grado – Asignatura | Agregación (many o-- many) | Un grado tiene varias asignaturas y una asignatura se puede impartir en varios grados. Si el grado desaparece la asignatura puede seguir perteneciendo a otro grado |
+| Asignatura – Profesor | Agregación (many o-- 1) | Una asignatura solo tiene un profesor asignado pero un profesor puede impartir varias asignaturas. Si la asignatura desaparece el profesor puede seguir impartiendo otra asignatura |
+| Asignatura – Alumno | Agregación (many o-- many) | Una asignatura tiene varios alumnos y un alumno cursa varias asignaturas. Si la asignatura desaparece el alumno puede seguir cursando otras asignaturas |
+| Asignatura – Evaluacion | Composición (1 *-- many) | Una asignatura tiene varias evaluaciones pero una evaluación solo pertenece a una sola asignatura. Si la asignatura desaparece también lo hacen sus evaluaciones |
+| Evaluacion – Examen | Composición (*-- ) | Un examen es una evaluacion pero una evaluación no tiene porque ser un examen. Si una evaluacion desaparece |
+| Examen – Pregunta | Agregación (many o-- many) | Un examen contiene varias preguntas y una pregunta puede estar en varios examenes. Si el examen desaparece la pregunta puede seguir estando en otros examenes |
+| Asignatura – Tema | Composición (1 *-- many) | Una asignatura tiene varios temas pero un tema solo forma parte de una asignatura. Si la asignatura desaparece también lo hacen sus temas |
+| Tema – Pregunta | Composición (1 *-- many) | Un tema tiene varias preguntas pero una pregunta solo puede pertenecer a un solo tema. Si el tema desaparece también lo hacen sus preguntas |
+| Alumno – Evaluacion | Agregación (many o-- many) | Un alumno tiene varias evaluaciones y una evaluacion se dirige a varios alumnos. Si un Alumno desaparece las evaluaciones se siguen dirigiendo a el resto de alumnos |
+| BateriaDePreguntas – Pregunta | Composición (1 *-- many) | Una bateria de preguntas contiene varias preguntas y una pregunta forma parte de una sola bateria de preguntas. Si una bateria de preguntas desaparece tambien lo hacen las preguntas que contiene |
+| Examen – ModeloCorrección | Composición (1 *-- 1) | Un examen tiene un solo modelo de corrección y un modelo de correción corresponde a un solo examen. Si el examen desaparece tambien lo hace su modelo de corrección |
