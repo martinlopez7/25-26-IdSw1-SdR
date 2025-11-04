@@ -1,24 +1,32 @@
 @startuml
 
 class Examen{
- - evaluacion
+ - evaluación
 }
 class Asignatura{
- - nombre
- - codigo
+ - título
+ - código
 }
 class Tema{
- - nombre
+ - título
 }
 class Pregunta{
+ - asignatura
  - enunciado
  - opciones respuesta
  - respuesta correcta
  - dificultad
 }
-class BateriaDePreguntas
-class ModeloCorrección
-class Grado
+class BateriaDePreguntas{
+ - preguntas
+}
+class ModeloCorrección{
+ - soluciones
+}
+class Grado{
+ - título
+ - código
+}
 class Universidad
 class Profesor{
  - nombre
@@ -33,17 +41,17 @@ class Alumno{
 
 Universidad --* Grado : tiene
 Universidad --o Profesor : tiene
-Grado o-- Alumno : matricula
+Grado *-- Alumno : matricula
 Grado --o Asignatura : contiene
 Asignatura --o Profesor : tiene asignado
-Asignatura o-- Alumno : cursa
+Asignatura *-- Alumno : cursa
 Examen *-- Asignatura : tiene
-Examen --o Pregunta : contiene
+Examen --* Pregunta : contiene
 Asignatura --* Tema : contiene
 Tema *-- Pregunta : forma parte
 Alumno --o Examen : realiza
 BateriaDePreguntas *-- Pregunta : forma parte
 Examen --* ModeloCorrección : tiene
-Asignatura --o BateriaDePreguntas : tiene
+Profesor --* BateriaDePreguntas : tiene
 Profesor --o Pregunta : crea
 @enduml
