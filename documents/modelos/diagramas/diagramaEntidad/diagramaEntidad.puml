@@ -4,6 +4,8 @@ class Examen{
  - evaluación
  - clave corrección
 }
+class AsignaturaGrado{
+}
 class Asignatura{
  - título
  - código
@@ -12,15 +14,12 @@ class Tema{
  - título
 }
 class Pregunta{
- - asignatura
- - tema
  - enunciado
  - opciones respuesta
  - respuesta correcta
  - dificultad
 }
 class BateriaDePreguntas{
- - preguntas
 }
 class ModeloCorrección{
  - soluciones
@@ -29,7 +28,6 @@ class Grado{
  - título
  - código
 }
-class Universidad
 class Profesor{
  - nombre
  - apellidos
@@ -41,19 +39,18 @@ class Alumno{
  - DNI
 }
 
-Universidad --* Grado : tiene
-Universidad --o Profesor : tiene
-Grado *-- Alumno : matricula
-Grado --o Asignatura : contiene
-Asignatura --o Profesor : tiene asignado
-Asignatura *-- Alumno : cursa
-Examen *-- Asignatura : tiene
-Examen --* Pregunta : contiene
-Asignatura --* Tema : contiene
-Tema *-- Pregunta : forma parte
-Alumno --o Examen : realiza
-BateriaDePreguntas *-- Pregunta : forma parte
-Examen --* ModeloCorrección : tiene
-Profesor --* BateriaDePreguntas : tiene
-Profesor --o Pregunta : crea
+Grado *-- Alumno : se matricula
+Grado --* AsignaturaGrado : contiene
+Asignatura --* AsignaturaGrado : contiene
+Asignatura *-- Profesor : tiene asignado
+Asignatura *-- Alumno : se imparte
+Examen --* Asignatura : tiene
+Examen *-- Pregunta : contiene
+Asignatura *-- Tema : contiene
+Tema *-- Pregunta : tiene
+Alumno o-- Examen : realiza
+BateriaDePreguntas *-- Pregunta : contiene
+Examen *-- ModeloCorrección : se corrige
+Profesor *-- BateriaDePreguntas : tiene
+Profesor o-- Pregunta : crea
 @enduml
