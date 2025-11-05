@@ -2,6 +2,7 @@
 
 class Examen{
  - evaluación
+ - clave corrección
 }
 class Asignatura{
  - título
@@ -12,6 +13,7 @@ class Tema{
 }
 class Pregunta{
  - asignatura
+ - tema
  - enunciado
  - opciones respuesta
  - respuesta correcta
