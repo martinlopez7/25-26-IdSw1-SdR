@@ -1,4 +1,4 @@
-📘 Glosario
+# 📘 Glosario
 
 | Término              | Definición                                                                                                                                                                                                 |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -17,6 +17,7 @@
 | **Evaluación**       | Actividad mediante la cual el profesor califica al alumno en una asignatura (Examen parcial, Examen final, Examen extraordinario).                                                                         |
 | **Tema**             | Parte o unidad dentro de una asignatura que agrupa varias preguntas relacionadas. Sirve para organizar la batería de preguntas del profesor.                                                               |
 | **Modelo de corrección** | Conjunto de respuestas correctas ordenadas asociadas a un examen concreto.                                                                                                                              |
+
 
 
 
