@@ -1,28 +1,67 @@
 @startuml
-class Universidad 
-class Profesor
-class Grado
-class Asignatura
-class Alumno
-class Pregunta
-class Evaluacion
-class Examen
-class Tema
-class BateriaDePreguntas
-class ModeloCorrección
 
-Universidad "1" *-- "many" Grado : tiene
-Universidad "many" o-- "many" Profesor : contrata
-Grado "1" o-- "many" Alumno : matricula
-Grado "many" o-- "many" Asignatura : contiene
-Asignatura "many" o-- "1" Profesor : tiene asignado
-Asignatura "many" o-- "many" Alumno : cursa
-Asignatura "1" *-- "many" Evaluacion : tiene
-Evaluacion *-- Examen : es un
-Examen "many" o-- "many" Pregunta : contiene
-Asignatura "1" *-- "many" Tema : contiene
-Tema "1" *-- "many" Pregunta : forma parte
-Alumno "many" o-- "many" Evaluacion : tiene
-BateriaDePreguntas "1" *-- "many" Pregunta : forma parte
-Examen "1" *-- "1" ModeloCorrección : tiene
+class Examen{
+ - evaluación
+ - clave corrección
+}
+class Asignatura{
+ - título
+ - temas
+ - código
+}
+class Pregunta{
+ - asignatura
+ - tema
+ - enunciado
+ - opciones respuesta
+ - respuesta correcta
+ - dificultad
+}
+class BateriaDePreguntas{
+}
+class ModeloCorrección{
+ - orden concreto de soluciones
+}
+class Grado{
+ - título
+ - código
+}
+class Profesor{
+ - nombre
+ - apellidos
+ - DNI
+}
+class Alumno{
+ - nombre
+ - apellidos
+ - DNI
+}
+enum EvaluaciónExamen{
+ - Parcial 1
+ - Parcial 2
+ - Parcial 3
+ - Examen final
+ - Examen extraordinario
+}
+enum DificultadPregunta{
+ - facil
+ - medio
+ - dificil
+}
+
+Examen .. EvaluaciónExamen
+Pregunta -u-* Examen : contiene
+Pregunta .. DificultadPregunta
+Examen *-r- ModeloCorrección : se corrige
+Profesor o-l- Pregunta : crea
+Profesor *-u- Examen : crea
+Profesor *-- BateriaDePreguntas : tiene
+BateriaDePreguntas *-u- Pregunta : contiene
+Asignatura *-u- Examen : tiene 
+Asignatura o-l- Profesor : tiene  
+Grado *-u- Asignatura: contiene 
+Alumno o-u- Examen : realiza 
+Asignatura *-r- Alumno : se imparte 
+Grado *-u- Alumno : se cursa
+
 @enduml
