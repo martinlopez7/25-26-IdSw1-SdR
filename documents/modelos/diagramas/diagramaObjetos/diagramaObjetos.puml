@@ -1,0 +1,107 @@
+@startuml
+object "Profesor1:Profesor" as prof1 {
+  Nombre: "María García"
+  Apellidos: "López Martínez"
+  DNI: "12345678A"
+}
+
+object "Asignatura1:Asignatura" as asig1 {
+  Título: "Programación Orientada a Objetos"
+  Temas: "Clases, Herencia, Polimorfismo"
+  Código: "POO-101"
+}
+
+object "Alumno1:Alumno" as alum1 {
+  Nombre: "Juan"
+  Apellidos: "Pérez Sánchez"
+  DNI: "87654321B"
+}
+
+object "Alumno2:Alumno" as alum2 {
+  Nombre: "Ana"
+  Apellidos: "Rodríguez Gómez"
+  DNI: "11223344C"
+}
+
+object "Grado1:Grado" as grado1 {
+  Título: "Ingeniería Informática"
+  Código: "GII"
+}
+
+object "Examen1:Examen" as exam1 {
+  Evaluación: "Primera convocatoria"
+  Clave corrección: "CL2024-01"
+}
+
+object "Pregunta1:Pregunta" as preg1 {
+  Asignatura: "POO-101"
+  Tema: "Herencia"
+  Enunciado: "Explique el concepto de herencia múltiple"
+  Opciones respuesta: "A, B, C, D"
+  Respuesta correcta: "B"
+  Dificultad: "media"
+}
+
+object "Pregunta2:Pregunta" as preg2 {
+  Asignatura: "POO-101"
+  Tema: "Polimorfismo"
+  Enunciado: "¿Qué es el polimorfismo?"
+  Opciones respuesta: "A, B, C, D"
+  Respuesta correcta: "A"
+  Dificultad: "fácil"
+}
+
+object "Bateria1:BateríaDePreguntas" as bateria1 {
+}
+
+object "Dificultad1:DificultadPregunta" as dif1 {
+  Fácil: "true"
+  Medio: "false"
+  Difícil: "false"
+}
+
+object "Dificultad2:DificultadPregunta" as dif2 {
+  Fácil: "false"
+  Medio: "true"
+  Difícil: "false"
+}
+
+object "Evaluacion1:EvaluaciónExamen" as eval1 {
+  Parcial 1: "7.5"
+  Parcial 2: "8.0"
+  Parcial 3: "6.5"
+  Examen final: "0"
+  Examen extraordinario: "0"
+}
+
+object "Modelo1:ModeloCorrección" as modelo1 {
+  Orden concreto de soluciones: "1, 3, 2, 4"
+}
+
+' Relaciones con cardinalidad y etiquetas
+prof1 "1" -- "1" asig1 : tiene
+prof1 "1" -- "1" exam1 : crea
+prof1 "1" -- "1" bateria1 : tiene
+
+asig1 "1" -- "*" exam1 : tiene
+asig1 "1" -- "*" alum1 : se imparte
+asig1 "1" -- "*" alum2 : se imparte
+
+exam1 "1" -- "*" preg1 : contiene
+exam1 "1" -- "*" preg2 : contiene
+exam1 "1" -- "*" alum1 : realiza
+exam1 "1" -- "*" alum2 : realiza
+exam1 "1" -- "1" eval1
+exam1 "1" -- "1" modelo1 : se corrige
+
+bateria1 "1" -- "*" preg1 : contiene
+bateria1 "1" -- "*" preg2 : contiene
+
+preg1 "1" -- "1" dif2
+preg2 "1" -- "1" dif1
+
+grado1 "1" -- "*" asig1 : contiene
+grado1 "1" -- "*" alum1 : se cursa
+grado1 "1" -- "*" alum2 : se cursa
+
+@enduml
