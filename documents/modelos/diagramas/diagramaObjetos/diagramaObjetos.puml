@@ -74,7 +74,7 @@ prof1 -u-> exam1 : crea
 prof1 --> bateria1 : tiene
 preg1 -[hidden]r- preg2
 preg2 -[hidden]r- preg3
-'La flecha de profesor1 a pregunta1 se junta con el marjen de pregunta 3 y pregunta 2.
+'La flecha de profesor1 a pregunta1 se junta con el margen de pregunta 3 y pregunta 2.
 prof1 -l-> preg1 : crea 
 prof1 -l-> preg2 : crea
 prof1 -l-> preg3 : crea
