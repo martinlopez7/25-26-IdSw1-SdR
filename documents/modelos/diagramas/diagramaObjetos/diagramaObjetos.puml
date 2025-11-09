@@ -1,14 +1,8 @@
 @startuml
-object "Profesor1:Profesor" as prof1 {
-  Nombre: "María García"
-  Apellidos: "López Martínez"
-  DNI: "12345678A"
-}
 
-object "Asignatura1:Asignatura" as asig1 {
-  Título: "Programación Orientada a Objetos"
-  Temas: "Clases, Herencia, Polimorfismo"
-  Código: "POO-101"
+object "Grado1:Grado" as grado1 {
+  Título: "Ingeniería Informática"
+  Código: "GII"
 }
 
 object "Alumno1:Alumno" as alum1 {
@@ -17,91 +11,80 @@ object "Alumno1:Alumno" as alum1 {
   DNI: "87654321B"
 }
 
-object "Alumno2:Alumno" as alum2 {
-  Nombre: "Ana"
-  Apellidos: "Rodríguez Gómez"
-  DNI: "11223344C"
+object "Asignatura1:Asignatura" as asig1 {
+  Título: "Programación Orientada a Objetos"
+  Temas: "Clases, Herencia, Polimorfismo"
+  Código: "POO101"
 }
 
-object "Grado1:Grado" as grado1 {
-  Título: "Ingeniería Informática"
-  Código: "GII"
+object "Profesor1:Profesor" as prof1 {
+  Nombre: "María García"
+  Apellidos: "López Martínez"
+  DNI: "12345678A"
 }
 
 object "Examen1:Examen" as exam1 {
-  Evaluación: "Primera convocatoria"
-  Clave corrección: "CL2024-01"
+  Evaluación: "Parcial 1"
+  Clave corrección: "a7f3k9m2p5w8x1q4"
 }
 
-object "Pregunta1:Pregunta" as preg1 {
-  Asignatura: "POO-101"
-  Tema: "Herencia"
-  Enunciado: "Explique el concepto de herencia múltiple"
-  Opciones respuesta: "A, B, C, D"
-  Respuesta correcta: "B"
-  Dificultad: "media"
-}
-
-object "Pregunta2:Pregunta" as preg2 {
-  Asignatura: "POO-101"
-  Tema: "Polimorfismo"
-  Enunciado: "¿Qué es el polimorfismo?"
-  Opciones respuesta: "A, B, C, D"
-  Respuesta correcta: "A"
-  Dificultad: "fácil"
+object "Modelo1:ModeloCorrección" as modelo1 {
+  Orden concreto de soluciones: 
+""Reutilizar código de clases existentes",
+"Capacidad de objetos de diferentes clases de responder al mismo mensaje",
+"Método especial para inicializar objetos""
 }
 
 object "Bateria1:BateríaDePreguntas" as bateria1 {
 }
 
-object "Dificultad1:DificultadPregunta" as dif1 {
-  Fácil: "true"
-  Medio: "false"
-  Difícil: "false"
+object "Pregunta1:Pregunta" as preg1 {
+  Asignatura: "POO101"
+  Tema: "Herencia"
+  Enunciado: "¿Qué permite la herencia en POO?"
+  Opciones respuesta: "Reutilizar código de clases existentes,\nCrear variables globales,\nEliminar métodos,\nOcultar atributos privados"
+  Respuesta correcta: "Reutilizar código de clases existentes"
+  Dificultad: "media"
 }
 
-object "Dificultad2:DificultadPregunta" as dif2 {
-  Fácil: "false"
-  Medio: "true"
-  Difícil: "false"
+object "Pregunta2:Pregunta" as preg2 {
+  Asignatura: "POO101"
+  Tema: "Polimorfismo"
+  Enunciado: "¿Qué es el polimorfismo?"
+  Opciones respuesta: "Capacidad de objetos de diferentes clases de responder al mismo mensaje,\nUn tipo de variable,\nUn método estático,\nUna clase abstracta"
+  Respuesta correcta: "Capacidad de objetos de diferentes clases de responder al mismo mensaje"
+  Dificultad: "fácil"
 }
 
-object "Evaluacion1:EvaluaciónExamen" as eval1 {
-  Parcial 1: "7.5"
-  Parcial 2: "8.0"
-  Parcial 3: "6.5"
-  Examen final: "0"
-  Examen extraordinario: "0"
+object "Pregunta3:Pregunta" as preg3 {
+  Asignatura: "POO101"
+  Tema: "Clases"
+  Enunciado: "¿Qué es un constructor?"
+  Opciones respuesta: "Método especial para inicializar objetos,\nUna variable de clase,\nUn tipo de herencia,\nUn operador lógico"
+  Respuesta correcta: "Método especial para inicializar objetos"
+  Dificultad: "fácil"
 }
 
-object "Modelo1:ModeloCorrección" as modelo1 {
-  Orden concreto de soluciones: "1, 3, 2, 4"
-}
-
-' Relaciones con cardinalidad y etiquetas
-prof1 "1" -- "1" asig1 : tiene
-prof1 "1" -- "1" exam1 : crea
-prof1 "1" -- "1" bateria1 : tiene
-
-asig1 "1" -- "*" exam1 : tiene
-asig1 "1" -- "*" alum1 : se imparte
-asig1 "1" -- "*" alum2 : se imparte
-
-exam1 "1" -- "*" preg1 : contiene
-exam1 "1" -- "*" preg2 : contiene
-exam1 "1" -- "*" alum1 : realiza
-exam1 "1" -- "*" alum2 : realiza
-exam1 "1" -- "1" eval1
-exam1 "1" -- "1" modelo1 : se corrige
-
-bateria1 "1" -- "*" preg1 : contiene
-bateria1 "1" -- "*" preg2 : contiene
-
-preg1 "1" -- "1" dif2
-preg2 "1" -- "1" dif1
-
-grado1 "1" -- "*" asig1 : contiene
-grado1 "1" -- "*" alum1 : se cursa
-grado1 "1" -- "*" alum2 : se cursa
+grado1 -u-> asig1 : contiene
+grado1 -u-> alum1 : se cursa
+asig1 -l-> prof1 : tiene
+asig1 -u-> exam1 : tiene
+asig1 -r-> alum1 : se imparte
+prof1 -u-> exam1 : crea
+prof1 --> bateria1 : tiene
+preg1 -[hidden]r- preg2
+preg2 -[hidden]r- preg3
+'La flecha de profesor1 a pregunta1 se junta con el marjen de pregunta 3 y pregunta 2.
+prof1 -l-> preg1 : crea 
+prof1 -l-> preg2 : crea
+prof1 -l-> preg3 : crea
+exam1 -r-> modelo1 : se corrige
+alum1 -u-> exam1 : realiza
+exam1 -d-> preg1 : tiene
+exam1 -d-> preg2 : tiene
+exam1 -d-> preg3 : tiene
+bateria1 -u-> preg1 : contiene
+bateria1 -u-> preg2 : contiene
+bateria1 -u-> preg3 : contiene
 
 @enduml
