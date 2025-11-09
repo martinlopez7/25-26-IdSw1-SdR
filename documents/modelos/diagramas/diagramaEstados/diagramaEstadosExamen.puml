@@ -1,0 +1,28 @@
+@startuml
+title Diagrama de Estados - Entidad Examen
+
+[*] --> Diseñado
+
+Diseñado : El docente define los parámetros del examen 
+Diseñado --> Generado : generar exámenes 
+
+Generado : Exámenes generados y almacenados
+Generado --> EnImpresion : imprimir exámenes
+EnImpresion --> EnCurso : distribuir exámenes a los alumnos
+
+EnCurso : Los alumnos realizan el examen en papel
+EnCurso --> Recolectado : finalizar examen
+
+Recolectado : Exámenes escaneados o pendientes de corrección
+Recolectado --> EnCorreccion : escanear y leer hashcodes
+
+EnCorreccion : Sistema aplica IA para corrección automática
+EnCorreccion --> Corregido : corrección completada
+
+Corregido : Exámenes corregidos 
+Corregido --> Cerrado : validar resultados 
+
+Cerrado : Examen archivado 
+Cerrado --> [*]
+
+@enduml
