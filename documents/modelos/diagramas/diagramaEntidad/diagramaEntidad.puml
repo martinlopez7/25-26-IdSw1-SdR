@@ -6,7 +6,6 @@ class Examen{
 }
 class Asignatura{
  - título
- - temas
  - código
 }
 class Pregunta{
@@ -55,7 +54,7 @@ Pregunta .. DificultadPregunta
 Examen *-r- ModeloCorrección : se corrige
 Profesor o-l- Pregunta : crea
 Profesor *-u- Examen : crea
-Profesor *-- BateriaDePreguntas : tiene
+Asignatura *-- BateriaDePreguntas : tiene
 BateriaDePreguntas *-u- Pregunta : contiene
 Asignatura *-u- Examen : tiene 
 Asignatura o-l- Profesor : tiene  
