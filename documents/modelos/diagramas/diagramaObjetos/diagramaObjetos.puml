@@ -13,7 +13,6 @@ object "Alumno1:Alumno" as alum1 {
 
 object "Asignatura1:Asignatura" as asig1 {
   Título: "Programación Orientada a Objetos"
-  Temas: "Clases, Herencia, Polimorfismo"
   Código: "POO101"
 }
 
@@ -71,7 +70,7 @@ asig1 -l-> prof1 : tiene
 asig1 -u-> exam1 : tiene
 asig1 -r-> alum1 : se imparte
 prof1 -u-> exam1 : crea
-prof1 --> bateria1 : tiene
+asig1 --> bateria1 : tiene
 preg1 -[hidden]r- preg2
 preg2 -[hidden]r- preg3
 'La flecha de profesor1 a pregunta1 se junta con el margen de pregunta 3 y pregunta 2.
