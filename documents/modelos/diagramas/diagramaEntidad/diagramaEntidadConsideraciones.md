@@ -4,7 +4,7 @@
 | **Examen – ModeloCorrección** | Composición (1 *-- 1) | Cada examen tiene un único modelo de corrección y un modelo de corrección solo pertenece a un examen. |
 | **Profesor - Examen** | Composición (1 *-- many) | Un profesor puede crear varios examenes pero un examen solo puede ser creado por un profesor. |
 | **Profesor – Pregunta** | Agregación (1 o-- many) | Un profesor puede crear varias preguntas y una pregunta solo puede ser creada por un profesor |
-| **Profesor – BateríaDePreguntas** | Composición (1 *-- 1) | Un profesor crea y mantiene una batería de preguntas y una batería de preguntas solo puede ser creada y mantenida por un profesor. |
+| **Asignatura – BateríaDePreguntas** | Composición (1 *-- 1) | Una asignatura tiene una batería de preguntas y una batería de preguntas solo puede pertenecer a una asignatura. |
 | **BateríaDePreguntas – Pregunta** | Composición (1 *-- many) | Una batería de preguntas tiene muchas preguntas y una pregunta esta en una sola batería de preguntas. |
 | **Asignatura – Examen** | Composición (1 *-- many) | Una asignatura puede tener varios examenes pero un examen solo puede pertenecer a una sola asignatura. |
 | **Asignatura – Profesor** | Agregación (many o-- 1) | Una asignatura tiene un solo profesor asignado, pero un profesor puede impartir varias asignaturas. |
