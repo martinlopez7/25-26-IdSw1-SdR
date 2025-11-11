@@ -1,10 +1,10 @@
 @startuml
 title Diagrama de Estados - Entidad Examen
 
-[*] --> NoCreado : iniciar
-NoCreado --> Creado : generar
-Creado --> Asignado : asignar
-Asignado --> Corregido : corregir
-Corregido --> [*] : finalizar
+ [*] --> NoCreado : iniciar
+ NoCreado --> Creado : generar
+ Creado --> Asignado : asignar
+ Asignado --> Corregido : corregir
+ Corregido --> [*] : finalizar
 
 @enduml
