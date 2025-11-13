@@ -9,3 +9,6 @@
 ## ➕RECURSOS ADICIONALES
 
 Aquí puedes encontrar imágenes, notas de audio y distintos tipos de recursos que pueden ayudar a comprender mejor el objetivo del proyecto
+|REUNIÓN 1|REUNIÓN 2|
+|---------|---------|
+|[Notas primera reunión](/documents/evidencias/reunion-01/Notas.md)|[Notas segunda reunión](/documents/evidencias/reunion-01/Notas.md)|
