@@ -9,7 +9,9 @@
 A continuación se muestra el diagrama de entidades propuesto del proyecto
 <p align="center">
   <img src="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.svg">
-  
+
+[Consideraciones sobre el diagrama](/documents/modelos/diagramas/diagramaEntidad/diagramaEntidadConsideraciones.md)
+
 [Enlace al código del diagrama de entidades](/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.puml)
 
 ## DIAGRAMA DE OBJETOS
@@ -23,5 +25,7 @@ A continuación se muestra el diagrama de objetos del proyecto
 A continuación se muestra el diagrama de estados de la entidad examen
 <p align="center">
   <img src="/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamen.svg">
+
+[Consideraciones sobre el diagrama](/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamenConsideraciones.md)
   
 [Enlace al código del diagrama de estados](/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamen.puml)
