@@ -23,5 +23,5 @@
 | **Universidad**      | Institución que tiene grados y asignaturas.                                                                                                                                                                |cor
 | **Importar**         | Cargar datos como listados de alumnos o preguntas de examen.                                                                                                                                                |
 | **Exportar**         | Guardar o sacar datos como configuraciones o preguntas.                                                                                                                                                     |
+| **Escáner**         |   Dispositivo que digitaliza las hojas de respuesta de los alumnos para poder leerlas y corregirlas.                                                                                                         |
 
-| **Escáner**          | Dispositivo que digitaliza las hojas de respuesta de los alumnos para poder leerlas y corregirlas.                                                                                                         |
