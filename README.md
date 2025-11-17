@@ -10,7 +10,7 @@
 
 ## 💠INFORMACIÓN GENERAL DEL PROYECTO
 
-_(nombre_Aplicacion)_ es una sistema mediante el que un docente puede generar un examen (tipo test) con un número de preguntas concreto, dificultad concreta (en proporciones) y único para cada alumno a partir de una batería de preguntas que el profesor ha preparado previamente.
+_Jorgestor_ es una sistema mediante el que un docente puede generar un examen (tipo test) con un número de preguntas concreto, dificultad concreta (en proporciones) y único para cada alumno a partir de una batería de preguntas que el profesor ha preparado previamente.
 
 <table>
 <tr>
