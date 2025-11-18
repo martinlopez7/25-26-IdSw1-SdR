@@ -1,0 +1,37 @@
+@startuml actoresYCasosDeUso-administradorInstitucional
+
+left to right direction
+
+actor "Administrador Institucional" as admin
+
+package "Módulo Usuarios Docentes" {
+  usecase "Crear profesor" as UC32
+  usecase "Ver profesores" as UC33
+  usecase "Editar profesor" as UC34
+  usecase "Eliminar profesor" as UC35
+}
+
+package "Módulo Gestión Licencias" {
+  usecase "Adquirir licencia" as UC36
+  usecase "Ver licencias" as UC37
+  usecase "Editar licencia" as UC38
+  usecase "Eliminar licencia" as UC39
+}
+
+package "Módulo Sesión" {
+  usecase "Iniciar sesión" as UC41
+  usecase "Cerrar sesión" as UC42
+}
+
+admin --> UC32
+admin --> UC33
+admin --> UC34
+admin --> UC35
+admin --> UC36
+admin --> UC37
+admin --> UC38
+admin --> UC39
+admin --> UC41
+admin --> UC42
+
+@enduml
