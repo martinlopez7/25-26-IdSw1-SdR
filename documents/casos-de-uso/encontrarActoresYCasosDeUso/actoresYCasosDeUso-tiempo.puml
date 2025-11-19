@@ -1,0 +1,13 @@
+@startuml actoresYCasosDeUso-tiempo
+
+left to right direction
+
+actor "Tiempo" as tiempo
+
+package "Módulo Sesión" {
+  usecase "Cerrar sesión automáticamente" as UC40
+}
+
+tiempo --> UC40
+
+@enduml
