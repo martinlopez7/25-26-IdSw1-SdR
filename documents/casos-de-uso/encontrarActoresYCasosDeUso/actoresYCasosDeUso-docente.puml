@@ -28,7 +28,7 @@ package "Módulo Alumno" {
 
 package "Módulo Asignaciones" {
   usecase "Actualizar alumno de grado" as UC13
-  usecase "Actualizar grado de alumno" as UC15
+  usecase "Actualizar grado de asignatura" as UC15
   usecase "Actualizar alumno de asignatura" as UC17
 }
 
