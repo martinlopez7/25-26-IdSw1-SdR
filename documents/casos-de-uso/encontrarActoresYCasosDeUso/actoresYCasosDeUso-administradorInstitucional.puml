@@ -11,7 +11,7 @@ package "Módulo Usuarios Docentes" {
   usecase "Eliminar profesor" as UC35
 }
 
-package "Módulo Gestión Licencias" {
+package "Módulo Gestión Licencias(intencion)" {
   usecase "Adquirir licencia" as UC36
   usecase "Ver licencias" as UC37
   usecase "Editar licencia" as UC38
