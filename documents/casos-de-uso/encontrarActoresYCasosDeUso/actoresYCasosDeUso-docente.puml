@@ -27,18 +27,15 @@ package "Módulo Alumno" {
 }
 
 package "Módulo Asignaciones" {
-  usecase "Asignar alumno a grado" as UC13
-  usecase "Desasignar alumno de grado" as UC14
-  usecase "Asignar grado a asignatura" as UC15
-  usecase "Desasignar grado de asignatura" as UC16
-  usecase "Asignar alumno a asignatura" as UC17
-  usecase "Desasignar alumno de asignatura" as UC18
- 
+  usecase "Actualizar grado del alumno" as UC13
+  usecase "Actualizar asignatura del grado" as UC15
+  usecase "Actualizar asignatura del alumno" as UC17
 }
 
 package "Módulo Gestión de Preguntas" {
   usecase "Crear pregunta" as UC20
   usecase "Ver preguntas" as UC21
+  usecase "Ver pregunta" as UC30
   usecase "Editar pregunta" as UC22
   usecase "Eliminar pregunta" as UC23
   usecase "Importar preguntas" as UC24
@@ -78,11 +75,8 @@ doc --> UC10
 doc --> UC11
 doc --> UC12
 doc --> UC13
-doc --> UC14
 doc --> UC15
-doc --> UC16
 doc --> UC17
-doc --> UC18
 doc --> UC19
 doc --> UC20
 doc --> UC21
