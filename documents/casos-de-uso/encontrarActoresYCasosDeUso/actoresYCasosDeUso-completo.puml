@@ -73,7 +73,6 @@ package "Módulo Gestión Licencias(intencion)" {
 }
 
 package "Módulo Sesión" {
-  usecase "Cerrar sesión automáticamente" as UC40
   usecase "Iniciar sesión" as UC41
   usecase "Cerrar sesión" as UC42
 }
@@ -119,6 +118,6 @@ admin --> UC39
 admin --> UC41
 admin --> UC42
 
-tiempo --> UC40
+tiempo --> UC42
 
 @enduml
