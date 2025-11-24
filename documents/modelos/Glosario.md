@@ -9,7 +9,6 @@
 
 | Término | Definición |
 |---|---|
-| **Universidad** | Institución que tiene grados y asignaturas. |
 | **Grado** | Programa universitario al que pertenecen los alumnos y las asignaturas. Sirve para organizar los cursos y exámenes. |
 | **Asignatura** | Materia concreta dentro de un grado. Cada asignatura tiene sus propios temas y exámenes. |
 | **Curso académico** | Periodo temporal (ej. 2024-2025) definido en la asignatura para organizar la matriculación de alumnos y la docencia. |
@@ -21,10 +20,5 @@
 | **Pregunta** | Elemento básico del examen tipo test creado por el profesor. Cada pregunta tiene una asignatura, un tema, enunciado, opciones, respuesta correcta y dificultad. |
 | **Respuesta** | Opción individual que forma parte de una pregunta. Indica una posible solución al enunciado y define si es la opción correcta o incorrecta. |
 | **Examen** | Documento de evaluación tipo test que un docente genera a partir de una batería de preguntas previamente preparada. |
-| **Clave de corrección** | Conjunto de respuestas correctas asociadas a un modelo de examen que permite al sistema calificar automáticamente las pruebas. |
+| **Clave de corrección** | Conjunto de respuestas correctas asociadas a un modelo de examen que permite al sistema corrige automáticamente las pruebas. |
 | **Evaluación** | Actividad mediante la cual el profesor califica al alumno (Examen parcial 1-3, final o extraordinario). |
-| **Hoja de respuestas** | Documento físico estandarizado donde el alumno marca sus opciones. Es el soporte que procesa el escáner. |
-| **Escáner** | Dispositivo que digitaliza las hojas de respuesta de los alumnos para poder leerlas y corregirlas. |
-| **Datos sensibles** | Información que debe protegerse por privacidad, como los datos de los alumnos (nombre, DNI, grado). |
-| **Importar** | Cargar datos externos al sistema, como listados de alumnos matriculados o preguntas de examen. |
-| **Exportar** | Guardar o extraer datos del sistema, como configuraciones, notas o copias de seguridad de las preguntas. |
