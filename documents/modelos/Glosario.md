@@ -20,5 +20,5 @@
 | **Pregunta** | Elemento básico del examen tipo test creado por el profesor. Cada pregunta tiene una asignatura, un tema, enunciado, opciones, respuesta correcta y dificultad. |
 | **Respuesta** | Opción individual que forma parte de una pregunta. Indica una posible solución al enunciado y define si es la opción correcta o incorrecta. |
 | **Examen** | Documento de evaluación tipo test que un docente genera a partir de una batería de preguntas previamente preparada. |
-| **Clave de corrección** | Conjunto de respuestas correctas asociadas a un modelo de examen que permite al sistema corrige automáticamente las pruebas. |
+| **Clave de corrección** | Conjunto de respuestas correctas asociadas a un modelo de examen que permite al sistema corregir automáticamente las pruebas. |
 | **Evaluación** | Actividad mediante la cual el profesor califica al alumno (Examen parcial 1-3, final o extraordinario). |

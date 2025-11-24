@@ -1,7 +1,7 @@
 | Relación | Tipo y Cardinalidad | Justificación |
 | :--- | :--- | :--- |
 | **Profesor – Asignatura** | Agregación (1 o-- many) | Un solo profesor puede ser responsable de impartir **varias** asignaturas, mientras que cada asignatura tiene asignado un único profesor titular. |
-| **Grado – Asignatura** | Composición (1 *-- many) | Un Grado está formado por **muchas** asignaturas a lo largo de los cursos, pero cada asignatura pertenece exclusivamente a un único Grado. |
+| **Grado – Asignatura** | Composición (many *-- many) | Un Grado está formado por **muchas** asignaturas a lo largo de los cursos y cada asignatura puede pertenecer a varios grados. |
 | **Asignatura – Alumno** | Asociación (many -- many) | En una asignatura se matriculan **muchos** alumnos y, a su vez, un mismo alumno se matricula en **muchas** asignaturas diferentes. |
 | **Asignatura – Examen** | Composición (1 *-- many) | Una asignatura tiene planificados **varios** exámenes (parciales, finales, recuperaciones), pero cada examen corresponde a una única asignatura. |
 | **Asignatura – BateríaDePreguntas** | Composición (1 *-- 1) | Cada asignatura tiene asociada **una** única batería de preguntas, y esa batería pertenece solo a esa asignatura. |
