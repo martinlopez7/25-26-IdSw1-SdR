@@ -1,10 +1,5 @@
 @startuml
 
-object "Examen1:Examen" as exam1 {
-  Evaluación: "Parcial 1"
-  Clave corrección: "abc123xyz789"
-}
-
 object "Grado1:Grado" as grado1 {
   Título: "Ingeniería Informática"
   Código: "GII"
@@ -16,16 +11,21 @@ object "Asignatura1:Asignatura" as asig1 {
   Curso académico: "2024/2025"
 }
 
+object "Alumno1:Alumno" as alum1 {
+  Nombre: "Juan"
+  Apellidos: "Pérez Sánchez"
+  DNI: "87654321B"
+}
+
 object "Profesor1:Profesor" as prof1 {
   Nombre: "María"
   Apellidos: "García López"
   DNI: "12345678A"
 }
 
-object "Alumno1:Alumno" as alum1 {
-  Nombre: "Juan"
-  Apellidos: "Pérez Sánchez"
-  DNI: "87654321B"
+object "Examen1:Examen" as exam1 {
+  Evaluación: "Parcial 1"
+  Clave corrección: "abc123xyz789"
 }
 
 object "Bateria1:BateriaDePreguntas" as bateria1 {
@@ -34,64 +34,88 @@ object "Bateria1:BateriaDePreguntas" as bateria1 {
 object "Pregunta1:Pregunta" as preg1 {
   Asignatura: "POO101"
   Enunciado: "¿Qué permite la herencia en POO?"
-  Opciones respuesta: "Reutilizar código de clases existentes,\nCrear variables globales,\nEliminar métodos,\nOcultar atributos privados"
-  Respuesta correcta: "Reutilizar código de clases existentes"
   Dificultad: "medio"
+  Tema: "Herencia"
 }
 
 object "Pregunta2:Pregunta" as preg2 {
   Asignatura: "POO101"
   Enunciado: "¿Qué es el polimorfismo?"
-  Opciones respuesta: "Capacidad de objetos de diferentes clases de responder al mismo mensaje,\nUn tipo de variable,\nUn método estático,\nUna clase abstracta"
-  Respuesta correcta: "Capacidad de objetos de diferentes clases de responder al mismo mensaje"
   Dificultad: "facil"
+  Tema: "Polimorfismo"
 }
 
 object "Pregunta3:Pregunta" as preg3 {
   Asignatura: "POO101"
   Enunciado: "¿Qué es un constructor?"
-  Opciones respuesta: 
-"Método especial para inicializar objetos,
-Una variable de clase,
-Un tipo de herencia,
-Un operador lógico"
-  Respuesta correcta: "Método especial para inicializar objetos"
   Dificultad: "fácil"
+  Tema: "Clases y Objetos"
 }
 
-object "Respuesta1:Respuesta" as resp1 {
-  Opción: "Reutilizar código de clases"
+object "Respuesta1C:Respuesta" as resp1C {
+  Opción: "Reutilizar código de clases existentes"
   esCorrecta: true
 }
-
-object "Respuesta2:Respuesta" as resp2 {
+object "Respuesta1I:Respuesta" as resp1I {
+  Opción: "Crear variables globales"
+  esCorrecta: false
+}
+object "Respuesta2C:Respuesta" as resp2C {
   Opción: "Capacidad de responder al mismo mensaje"
   esCorrecta: true
 }
-
-object "Respuesta3:Respuesta" as resp3 {
+object "Respuesta2I:Respuesta" as resp2I {
+  Opción: "Un tipo de variable"
+  esCorrecta: false
+}
+object "Respuesta3C:Respuesta" as resp3C {
   Opción: "Método especial para inicializar objetos"
   esCorrecta: true
 }
+object "Respuesta3I:Respuesta" as resp3I {
+  Opción: "Un tipo de herencia"
+  esCorrecta: false
+}
 
-grado1 -u-> asig1 : contiene
-asig1 -u-> alum1 : se imparte
-asig1 -l-> prof1 : tiene
-asig1 -u-> exam1 : tiene
-asig1 -u-> bateria1 : tiene
 
-alum1 -u-> exam1 : realiza
+grado1 *-- asig1 : contiene
 
-bateria1 -u-> preg1 : contiene
-bateria1 -u-> preg2 : contiene
-bateria1 -u-> preg3 : contiene
+asig1 *-- exam1 : tiene
+asig1 *-- bateria1 : tiene
 
-exam1 -d-> preg1 : contiene
-exam1 -d-> preg2 : contiene
-exam1 -d-> preg3 : contiene
+exam1 *-- preg1 : contiene
+exam1 *-- preg2 : contiene
+exam1 *-- preg3 : contiene
 
-preg1 -d-> resp1 : tiene
-preg2 -d-> resp2 : tiene
-preg3 -d-> resp3 : tiene
+bateria1 *-- preg1 : contiene
+bateria1 *-- preg2 : contiene
+bateria1 *-- preg3 : contiene
+
+preg1 *-- resp1C : tiene
+preg1 *-- resp1I : tiene
+
+preg2 *-- resp2C : tiene
+preg2 *-- resp2I : tiene
+
+preg3 *-- resp3C : tiene
+preg3 *-- resp3I : tiene
+
+
+preg1 -[hidden]right-> preg2
+preg2 -[hidden]right-> preg3
+
+exam1 -[hidden]right-> bateria1
+
+alum1 -u-> grado1 : se cursa
+asig1 -left-> alum1 : se imparte
+asig1 -right-> prof1 : tiene
+alum1 -d-> exam1 : realiza
+
+preg1 -[hidden]down-> resp1C
+preg2 -[hidden]down-> resp2C
+preg3 -[hidden]down-> resp3C
+resp1C -[hidden]right-> resp1I
+resp2C -[hidden]right-> resp2I
+resp3C -[hidden]right-> resp3I
 
 @enduml
