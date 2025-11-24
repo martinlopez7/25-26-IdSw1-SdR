@@ -7,11 +7,9 @@ class Asignatura{
  - título
  - código
  - curso académico
- - asignatura
 }
 class Pregunta{
  - asignatura
- - tema
  - enunciado
  - opciones respuesta
  - respuesta correcta
@@ -51,6 +49,9 @@ class Respuesta{
  - esCorrecta
 }
 
+enum Tema{
+}
+
 Respuesta -u-* Pregunta
 Pregunta .. DificultadPregunta
 Pregunta -u-o Examen : contiene
@@ -58,9 +59,10 @@ Pregunta -u-* BateriaDePreguntas : contiene
 Examen .. EvaluaciónExamen
 BateriaDePreguntas -u-* Asignatura : tiene
 Examen -u-* Asignatura : tiene
-Profesor -r-o Asignatura : tiene
-Asignatura -u-* Grado : contiene
+Profesor o-r- Asignatura : tiene
+Asignatura --* Grado : contiene
 Alumno -u-o Examen : realiza
 Alumno -u-* Asignatura : se imparte
 Alumno -u-* Grado : se cursa
+Pregunta .. Tema
 @enduml
