@@ -1,5 +1,4 @@
 @startuml
-
 title Diagrama de Estados - Entidad Pregunta
 
 state "No Creado" as no_creado 
@@ -7,15 +6,9 @@ state "En Construcción" as construccion
 state "Habilitada" as habilitada
 state "Inhabilitada" as inhabilitada 
 
-[*] --> no_creado
-
 no_creado --> construccion : Crear
 construccion --> habilitada : Habilitar
 
 habilitada --> inhabilitada : Deshabilitar
 inhabilitada --> habilitada : Habilitar
-
-habilitada --> [*] : Finalizar
-inhabilitada --> [*] : Finalizar
-
 @enduml
