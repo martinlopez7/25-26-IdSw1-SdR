@@ -1,8 +1,30 @@
 @startuml
 
+top to bottom direction
+
+object "Profesor1:Profesor" as prof1 {
+  Nombre: "María"
+  Apellidos: "García López"
+  DNI: "12345678A"
+}
+
+object "Asignatura1:Asignatura" as asig1 {
+  Título: "Programación Orientada a Objetos"
+  Código: "POO101"
+  Curso académico: "2024/2025"
+}
+
 object "Grado1:Grado" as grado1 {
   Título: "Ingeniería Informática"
   Código: "GII"
+}
+
+object "Examen1:Examen" as exam1 {
+  Evaluación: "Parcial 1"
+  Clave corrección: "abc123xyz789"
+}
+
+object "Bateria1:BateriaDePreguntas" as bateria1 {
 }
 
 object "Alumno1:Alumno" as alum1 {
@@ -11,79 +33,94 @@ object "Alumno1:Alumno" as alum1 {
   DNI: "87654321B"
 }
 
-object "Asignatura1:Asignatura" as asig1 {
-  Título: "Programación Orientada a Objetos"
-  Código: "POO101"
-}
-
-object "Profesor1:Profesor" as prof1 {
-  Nombre: "María García"
-  Apellidos: "López Martínez"
-  DNI: "12345678A"
-}
-
-object "Examen1:Examen" as exam1 {
-  Evaluación: "Parcial 1"
-  Clave corrección: "a7f3k9m2p5w8x1q4"
-}
-
-object "Modelo1:ModeloCorrección" as modelo1 {
-  Orden concreto de soluciones: 
-""Reutilizar código de clases existentes",
-"Capacidad de objetos de diferentes clases de responder al mismo mensaje",
-"Método especial para inicializar objetos""
-}
-
-object "Bateria1:BateríaDePreguntas" as bateria1 {
-}
-
 object "Pregunta1:Pregunta" as preg1 {
   Asignatura: "POO101"
-  Tema: "Herencia"
   Enunciado: "¿Qué permite la herencia en POO?"
-  Opciones respuesta: "Reutilizar código de clases existentes,\nCrear variables globales,\nEliminar métodos,\nOcultar atributos privados"
-  Respuesta correcta: "Reutilizar código de clases existentes"
-  Dificultad: "media"
+  Dificultad: "medio"
+  Tema: "Herencia"
 }
 
 object "Pregunta2:Pregunta" as preg2 {
   Asignatura: "POO101"
-  Tema: "Polimorfismo"
   Enunciado: "¿Qué es el polimorfismo?"
-  Opciones respuesta: "Capacidad de objetos de diferentes clases de responder al mismo mensaje,\nUn tipo de variable,\nUn método estático,\nUna clase abstracta"
-  Respuesta correcta: "Capacidad de objetos de diferentes clases de responder al mismo mensaje"
-  Dificultad: "fácil"
+  Dificultad: "facil"
+  Tema: "Polimorfismo"
 }
 
 object "Pregunta3:Pregunta" as preg3 {
   Asignatura: "POO101"
-  Tema: "Clases"
   Enunciado: "¿Qué es un constructor?"
-  Opciones respuesta: "Método especial para inicializar objetos,\nUna variable de clase,\nUn tipo de herencia,\nUn operador lógico"
-  Respuesta correcta: "Método especial para inicializar objetos"
   Dificultad: "fácil"
+  Tema: "Clases y Objetos"
 }
 
-grado1 -u-> asig1 : contiene
-grado1 -u-> alum1 : se cursa
-asig1 -l-> prof1 : tiene
-asig1 -u-> exam1 : tiene
-asig1 -r-> alum1 : se imparte
-prof1 -u-> exam1 : crea
-asig1 --> bateria1 : tiene
-preg1 -[hidden]r- preg2
-preg2 -[hidden]r- preg3
-'La flecha de profesor1 a pregunta1 se junta con el margen de pregunta 3 y pregunta 2.
-prof1 -l-> preg1 : crea 
-prof1 -l-> preg2 : crea
-prof1 -l-> preg3 : crea
-exam1 -r-> modelo1 : se corrige
-alum1 -u-> exam1 : realiza
-exam1 -d-> preg1 : tiene
-exam1 -d-> preg2 : tiene
-exam1 -d-> preg3 : tiene
-bateria1 -u-> preg1 : contiene
-bateria1 -u-> preg2 : contiene
-bateria1 -u-> preg3 : contiene
+object "Respuesta1C:Respuesta" as resp1C {
+  Opción: "Reutilizar código de clases existentes"
+  esCorrecta: true
+}
+object "Respuesta1I:Respuesta" as resp1I {
+  Opción: "Crear variables globales"
+  esCorrecta: false
+}
+object "Respuesta2C:Respuesta" as resp2C {
+  Opción: "Capacidad de responder al mismo mensaje"
+  esCorrecta: true
+}
+object "Respuesta2I:Respuesta" as resp2I {
+  Opción: "Un tipo de variable"
+  esCorrecta: false
+}
+object "Respuesta3C:Respuesta" as resp3C {
+  Opción: "Método especial para inicializar objetos"
+  esCorrecta: true
+}
+object "Respuesta3I:Respuesta" as resp3I {
+  Opción: "Un tipo de herencia"
+  esCorrecta: false
+}
+
+asig1 *-- exam1 : tiene
+asig1 --* grado1 : contiene
+asig1 *-- bateria1 : tiene
+asig1 *-- alum1 : se imparte
+
+grado1 *-- alum1 : inscribe
+
+bateria1 *-- preg1 : contiene
+bateria1 *-- preg2 : contiene
+bateria1 *-- preg3 : contiene
+
+preg1 *-- resp1C : tiene
+preg1 *-- resp1I : tiene
+
+preg2 *-- resp2C : tiene
+preg2 *-- resp2I : tiene
+
+preg3 *-- resp3C : tiene
+preg3 *-- resp3I : tiene
+
+
+prof1 o-- asig1 : tiene
+exam1 o-- alum1 : realiza
+exam1 o-- preg1 : contiene
+exam1 o-- preg2 : contiene
+exam1 o-- preg3 : contiene
+
+
+prof1 -[hidden]right-> asig1
+
+grado1 -[hidden]right-> exam1
+exam1 -[hidden]right-> bateria1
+
+preg1 -[hidden]right-> preg2
+preg2 -[hidden]right-> preg3
+alum1 -[hidden]right-> preg2
+
+preg1 -[hidden]down-> resp1C
+preg2 -[hidden]down-> resp2C
+preg3 -[hidden]down-> resp3C
+resp1C -[hidden]right-> resp1I
+resp2C -[hidden]right-> resp2I
+resp3C -[hidden]right-> resp3I
 
 @enduml
