@@ -4,7 +4,6 @@
 
 </div>
 
-
 ## DIAGRAMA DE ENTIDADES
 A continuación se muestra el diagrama de entidades propuesto del proyecto
 <p align="center">
@@ -22,10 +21,20 @@ A continuación se muestra el diagrama de objetos del proyecto
 [Enlace al código del diagrama de objetos](/documents/modelos/diagramas/diagramaObjetos/diagramaObjetos.puml)
 
 ## DIAGRAMA DE ESTADOS
+### Entidad Examen
 A continuación se muestra el diagrama de estados de la entidad examen
 <p align="center">
-  <img src="/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamen.svg">
+  <img src="/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamen/diagramaEstadosExamen.svg">
 
-[Consideraciones sobre el diagrama](/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamenConsideraciones.md)
+[Consideraciones sobre el diagrama](/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamen/diagramaEstadosExamenConsideraciones.md)
   
-[Enlace al código del diagrama de estados](/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamen.puml)
+[Enlace al código del diagrama de estados](/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamen/diagramaEstadosExamen.puml)
+
+### Entidad Pregunta
+A continuación se muestra el diagrama de estados de la entidad pregunta
+<p align="center">
+  <img src="/documents/modelos/diagramas/diagramaEstados/diagramaEstadosPregunta/diagramaEstadosPregunta.svg">
+
+[Consideraciones sobre el diagrama](/documents/modelos/diagramas/diagramaEstados/diagramaEstadosPregunta/diagramaEstadosPreguntaConsideraciones.md)
+  
+[Enlace al código del diagrama de estados](/documents/modelos/diagramas/diagramaEstados/diagramaEstadosPregunta/diagramaEstadosPregunta.puml)
