@@ -7,21 +7,18 @@
 
 # 📘 Glosario
 
-| Término              | Definición                                                                                                                                                                                                 |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Examen**           | Documento de evaluación tipo test que un docente genera a partir de una batería de preguntas previamente preparada.                                                                                         |
-| **Profesor**         | Persona encargada de crear y corregir los exámenes tipo test.                                                                                                                                               |
-| **Alumno**           | Persona que realiza el examen en formato papel.                                                                                                                                                             |
-| **Grado**            | Programa universitario al que pertenecen los alumnos y las asignaturas. Sirve para organizar los cursos y exámenes.                                                                                        |
-| **Asignatura**       | Materia concreta dentro de un grado. Cada asignatura tiene sus propios temas y exámenes.                                                                                                        |
-| **Batería de preguntas** | Conjunto de preguntas preparadas por un docente para generar exámenes tipo test.                                                                                                                       |
-| **Pregunta**         | Elemento básico del examen tipo test creado por el profesor. Cada pregunta tiene una asignatura asignada, un tema asignado, un enunciado, cuatro opciones de respuesta, la respuesta correcta y un nivel de dificultad (facil, medio, dificil).     |
-| **Evaluación**       | Actividad mediante la cual el profesor califica al alumno en una asignatura. Esto puede ser un examen parcial (1, 2 o 3), un examen final o un examen extraordinario).                                                                         |
-| **Tema**             | Parte o unidad dentro de una asignatura que agrupa varias preguntas relacionadas. Sirve para organizar la batería de preguntas del profesor.                                                               |
-| **Modelo de corrección** | Conjunto de respuestas correctas ordenadas asociadas a un examen concreto.  |
-| **Datos sensibles**  | Información que debe protegerse por privacidad, como los datos de los alumnos (nombre, DNI, grado).                                                                                                        |
-| **Universidad**      | Institución que tiene grados y asignaturas.                                                                                                                                                                |cor
-| **Importar**         | Cargar datos como listados de alumnos o preguntas de examen.                                                                                                                                                |
-| **Exportar**         | Guardar o sacar datos como configuraciones o preguntas.                                                                                                                                                     |
-| **Escáner**         |   Dispositivo que digitaliza las hojas de respuesta de los alumnos para poder leerlas y corregirlas.                                                                                                         |
-
+| Término | Definición |
+|---|---|
+| **Grado** | Programa universitario al que pertenecen los alumnos y las asignaturas. Sirve para organizar los cursos y exámenes. |
+| **Asignatura** | Materia concreta dentro de un grado. Cada asignatura tiene sus propios temas y exámenes. |
+| **Curso académico** | Periodo temporal (ej. 2024-2025) definido en la asignatura para organizar la matriculación de alumnos y la docencia. |
+| **Profesor** | Persona encargada de crear y corregir los exámenes tipo test. |
+| **Alumno** | Persona que realiza el examen en formato papel. |
+| **Matrícula** | Vínculo formal que asocia a un alumno con una asignatura específica, permitiéndole presentarse a los exámenes de dicha materia. |
+| **Batería de preguntas** | Conjunto de preguntas preparadas por un docente para generar exámenes tipo test. |
+| **Tema** | Parte o unidad dentro de una asignatura que agrupa varias preguntas relacionadas. Sirve para organizar la batería de preguntas del profesor. |
+| **Pregunta** | Elemento básico del examen tipo test creado por el profesor. Cada pregunta tiene una asignatura, un tema, enunciado, opciones, respuesta correcta y dificultad. |
+| **Respuesta** | Opción individual que forma parte de una pregunta. Indica una posible solución al enunciado y define si es la opción correcta o incorrecta. |
+| **Examen** | Documento de evaluación tipo test que un docente genera a partir de una batería de preguntas previamente preparada. |
+| **Clave de corrección** | Conjunto de respuestas correctas asociadas a un modelo de examen que permite al sistema corregir automáticamente las pruebas. |
+| **Evaluación** | Actividad mediante la cual el profesor califica al alumno (Examen parcial 1-3, final o extraordinario). |
