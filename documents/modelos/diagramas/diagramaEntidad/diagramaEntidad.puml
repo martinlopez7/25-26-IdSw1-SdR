@@ -12,7 +12,7 @@ class Pregunta{
  - asignatura
  - enunciado
  - opciones respuesta
- - respuesta correcta
+ - tema
  - dificultad
 }
 class BateriaDePreguntas{
