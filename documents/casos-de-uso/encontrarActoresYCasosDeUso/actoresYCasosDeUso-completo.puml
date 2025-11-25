@@ -29,17 +29,15 @@ package "Módulo Alumno" {
 }
 
 package "Módulo Asignaciones" {
-  usecase "Asignar alumno a grado" as UC13
-  usecase "Desasignar alumno de grado" as UC14
-  usecase "Asignar grado a asignatura" as UC15
-  usecase "Desasignar grado de asignatura" as UC16
-  usecase "Asignar alumno a asignatura" as UC17
-  usecase "Desasignar alumno de asignatura" as UC18
+  usecase "Actualizar alumno de grado" as UC13
+  usecase "Actualizar grado de asignatura" as UC15
+  usecase "Actualizar alumno de asignatura" as UC17
 }
 
 package "Módulo Gestión de Preguntas" {
   usecase "Crear pregunta" as UC20
   usecase "Ver preguntas" as UC21
+  usecase "Ver pregunta" as UC30
   usecase "Editar pregunta" as UC22
   usecase "Eliminar pregunta" as UC23
   usecase "Importar preguntas" as UC24
@@ -67,7 +65,7 @@ package "Módulo Usuarios Docentes" {
   usecase "Eliminar profesor" as UC35
 }
 
-package "Módulo Gestión Licencias" {
+package "Módulo Gestión Licencias(intencion)" {
   usecase "Adquirir licencia" as UC36
   usecase "Ver licencias" as UC37
   usecase "Editar licencia" as UC38
@@ -75,7 +73,6 @@ package "Módulo Gestión Licencias" {
 }
 
 package "Módulo Sesión" {
-  usecase "Cerrar sesión automáticamente" as UC40
   usecase "Iniciar sesión" as UC41
   usecase "Cerrar sesión" as UC42
 }
@@ -93,11 +90,8 @@ doc --> UC10
 doc --> UC11
 doc --> UC12
 doc --> UC13
-doc --> UC14
 doc --> UC15
-doc --> UC16
 doc --> UC17
-doc --> UC18
 doc --> UC19
 doc --> UC20
 doc --> UC21
@@ -124,6 +118,6 @@ admin --> UC39
 admin --> UC41
 admin --> UC42
 
-tiempo --> UC40
+tiempo --> UC42
 
 @enduml
