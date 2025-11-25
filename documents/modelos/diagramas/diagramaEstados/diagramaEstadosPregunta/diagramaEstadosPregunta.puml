@@ -11,4 +11,7 @@ construccion --> habilitada : Habilitar
 
 habilitada --> inhabilitada : Deshabilitar
 inhabilitada --> habilitada : Habilitar
+
+habilitada --> construccion : Editar
+inhabilitada --> construccion : Editar
 @enduml
