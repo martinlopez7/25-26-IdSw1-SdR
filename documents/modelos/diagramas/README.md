@@ -30,6 +30,8 @@ A continuación se muestra el diagrama de estados de la entidad examen
   
 [Enlace al código del diagrama de estados](/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamen/diagramaEstadosExamen.puml)
 
+---
+
 ### Entidad Pregunta
 A continuación se muestra el diagrama de estados de la entidad pregunta
 <p align="center">
