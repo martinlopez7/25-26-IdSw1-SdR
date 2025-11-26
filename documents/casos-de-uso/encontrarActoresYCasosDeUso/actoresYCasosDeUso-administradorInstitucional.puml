@@ -4,11 +4,11 @@ left to right direction
 
 actor "Administrador Institucional" as admin
 
-package "Módulo Usuarios Docentes" {
-  usecase "Crear profesor" as UC32
-  usecase "Ver profesores" as UC33
-  usecase "Editar profesor" as UC34
-  usecase "Eliminar profesor" as UC35
+package "Módulo Docentes" {
+  usecase "Crear Docente" as UC32
+  usecase "Ver Docentes" as UC33
+  usecase "Editar Docente" as UC34
+  usecase "Eliminar Docente" as UC35
 }
 
 package "Módulo Gestión Licencias(intencion)" {
