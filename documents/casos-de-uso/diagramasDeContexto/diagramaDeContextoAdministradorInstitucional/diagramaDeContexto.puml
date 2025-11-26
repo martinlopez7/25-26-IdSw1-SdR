@@ -1,0 +1,28 @@
+@startuml
+
+left to right direction
+
+'Estados'
+
+state "SESION_CERRADA" as NoAuth
+state "SISTEMA_DISPONIBLE" as Menu
+
+state "DOCENTES_ABIERTO" as ListDocentes
+state "DOCENTE_ABIERTO" as EditDocentes
+
+'Modulo sesion'
+
+NoAuth --> Menu : iniciarSesion()
+Menu --> NoAuth : cerrarSesion()
+
+'Modulo profesores'
+
+Menu --> ListDocentes: verDocentes()
+ListDocentes --> EditDocentes: crearDocente()
+ListDocentes --> EditDocentes: editarDocente()
+ListDocentes --> ListDocentes: eliminarDocente()
+EditDocentes --> EditDocentes: editarDocente()
+EditDocentes --> ListDocentes: verDocentes()
+ListDocentes --> Menu: completarGestion()
+
+@enduml

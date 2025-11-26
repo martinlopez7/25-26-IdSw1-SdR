@@ -80,7 +80,7 @@ object "Respuesta3I:Respuesta" as resp3I {
 }
 
 asig1 *-- exam1 : tiene
-asig1 --* grado1 : contiene
+asig1 *-- grado1 : contiene
 asig1 *-- bateria1 : tiene
 asig1 *-- alum1 : se imparte
 

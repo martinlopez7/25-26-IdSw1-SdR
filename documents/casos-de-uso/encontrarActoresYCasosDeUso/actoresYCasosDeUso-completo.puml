@@ -28,16 +28,11 @@ package "Módulo Alumno" {
   usecase "Importar alumnos" as UC19
 }
 
-package "Módulo Asignaciones" {
-  usecase "Actualizar alumno de grado" as UC13
-  usecase "Actualizar grado de asignatura" as UC15
-  usecase "Actualizar alumno de asignatura" as UC17
-}
+
 
 package "Módulo Gestión de Preguntas" {
   usecase "Crear pregunta" as UC20
   usecase "Ver preguntas" as UC21
-  usecase "Ver pregunta" as UC30
   usecase "Editar pregunta" as UC22
   usecase "Eliminar pregunta" as UC23
   usecase "Importar preguntas" as UC24
@@ -50,7 +45,7 @@ package "Módulo Configuración General" {
 }
 
 package "Módulo Examen" {
-  usecase "Crear examenes" as UC28
+  usecase "Generar examenes" as UC28
   usecase "Asignar examenes" as UC29
 }
 
@@ -58,11 +53,11 @@ package "Módulo Corrección" {
   usecase "Corregir exámenes" as UC31
 }
 
-package "Módulo Usuarios Docentes" {
-  usecase "Crear profesor" as UC32
-  usecase "Ver profesores" as UC33
-  usecase "Editar profesor" as UC34
-  usecase "Eliminar profesor" as UC35
+package "Módulo Docentes" {
+  usecase "Crear Docente" as UC32
+  usecase "Ver Docentes" as UC33
+  usecase "Editar Docente" as UC34
+  usecase "Eliminar Docente" as UC35
 }
 
 package "Módulo Gestión Licencias(intencion)" {
@@ -77,6 +72,10 @@ package "Módulo Sesión" {
   usecase "Cerrar sesión" as UC42
 }
 
+package "Módulo Gestión" {
+  usecase "Completar Gestión" as UC13
+
+}
 doc --> UC1
 doc --> UC2
 doc --> UC3
@@ -90,8 +89,6 @@ doc --> UC10
 doc --> UC11
 doc --> UC12
 doc --> UC13
-doc --> UC15
-doc --> UC17
 doc --> UC19
 doc --> UC20
 doc --> UC21
@@ -107,6 +104,7 @@ doc --> UC31
 doc --> UC41
 doc --> UC42
 
+admin --> UC13
 admin --> UC32
 admin --> UC33
 admin --> UC34
