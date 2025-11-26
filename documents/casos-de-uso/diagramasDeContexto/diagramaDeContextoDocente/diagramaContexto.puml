@@ -1,0 +1,95 @@
+@startuml diagrama-contexto-docente
+
+left to right direction
+
+'Estados'
+
+state "SESION_CERRADA" as NoAuth
+state "SISTEMA_DISPONIBLE" as Menu
+
+state "GRADOS_ABIERTO" as ListGrados
+state "GRADO_ABIERTO" as EditGrado
+
+state "ASIGNATURAS_ABIERTO" as ListAsignaturas
+state "ASIGNATURA_ABIERTO" as EditAsignatura
+
+state "ALUMNOS_ABIERTO" as ListAlumnos
+state "ALUMNO_ABIERTO" as EditAlumno
+
+state "PREGUNTAS_ABIERTO" as ListPreguntas
+state "PREGUNTA_ABIERTO" as EditPregunta
+
+state "EXAMENES_GENERADOS" as ExamenesGenerados
+state "EXAMENES_ASIGNADOS" as ExamenesAsignados
+
+state "EXAMENES_CORREGIDOS" as ExamenesCorregidos
+
+'Transiciones'
+
+[*] --> NoAuth
+
+'Modulo sesion'
+
+NoAuth --> Menu : iniciarSesion()
+Menu --> NoAuth : cerrarSesion()
+
+'Modulo grados'
+
+Menu --> ListGrados: verGrados()
+ListGrados --> ListGrados: eliminarGrado()
+ListGrados --> EditGrado: crearGrado()
+ListGrados --> EditGrado: editarGrado()
+EditGrado --> EditGrado: editarGrado()
+EditGrado --> ListGrados: verGrados()
+ListGrados --> Menu: completarGestion()
+
+'Modulo asignaturas'
+
+Menu --> ListAsignaturas: verAsignaturas()
+ListAsignaturas --> EditAsignatura: crearAsignatura()
+ListAsignaturas --> ListAsignaturas: eliminarAsignatura()
+EditAsignatura --> EditAsignatura: editarAsignatura()
+EditAsignatura --> ListAsignaturas: verAsignaturas()
+ListAsignaturas --> EditAsignatura: editarAsignatura()
+ListAsignaturas --> Menu: completarGestion()
+
+'Modulo alumnos'
+
+Menu --> ListAlumnos: verAlumnos()
+ListAlumnos --> EditAlumno: crearAlumno()
+ListAlumnos --> EditAlumno: editarAlumno()
+ListAlumnos --> ListAlumnos: eliminarAlumno()
+ListAlumnos --> ListAlumnos: importarAlumnos()
+EditAlumno --> EditAlumno: editarAlumno()
+EditAlumno --> ListAlumnos: verAlumnos()
+ListAlumnos --> Menu: completarGestion()
+
+'Modulo preguntas'
+
+Menu --> ListPreguntas: verPreguntas()
+ListPreguntas --> EditPregunta: crearPregunta()
+ListPreguntas --> EditPregunta: editarPregunta()
+ListPreguntas --> ListPreguntas: eliminarPregunta()
+ListPreguntas --> ListPreguntas: importarPreguntas()
+ListPreguntas --> ListPreguntas: exportarPreguntas()
+EditPregunta --> EditPregunta: editarPregunta()
+EditPregunta --> ListPreguntas: verPreguntas()
+ListPreguntas --> Menu: completarGestion()
+
+'Modulo configuracion general'
+
+Menu --> Menu: importarConfiguracionGlobal()
+Menu --> Menu: exportarConfiguracionGlobal()
+
+'Modulo examenes'
+
+Menu --> ExamenesGenerados: generarExamenes()
+ExamenesGenerados --> ExamenesAsignados: asignarExamenes()
+ExamenesAsignados --> Menu: completarGestion()
+
+'Módulo correccion'
+
+Menu --> ExamenesCorregidos: corregirExamenes()
+ExamenesCorregidos --> Menu: completarGestion()
+
+@enduml
