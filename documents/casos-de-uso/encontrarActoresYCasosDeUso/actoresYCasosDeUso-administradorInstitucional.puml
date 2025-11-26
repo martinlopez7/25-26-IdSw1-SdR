@@ -22,7 +22,12 @@ package "Módulo Sesión" {
   usecase "Iniciar sesión" as UC41
   usecase "Cerrar sesión" as UC42
 }
+package "Módulo Gestión" {
+  usecase "Completar Gestión" as UC13
 
+}
+
+admin --> UC13
 admin --> UC32
 admin --> UC33
 admin --> UC34
