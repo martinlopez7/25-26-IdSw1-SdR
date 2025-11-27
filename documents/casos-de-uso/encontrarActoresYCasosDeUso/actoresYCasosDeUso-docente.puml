@@ -24,6 +24,7 @@ package "Módulo Alumno" {
   usecase "Editar alumno" as UC11
   usecase "Eliminar alumno" as UC12
    usecase "Importar alumnos" as UC19
+   usecase "Exportar alumnos" as UC17
 }
 
 
@@ -75,6 +76,7 @@ doc --> UC10
 doc --> UC11
 doc --> UC12
 doc --> UC13
+doc --> UC17
 doc --> UC19
 doc --> UC20
 doc --> UC21
