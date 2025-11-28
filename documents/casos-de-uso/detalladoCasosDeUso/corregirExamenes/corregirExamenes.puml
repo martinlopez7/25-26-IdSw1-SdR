@@ -1,0 +1,55 @@
+@startuml generar
+
+skinparam linetype polyline
+
+state corregirExamenes as "corregirExamenes()" {
+
+    state " " as RequiringCorrection
+    state " " as ProvidingDoneExams
+    state " " as ProvidingConfirmation
+    state c <<choice>>
+
+    [*] -[#green]-> RequiringCorrection
+    note on link
+    <b>Docente</b> solicita corregir examenes
+    end note    
+    
+    RequiringCorrection -[#green]-> ProvidingDoneExams
+    note on link
+    <b>Sistema</b> permite introducir
+    • examenes realizados por alumnos
+    end note
+    
+    ProvidingDoneExams -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Docente</b> introduce examenes realizados
+    end note
+    
+    ProvidingConfirmation -[#green]-> c
+    note on link
+    <b>Docente</b> solicita
+    • confirmar corrección
+    • cancelar corrección
+    end note
+    
+    c -[#red]-> ProvidingDoneExams
+    note on link
+    Docente cancela corrección
+    end note
+
+    c -[#red]-> ProvidingDoneExams
+    note on link
+    Docente confirma corrección: error en la corrección
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    Docente confirma corrección: corrección exitosa
+    end note
+}
+
+SISTEMA_DISPONIBLE -[#green]-> corregirExamenes
+
+corregirExamenes -[#green]-> EXAMENES_CORREGIDOS
+
+@enduml
