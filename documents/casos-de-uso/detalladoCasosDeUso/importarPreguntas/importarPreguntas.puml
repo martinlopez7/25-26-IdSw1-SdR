@@ -1,0 +1,54 @@
+@startuml importarPreguntas
+
+skinparam linetype polyline
+
+state importarPreguntas as "importarPreguntas()" {
+
+    state " " as RequiringImport
+    state " " as ProvidingPreguntas
+    state " " as ProvidingConfirmation
+    state c <<choice>>
+
+    [*] -[#green]-> RequiringImport
+    note on link
+    <b>Docente</b> solicita importar preguntas
+    end note    
+
+    RequiringImport -[#green]-> ProvidingPreguntas
+    note on link
+    <b>Sistema</b> permite introducir
+    • preguntas a importar
+    end note
+
+    ProvidingPreguntas -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Docente</b> introduce preguntas a importar
+    end note
+
+    ProvidingConfirmation -[#green]-> c
+    note on link
+    <b>Docente</b> solicita
+    • confirmar importación
+    • cancelar importación
+    end note
+
+    c -[#red]-> ProvidingPreguntas
+    note on link
+    Docente cancela importación
+    end note
+
+    c -[#red]-> ProvidingPreguntas
+    note on link
+    Docente confirma importación: error en la importación
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    Docente confirma importación: importación exitosa
+    end note
+}
+
+PREGUNTAS_ABIERTO -[#green]-> importarPreguntas
+importarPreguntas -[#green]-> PREGUNTAS_ABIERTO
+
+@enduml
