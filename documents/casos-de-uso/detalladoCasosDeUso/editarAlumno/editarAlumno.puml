@@ -1,0 +1,58 @@
+@startuml
+skinparam linetype polyline
+
+state editarAlumno as "editarAlumno(alumno)" {
+
+    state " " as EditandoDatos
+    state " " as GuardandoDatos 
+
+    [*] -[#green]-> EditandoDatos 
+    note on link
+    <b>Docente</b> solicita editar alumno
+    end note    
+    
+    EditandoDatos -[#green]-> GuardandoDatos
+    note on link
+    <b>Sistema</b> presenta datos de edición
+    (Recuperados de BDD):
+    • DNI (Identificador Inmutable/Mutable según regla)
+    • Nombre
+    • Apellidos
+    
+    <b>Sistema</b> permite solicitar:
+    • modificar campos
+    • guardar alumno
+    • cancelar edición
+    end note
+    
+    ' El ciclo de modificación (Patrón Interactivo)
+    GuardandoDatos -[#green]-> EditandoDatos
+    note on link
+    <b>Docente</b> solicita modificar campos
+    end note
+    
+    ' Salida Exitosa
+    GuardandoDatos -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita guardar y salir
+    end note
+
+    ' Salida Cancelada (Interna)
+    GuardandoDatos -[#red]-> [*]
+    note on link
+    <b>Docente</b> solicita cancelar edición
+    end note
+
+}
+
+' Salidas Externas
+editarAlumno -[#green]-> ALUMNOS_ABIERTO
+note on link
+verAlumnos()
+end note
+
+editarAlumno -[#red]-> ALUMNOS_ABIERTO
+note on link
+cancelar edición
+end note
+@enduml
