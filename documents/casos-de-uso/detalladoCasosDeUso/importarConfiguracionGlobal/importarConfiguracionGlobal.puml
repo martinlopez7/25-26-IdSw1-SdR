@@ -1,0 +1,55 @@
+@startuml generar
+
+skinparam linetype polyline
+
+state importarConfiguracionGlobal as "importarConfiguracionGlobal()" {
+
+    state " " as RequiringGlobalConfigurationImport
+    state " " as ProvidingGlobalConfiguration
+    state " " as ProvidingConfirmation
+    state c <<choice>>
+
+    [*] -[#green]-> RequiringGlobalConfigurationImport
+    note on link
+    <b>Docente</b> solicita importar configuración global
+    end note    
+    
+    RequiringGlobalConfigurationImport -[#green]-> ProvidingGlobalConfiguration
+    note on link
+    <b>Sistema</b> permite introducir
+    • configuración global
+    end note
+    
+    ProvidingGlobalConfiguration -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Docente</b> introduce configuración global
+    end note
+    
+    ProvidingConfirmation -[#green]-> c
+    note on link
+    <b>Docente</b> solicita
+    • confirmar importación
+    • cancelar importación
+    end note
+    
+    c -[#red]-> ProvidingGlobalConfiguration
+    note on link
+    Docente cancela importación
+    end note
+
+    c -[#red]-> ProvidingGlobalConfiguration
+    note on link
+    Docente confirma importación: error en la importación
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    Docente confirma importación: importación exitosa
+    end note
+}
+
+SISTEMA_DISPONIBLE -[#green]-> importarConfiguracionGlobal
+
+importarConfiguracionGlobal -[#green]-> SISTEMA_DISPONIBLE
+
+@enduml
