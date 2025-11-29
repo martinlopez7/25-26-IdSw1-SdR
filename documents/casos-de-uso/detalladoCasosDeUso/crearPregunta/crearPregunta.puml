@@ -9,12 +9,11 @@ state crearPregunta as "crearPregunta()" {
     [*] -[#green]-> SolicitandoDatosPregunta 
     note on link
     <b>Docente</b> solicita crear nueva pregunta
-    al banco de preguntas
     end note    
     
     SolicitandoDatosPregunta -[#green]-> ProcesandoCreacion
     note on link
-    <b>Sistema</b> presenta formulario de datos obligatorios:
+    <b>Sistema</b> presenta una solicitud de datos minimos:
     ---
     <b>Pregunta:</b>
     • Asignatura (obligatorio)
@@ -22,8 +21,9 @@ state crearPregunta as "crearPregunta()" {
     • Tema (obligatorio)
     • Dificultad (ENUM: BAJA, MEDIA, ALTA)(obligatorio)
     ---
-    <b>Respuesta (Obligatoria):</b>
-    • Contenido de la respuesta correcta
+    <b>Respuestas (Obligatoria):</b>
+    • Contenido de la respuesta
+    • Correcta/incorrecta
     ---
     • Permite confirmar creación
     • Permite cancelar operación
@@ -37,12 +37,12 @@ state crearPregunta as "crearPregunta()" {
     end note
 }
 
-crearPregunta -[#green]-> PREGUNTA_GUARDADA
+crearPregunta -[#green]-> PREGUNTA_ABIERTO
 note on link
 editarPregunta(nuevaPregunta)
 end note
 
-crearPregunta -[#blue]-> BANCO_PREGUNTAS
+crearPregunta -[#blue]-> PREGUNTAS_ABIERTO
 note on link
 cancelar creación
 end note
