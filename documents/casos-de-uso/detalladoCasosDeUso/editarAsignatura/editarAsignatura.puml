@@ -1,5 +1,4 @@
-@startuml editarAsignatura
-
+@startuml
 skinparam linetype polyline
 
 ' 1. ESTADO PREVIO (Contexto de origen: Listado de Asignaturas)
@@ -26,12 +25,11 @@ state editarAsignatura as "editarAsignatura(asignatura)" {
     EditandoDatos -[#green]-> GuardandoDatos
     note on link
     <b>Sistema</b> presenta datos de edición
-    (Recuperados de BDD):
     ---
     <b>Datos Asignatura:</b>
-    • Título [Valor Actual]
-    • Código [Valor Actual]
-    • Curso Académico [Valor Actual]
+    • Título
+    • Código
+    • Curso Académico
     ---
     <b>Opciones de Navegación (Vínculos):</b>
     • Acceso a ver listado de Alumnos
@@ -77,16 +75,4 @@ editarAsignatura -[#red]-> ASIGNATURAS_ABIERTO
 note on link
 cancelar edición
 end note
-
-' 5. NAVEGACIÓN TRANSVERSAL (Saltos de contexto)
-editarAsignatura -[#orange]-> ALUMNOS_ABIERTO
-note on link
-verAlumnos(asignatura)
-end note
-
-editarAsignatura -[#orange]-> GRADOS_ABIERTO
-note on link
-verGrados(asignatura)
-end note
-
 @enduml

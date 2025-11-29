@@ -31,10 +31,9 @@ state crearPregunta as "crearPregunta()" {
     • Enunciado (obligatorio)
     • Tema (obligatorio)
     • Dificultad (ENUM: BAJA, MEDIA, ALTA)(obligatorio)
-    ---
     <b>Respuestas (Obligatoria):</b>
     • Contenido de la respuesta
-    • Correcta/incorrecta (Flag)
+    • Correcta/incorrecta
     ---
     • Permite confirmar creación
     • Permite cancelar operación
@@ -43,8 +42,6 @@ state crearPregunta as "crearPregunta()" {
     ProcesandoCreacion -[#green]-> [*]
     note on link
     <b>Usuario</b> proporciona todos los datos requeridos.
-    <b>Sistema</b> valida integridad (campos no nulos).
-    <b>Sistema</b> persiste Pregunta + Respuesta (Transacción).
     end note
 }
 
