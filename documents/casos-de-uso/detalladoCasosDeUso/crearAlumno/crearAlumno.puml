@@ -1,0 +1,40 @@
+@startuml
+skinparam linetype polyline
+
+state crearAlumno as "crearAlumno()" {
+
+    state " " as SolicitandoDatos
+    state " " as CreandoAlumno
+
+    [*] -[#green]-> SolicitandoDatos 
+    note on link
+    <b>Docente</b> solicita crear alumno nuevo
+    end note    
+    
+    SolicitandoDatos -[#green]-> CreandoAlumno
+    note on link
+    <b>Sistema</b> presenta solicitud de datos mínimos del alumno
+    • Nombre (obligatorio)
+    • Apellidos (obligatorio)
+    • DNI (obligatorio)
+    • Permite solicitar crear alumno
+    • Permite solicitar cancelar creación
+    end note
+    
+    CreandoAlumno -[#green]-> [*]
+    note on link
+    <b>Docente</b> proporciona datos mínimos
+    <b>Sistema</b> crea alumno y transfiere a edición
+    end note
+}
+
+crearAlumno -[#green]-> ALUMNO_ABIERTO
+note on link
+editarAlumno(alumnoNuevo)
+end note
+
+crearAlumno -[#blue]-> ALUMNOS_ABIERTO
+note on link
+cancelar creación
+end note
+@enduml
