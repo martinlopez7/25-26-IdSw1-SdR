@@ -1,6 +1,17 @@
-@startuml
+@startuml crearDocente
+
 skinparam linetype polyline
 
+' 1. ESTADO PREVIO (Contexto de origen)
+state DOCENTES_ABIERTO
+
+' 2. TRANSICIÓN DE ENTRADA
+DOCENTES_ABIERTO -[#green]-> crearDocente
+note on link
+crearDocente()
+end note
+
+' 3. EL CASO DE USO (Caja negra detallada)
 state crearDocente as "crearDocente()" {
 
     state " " as SolicitandoDatos
@@ -30,13 +41,18 @@ state crearDocente as "crearDocente()" {
     end note
 }
 
+' 4. SALIDAS DEL CASO DE USO
+
+' Flujo Exitoso: Transición inmediata a Edición/Detalle
 crearDocente -[#green]-> DOCENTE_ABIERTO
 note on link
 editarDocente(docenteNuevo)
 end note
 
+' Flujo Alternativo: Cancelación y vuelta al listado
 crearDocente -[#blue]-> DOCENTES_ABIERTO
 note on link
 cancelar creación
 end note
+
 @enduml

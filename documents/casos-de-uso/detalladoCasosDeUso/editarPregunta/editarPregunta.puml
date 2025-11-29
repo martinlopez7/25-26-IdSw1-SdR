@@ -1,6 +1,16 @@
 @startuml
 skinparam linetype polyline
 
+' 1. ESTADO PREVIO (Contexto de origen: Banco de Preguntas)
+state PREGUNTAS_ABIERTO
+
+' 2. ENTRADA AL CASO DE USO
+PREGUNTAS_ABIERTO -[#green]-> editarPregunta
+note on link
+editarPregunta(pregunta)
+end note
+
+' 3. DETALLE DEL PROCESO
 state editarPregunta as "editarPregunta(pregunta)" {
 
     state " " as EditandoDatos
@@ -18,8 +28,10 @@ state editarPregunta as "editarPregunta(pregunta)" {
     <b>Pregunta:</b>
     • Asignatura, Enunciado
     • Tema, Dificultad (Enum)
+    ---
     <b>Respuesta (Obligatoria):</b>
     • Contenido de la respuesta
+    • Correcta/incorrecta
     ---
     <b>Sistema</b> permite solicitar:
     • modificar campos
@@ -27,13 +39,13 @@ state editarPregunta as "editarPregunta(pregunta)" {
     • cancelar edición
     end note
     
-    ' El ciclo de modificación (la clave de tu ejemplo)
+    ' Ciclo de modificación (Patrón Interactivo)
     GuardandoDatos -[#green]-> EditandoDatos
     note on link
     <b>Docente</b> solicita modificar campos
     end note
     
-    ' Salida Exitosa
+    ' Salida Exitosa (Interna)
     GuardandoDatos -[#green]-> [*]
     note on link
     <b>Docente</b> solicita guardar y salir
@@ -46,12 +58,16 @@ state editarPregunta as "editarPregunta(pregunta)" {
     end note
 }
 
-' Salidas Externas
+' 4. SALIDAS EXTERNAS
+
+' Salida Exitosa con CONFIRMACIÓN
 editarPregunta -[#green]-> PREGUNTAS_ABIERTO
 note on link
+<b>Sistema</b> confirma: "Pregunta actualizada"
 verPreguntas()
 end note
 
+' Salida Cancelada
 editarPregunta -[#red]-> PREGUNTAS_ABIERTO
 note on link
 cancelar edición

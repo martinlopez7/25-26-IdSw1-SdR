@@ -1,6 +1,17 @@
-@startuml
+@startuml crearPregunta
+
 skinparam linetype polyline
 
+' 1. ESTADO PREVIO (Contexto de origen: Banco de Preguntas)
+state PREGUNTAS_ABIERTO
+
+' 2. TRANSICIÓN DE ENTRADA
+PREGUNTAS_ABIERTO -[#green]-> crearPregunta
+note on link
+crearPregunta()
+end note
+
+' 3. EL CASO DE USO (Caja negra detallada)
 state crearPregunta as "crearPregunta()" {
 
     state " " as SolicitandoDatosPregunta
@@ -13,7 +24,7 @@ state crearPregunta as "crearPregunta()" {
     
     SolicitandoDatosPregunta -[#green]-> ProcesandoCreacion
     note on link
-    <b>Sistema</b> presenta una solicitud de datos minimos:
+    <b>Sistema</b> presenta una solicitud de datos mínimos:
     ---
     <b>Pregunta:</b>
     • Asignatura (obligatorio)
@@ -23,7 +34,7 @@ state crearPregunta as "crearPregunta()" {
     ---
     <b>Respuestas (Obligatoria):</b>
     • Contenido de la respuesta
-    • Correcta/incorrecta
+    • Correcta/incorrecta (Flag)
     ---
     • Permite confirmar creación
     • Permite cancelar operación
@@ -37,13 +48,18 @@ state crearPregunta as "crearPregunta()" {
     end note
 }
 
+' 4. SALIDAS DEL CASO DE USO
+
+' Flujo Exitoso: Va al detalle para seguir editando (añadir más respuestas, imágenes, etc.)
 crearPregunta -[#green]-> PREGUNTA_ABIERTO
 note on link
 editarPregunta(nuevaPregunta)
 end note
 
+' Flujo Alternativo: Cancela y vuelve al banco de preguntas
 crearPregunta -[#blue]-> PREGUNTAS_ABIERTO
 note on link
 cancelar creación
 end note
+
 @enduml

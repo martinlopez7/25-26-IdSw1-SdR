@@ -1,6 +1,16 @@
 @startuml
 skinparam linetype polyline
 
+' 1. ESTADO PREVIO (Contexto de origen)
+state ALUMNOS_ABIERTO
+
+' 2. ENTRADA AL CASO DE USO
+ALUMNOS_ABIERTO -[#green]-> editarAlumno
+note on link
+editarAlumno(alumno)
+end note
+
+' 3. DETALLE DEL PROCESO
 state editarAlumno as "editarAlumno(alumno)" {
 
     state " " as EditandoDatos
@@ -14,8 +24,7 @@ state editarAlumno as "editarAlumno(alumno)" {
     EditandoDatos -[#green]-> GuardandoDatos
     note on link
     <b>Sistema</b> presenta datos de edición
-    (Recuperados de BDD):
-    • DNI (Identificador Inmutable/Mutable según regla)
+    • DNI (Identificador)
     • Nombre
     • Apellidos
     
@@ -25,13 +34,13 @@ state editarAlumno as "editarAlumno(alumno)" {
     • cancelar edición
     end note
     
-    ' El ciclo de modificación (Patrón Interactivo)
+    ' Ciclo de modificación
     GuardandoDatos -[#green]-> EditandoDatos
     note on link
     <b>Docente</b> solicita modificar campos
     end note
     
-    ' Salida Exitosa
+    ' Salida Exitosa (Interna)
     GuardandoDatos -[#green]-> [*]
     note on link
     <b>Docente</b> solicita guardar y salir
@@ -42,15 +51,18 @@ state editarAlumno as "editarAlumno(alumno)" {
     note on link
     <b>Docente</b> solicita cancelar edición
     end note
-
 }
 
-' Salidas Externas
+' 4. SALIDAS EXTERNAS
+
+' Salida Exitosa con CONFIRMACIÓN (Lo que faltaba)
 editarAlumno -[#green]-> ALUMNOS_ABIERTO
 note on link
+<b>Sistema</b> confirma: "Alumno actualizado"
 verAlumnos()
 end note
 
+' Salida Cancelada
 editarAlumno -[#red]-> ALUMNOS_ABIERTO
 note on link
 cancelar edición

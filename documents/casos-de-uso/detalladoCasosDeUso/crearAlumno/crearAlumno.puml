@@ -1,6 +1,17 @@
-@startuml
+@startuml crearAlumno
+
 skinparam linetype polyline
 
+' 1. ESTADO PREVIO (Contexto de origen)
+state ALUMNOS_ABIERTO
+
+' 2. TRANSICIÓN DE ENTRADA
+ALUMNOS_ABIERTO -[#green]-> crearAlumno
+note on link
+crearAlumno()
+end note
+
+' 3. EL CASO DE USO (Caja negra detallada)
 state crearAlumno as "crearAlumno()" {
 
     state " " as SolicitandoDatos
@@ -28,13 +39,18 @@ state crearAlumno as "crearAlumno()" {
     end note
 }
 
+' 4. SALIDAS DEL CASO DE USO
+
+' Flujo Exitoso: Va al detalle para seguir editando
 crearAlumno -[#green]-> ALUMNO_ABIERTO
 note on link
 editarAlumno(alumnoNuevo)
 end note
 
+' Flujo Alternativo: Cancela y vuelve al listado original
 crearAlumno -[#blue]-> ALUMNOS_ABIERTO
 note on link
 cancelar creación
 end note
+
 @enduml

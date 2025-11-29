@@ -1,6 +1,17 @@
-@startuml
+@startuml editarAsignatura
+
 skinparam linetype polyline
 
+' 1. ESTADO PREVIO (Contexto de origen: Listado de Asignaturas)
+state ASIGNATURAS_ABIERTO
+
+' 2. ENTRADA AL CASO DE USO
+ASIGNATURAS_ABIERTO -[#green]-> editarAsignatura
+note on link
+editarAsignatura(asignatura)
+end note
+
+' 3. DETALLE DEL PROCESO
 state editarAsignatura as "editarAsignatura(asignatura)" {
 
     state " " as EditandoDatos
@@ -8,18 +19,19 @@ state editarAsignatura as "editarAsignatura(asignatura)" {
 
     [*] -[#green]-> EditandoDatos 
     note on link
-    <b>Docente</b> solicita editar una asignatura
+    <b>Docente/Admin</b> solicita editar una asignatura
     existente
     end note    
     
     EditandoDatos -[#green]-> GuardandoDatos
     note on link
-    <b>Sistema</b> presenta una solicitud de datos minimos:
+    <b>Sistema</b> presenta datos de edición
+    (Recuperados de BDD):
     ---
     <b>Datos Asignatura:</b>
-    • Título
-    • Código
-    • Curso Académico
+    • Título [Valor Actual]
+    • Código [Valor Actual]
+    • Curso Académico [Valor Actual]
     ---
     <b>Opciones de Navegación (Vínculos):</b>
     • Acceso a ver listado de Alumnos
@@ -31,41 +43,42 @@ state editarAsignatura as "editarAsignatura(asignatura)" {
     • cancelar edición
     end note
     
-    ' El ciclo de modificación (Patrón Interactivo)
+    ' Ciclo de modificación (Patrón Interactivo)
     GuardandoDatos -[#green]-> EditandoDatos
     note on link
-    <b>Docente</b> solicita modificar campos
+    <b>Usuario</b> solicita modificar campos
     (Corrige o cambia datos)
     end note
     
-    ' Salida Exitosa (Guardar)
+    ' Salida Exitosa (Interna)
     GuardandoDatos -[#green]-> [*]
     note on link
-    <b>Docente</b> solicita guardar y salir
+    <b>Usuario</b> solicita guardar y salir
     end note
 
-    ' Salida Cancelada (Interna - Abortar operación)
+    ' Salida Cancelada (Interna)
     GuardandoDatos -[#red]-> [*]
     note on link
-    <b>Docente</b> solicita cancelar edición
+    <b>Usuario</b> solicita cancelar edición
     end note
 }
 
-' --- Salidas y Navegación Externa ---
+' 4. SALIDAS EXTERNAS
 
-' 1. Flujo Normal: Volver al listado
+' Salida Exitosa con CONFIRMACIÓN
 editarAsignatura -[#green]-> ASIGNATURAS_ABIERTO
 note on link
+<b>Sistema</b> confirma: "Asignatura actualizada"
 verAsignaturas()
 end note
 
-' 2. Flujo Cancelación
+' Salida Cancelada
 editarAsignatura -[#red]-> ASIGNATURAS_ABIERTO
 note on link
 cancelar edición
 end note
 
-' 3. Navegación a Casos de Uso Relacionados (Lo que pediste)
+' 5. NAVEGACIÓN TRANSVERSAL (Saltos de contexto)
 editarAsignatura -[#orange]-> ALUMNOS_ABIERTO
 note on link
 verAlumnos(asignatura)
@@ -75,4 +88,5 @@ editarAsignatura -[#orange]-> GRADOS_ABIERTO
 note on link
 verGrados(asignatura)
 end note
+
 @enduml
