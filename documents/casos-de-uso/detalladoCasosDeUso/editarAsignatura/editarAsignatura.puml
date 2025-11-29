@@ -14,12 +14,12 @@ state editarAsignatura as "editarAsignatura(asignatura)" {
     
     EditandoDatos -[#green]-> GuardandoDatos
     note on link
-    <b>Sistema</b> presenta formulario de edición:
+    <b>Sistema</b> presenta una solicitud de datos minimos:
     ---
     <b>Datos Asignatura:</b>
-    • Título [Valor Actual]
-    • Código [Valor Actual]
-    • Curso Académico [Valor Actual]
+    • Título
+    • Código
+    • Curso Académico
     ---
     <b>Opciones de Navegación (Vínculos):</b>
     • Acceso a ver listado de Alumnos
@@ -66,12 +66,12 @@ cancelar edición
 end note
 
 ' 3. Navegación a Casos de Uso Relacionados (Lo que pediste)
-editarAsignatura -[#orange]-> LISTADO_ALUMNOS
+editarAsignatura -[#orange]-> ALUMNOS_ABIERTO
 note on link
 verAlumnos(asignatura)
 end note
 
-editarAsignatura -[#orange]-> LISTADO_GRADOS
+editarAsignatura -[#orange]-> GRADOS_ABIERTO
 note on link
 verGrados(asignatura)
 end note

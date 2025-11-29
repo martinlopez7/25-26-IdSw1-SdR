@@ -18,7 +18,6 @@ state editarPregunta as "editarPregunta(pregunta)" {
     <b>Pregunta:</b>
     • Asignatura, Enunciado
     • Tema, Dificultad (Enum)
-    ---
     <b>Respuesta (Obligatoria):</b>
     • Contenido de la respuesta
     ---

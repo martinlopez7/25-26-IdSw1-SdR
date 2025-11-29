@@ -17,6 +17,7 @@ state crearDocente as "crearDocente()" {
     • Nombre (obligatorio)
     • Apellidos (obligatorio)
     • DNI (obligatorio - Identificador)
+    • Email (obligatorio)
     • Password (obligatorio)
     • Permite solicitar crear docente
     • Permite solicitar cancelar creación
