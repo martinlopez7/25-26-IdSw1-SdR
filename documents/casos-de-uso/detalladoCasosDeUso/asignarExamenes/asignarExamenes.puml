@@ -1,0 +1,55 @@
+@startuml asignarExamenes
+
+skinparam linetype polyline
+
+state asignarExamenes as "asignarExamenes()" {
+
+    state " " as RequiringAssignment
+    state " " as ProvidingAssignment
+    state " " as ProvidingConfirmation
+    state c <<choice>>
+
+    [*] -[#green]-> RequiringAssignment
+    note on link
+    <b>Docente</b> solicita asignar examenes
+    end note    
+
+    RequiringAssignment -[#green]-> ProvidingAssignment
+    note on link
+    <b>Sistema</b> permite introducir
+    • examenes a asignar
+    • alumnos o grupos destinatarios
+    end note
+
+    ProvidingAssignment -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Docente</b> introduce asignación de examenes
+    end note
+
+    ProvidingConfirmation -[#green]-> c
+    note on link
+    <b>Docente</b> solicita
+    • confirmar asignación
+    • cancelar asignación
+    end note
+
+    c -[#red]-> ProvidingAssignment
+    note on link
+    Docente cancela asignación
+    end note
+
+    c -[#red]-> ProvidingAssignment
+    note on link
+    Docente confirma asignación: error en la asignación
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    Docente confirma asignación: asignación exitosa
+    end note
+}
+
+EXAMENES_GENERADOS -[#green]-> asignarExamenes
+asignarExamenes -[#green]-> EXAMENES_ASIGNADOS
+
+@enduml
