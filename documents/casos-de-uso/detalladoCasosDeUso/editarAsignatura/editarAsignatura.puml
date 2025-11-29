@@ -1,0 +1,78 @@
+@startuml
+skinparam linetype polyline
+
+state editarAsignatura as "editarAsignatura(asignatura)" {
+
+    state " " as EditandoDatos
+    state " " as GuardandoDatos 
+
+    [*] -[#green]-> EditandoDatos 
+    note on link
+    <b>Docente</b> solicita editar una asignatura
+    existente
+    end note    
+    
+    EditandoDatos -[#green]-> GuardandoDatos
+    note on link
+    <b>Sistema</b> presenta formulario de edición:
+    ---
+    <b>Datos Asignatura:</b>
+    • Título [Valor Actual]
+    • Código [Valor Actual]
+    • Curso Académico [Valor Actual]
+    ---
+    <b>Opciones de Navegación (Vínculos):</b>
+    • Acceso a ver listado de Alumnos
+    • Acceso a ver Grados asociados
+    ---
+    <b>Sistema</b> permite solicitar:
+    • modificar campos
+    • guardar asignatura
+    • cancelar edición
+    end note
+    
+    ' El ciclo de modificación (Patrón Interactivo)
+    GuardandoDatos -[#green]-> EditandoDatos
+    note on link
+    <b>Docente</b> solicita modificar campos
+    (Corrige o cambia datos)
+    end note
+    
+    ' Salida Exitosa (Guardar)
+    GuardandoDatos -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita guardar y salir
+    end note
+
+    ' Salida Cancelada (Interna - Abortar operación)
+    GuardandoDatos -[#red]-> [*]
+    note on link
+    <b>Docente</b> solicita cancelar edición
+    end note
+}
+
+' --- Salidas y Navegación Externa ---
+
+' 1. Flujo Normal: Volver al listado
+editarAsignatura -[#green]-> ASIGNATURAS_ABIERTO
+note on link
+verAsignaturas()
+end note
+
+' 2. Flujo Cancelación
+editarAsignatura -[#red]-> ASIGNATURAS_ABIERTO
+note on link
+cancelar edición
+end note
+
+' 3. Navegación a Casos de Uso Relacionados (Lo que pediste)
+editarAsignatura -[#orange]-> LISTADO_ALUMNOS
+note on link
+verAlumnos(asignatura)
+end note
+
+editarAsignatura -[#orange]-> LISTADO_GRADOS
+note on link
+verGrados(asignatura)
+end note
+@enduml
