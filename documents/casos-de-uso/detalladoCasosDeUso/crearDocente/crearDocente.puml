@@ -8,7 +8,7 @@ state crearDocente as "crearDocente()" {
 
     [*] -[#green]-> SolicitandoDatos 
     note on link
-    <b>Docente</b> solicita crear docente nuevo
+    <b>Administrador</b> solicita crear docente nuevo
     end note    
     
     SolicitandoDatos -[#green]-> CreandoDocente
@@ -24,7 +24,7 @@ state crearDocente as "crearDocente()" {
     
     CreandoDocente -[#green]-> [*]
     note on link
-    <b>Docente</b> proporciona datos mínimos
+    <b>Administrador</b> proporciona datos mínimos
     <b>Sistema</b> crea docente y transfiere a edición
     end note
 }
