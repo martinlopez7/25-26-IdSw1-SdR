@@ -1,76 +1,58 @@
 @startuml
 skinparam linetype polyline
 
-' 1. ESTADO PREVIO (Contexto de origen: Listado de Asignaturas)
 state ASIGNATURAS_ABIERTO
 
-' 2. ENTRADA AL CASO DE USO
 ASIGNATURAS_ABIERTO -[#green]-> editarAsignatura
-note on link
-editarAsignatura(asignatura)
-end note
 
-' 3. DETALLE DEL PROCESO
-state editarAsignatura as "editarAsignatura(asignatura)" {
+state editarAsignatura as "editarAsignatura()" {
 
     state " " as EditandoDatos
     state " " as GuardandoDatos 
 
     [*] -[#green]-> EditandoDatos 
     note on link
-    <b>Docente/Admin</b> solicita editar una asignatura
-    existente
+    <b>Docente</b> solicita editar asignatura
     end note    
     
     EditandoDatos -[#green]-> GuardandoDatos
     note on link
     <b>Sistema</b> presenta datos de edición
-    ---
+
     <b>Datos Asignatura:</b>
     • Título
     • Código
     • Curso Académico
-    ---
-    <b>Opciones de Navegación (Vínculos):</b>
-    • Acceso a ver listado de Alumnos
-    • Acceso a ver Grados asociados
-    ---
+    • Alumnos matriculados
+    • Grados asociados
+    
     <b>Sistema</b> permite solicitar:
     • modificar campos
     • guardar asignatura
     • cancelar edición
     end note
     
-    ' Ciclo de modificación (Patrón Interactivo)
     GuardandoDatos -[#green]-> EditandoDatos
     note on link
-    <b>Usuario</b> solicita modificar campos
-    (Corrige o cambia datos)
+    <b>Docente</b> solicita modificar campos
     end note
     
-    ' Salida Exitosa (Interna)
     GuardandoDatos -[#green]-> [*]
     note on link
-    <b>Usuario</b> solicita guardar y salir
+    <b>Docente</b> solicita guardar y salir
     end note
 
-    ' Salida Cancelada (Interna)
     GuardandoDatos -[#red]-> [*]
     note on link
-    <b>Usuario</b> solicita cancelar edición
+    <b>Docente</b> solicita cancelar edición
     end note
 }
 
-' 4. SALIDAS EXTERNAS
-
-' Salida Exitosa con CONFIRMACIÓN
 editarAsignatura -[#green]-> ASIGNATURAS_ABIERTO
 note on link
-<b>Sistema</b> confirma: "Asignatura actualizada"
 verAsignaturas()
 end note
 
-' Salida Cancelada
 editarAsignatura -[#red]-> ASIGNATURAS_ABIERTO
 note on link
 cancelar edición

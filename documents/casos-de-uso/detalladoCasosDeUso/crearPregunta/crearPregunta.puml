@@ -2,16 +2,10 @@
 
 skinparam linetype polyline
 
-' 1. ESTADO PREVIO (Contexto de origen: Banco de Preguntas)
 state PREGUNTAS_ABIERTO
 
-' 2. TRANSICIÓN DE ENTRADA
 PREGUNTAS_ABIERTO -[#green]-> crearPregunta
-note on link
-crearPregunta()
-end note
 
-' 3. EL CASO DE USO (Caja negra detallada)
 state crearPregunta as "crearPregunta()" {
 
     state " " as SolicitandoDatosPregunta
@@ -31,29 +25,24 @@ state crearPregunta as "crearPregunta()" {
     • Enunciado (obligatorio)
     • Tema (obligatorio)
     • Dificultad (ENUM: BAJA, MEDIA, ALTA)(obligatorio)
-    <b>Respuestas (Obligatoria):</b>
-    • Contenido de la respuesta
-    • Correcta/incorrecta
+    • Respuestas con contenido y si es correcta/incorrecta (obligatorio)
     ---
-    • Permite confirmar creación
-    • Permite cancelar operación
+    • Permite solicitar crear pregunta
+    • Permite solicitar cancelar operación
     end note
     
     ProcesandoCreacion -[#green]-> [*]
     note on link
-    <b>Usuario</b> proporciona todos los datos requeridos.
+    <b>Docente</b> proporciona datos mínimos
+    <b>Sistema</b> crea pregunta y transfiere a edición
     end note
 }
 
-' 4. SALIDAS DEL CASO DE USO
-
-' Flujo Exitoso: Va al detalle para seguir editando (añadir más respuestas, imágenes, etc.)
 crearPregunta -[#green]-> PREGUNTA_ABIERTO
 note on link
 editarPregunta(nuevaPregunta)
 end note
 
-' Flujo Alternativo: Cancela y vuelve al banco de preguntas
 crearPregunta -[#blue]-> PREGUNTAS_ABIERTO
 note on link
 cancelar creación
