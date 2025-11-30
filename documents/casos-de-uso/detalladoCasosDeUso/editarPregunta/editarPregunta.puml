@@ -1,0 +1,59 @@
+@startuml
+skinparam linetype polyline
+
+state PREGUNTAS_ABIERTO
+
+PREGUNTAS_ABIERTO -[#green]-> editarPregunta
+
+state editarPregunta as "editarPregunta()" {
+
+    state " " as EditandoDatos
+    state " " as GuardandoDatos 
+
+    [*] -[#green]-> EditandoDatos 
+    note on link
+    <b>Docente</b> solicita editar pregunta
+    end note    
+    
+    EditandoDatos -[#green]-> GuardandoDatos
+    note on link
+    <b>Sistema</b> presenta datos de edición
+    
+    • Asignatura, Enunciado
+    • Tema, Dificultad (Enum)
+    • Respuestas (contenido y si es correcta/incorrecta)
+    • Habilitada/deshabilitada
+
+    <b>Sistema</b> permite solicitar:
+    • modificar campos
+    • guardar pregunta
+    • cancelar edición
+    end note
+    
+    GuardandoDatos -[#green]-> EditandoDatos
+    note on link
+    <b>Docente</b> solicita modificar campos
+    end note
+    
+    GuardandoDatos -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita guardar y salir
+    end note
+
+    GuardandoDatos -[#red]-> [*]
+    note on link
+    <b>Docente</b> solicita cancelar edición
+    end note
+}
+
+editarPregunta -[#green]-> PREGUNTAS_ABIERTO
+note on link
+verPreguntas()
+end note
+
+editarPregunta -[#red]-> PREGUNTAS_ABIERTO
+note on link
+cancelar edición
+end note
+
+@enduml

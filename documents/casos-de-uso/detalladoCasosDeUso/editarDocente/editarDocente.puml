@@ -1,0 +1,60 @@
+@startuml
+skinparam linetype polyline
+
+state DOCENTES_ABIERTO
+
+DOCENTES_ABIERTO -[#green]-> editarDocente
+
+state editarDocente as "editarDocente()" {
+
+    state " " as EditandoDatos
+    state " " as GuardandoDatos 
+
+    [*] -[#green]-> EditandoDatos 
+    note on link
+    <b>Administrador institucional</b> solicita editar docente
+    end note    
+    
+    EditandoDatos -[#green]-> GuardandoDatos
+    note on link
+    <b>Sistema</b> presenta datos de edición
+    • Nombre 
+    • Apellidos 
+    • DNI 
+    • nombre de usuario 
+    • Email 
+    • Password
+    
+    <b>Sistema</b> permite solicitar:
+    • modificar campos
+    • guardar docente
+    • cancelar edición
+    end note
+    
+    GuardandoDatos -[#green]-> EditandoDatos
+    note on link
+    <b>Administrador institucional</b> solicita modificar campos
+    end note
+    
+    GuardandoDatos -[#green]-> [*]
+    note on link
+    <b>Administrador institucional</b> solicita guardar y salir
+    end note
+
+    GuardandoDatos -[#red]-> [*]
+    note on link
+    <b>Administrador institucional</b> solicita cancelar edición
+    end note
+}
+
+editarDocente -[#green]-> DOCENTES_ABIERTO
+note on link
+verDocentes()
+end note
+
+editarDocente -[#red]-> DOCENTES_ABIERTO
+note on link
+cancelar edición
+end note
+
+@enduml
