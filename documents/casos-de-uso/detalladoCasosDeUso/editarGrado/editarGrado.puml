@@ -1,0 +1,56 @@
+@startuml editarGrado
+
+skinparam linetype polyline
+
+state editarGrado as "editarGrado()" {
+
+    state " " as EditandoDatos
+    state " " as GuardandoDatos 
+
+    [*] -[#green]-> EditandoDatos 
+    note on link
+    <b>Docente</b> solicita editar grado
+    end note    
+    
+    EditandoDatos -[#green]-> GuardandoDatos
+    note on link
+    <b>Sistema</b> presenta datos de edición
+    • Nombre, código
+    • Lista de alumnos enlistados
+    
+    <b>Sistema</b> permite solicitar:
+    • modificar campos
+    • guardar grado
+    • cancelar edición
+    end note
+    
+    GuardandoDatos -[#green]-> EditandoDatos
+    note on link
+    <b>Docente</b> solicita modificar campos
+    end note
+    
+    GuardandoDatos -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita guardar y salir
+    end note
+
+    GuardandoDatos -[#red]-> [*]
+    note on link
+    <b>Docente</b> solicita cancelar edición
+    end note
+
+}
+
+GRADOS_ABIERTO -[#green]-> editarGrado
+
+editarGrado -[#green]-> GRADOS_ABIERTO
+note on link
+verGrados()
+end note
+
+editarGrado -[#red]-> GRADOS_ABIERTO
+note on link
+cancelar edición
+end note
+
+@enduml
