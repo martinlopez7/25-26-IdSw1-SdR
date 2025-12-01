@@ -1,0 +1,60 @@
+@startuml verGrados
+
+skinparam linetype polyline
+
+state verGrados as "verGrados()" {
+
+    state " " as MostrandoGrados
+    state " " as FiltrandoGrados
+
+    [*] -[#green]-> MostrandoGrados 
+    note on link
+    <b>Docente</b> solicita ver grados
+    end note    
+    
+    MostrandoGrados -[#green]-> FiltrandoGrados
+    note on link
+    <b>Sistema</b> presenta lista de grados
+    • Nombre, código, alumnos enlistados
+    
+    • Permite solicitar filtrar lista
+    • Permite solicitar crear grado nuevo
+    • Permite solicitar eliminar grado
+    • Permite solicitar editar grado
+    end note
+    
+    FiltrandoGrados -[#green]-> FiltrandoGrados
+    note on link
+    <b>Docente</b> solicita filtrar lista
+    <b>Sistema</b> presenta lista filtrada
+    end note
+    
+    FiltrandoGrados -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita una de las opciones
+    end note
+}
+
+SISTEMA_DISPONIBLE -[#green]-> verGrados
+
+verGrados -[#green]-> GRADO_ABIERTO
+note on link
+editarGrado()
+end note
+
+verGrados -[#green]-> GRADO_ABIERTO
+note on link
+crearGrado()
+end note
+
+verGrados -[#green]-> GRADOS_ABIERTO
+note on link
+eliminarGrado()
+end note
+
+verGrados -[#green]-> SISTEMA_DISPONIBLE
+note on link
+completarGestion()
+end note
+
+@enduml

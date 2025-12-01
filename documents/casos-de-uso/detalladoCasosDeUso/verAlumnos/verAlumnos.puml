@@ -1,0 +1,60 @@
+@startuml verAlumnos
+
+skinparam linetype polyline
+
+state verAlumnos as "verAlumnos()" {
+
+    state " " as MostrandoAlumnos
+    state " " as FiltrandoAlumnos
+
+    [*] -[#green]-> MostrandoAlumnos 
+    note on link
+    <b>Docente</b> solicita ver alumnos
+    end note    
+    
+    MostrandoAlumnos -[#green]-> FiltrandoAlumnos
+    note on link
+    <b>Sistema</b> presenta lista de alumnos
+    • DNI, nombre, apellidos
+	
+    • Permite solicitar filtrar lista
+    • Permite solicitar crear alumno nuevo
+    • Permite solicitar eliminar alumno
+    • Permite solicitar editar alumno
+    end note
+    
+    FiltrandoAlumnos -[#green]-> FiltrandoAlumnos
+    note on link
+    <b>Docente</b> solicita filtrar lista
+    <b>Sistema</b> presenta lista filtrada
+    end note
+    
+    FiltrandoAlumnos -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita una de las opciones
+    end note
+}
+
+SISTEMA_DISPONIBLE -[#green]-> verAlumnos
+
+verAlumnos -[#green]-> ALUMNO_ABIERTO
+note on link
+editarAlumno()
+end note
+
+verAlumnos -[#green]-> ALUMNO_ABIERTO
+note on link
+crearAlumno()
+end note
+
+verAlumnos -[#green]-> ALUMNOS_ABIERTO
+note on link
+eliminarAlumno()
+end note
+
+verAlumnos -[#green]-> SISTEMA_DISPONIBLE
+note on link
+completarGestion()
+end note
+
+@enduml     
