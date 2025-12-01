@@ -1,0 +1,48 @@
+@startuml eliminarPregunta
+skinparam linetype polyline
+
+state eliminarPregunta as "eliminarPregunta()" {
+
+    state " " as ConfirmandoEliminacion
+    state " " as EliminandoPregunta
+    
+    [*] -[#green]-> ConfirmandoEliminacion
+    note on link
+    <b>Docente</b> solicita eliminar pregunta
+    end note
+    
+    ConfirmandoEliminacion -[#green]-> EliminandoPregunta
+    note on link
+    <b>Sistema</b> presenta información de la pregunta a eliminar
+    • Asignatura 
+    • Enunciado 
+    • Tema 
+    • Dificultad
+    • Respuestas 
+    
+    • Presenta advertencia de eliminación
+    • Permite solicitar confirmar eliminación
+    • Permite solicitar cancelar eliminación
+    end note
+    
+    EliminandoPregunta -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita confirmación de eliminación
+    <b>Sistema</b> permite solicitar confirmar eliminación
+    <b>Doocente</b> solicita confirmar eliminación
+    end note
+}
+
+PREGUNTAS_ABIERTO -[#green]-> eliminarPregunta
+
+eliminarPregunta -[#green]-> PREGUNTAS_ABIERTO
+note on link
+verPreguntas() - lista actualizada
+end note
+
+eliminarPregunta -[#blue]-> PREGUNTAS_ABIERTO
+note on link
+verPreguntas() - cancelar eliminación
+end note
+
+@enduml
