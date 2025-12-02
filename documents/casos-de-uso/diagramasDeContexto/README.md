@@ -6,10 +6,14 @@
 
 ### Actor **Docente**
 
-![Diagrama de contexto para Docente](documents\casos-de-uso\diagramasDeContexto\diagramaDeContextoDocente\diagramaContexto.svg)
+| ![Diagrama de contexto para Docente](diagramaDeContextoDocente\diagramaContexto.svg) |
+| :--- |
+| [Código UML](diagramaDeContextoDocente\diagramaContexto.puml) |
 
 ---
 
 ### Actor **Administrador institucional**
 
-![Diagrama de contexto para Administrador Institucional](documents\casos-de-uso\diagramasDeContexto\diagramaDeContextoAdministradorInstitucional\diagramaContexto.svg)
+| ![Diagrama de contexto para Administrador Institucional](diagramaDeContextoAdministradorInstitucional/diagramaContexto.svg) |
+| :--- |
+| [Código UML](diagramaDeContextoAdministradorInstitucional/diagramaContexto.puml) |

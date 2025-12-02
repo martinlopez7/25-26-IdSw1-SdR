@@ -2,35 +2,35 @@
 
 | Orden de priorización de casos de uso |
 |---------|
-| 1. corregirExamenes() |
-| 2. generarExamenes() |
-| 3. importarConfiguracionGlobal() |
-| 4. exportarConfiguracionGlobal() |
-| 5. importarAlumnos() |
-| 6. importarPreguntas() |
-| 7. exportarAlumnos() |
-| 8. exportarPreguntas() |
-| 9. asignarExamenes() |
-| 10. crearPregunta() |
-| 11. editarPregunta() |
-| 12. editarAsignatura() |
-| 13. crearDocente() |
-| 14. crearAlumno() |
-| 15. editarDocente() |
-| 16. editarAlumno() |
-| 17. crearGrado() |
-| 18. crearAsignatura() |
-| 19. editarGrado() |
-| 20. verPreguntas() |
-| 21. verAsignaturas() |
-| 22. verGrados() |
-| 23. verAlumnos() |
-| 24. verDocentes() |
-| 25. eliminarPregunta() |
-| 26. eliminarAsignatura() |
-| 27. eliminarGrado() |
-| 28. eliminarAlumno() |
-| 29. eliminarDocente() |
-| 30. iniciarSesion() |
-| 31. cerrarSesion() |
-| 32. completarGestion() |
+| 1. <a href="..\detalladoCasosDeUso\README.md#corregir-examenes">corregirExamenes()</a> [Docente]|
+| 2. <a href="..\detalladoCasosDeUso\README.md#generar-examenes">generarExamenes()</a> [Docente]|
+| 3. <a href="..\detalladoCasosDeUso\README.md#importar-configuración-global">importarConfiguracionGlobal()</a> [Docente]|
+| 4. <a href="..\detalladoCasosDeUso\README.md#exportar-configuración-global">exportarConfiguraci[Docente]onGlobal()</a> [Docente]|
+| 5. <a href="..\detalladoCasosDeUso\README.md#importar-alumnos">importarAlumnos()</a> [Docente]|
+| 6. <a href="..\detalladoCasosDeUso\README.md#importar-preguntas">importarPreguntas()</a> [Docente]|
+| 7. <a href="..\detalladoCasosDeUso\README.md#exportar-alumnos">exportarAlumnos()</a> [Docente]|
+| 8. <a href="..\detalladoCasosDeUso\README.md#exportar-preguntas">exportarPreguntas()</a> [Docente]|
+| 9. <a href="..\detalladoCasosDeUso\README.md#asignar-exámenes">asignarExamenes()</a> [Docente]|
+| 10. <a href="..\detalladoCasosDeUso\README.md#crear-pregunta">crearPregunta()</a> [Docente]|
+| 11. <a href="..\detalladoCasosDeUso\README.md#editar-pregunta">editarPregunta()</a> [Docente]|
+| 12. <a href="..\detalladoCasosDeUso\README.md#editar-asignatura">editarAsignatura()</a> [Docente]|
+| 13. <a href="..\detalladoCasosDeUso\README.md#crear-docente">crearDocente()</a> [Administrador institucional]|
+| 14. <a href="..\detalladoCasosDeUso\README.md#crear-alumno">crearAlumno()</a> [Docente]|
+| 15. <a href="..\detalladoCasosDeUso\README.md#editar-docente">editarDocente()</a> [Administrador institucional]|
+| 16. <a href="..\detalladoCasosDeUso\README.md#editar-alumno">editarAlumno()</a> [Docente]|
+| 17. <a href="..\detalladoCasosDeUso\README.md#crear-grado">crearGrado()</a> [Docente]|
+| 18. <a href="..\detalladoCasosDeUso\README.md#crear-asignatura">crearAsignatura()</a> [Docente]|
+| 19. <a href="..\detalladoCasosDeUso\README.md#editar-grado">editarGrado()</a> [Docente]|
+| 20. <a href="..\detalladoCasosDeUso\README.md#ver-preguntas">verPreguntas()</a> [Docente]|
+| 21. <a href="..\detalladoCasosDeUso\README.md#ver-asignaturas">verAsignaturas()</a> [Docente]|
+| 22. <a href="..\detalladoCasosDeUso\README.md#ver-grados">verGrados()</a> [Docente]|
+| 23. <a href="..\detalladoCasosDeUso\README.md#ver-alumnos">verAlumnos()</a> [Docente]|
+| 24. <a href="..\detalladoCasosDeUso\README.md#ver-docentes">verDocentes()</a> [Administrador institucional]|
+| 25. <a href="..\detalladoCasosDeUso\README.md#eliminar-pregunta">eliminarPregunta()</a> [Docente]|
+| 26. <a href="..\detalladoCasosDeUso\README.md#eliminar-asignatura">eliminarAsignatura()</a> [Docente]|
+| 27. <a href="..\detalladoCasosDeUso\README.md#eliminar-grado">eliminarGrado()</a> [Docente]|
+| 28. <a href="..\detalladoCasosDeUso\README.md#eliminar-alumno">eliminarAlumno()</a> [Docente]|
+| 29. <a href="..\detalladoCasosDeUso\README.md#eliminar-docente">eliminarDocente()</a> [Administrador institucional]|
+| 30. <a href="..\detalladoCasosDeUso\README.md#iniciar-sesión">iniciarSesion()</a> [Docente y Administrador institucional]|
+| 31. <a href="..\detalladoCasosDeUso\README.md#cerrar-sesión">cerrarSesion()</a> [Docente y Administrador institucional]|
+| 32. <a href="..\detalladoCasosDeUso\README.md#completar-gestión">completarGestion()</a> [Docente y Administrador institucional]|

@@ -24,7 +24,9 @@ Para la generación, el sistema utiliza una batería de preguntas previamente ca
 
 Estos son sus casos de uso:
 
-![Casos de uso de Docente](documents\casos-de-uso\encontrarActoresYCasosDeUso\actoresYCasosDeUso-docente.svg)
+| ![Casos de Uso Docente](actoresYCasosDeUso-docente.svg) |
+| :--- |
+| [Código UML](actoresYCasosDeUso-docente.puml) |
 
 ---
 
@@ -34,7 +36,9 @@ Es el "representante" de la universidad, su función es gestionar las cuentas pa
 
 Estos son sus casos de uso:
 
-![Casos de uso de Administrador Institucional](documents\casos-de-uso\encontrarActoresYCasosDeUso\actoresYCasosDeUso-administradorInstitucional.svg)
+| ![Casos de Uso Administrador Institucional](actoresYCasosDeUso-administradorInstitucional.svg) |
+| :--- |
+| [Código UML](actoresYCasosDeUso-administradorInstitucional.puml) |
 
 ---
 
@@ -42,7 +46,7 @@ Estos son sus casos de uso:
 
 Se encarga únicamente de cerrar sesión cuando hay un tiempo de inactividad determinado.
 
-![Caso de uso de Tiempo](documents\casos-de-uso\encontrarActoresYCasosDeUso\actoresYCasosDeUso-tiempo.svg)
-
-
+| ![Casos de Uso Tiempo](actoresYCasosDeUso-tiempo.svg) |
+| :--- |
+| [Código UML](actoresYCasosDeUso-tiempo.puml) |
 

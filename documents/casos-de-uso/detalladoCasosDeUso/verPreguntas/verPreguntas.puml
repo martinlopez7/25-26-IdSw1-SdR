@@ -1,0 +1,60 @@
+@startuml verPreguntas
+
+skinparam linetype polyline
+
+state verPreguntas as "verPreguntas()" {
+
+    state " " as MostrandoPreguntas
+    state " " as FiltrandoPreguntas
+
+    [*] -[#green]-> MostrandoPreguntas
+    note on link
+    <b>Docente</b> solicita ver preguntas
+    end note    
+   
+    MostrandoPreguntas -[#green]-> FiltrandoPreguntas
+    note on link
+    <b>Sistema</b> presenta lista de preguntas
+    • Enunciado, asignatura, tema, dificultad, respuestas
+   
+    • Permite solicitar filtrar lista
+    • Permite solicitar crear pregunta nueva
+    • Permite solicitar eliminar pregunta
+    • Permite solicitar editar pregunta
+    end note
+   
+    FiltrandoPreguntas -[#green]-> FiltrandoPreguntas
+    note on link
+    <b>Docente</b> solicita filtrar lista
+    <b>Sistema</b> presenta lista filtrada
+    end note
+   
+    FiltrandoPreguntas -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita una de las opciones
+    end note
+}
+
+SISTEMA_DISPONIBLE -[#green]-> verPreguntas
+
+verPreguntas -[#green]-> PREGUNTA_ABIERTA
+note on link
+editarPregunta()
+end note
+
+verPreguntas -[#green]-> PREGUNTA_ABIERTA
+note on link
+crearPregunta()
+end note
+
+verPreguntas -[#green]-> PREGUNTAS_ABIERTO
+note on link
+eliminarPregunta()
+end note
+
+verPreguntas -[#green]-> SISTEMA_DISPONIBLE
+note on link
+completarGestion()
+end note
+
+@enduml
