@@ -4,7 +4,7 @@
 
 </div>
 
-## DIAGRAMA DE ENTIDADES
+## Diagrama de entidades
 A continuación se muestra el diagrama de entidades propuesto del proyecto
 <p align="center">
   <img src="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.svg">
@@ -13,14 +13,15 @@ A continuación se muestra el diagrama de entidades propuesto del proyecto
 
 [Enlace al código del diagrama de entidades](/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.puml)
 
-## DIAGRAMA DE OBJETOS
+## Diagrama de objetos
 A continuación se muestra el diagrama de objetos del proyecto 
 <p align="center">
   <img src="/documents/modelos/diagramas/diagramaObjetos/diagramaObjetos.svg">
   
 [Enlace al código del diagrama de objetos](/documents/modelos/diagramas/diagramaObjetos/diagramaObjetos.puml)
 
-## DIAGRAMA DE ESTADOS
+## Diagramas de estados
+
 ### Entidad Examen
 A continuación se muestra el diagrama de estados de la entidad examen
 <p align="center">
