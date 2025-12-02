@@ -1,9 +1,19 @@
 [![](https://img.shields.io/badge/-INICIO-white?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-MODELO%20DEL%20DOMINIO-white?style=flat&logo=diagramsdotnet&logoColor=black)](/documents/modelos/diagramas/README.md)   [![](https://img.shields.io/badge/-ACTORES%20Y%20CASOS%20DE%20USO-white?style=flat&logo=showwcase&logoColor=black)](/documents/casos-de-uso/encontrarActoresYCasosDeUso/README.md)  [![](https://img.shields.io/badge/-DIAGRAMAS%20DE%20CONTEXTO-white?style=flat&logo=showwcase&logoColor=black)](/documents/casos-de-uso/diagramasDeContexto/README.md)  [![](https://img.shields.io/badge/-PRIORIZADO%20DE%20CASOS%20DE%20USO-white?style=flat&logo=showwcase&logoColor=black)](/documents/casos-de-uso/priorizarCasosDeUso/CasosDeUsoPriorizados.md)<br> [![](https://img.shields.io/badge/-DETALLADO%20DE%20CASOS%20DE%20USO-white?style=flat&logo=showwcase&logoColor=black)](/documents/casos-de-uso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-PROTOTIPADO%20DE%20CASOS%20DE%20USO-white?style=flat&logo=showwcase&logoColor=black)](/documents/casos-de-uso/prototipadoCasosDeUso/README.md) [![](https://img.shields.io/badge/-SESIONES%20DE%20REQUISITADO-white?style=flat&logo=LiveChat&logoColor=black)](/documents/minutas/README.md) [![](https://img.shields.io/badge/-RECURSOS%20ADICIONALES-white?style=flat&logo=openstreetmap&logoColor=black)](/documents/evidencias/README.md)  [![](https://img.shields.io/badge/-GLOSARIO-white?style=flat&logo=gitbook&logoColor=black)](/documents/modelos/Glosario.md) [![](https://img.shields.io/badge/-USO%20DE%20IA-white?style=flat&logo=chatbot&logoColor=black)](/documents/AI-uso.md)
 
-| Relación entre Estados | Tipo | Justificación contextualizada |
-|------------------------|------|-------------------------------|
-| **[*] → NoCreado** | Inicialización | El sistema todavía no tiene datos del examen.
-| **NoCreado → Creado** | Transición | El sistema genera los exámenes teniendo en cuenta el nº de preguntas, el nº de examenes, la asignatura, temas, proporcion de dificultad y demás. |
-| **Creado → Asignado** | Transición |El examen se asigna formalmente a los estudiantes de la asignatura mediante la vinculación del modelo de corrección correspondiente a cada alumno y guarda un hash único del modelo de corrección asignado a cada estudiante. De este modo, se asegura que no haya cambios en las respuestas o en los criterios de corrección. |
-| **Asignado → Corregido** | Transición | El sistema detecta el hash, identifica cuál modelo debe usar y emplea IA de visión para leer las respuestas marcadas. Luego compara automáticamente con el modelo correcto (sin calificar) y genera un PDF corregido visualmente. |
-| **Corregido → [*]** | Finalización | Cuando el sistema genera el documento corregido (o varios), almacena los resultados y termina el ciclo. El docente puede revisar, exportar o calificar manualmente según la normativa.|
+---
+
+## Diagramas de contexto para los distintos actores que atacan el sistema
+
+### Actor **Docente**
+
+| ![Diagrama de contexto para Docente](diagramaDeContextoDocente\diagramaContexto.svg) |
+| :--- |
+| [Código UML](diagramaDeContextoDocente\diagramaContexto.puml) |
+
+---
+
+### Actor **Administrador institucional**
+
+| ![Diagrama de contexto para Administrador Institucional](diagramaDeContextoAdministradorInstitucional/diagramaContexto.svg) |
+| :--- |
+| [Código UML](diagramaDeContextoAdministradorInstitucional/diagramaContexto.puml) |
