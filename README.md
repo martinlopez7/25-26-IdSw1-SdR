@@ -5,7 +5,7 @@
 </div>
 
 <p align="center">
-  <img src="documents\recursos\JorgestorLogo.png" alt="Jorgestor Logo" width="200">
+  <img src="documents\recursos\JorgestorLogo.png" alt="Jorgestor Logo" height="350" width="350">
 </p>
 
 ##  DESCRIPCIÓN GENERAL
