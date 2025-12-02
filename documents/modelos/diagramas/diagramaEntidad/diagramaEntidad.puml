@@ -1,5 +1,4 @@
 @startuml
-
 class Examen{
  - evaluación
  - clave corrección
@@ -7,19 +6,15 @@ class Examen{
 class Asignatura{
  - título
  - código
+ - curso académico
 }
 class Pregunta{
  - asignatura
- - tema
  - enunciado
- - opciones respuesta
- - respuesta correcta
+ - tema
  - dificultad
 }
 class BateriaDePreguntas{
-}
-class ModeloCorrección{
- - orden concreto de soluciones
 }
 class Grado{
  - título
@@ -48,19 +43,25 @@ enum DificultadPregunta{
  - dificil
 }
 
-Examen .. EvaluaciónExamen
-Pregunta -u-* Examen : contiene
-Pregunta .. DificultadPregunta
-Examen *-r- ModeloCorrección : se corrige
-Profesor o-l- Pregunta : crea
-Profesor *-u- Examen : crea
-Asignatura *-- BateriaDePreguntas : tiene
-BateriaDePreguntas *-u- Pregunta : contiene
-Asignatura *-u- Examen : tiene 
-Asignatura o-l- Profesor : tiene  
-Grado *-u- Asignatura: contiene 
-Alumno o-u- Examen : realiza 
-Asignatura *-r- Alumno : se imparte 
-Grado *-u- Alumno : se cursa
+class Respuesta{
+ - opción
+ - esCorrecta
+}
 
+enum Tema{
+}
+
+Respuesta -u-* Pregunta
+Pregunta .. DificultadPregunta
+Pregunta -u-o Examen : contiene
+Pregunta -u-* BateriaDePreguntas : contiene
+Examen .. EvaluaciónExamen
+BateriaDePreguntas -u-* Asignatura : tiene
+Examen -u-* Asignatura : tiene
+Profesor o-r- Asignatura : tiene
+Asignatura *-- Grado : contiene
+Alumno -u-o Examen : realiza
+Alumno -u-* Asignatura : se imparte
+Alumno -u-* Grado : se cursa
+Pregunta .. Tema
 @enduml

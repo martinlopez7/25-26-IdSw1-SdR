@@ -1,0 +1,50 @@
+@startuml generar
+
+skinparam linetype polyline
+
+state exportarConfiguracionGlobal as "exportarConfiguracionGlobal()" {
+
+    state " " as RequiringGlobalConfigurationExport
+    state " " as ProvidingGlobalConfiguration
+    state " " as ProvidingConfirmation
+    state c <<choice>>
+
+    [*] -[#green]-> RequiringGlobalConfigurationExport
+    note on link
+    <b>Docente</b> solicita exportar configuración global
+    end note    
+    
+    RequiringGlobalConfigurationExport -[#green]-> ProvidingGlobalConfiguration
+    note on link
+    <b>Sistema</b> permite exportar
+    • configuración global
+    end note
+    
+    ProvidingGlobalConfiguration -[#green]-> c
+    note on link
+    <b>Docente</b> solicita
+    • confirmar exportación
+    • cancelar exportación
+    end note
+    
+    c -[#red]-> ProvidingGlobalConfiguration
+    note on link
+    Docente cancela exportación
+    end note
+
+    c -[#red]-> ProvidingGlobalConfiguration
+    note on link
+    Docente confirma exportación: error en la exportación
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    Docente confirma exportación: exportación exitosa
+    end note
+}
+
+SISTEMA_DISPONIBLE -[#green]-> exportarConfiguracionGlobal
+
+exportarConfiguracionGlobal -[#green]-> SISTEMA_DISPONIBLE
+
+@enduml

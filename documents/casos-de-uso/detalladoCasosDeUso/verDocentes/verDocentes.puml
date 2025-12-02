@@ -1,0 +1,60 @@
+@startuml verDocentes
+
+skinparam linetype polyline
+
+state verDocentes as "verDocentes()" {
+
+    state " " as MostrandoDocentes
+    state " " as FiltrandoDocentes
+
+    [*] -[#green]-> MostrandoDocentes 
+    note on link
+    <b>Administrador institucional</b> solicita ver docentes
+    end note    
+    
+    MostrandoDocentes -[#green]-> FiltrandoDocentes
+    note on link
+    <b>Sistema</b> presenta lista de docentes
+    •  Nombre, apellidos, DNI, nombre de usuario, email, password 
+    
+    • Permite solicitar filtrar lista
+    • Permite solicitar crear docente nuevo
+    • Permite solicitar eliminar docente
+    • Permite solicitar editar docente
+    end note
+    
+    FiltrandoDocentes -[#green]-> FiltrandoDocentes
+    note on link
+    <b>Administrador institucional</b> solicita filtrar lista
+    <b>Sistema</b> presenta lista filtrada
+    end note
+    
+    FiltrandoDocentes -[#green]-> [*]
+    note on link
+    <b>Administrador institucional</b> solicita una de las opciones
+    end note
+}
+
+SISTEMA_DISPONIBLE -[#green]-> verDocentes
+
+verDocentes -[#green]-> DOCENTE_ABIERTO
+note on link
+editarDocente()
+end note
+
+verDocentes -[#green]-> DOCENTE_ABIERTO
+note on link
+crearDocente()
+end note
+
+verDocentes -[#green]-> DOCENTES_ABIERTO
+note on link
+eliminarDocente()
+end note
+
+verDocentes -[#green]-> SISTEMA_DISPONIBLE
+note on link
+completarGestion()
+end note
+
+@enduml

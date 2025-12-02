@@ -1,0 +1,55 @@
+@startuml generar
+
+skinparam linetype polyline
+
+state generarExamenes as "generarExamenes()" {
+
+    state " " as RequiringGeneration
+    state " " as ProvidingData
+    state " " as ProvidingConfirmation
+    state c <<choice>>
+
+    [*] -[#green]-> RequiringGeneration 
+    note on link
+    <b>Docente</b> solicita generar examenes
+    end note    
+    
+    RequiringGeneration -[#green]-> ProvidingData
+    note on link
+    <b>Sistema</b> presenta
+    • datos disponibles para la generación
+    end note
+    
+    ProvidingData -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Docente</b> introduce datos para la generación
+    end note
+    
+    ProvidingConfirmation -[#green]-> c
+    note on link
+    <b>Docente</b> solicita
+    • confirmar generación
+    • cancelar generación
+    end note
+    
+    c -[#red]-> ProvidingData
+    note on link
+    Docente cancela generación
+    end note
+
+    c -[#red]-> ProvidingData
+    note on link
+    Docente confirma generación: datos insuficientes
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    Docente confirma generación: generación exitosa
+    end note
+}
+
+SISTEMA_DISPONIBLE -[#green]-> generarExamenes
+
+generarExamenes -[#green]-> EXAMENES_GENERADOS
+
+@enduml

@@ -1,14 +1,14 @@
+[![](https://img.shields.io/badge/-INICIO-white?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-MODELO%20DEL%20DOMINIO-white?style=flat&logo=diagramsdotnet&logoColor=black)](/documents/modelos/diagramas/README.md)   [![](https://img.shields.io/badge/-ACTORES%20Y%20CASOS%20DE%20USO-white?style=flat&logo=showwcase&logoColor=black)](/documents/casos-de-uso/encontrarActoresYCasosDeUso/README.md)  [![](https://img.shields.io/badge/-DIAGRAMAS%20DE%20CONTEXTO-white?style=flat&logo=showwcase&logoColor=black)](/documents/casos-de-uso/diagramasDeContexto/README.md)  [![](https://img.shields.io/badge/-PRIORIZADO%20DE%20CASOS%20DE%20USO-white?style=flat&logo=showwcase&logoColor=black)](/documents/casos-de-uso/priorizarCasosDeUso/CasosDeUsoPriorizados.md)<br> [![](https://img.shields.io/badge/-DETALLADO%20DE%20CASOS%20DE%20USO-white?style=flat&logo=showwcase&logoColor=black)](/documents/casos-de-uso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-PROTOTIPADO%20DE%20CASOS%20DE%20USO-white?style=flat&logo=showwcase&logoColor=black)](/documents/casos-de-uso/prototipadoCasosDeUso/README.md) [![](https://img.shields.io/badge/-SESIONES%20DE%20REQUISITADO-white?style=flat&logo=LiveChat&logoColor=black)](/documents/minutas/README.md) [![](https://img.shields.io/badge/-RECURSOS%20ADICIONALES-white?style=flat&logo=openstreetmap&logoColor=black)](/documents/evidencias/README.md)  [![](https://img.shields.io/badge/-GLOSARIO-white?style=flat&logo=gitbook&logoColor=black)](/documents/modelos/Glosario.md) [![](https://img.shields.io/badge/-USO%20DE%20IA-white?style=flat&logo=chatbot&logoColor=black)](/documents/AI-uso.md)
+
 | Relación | Tipo y Cardinalidad | Justificación |
-|-----------|---------------------|----------------|
-| **Examen – Pregunta** | Composición (many *-- many) | Un examen contiene varias preguntas y una pregunta puede formar parte de otros exámenes. |
-| **Examen – ModeloCorrección** | Composición (1 *-- 1) | Cada examen tiene un único modelo de corrección y un modelo de corrección solo pertenece a un examen. |
-| **Profesor - Examen** | Composición (1 *-- many) | Un profesor puede crear varios examenes pero un examen solo puede ser creado por un profesor. |
-| **Profesor – Pregunta** | Agregación (1 o-- many) | Un profesor puede crear varias preguntas y una pregunta solo puede ser creada por un profesor |
-| **Asignatura – BateríaDePreguntas** | Composición (1 *-- 1) | Una asignatura tiene una batería de preguntas y una batería de preguntas solo puede pertenecer a una asignatura. |
-| **BateríaDePreguntas – Pregunta** | Composición (1 *-- many) | Una batería de preguntas tiene muchas preguntas y una pregunta esta en una sola batería de preguntas. |
-| **Asignatura – Examen** | Composición (1 *-- many) | Una asignatura puede tener varios examenes pero un examen solo puede pertenecer a una sola asignatura. |
-| **Asignatura – Profesor** | Agregación (many o-- 1) | Una asignatura tiene un solo profesor asignado, pero un profesor puede impartir varias asignaturas. |
-| **Asignatura – Alumno** | Composición (many o-- many) | Una asignatura puede ser impartida a muchos alumnos, y un alumno puede cursar varias asignaturas. |
-| **Alumno – Examen** | Agregación (1 o-- 1) | Un alumno realiza un exámen, y un examen solo puede ser realizado por un solo alumno. |
-| **Grado – Asignatura** | Composición (many o-- many) | Un grado contiene varias asignaturas y una asignatura puede estar contenida en varios grados. |
-| **Grado – Alumno** | Composición (1 *-- many) | Un grado puede ser cursado por varios alumnos, pero un alumno solo puede cursar un solo grado. |
+| :--- | :--- | :--- |
+| **Profesor – Asignatura** | Agregación (1 o-- many) | Un solo profesor puede ser responsable de impartir **varias** asignaturas, mientras que cada asignatura tiene asignado un único profesor titular. |
+| **Asignatura– Grado** | Composición (many *-- many) | Una asignatura puede estar formada por **muchos** grados y cada grado puede estar presente en varias asignaturas. |
+| **Asignatura – Alumno** | Asociación (many -- many) | En una asignatura se matriculan **muchos** alumnos y, a su vez, un mismo alumno se matricula en **muchas** asignaturas diferentes. |
+| **Asignatura – Examen** | Composición (1 *-- many) | Una asignatura tiene planificados **varios** exámenes (parciales, finales, recuperaciones), pero cada examen corresponde a una única asignatura. |
+| **Asignatura – BateríaDePreguntas** | Composición (1 *-- 1) | Cada asignatura tiene asociada **una** única batería de preguntas, y esa batería pertenece solo a esa asignatura. |
+| **Grado – Alumno** | Composición (1 *-- many) | Un Grado tiene inscritos a **muchos** alumnos, pero un alumno cursa (en este contexto) un único Grado principal. |
+| **Alumno – Examen** | Agregación (1 o-- 1) | Un alumno realiza **una** única instancia/entrega de un examen específico, y esa entrega pertenece a ese único alumno. |
+| **Examen – Pregunta** | Agregación (many o-- many) | Un examen consta de **muchas** preguntas, y una misma pregunta puede ser reutilizada y aparecer en **muchos** exámenes distintos. |
+| **BateríaDePreguntas – Pregunta** | Composición (1 *-- many) | La batería almacena **muchas** preguntas distintas, pero cada pregunta específica reside en una única batería. |
+| **Pregunta – Respuesta** | Composición (1 *-- many) | Una sola pregunta tiene asociadas **varias** opciones de respuesta posibles, que pertenecen únicamente a esa pregunta. |

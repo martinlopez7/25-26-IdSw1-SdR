@@ -1,0 +1,54 @@
+@startuml exportarAlumnos
+
+skinparam linetype polyline
+
+state exportarAlumnos as "exportarAlumnos()" {
+
+    state " " as RequiringExport
+    state " " as ProvidingAlumnos
+    state " " as ProvidingConfirmation
+    state c <<choice>>
+
+    [*] -[#green]-> RequiringExport
+    note on link
+    <b>Docente</b> solicita exportar alumnos
+    end note    
+
+    RequiringExport -[#green]-> ProvidingAlumnos
+    note on link
+    <b>Sistema</b> permite introducir
+    • alumnos a exportar
+    end note
+
+    ProvidingAlumnos -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Docente</b> introduce alumnos a exportar
+    end note
+
+    ProvidingConfirmation -[#green]-> c
+    note on link
+    <b>Docente</b> solicita
+    • confirmar exportación
+    • cancelar exportación
+    end note
+
+    c -[#red]-> ProvidingAlumnos
+    note on link
+    Docente cancela exportación
+    end note
+
+    c -[#red]-> ProvidingAlumnos
+    note on link
+    Docente confirma exportación: error en la exportación
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    Docente confirma exportación: exportación exitosa
+    end note
+}
+
+ALUMNOS_ABIERTO -[#green]-> exportarAlumnos
+exportarAlumnos -[#green]-> ALUMNOS_ABIERTO
+
+@enduml
