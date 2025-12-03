@@ -1,10 +1,15 @@
 @startuml crearPregunta
-
 skinparam linetype polyline
 
+
 state PREGUNTAS_ABIERTO
+state PREGUNTAS_CONTEXTUALES_ABIERTO
+state PREGUNTA_ABIERTO
+state PREGUNTA_CONTEXTUAL_ABIERTO
+
 
 PREGUNTAS_ABIERTO -[#green]-> crearPregunta
+PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> crearPregunta
 
 state crearPregunta as "crearPregunta()" {
 
@@ -18,14 +23,14 @@ state crearPregunta as "crearPregunta()" {
     
     SolicitandoDatosPregunta -[#green]-> ProcesandoCreacion
     note on link
-    <b>Sistema</b> presenta una solicitud de datos mínimos:
+    <b>Sistema</b> presenta solicitud de datos mínimos:
     ---
     <b>Pregunta:</b>
     • Asignatura (obligatorio)
     • Enunciado (obligatorio)
     • Tema (obligatorio)
     • Dificultad (ENUM: BAJA, MEDIA, ALTA)(obligatorio)
-    • Respuestas con contenido y si es correcta/incorrecta (obligatorio)
+    • Respuestas (contenido y si es correcta/incorrecta)(obligatorio)
     ---
     • Permite solicitar crear pregunta
     • Permite solicitar cancelar operación
@@ -38,12 +43,28 @@ state crearPregunta as "crearPregunta()" {
     end note
 }
 
+
+
 crearPregunta -[#green]-> PREGUNTA_ABIERTO
 note on link
 editarPregunta(nuevaPregunta)
+(Caso Estándar)
 end note
 
+crearPregunta -[#green]-> PREGUNTA_CONTEXTUAL_ABIERTO
+note on link
+editarPregunta(nuevaPregunta)
+(Caso Contextual)
+end note
+
+
+
 crearPregunta -[#blue]-> PREGUNTAS_ABIERTO
+note on link
+cancelar creación
+end note
+
+crearPregunta -[#blue]-> PREGUNTAS_CONTEXTUALES_ABIERTO
 note on link
 cancelar creación
 end note
