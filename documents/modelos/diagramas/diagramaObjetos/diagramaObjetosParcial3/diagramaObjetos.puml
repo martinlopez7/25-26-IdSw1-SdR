@@ -31,7 +31,7 @@ object "Alumno1:Alumno" as alum1 {
 }
 
 asig1 *-- exam1 : tiene
-asig1 --> grado1 : contiene
+asig1 --> grado1 : pertenece
 asig1 *-- alum1 : se imparte
 grado1 *-- alum1 : inscribe
 prof1 o-- asig1 : tiene
