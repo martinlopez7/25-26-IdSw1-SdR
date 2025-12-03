@@ -24,6 +24,15 @@ state "EXAMENES_ASIGNADOS" as ExamenesAsignados
 
 state "EXAMENES_CORREGIDOS" as ExamenesCorregidos
 
+state "RESPUESTAS_ABIERTO" as ListRespuestas
+state "RESPUESTA_ABIERTO" as EditRespuesta
+
+state "PREGUNTAS_CONTEXTUALES_ABIERTO" as ListPreguntasContextuales
+state "PREGUNTA_CONTEXTUAL_ABIERTO" as EditPreguntaContextual
+
+state "RESPUESTAS_CONTEXTUALES_ABIERTO" as ListRespuestasContextuales
+state "RESPUESTA_CONTEXTUAL_ABIERTO" as EditRespuestaContextual
+
 'Transiciones'
 
 [*] --> NoAuth
@@ -76,6 +85,35 @@ ListPreguntas --> ListPreguntas: exportarPreguntas()
 EditPregunta --> EditPregunta: editarPregunta()
 EditPregunta --> ListPreguntas: verPreguntas()
 ListPreguntas --> Menu: completarGestion()
+
+'Modulo preguntas contextuales '
+
+EditAsignatura --> ListPreguntasContextuales: verPreguntas()
+ListPreguntasContextuales --> EditPreguntaContextual: crearPregunta()
+ListPreguntasContextuales --> EditPreguntaContextual: editarPregunta()
+ListPreguntasContextuales --> ListPreguntasContextuales: eliminarPregunta()
+ListPreguntasContextuales --> ListPreguntasContextuales: importarPreguntas()
+ListPreguntasContextuales --> ListPreguntasContextuales: exportarPreguntas()
+EditPreguntaContextual --> EditPreguntaContextual: editarPregunta()
+EditPreguntaContextual --> ListPreguntasContextuales: verPreguntas()
+ListPreguntasContextuales --> EditAsignatura: editarAsignatura()
+EditPreguntaContextual --> ListRespuestasContextuales: verRespuestas()
+ListRespuestasContextuales --> EditRespuestaContextual: editarRespuesta()
+ListRespuestasContextuales --> EditRespuestaContextual: crearRespuesta()
+EditRespuestaContextual --> ListRespuestasContextuales: verRespuestas()
+ListRespuestasContextuales --> ListRespuestasContextuales: eliminarRespuesta()
+EditRespuestaContextual --> EditRespuestaContextual: editarRespuesta()
+ListRespuestasContextuales --> EditPreguntaContextual: editarPregunta()
+
+
+'Modulo Respuesta'
+EditPregunta --> ListRespuestas: verRespuestas()
+ListRespuestas --> EditRespuesta: editarRespuesta()
+ListRespuestas --> EditRespuesta: crearRespuesta()
+ListRespuestas --> ListRespuestas: eliminarRespuesta()
+EditRespuesta --> EditRespuesta: editarRespuesta()
+EditRespuesta --> ListRespuestas: verRespuestas()
+ListRespuestas --> EditPregunta: editarPregunta()
 
 'Modulo configuracion general'
 
