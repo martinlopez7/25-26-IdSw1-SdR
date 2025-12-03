@@ -1,0 +1,43 @@
+@startuml
+
+top to bottom direction
+
+object "Profesor1:Profesor" as prof1 {
+  Nombre: "María"
+  Apellidos: "García López"
+  DNI: "12345678A"
+}
+
+object "Asignatura1:Asignatura" as asig1 {
+  Título: "Programación Orientada a Objetos"
+  Código: "POO101"
+  Curso académico: "2024/2025"
+}
+
+object "Grado1:Grado" as grado1 {
+  Título: "Ingeniería Informática"
+  Código: "GII"
+}
+
+object "Examen1:Examen" as exam1 {
+  Evaluación: "Parcial 1"
+  Clave corrección: "abc123xyz789"
+}
+
+object "Alumno1:Alumno" as alum1 {
+  Nombre: "Juan"
+  Apellidos: "Pérez Sánchez"
+  DNI: "87654321B"
+}
+
+asig1 *-- exam1 : tiene
+asig1 --> grado1 : contiene
+asig1 *-- alum1 : se imparte
+grado1 *-- alum1 : inscribe
+prof1 o-- asig1 : tiene
+exam1 o-- alum1 : realiza
+
+prof1 -[hidden]right-> asig1
+grado1 -[hidden]right-> exam1
+
+@enduml

@@ -1,0 +1,71 @@
+@startuml
+
+top to bottom direction
+
+object "Asignatura1:Asignatura" as asig1 {
+  Título: "Programación Orientada a Objetos"
+  Código: "POO101"
+  Curso académico: "2024/2025"
+}
+
+object "Bateria1:BateriaDePreguntas" as bateria1 {
+}
+
+object "Pregunta1:Pregunta" as preg1 {
+  Asignatura: "POO101"
+  Enunciado: "¿Qué permite la herencia en POO?"
+  Dificultad: "medio"
+  Tema: "Herencia"
+}
+
+object "Pregunta2:Pregunta" as preg2 {
+  Asignatura: "POO101"
+  Enunciado: "¿Qué es el polimorfismo?"
+  Dificultad: "facil"
+  Tema: "Polimorfismo"
+}
+
+object "Pregunta3:Pregunta" as preg3 {
+  Asignatura: "POO101"
+  Enunciado: "¿Qué es un constructor?"
+  Dificultad: "fácil"
+  Tema: "Clases y Objetos"
+}
+
+object "Respuesta1C:Respuesta" as resp1C {
+  Opción: "Reutilizar código de clases existentes"
+  esCorrecta: true
+}
+object "Respuesta1I:Respuesta" as resp1I {
+  Opción: "Crear variables globales"
+  esCorrecta: false
+}
+object "Respuesta2C:Respuesta" as resp2C {
+  Opción: "Capacidad de responder al mismo mensaje"
+  esCorrecta: true
+}
+object "Respuesta2I:Respuesta" as resp2I {
+  Opción: "Un tipo de variable"
+  esCorrecta: false
+}
+object "Respuesta3C:Respuesta" as resp3C {
+  Opción: "Método especial para inicializar objetos"
+  esCorrecta: true
+}
+object "Respuesta3I:Respuesta" as resp3I {
+  Opción: "Un tipo de herencia"
+  esCorrecta: false
+}
+
+asig1 *-- bateria1 : tiene
+preg1 *-- resp1C : tiene
+preg1 *-- resp1I : tiene
+preg2 *-- resp2C : tiene
+preg2 *-- resp2I : tiene
+preg3 *-- resp3C : tiene
+preg3 *-- resp3I : tiene
+bateria1 o-- preg1 : contiene
+bateria1 o-- preg2 : contiene
+bateria1 o-- preg3 : contiene
+
+@enduml
