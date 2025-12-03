@@ -43,8 +43,8 @@ package "Módulo Gestión de Preguntas" {
 }
 
 package "Módulo Configuración General" {
-  usecase "Exportar configuración global" as UC26
-  usecase "Importar configuración global" as UC27
+  usecase "exportarConfiguracionGlobal()" as UC26
+  usecase "importarConfiguracionGlobal()" as UC27
 }
 
 package "Módulo Examen" {
@@ -58,12 +58,12 @@ package "Módulo Corrección" {
 }
 
 package "Módulo Sesión" {
-  usecase "Iniciar sesión" as UC41
-  usecase "Cerrar sesión" as UC42
+  usecase "iniciarSesion()" as UC41
+  usecase "cerrarSesion()" as UC42
 }
 
 package "Módulo Gestión" {
-  usecase "Completar Gestión" as UC13
+  usecase "completarGestion()" as UC13
 
 }
 
