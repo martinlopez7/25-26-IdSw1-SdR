@@ -1,0 +1,74 @@
+@startuml verRespuestas
+
+skinparam linetype polyline
+
+state verRespuestas as "verRespuestas()" {
+
+    state " " as MostrandoRespuestas
+    state " " as FiltrandoRespuestas
+
+    [*] -[#green]-> MostrandoRespuestas
+    note on link
+    <b>Docente</b> solicita ver respuestas
+    end note    
+    
+    MostrandoRespuestas -[#green]-> FiltrandoRespuestas
+    note on link
+    <b>Sistema</b> presenta lista de respuestas
+    • Contenido, correcto/incorrecto
+    
+    • Permite solicitar filtrar lista
+    • Permite solicitar crear respuesta nueva
+    • Permite solicitar eliminar respuesta
+    • Permite solicitar editar respuesta
+    end note
+    
+    FiltrandoRespuestas -[#green]-> FiltrandoRespuestas
+    note on link
+    <b>Docente</b> solicita filtrar lista
+    <b>Sistema</b> presenta lista filtrada
+    end note
+    
+    FiltrandoRespuestas -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita una de las opciones
+    end note
+}
+
+PREGUNTA_ABIERTO -[#green]-> verRespuestas
+RESPUESTA_ABIERTO -[#green]-> verRespuestas
+PREGUNTA_CONTEXTUAL_ABIERTO -[#green]-> verRespuestas
+RESPUESTA_CONTEXTUAL_ABIERTO -[#green]-> verRespuestas
+
+verRespuestas -[#green]-> RESPUESTA_ABIERTO
+note on link
+editarRespuesta()
+end note
+
+verRespuestas -[#green]-> RESPUESTA_CONTEXTUAL_ABIERTO
+note on link
+editarRespuesta()
+end note
+
+verRespuestas -[#green]-> RESPUESTA_ABIERTO
+note on link
+crearRespuesta()
+end note
+
+verRespuestas -[#green]-> RESPUESTA_CONTEXTUAL_ABIERTO
+note on link
+crearRespuesta()
+end note
+
+verRespuestas -[#green]-> RESPUESTAS_ABIERTO
+note on link
+eliminarRespuesta()
+end note
+
+verRespuestas -[#green]-> RESPUESTAS_CONTEXTUALES_ABIERTO
+note on link
+eliminarRespuesta()
+end note
+
+
+@enduml

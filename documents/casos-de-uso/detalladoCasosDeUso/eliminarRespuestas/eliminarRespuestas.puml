@@ -1,0 +1,57 @@
+@startuml eliminarRespuesta
+skinparam linetype polyline
+
+state eliminarRespuesta as "eliminarRespuesta()" {
+
+    state " " as ConfirmandoEliminacion
+    state " " as EliminandoRespuesta
+
+    [*] -[#green]-> ConfirmandoEliminacion
+    note on link
+    <b>Docente</b> solicita eliminar respuesta
+    end note
+
+    ConfirmandoEliminacion -[#green]-> EliminandoRespuesta
+    note on link
+    <b>Sistema</b> presenta información de la respuesta a eliminar
+    • Contenido
+    • Correcta/incorrecta
+
+
+    • Presenta advertencia de eliminación
+    • Permite solicitar confirmar eliminación
+    • Permite solicitar cancelar eliminación
+    end note
+
+    EliminandoRespuesta -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita confirmación de eliminación
+    <b>Sistema</b> permite solicitar confirmar eliminación
+    <b>Docente</b> solicita confirmar eliminación
+    end note
+}
+
+RESPUESTAS_ABIERTO -[#green]-> eliminarRespuesta
+RESPUESTAS_CONTEXTUALES_ABIERTO -[#green]-> eliminarRespuesta
+
+eliminarRespuesta -[#green]-> RESPUESTAS_ABIERTO
+note on link
+verRespuestas() - lista actualizada
+end note
+
+eliminarRespuesta -[#green]-> RESPUESTAS_CONTEXTUALES_ABIERTO
+note on link
+verRespuestas() - lista actualizada
+end note
+
+eliminarRespuesta -[#blue]-> RESPUESTAS_ABIERTO
+note on link
+verRespuestas() - cancelar eliminación
+end note
+
+eliminarRespuesta -[#blue]-> RESPUESTAS_CONTEXTUALES_ABIERTO
+note on link
+verRespuestas() - cancelar eliminación
+end note
+
+@enduml

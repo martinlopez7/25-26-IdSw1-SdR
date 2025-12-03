@@ -2,6 +2,8 @@
 
 skinparam linetype polyline
 
+state PREGUNTAS_CONTEXTUALES_ABIERTO
+
 state exportarPreguntas as "exportarPreguntas()" {
 
     state " " as RequiringExport
@@ -48,7 +50,12 @@ state exportarPreguntas as "exportarPreguntas()" {
     end note
 }
 
+' Conexiones existentes
 PREGUNTAS_ABIERTO -[#green]-> exportarPreguntas
 exportarPreguntas -[#green]-> PREGUNTAS_ABIERTO
+
+' Conexiones NUEVAS (Contextuales)
+PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> exportarPreguntas
+exportarPreguntas -[#green]-> PREGUNTAS_CONTEXTUALES_ABIERTO
 
 @enduml

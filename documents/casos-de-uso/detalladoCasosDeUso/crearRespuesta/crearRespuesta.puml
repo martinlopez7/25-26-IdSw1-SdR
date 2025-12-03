@@ -1,0 +1,60 @@
+@startuml crearRespuesta
+
+skinparam linetype polyline
+
+state RESPUESTAS_ABIERTO
+state RESPUESTAS_CONTEXTUALES_ABIERTO
+
+RESPUESTAS_ABIERTO -[#green]-> crearRespuesta
+RESPUESTAS_CONTEXTUALES_ABIERTO -[#green]-> crearRespuesta
+
+state crearRespuesta as "crearRespuesta()" {
+
+    state " " as SolicitandoDatosRespuesta
+    state " " as ProcesandoCreacion
+
+    [*] -[#green]-> SolicitandoDatosRespuesta 
+    note on link
+    <b>Docente</b> solicita crear nueva respuesta
+    end note    
+    
+    SolicitandoDatosRespuesta -[#green]-> ProcesandoCreacion
+    note on link
+    <b>Sistema</b> presenta una solicitud de datos mínimos:
+    ---
+    <b>Respuesta:</b>
+    • Contenido (obligatorio)
+    • Correcto/no correcto (obligatorio)
+    ---
+    • Permite solicitar crear respuesta
+    • Permite solicitar cancelar operación
+    end note
+    
+    ProcesandoCreacion -[#green]-> [*]
+    note on link
+    <b>Docente</b> proporciona datos mínimos
+    <b>Sistema</b> crea respuesta y transfiere a edición
+    end note
+}
+
+crearRespuesta -[#green]-> RESPUESTA_ABIERTO
+note on link
+editarRespuesta(nuevaRespuesta)
+end note
+
+crearRespuesta -[#green]-> RESPUESTA_CONTEXTUAL_ABIERTO
+note on link
+editarRespuesta(nuevaRespuesta)
+end note
+
+crearRespuesta -[#blue]-> RESPUESTAS_ABIERTO
+note on link
+cancelar creación
+end note
+
+crearRespuesta -[#blue]-> RESPUESTAS_CONTEXTUALES_ABIERTO
+note on link
+cancelar creación
+end note
+
+@enduml
