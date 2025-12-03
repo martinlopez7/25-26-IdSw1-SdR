@@ -202,9 +202,9 @@
 
 ### Crear Respuestas
 
-| ![Detallado de Crear Respuestas](crearRespuestas/crearRespuestas.svg) |
+| ![Detallado de Crear Respuestas](crearRespuesta/crearRespuesta.svg) |
 | :--- |
-| [Código UML](crearRespuestas/crearRespuestas.puml) |
+| [Código UML](crearRespuesta/crearRespuesta.puml) |
 
 ### Editar Respuesta
 
