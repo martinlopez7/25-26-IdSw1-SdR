@@ -2,6 +2,8 @@
 
 skinparam linetype polyline
 
+state PREGUNTAS_CONTEXTUALES_ABIERTO
+
 state importarPreguntas as "importarPreguntas()" {
 
     state " " as RequiringImport
@@ -48,7 +50,12 @@ state importarPreguntas as "importarPreguntas()" {
     end note
 }
 
+' Conexiones existentes
 PREGUNTAS_ABIERTO -[#green]-> importarPreguntas
 importarPreguntas -[#green]-> PREGUNTAS_ABIERTO
+
+' Conexiones NUEVAS (Contextuales)
+PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> importarPreguntas
+importarPreguntas -[#green]-> PREGUNTAS_CONTEXTUALES_ABIERTO
 
 @enduml

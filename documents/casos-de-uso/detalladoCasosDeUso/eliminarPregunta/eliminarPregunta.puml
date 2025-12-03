@@ -1,48 +1,74 @@
 @startuml eliminarPregunta
 skinparam linetype polyline
 
+' 1. Definición de Estados Externos
+state PREGUNTAS_ABIERTO
+state PREGUNTAS_CONTEXTUALES_ABIERTO
+
+' 2. Transiciones de ENTRADA
+PREGUNTAS_ABIERTO -[#green]-> eliminarPregunta
+PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> eliminarPregunta
+
 state eliminarPregunta as "eliminarPregunta()" {
 
     state " " as ConfirmandoEliminacion
     state " " as EliminandoPregunta
-    
+     
     [*] -[#green]-> ConfirmandoEliminacion
     note on link
     <b>Docente</b> solicita eliminar pregunta
     end note
-    
+     
     ConfirmandoEliminacion -[#green]-> EliminandoPregunta
     note on link
-    <b>Sistema</b> presenta información de la pregunta a eliminar
+    <b>Sistema</b> presenta información de la pregunta:
     • Asignatura 
     • Enunciado 
     • Tema 
     • Dificultad
     • Respuestas 
-    
+     
     • Presenta advertencia de eliminación
     • Permite solicitar confirmar eliminación
     • Permite solicitar cancelar eliminación
     end note
-    
+     
     EliminandoPregunta -[#green]-> [*]
     note on link
     <b>Docente</b> solicita confirmación de eliminación
-    <b>Sistema</b> permite solicitar confirmar eliminación
-    <b>Doocente</b> solicita confirmar eliminación
+    <b>Sistema</b> ejecuta borrado lógico/físico
     end note
+
+    ' Salida interna de cancelación
+    ConfirmandoEliminacion -[#red]-> [*]
 }
 
-PREGUNTAS_ABIERTO -[#green]-> eliminarPregunta
+' 3. Transiciones de SALIDA (Caso: Lista General)
 
 eliminarPregunta -[#green]-> PREGUNTAS_ABIERTO
 note on link
-verPreguntas() - lista actualizada
+verPreguntas()
+(Lista actualizada)
 end note
 
 eliminarPregunta -[#blue]-> PREGUNTAS_ABIERTO
 note on link
-verPreguntas() - cancelar eliminación
+Cancelar operación
+(Volver a lista general)
+end note
+
+' 4. Transiciones de SALIDA (Caso: Lista Contextual)
+
+eliminarPregunta -[#green]-> PREGUNTAS_CONTEXTUALES_ABIERTO
+note on link
+verPreguntas()
+(Lista contextual actualizada)
+end note
+
+eliminarPregunta -[#blue]-> PREGUNTAS_CONTEXTUALES_ABIERTO
+note on link
+Cancelar operación
+(Volver a lista de asignatura)
 end note
 
 @enduml
