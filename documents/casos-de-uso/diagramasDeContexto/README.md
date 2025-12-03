@@ -6,9 +6,9 @@
 
 ### Actor **Docente**
 
-| ![Diagrama de contexto para Docente](diagramaDeContextoDocente\diagramaContexto.svg) |
+| ![Diagrama de contexto para Docente](diagramaDeContextoDocente/diagramaContexto.svg) |
 | :--- |
-| [Código UML](diagramaDeContextoDocente\diagramaContexto.puml) |
+| [Código UML](diagramaDeContextoDocente/diagramaContexto.puml) |
 
 ---
 

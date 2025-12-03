@@ -10,7 +10,7 @@
 
 ##  DESCRIPCIÓN GENERAL
 
-_Jorgestor_ es una sistema mediante el cual un docente puede generar examenes personalizados y asignarselos a cada alumno mediante una clave única para cada uno. La personalización de estos examenes incluye: cantidad de preguntas, cantidad de tipos de examenes, selección de tema/temas en concreto y proporción de dificultad. Para generar los examenes el sistema se basa en una batería de preguntas que el profesor ha poblado previamente. Este sistema también puede corregir los examenes ya realizados por los alumnos utilizando inteligencia artificial de detección de imagenes para leer la clave de los examenes, que guarda el modelo de corrección al que se debe de ceñir, y las respuestas del alumno.
+_Jorgestor_ es una sistema mediante el cual un docente puede generar exámenes personalizados y asignárselos a cada alumno mediante una clave única para cada uno. La personalización de estos exámenes incluye: cantidad de preguntas, cantidad de tipos de exámenes, selección de tema/temas en concreto y proporción de dificultad. Para generar los exámenes el sistema se basa en una batería de preguntas que el profesor ha poblado previamente. Este sistema también puede corregir los exámenes ya realizados por los alumnos utilizando inteligencia artificial de detección de imágenes para leer la clave de los exámenes, que guarda la corrección a las preguntas del examen, y las respuestas que ha dado el alumno.
 
 <table>
 <tr>
@@ -28,7 +28,7 @@ _Jorgestor_ es una sistema mediante el cual un docente puede generar examenes pe
 <tr></tr>
   <tr>
     <td valign=top>
-      <p>El <a href="documents\modelos\diagramas\README.md">modelo de dominio</a> de <em>Jorgestor</em> proyecta la realidad acotada al contexto de nuestro cliente</p>
+      <p>El <a href="documents\modelos\diagramas\README.md">modelo de dominio</a> de <em>Jorgestor</em> proyecta la realidad acotada al contexto de nuestro cliente.</p>
       <p>Para describir esta realidad se utilizan los siguientes artefactos:</p>
       <ul>
         <li><a href="documents\modelos\diagramas\README.md#diagrama-de-entidades">Diagrama de Entidades</a></li>
@@ -40,7 +40,7 @@ _Jorgestor_ es una sistema mediante el cual un docente puede generar examenes pe
     </td>
   <td valign=top>
     <p>En esta sección se describen los actores principales que interactúan con el sistema y los casos de uso que representan las funcionalidades clave del proyecto.</p>
-    <p>Se pueden ver más detalles sobre esto con las siguientes herramientas</p>
+    <p>Se pueden ver más detalles sobre esto con los siguientes artefactos:</p>
     <ul>
       <li> <a href="documents\casos-de-uso\encontrarActoresYCasosDeUso\README.md">Actores y casos de uso</a> </li>
       <li> <a href="documents\casos-de-uso\diagramasDeContexto\README.md">Diagramas de contexto</a> </li> 

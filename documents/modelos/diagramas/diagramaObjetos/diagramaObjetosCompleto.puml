@@ -1,0 +1,126 @@
+@startuml
+
+top to bottom direction
+
+object "Profesor1:Profesor" as prof1 {
+  Nombre: "María"
+  Apellidos: "García López"
+  DNI: "12345678A"
+}
+
+object "Asignatura1:Asignatura" as asig1 {
+  Título: "Programación Orientada a Objetos"
+  Código: "POO101"
+  Curso académico: "2024/2025"
+}
+
+object "Grado1:Grado" as grado1 {
+  Título: "Ingeniería Informática"
+  Código: "GII"
+}
+
+object "Examen1:Examen" as exam1 {
+  Evaluación: "Parcial 1"
+  Clave corrección: "abc123xyz789"
+}
+
+object "Bateria1:BateriaDePreguntas" as bateria1 {
+}
+
+object "Alumno1:Alumno" as alum1 {
+  Nombre: "Juan"
+  Apellidos: "Pérez Sánchez"
+  DNI: "87654321B"
+}
+
+object "Pregunta1:Pregunta" as preg1 {
+  Asignatura: "POO101"
+  Enunciado: "¿Qué permite la herencia en POO?"
+  Dificultad: "medio"
+  Tema: "Herencia"
+}
+
+object "Pregunta2:Pregunta" as preg2 {
+  Asignatura: "POO101"
+  Enunciado: "¿Qué es el polimorfismo?"
+  Dificultad: "facil"
+  Tema: "Polimorfismo"
+}
+
+object "Pregunta3:Pregunta" as preg3 {
+  Asignatura: "POO101"
+  Enunciado: "¿Qué es un constructor?"
+  Dificultad: "fácil"
+  Tema: "Clases y Objetos"
+}
+
+object "Respuesta1C:Respuesta" as resp1C {
+  Opción: "Reutilizar código de clases existentes"
+  esCorrecta: true
+}
+object "Respuesta1I:Respuesta" as resp1I {
+  Opción: "Crear variables globales"
+  esCorrecta: false
+}
+object "Respuesta2C:Respuesta" as resp2C {
+  Opción: "Capacidad de responder al mismo mensaje"
+  esCorrecta: true
+}
+object "Respuesta2I:Respuesta" as resp2I {
+  Opción: "Un tipo de variable"
+  esCorrecta: false
+}
+object "Respuesta3C:Respuesta" as resp3C {
+  Opción: "Método especial para inicializar objetos"
+  esCorrecta: true
+}
+object "Respuesta3I:Respuesta" as resp3I {
+  Opción: "Un tipo de herencia"
+  esCorrecta: false
+}
+
+asig1 *-- exam1 : tiene
+asig1 --> grado1 : pertenece
+asig1 *-- bateria1 : tiene
+asig1 *-- alum1 : se imparte
+
+grado1 *-- alum1 : inscribe
+
+bateria1 *-- preg1 : contiene
+bateria1 *-- preg2 : contiene
+bateria1 *-- preg3 : contiene
+
+preg1 *-- resp1C : tiene
+preg1 *-- resp1I : tiene
+
+preg2 *-- resp2C : tiene
+preg2 *-- resp2I : tiene
+
+preg3 *-- resp3C : tiene
+preg3 *-- resp3I : tiene
+
+
+prof1 o-- asig1 : tiene
+exam1 o-- alum1 : realiza
+exam1 o-- preg1 : contiene
+exam1 o-- preg2 : contiene
+exam1 o-- preg3 : contiene
+
+
+prof1 -[hidden]right-> asig1
+
+grado1 -[hidden]right-> exam1
+exam1 -[hidden]right-> bateria1
+
+preg1 -[hidden]right-> preg2
+preg2 -[hidden]right-> preg3
+alum1 -[hidden]right-> preg2
+
+preg1 -[hidden]down-> resp1C
+preg2 -[hidden]down-> resp2C
+preg3 -[hidden]down-> resp3C
+resp1C -[hidden]right-> resp1I
+resp2C -[hidden]right-> resp2I
+resp3C -[hidden]right-> resp3I
+
+@enduml
