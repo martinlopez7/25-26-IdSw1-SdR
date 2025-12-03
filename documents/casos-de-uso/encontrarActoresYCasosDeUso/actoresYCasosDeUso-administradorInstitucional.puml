@@ -5,25 +5,25 @@ left to right direction
 actor "Administrador Institucional" as admin
 
 package "Módulo Docentes" {
-  usecase "Crear Docente" as UC32
-  usecase "Ver Docentes" as UC33
-  usecase "Editar Docente" as UC34
-  usecase "Eliminar Docente" as UC35
+  usecase "crearDocente()" as UC32
+  usecase "verDocentes()" as UC33
+  usecase "editarDocente()" as UC34
+  usecase "eliminarDocente()" as UC35
 }
 
 package "Módulo Gestión Licencias(intencion)" {
-  usecase "Adquirir licencia" as UC36
-  usecase "Ver licencias" as UC37
-  usecase "Editar licencia" as UC38
-  usecase "Eliminar licencia" as UC39
+  usecase "adquirirLicencia()" as UC36
+  usecase "verLicencias()" as UC37
+  usecase "editarLicencia()" as UC38
+  usecase "eliminarLicencia()" as UC39
 }
 
 package "Módulo Sesión" {
-  usecase "Iniciar sesión" as UC41
-  usecase "Cerrar sesión" as UC42
+  usecase "iniciarSesion()" as UC41
+  usecase "cerrarSesion()" as UC42
 }
 package "Módulo Gestión" {
-  usecase "Completar Gestión" as UC13
+  usecase "completarGestion()" as UC13
 
 }
 

@@ -5,7 +5,7 @@ left to right direction
 actor "Tiempo" as tiempo
 
 package "Módulo Sesión" {
-  usecase "Cerrar sesión" as UC40
+  usecase "cerrarSesión()" as UC40
 }
 
 tiempo --> UC40
