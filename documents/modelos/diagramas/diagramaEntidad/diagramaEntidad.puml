@@ -52,16 +52,16 @@ enum Tema{
 }
 
 Respuesta -u-* Pregunta
-Pregunta .. DificultadPregunta
+Pregunta ..> DificultadPregunta
 Pregunta -u-o Examen : contiene
 Pregunta -u-* BateriaDePreguntas : contiene
-Examen .. EvaluaciónExamen
+Examen ..> EvaluaciónExamen
 BateriaDePreguntas -u-* Asignatura : tiene
 Examen -u-* Asignatura : tiene
 Profesor o-r- Asignatura : tiene
-Asignatura *-- Grado : contiene
+Asignatura --> Grado : contiene
 Alumno -u-o Examen : realiza
 Alumno -u-* Asignatura : se imparte
 Alumno -u-* Grado : se cursa
-Pregunta .. Tema
+Pregunta ..> Tema
 @enduml
