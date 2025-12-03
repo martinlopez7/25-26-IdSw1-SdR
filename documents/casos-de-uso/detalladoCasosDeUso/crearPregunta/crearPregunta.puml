@@ -30,7 +30,7 @@ state crearPregunta as "crearPregunta()" {
     • Enunciado (obligatorio)
     • Tema (obligatorio)
     • Dificultad (ENUM: BAJA, MEDIA, ALTA)(obligatorio)
-    • Respuestas (contenido y si es correcta/incorrecta)(obligatorio)
+
     ---
     • Permite solicitar crear pregunta
     • Permite solicitar cancelar operación
