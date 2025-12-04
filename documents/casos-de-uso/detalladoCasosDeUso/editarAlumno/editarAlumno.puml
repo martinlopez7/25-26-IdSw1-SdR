@@ -5,6 +5,8 @@ state ALUMNOS_ABIERTO
 
 ALUMNOS_ABIERTO -[#green]-> editarAlumno
 
+ALUMNO_ABIERTO -[#green]-> editarAlumno
+
 state editarAlumno as "editarAlumno()" {
 
     state " " as EditandoDatos
@@ -45,9 +47,6 @@ state editarAlumno as "editarAlumno()" {
 }
 
 editarAlumno -[#green]-> ALUMNOS_ABIERTO
-note on link
-verAlumnos()
-end note
 
 editarAlumno -[#red]-> ALUMNOS_ABIERTO
 note on link

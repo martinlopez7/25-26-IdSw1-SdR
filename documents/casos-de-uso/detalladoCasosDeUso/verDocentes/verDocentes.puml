@@ -18,9 +18,6 @@ state verDocentes as "verDocentes()" {
     •  Nombre, apellidos, DNI, nombre de usuario, email, password 
     
     • Permite solicitar filtrar lista
-    • Permite solicitar crear docente nuevo
-    • Permite solicitar eliminar docente
-    • Permite solicitar editar docente
     end note
     
     FiltrandoDocentes -[#green]-> FiltrandoDocentes
@@ -28,33 +25,10 @@ state verDocentes as "verDocentes()" {
     <b>Administrador institucional</b> solicita filtrar lista
     <b>Sistema</b> presenta lista filtrada
     end note
-    
-    FiltrandoDocentes -[#green]-> [*]
-    note on link
-    <b>Administrador institucional</b> solicita una de las opciones
-    end note
 }
 
 SISTEMA_DISPONIBLE -[#green]-> verDocentes
 
-verDocentes -[#green]-> DOCENTE_ABIERTO
-note on link
-editarDocente()
-end note
-
-verDocentes -[#green]-> DOCENTE_ABIERTO
-note on link
-crearDocente()
-end note
-
 verDocentes -[#green]-> DOCENTES_ABIERTO
-note on link
-eliminarDocente()
-end note
-
-verDocentes -[#green]-> SISTEMA_DISPONIBLE
-note on link
-completarGestion()
-end note
 
 @enduml

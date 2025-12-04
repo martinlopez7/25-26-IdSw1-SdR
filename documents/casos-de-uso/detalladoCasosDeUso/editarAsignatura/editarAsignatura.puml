@@ -31,6 +31,7 @@ state editarAsignatura as "editarAsignatura()" {
     • Curso Académico
     • Alumnos matriculados
     • Grados asociados
+    • Batería de preguntas
     
     <b>Sistema</b> permite solicitar:
     • modificar campos

@@ -26,8 +26,7 @@ state eliminarRespuesta as "eliminarRespuesta()" {
     EliminandoRespuesta -[#green]-> [*]
     note on link
     <b>Docente</b> solicita confirmación de eliminación
-    <b>Sistema</b> permite solicitar confirmar eliminación
-    <b>Docente</b> solicita confirmar eliminación
+    <b>Sistema</b> confirma eliminación
     end note
 }
 
@@ -36,22 +35,22 @@ RESPUESTAS_CONTEXTUALES_ABIERTO -[#green]-> eliminarRespuesta
 
 eliminarRespuesta -[#green]-> RESPUESTAS_ABIERTO
 note on link
-verRespuestas() - lista actualizada
+lista actualizada
 end note
 
 eliminarRespuesta -[#green]-> RESPUESTAS_CONTEXTUALES_ABIERTO
 note on link
-verRespuestas() - lista actualizada
+lista actualizada
 end note
 
 eliminarRespuesta -[#blue]-> RESPUESTAS_ABIERTO
 note on link
-verRespuestas() - cancelar eliminación
+cancelar eliminación
 end note
 
 eliminarRespuesta -[#blue]-> RESPUESTAS_CONTEXTUALES_ABIERTO
 note on link
-verRespuestas() - cancelar eliminación
+cancelar eliminación
 end note
 
 @enduml

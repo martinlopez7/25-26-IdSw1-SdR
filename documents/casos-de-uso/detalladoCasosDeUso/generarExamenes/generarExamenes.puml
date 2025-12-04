@@ -22,7 +22,13 @@ state generarExamenes as "generarExamenes()" {
     
     ProvidingData -[#green]-> ProvidingConfirmation
     note on link
-    <b>Docente</b> introduce datos para la generación
+    <b>Docente</b> introduce datos minimos para la generación
+    • Asignatura (obligatorio)
+    • Tema/Temas (obligatorio)
+    • Número de preguntas (obligatorio)
+    • Cantidad de tipos de exámen (obligatorio)
+    • Proporción de dificultad (obligatorio)
+    • Evaluación (obligatorio)
     end note
     
     ProvidingConfirmation -[#green]-> c
