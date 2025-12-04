@@ -26,8 +26,7 @@ state eliminarAlumno as "eliminarAlumno()" {
     EliminandoAlumno -[#green]-> [*]
     note on link
     <b>Docente</b> solicita confirmación de eliminación
-    <b>Sistema</b> permite solicitar confirmar eliminación
-    <b>Doocente</b> solicita confirmar eliminación
+    <b>Sistema</b> confirma eliminación
     end note
 }
 
@@ -35,12 +34,12 @@ ALUMNOS_ABIERTO -[#green]-> eliminarAlumno
 
 eliminarAlumno -[#green]-> ALUMNOS_ABIERTO
 note on link
-verAlumnos() - lista actualizada
+lista actualizada
 end note
 
 eliminarAlumno -[#blue]-> ALUMNOS_ABIERTO
 note on link
-verAlumnos() - cancelar eliminación
+cancelar eliminación
 end note
 
 @enduml

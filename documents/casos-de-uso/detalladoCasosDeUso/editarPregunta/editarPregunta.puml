@@ -67,4 +67,6 @@ editarPregunta -[#green]-> PREGUNTA_CONTEXTUAL_ABIERTO
 ' Salida de cancelación (Opcional: regresa a la lista general o al origen)
 editarPregunta -[#red]-> PREGUNTAS_ABIERTO : Cancelar
 
+editarPregunta -[#red]-> PREGUNTAS_CONTEXTUALES_ABIERTO : Cancelar
+
 @enduml

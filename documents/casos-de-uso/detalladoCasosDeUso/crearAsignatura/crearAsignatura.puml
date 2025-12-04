@@ -28,7 +28,7 @@ state crearAsignatura as "crearAsignatura()" {
     CreandoAsignatura -[#green]-> [*]
     note on link
     <b>Docente</b> proporciona datos mínimos
-    <b>Sistema</b> crea asignatura y transfiere a edición
+    <b>Sistema</b> crea asignatura y su batería de preguntas y transfiere a edición
     end note
 }
 

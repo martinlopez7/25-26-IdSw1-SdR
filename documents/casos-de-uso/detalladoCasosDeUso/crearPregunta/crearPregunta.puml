@@ -48,16 +48,12 @@ state crearPregunta as "crearPregunta()" {
 crearPregunta -[#green]-> PREGUNTA_ABIERTO
 note on link
 editarPregunta(nuevaPregunta)
-(Caso Estándar)
 end note
 
 crearPregunta -[#green]-> PREGUNTA_CONTEXTUAL_ABIERTO
 note on link
 editarPregunta(nuevaPregunta)
-(Caso Contextual)
 end note
-
-
 
 crearPregunta -[#blue]-> PREGUNTAS_ABIERTO
 note on link

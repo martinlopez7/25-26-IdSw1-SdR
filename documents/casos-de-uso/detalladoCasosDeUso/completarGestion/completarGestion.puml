@@ -4,77 +4,33 @@ skinparam linetype polyline
 state completarGestion as "completarGestion()" {
 
     state " " as PresentandoOpciones
-    state " " as EsperandoSeleccion
 
     [*] -[#green]-> PresentandoOpciones 
     note on link
     <b>Administrador institucional o Docente</b> solicita disponibilizar sistema
     end note
     
-    PresentandoOpciones -[#green]-> EsperandoSeleccion
+    PresentandoOpciones -[#green]-> [*]
     note on link
-    <b>Sistema</b> permite solicitar:
-    • verGrados()
-    • verAsignaturas()
-    • verAlumnos()
-    • verPreguntas()
-    • generarExamenes()
-    • corregirExamenes()
-    • importar/exportarConfiguracionGlobal()
-    • cerrarSesion()
-    • verDocentes() [SOLO PARA Administrador institucional]
-    end note
-    
-    EsperandoSeleccion -[#green]-> [*]
-    note on link
-    <b>Administrador institucional o Docente</b> solicita una de las opciones
+    <b>Sistema</b> permite ser disponibilizado
     end note
 }
 
 
-completarGestion -[#green]-> GRADOS_ABIERTO
-note on link
-verGrados()
-end note
+GRADOS_ABIERTO -[#green]->  completarGestion 
 
-completarGestion -[#green]-> ASIGNATURAS_ABIERTO
-note on link
-verAsignaturas()
-end note
+ASIGNATURAS_ABIERTO -[#green]->  completarGestion 
 
-completarGestion -[#green]-> ALUMNOS_ABIERTO
-note on link
-verAlumnos()
-end note
+ALUMNOS_ABIERTO -[#green]-> completarGestion  
 
-completarGestion -[#green]-> PREGUNTAS_ABIERTO
-note on link
-verPreguntas()
-end note
+PREGUNTAS_ABIERTO -[#green]-> completarGestion 
 
-completarGestion -[#green]-> EXAMENES_GENERADOS
-note on link
-generarExamenes()
-end note
+EXAMENES_ASIGNADOS-[#green]-> completarGestion 
 
-completarGestion -[#green]-> EXAMENES_CORREGIDOS
-note on link
-corregirExamenes()
-end note
+EXAMENES_CORREGIDOS -[#green]-> completarGestion 
+
+DOCENTES_ABIERTO -[#green]-> completarGestion 
 
 completarGestion -[#green]-> SISTEMA_DISPONIBLE
-note on link
-importar/exportarConfiguracionGlobal()
-end note
-
-completarGestion -[#green]-> [*]
-note on link
-cerrarSesion()
-end note
-
-completarGestion -[#green]-> DOCENTES_ABIERTO
-note on link
-verDocentes()
-end note
 
 @enduml

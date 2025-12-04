@@ -18,7 +18,7 @@ state eliminarAsignatura as "eliminarAsignatura()" {
     • Código 
     • Curso académico 
     • Alumnos matriculados
-    • Grados asociados 
+    • Batería de preguntas
 
     • Presenta advertencia de eliminación
     • Permite solicitar confirmar eliminación
@@ -28,8 +28,7 @@ state eliminarAsignatura as "eliminarAsignatura()" {
     EliminandoAsignatura -[#green]-> [*]
     note on link
     <b>Docente</b> solicita confirmación de eliminación
-    <b>Sistema</b> permite solicitar confirmar eliminación
-    <b>Doocente</b> solicita confirmar eliminación
+    <b>Sistema</b> confirma eliminación
     end note
 }
 
@@ -37,12 +36,12 @@ ASIGNATURAS_ABIERTO -[#green]-> eliminarAsignatura
 
 eliminarAsignatura -[#green]-> ASIGNATURAS_ABIERTO
 note on link
-verAsignaturas() - lista actualizada
+lista actualizada
 end note
 
 eliminarAsignatura -[#blue]-> ASIGNATURAS_ABIERTO
 note on link
-verAsignaturas() - cancelar eliminación
+cancelar eliminación
 end note
 
 @enduml

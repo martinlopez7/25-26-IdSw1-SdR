@@ -14,7 +14,6 @@ ASIGNATURA_ABIERTO -[#green]-> verPreguntas
 SISTEMA_DISPONIBLE -[#green]-> verPreguntas
 PREGUNTA_CONTEXTUAL_ABIERTO -[#green]-> verPreguntas
 PREGUNTA_ABIERTO -[#green]-> verPreguntas
-PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> verPreguntas
 
 state verPreguntas as "verPreguntas()" {
 
@@ -33,31 +32,20 @@ state verPreguntas as "verPreguntas()" {
     
     <b>Acciones disponibles:</b>
     • Filtrar lista
-    • Seleccionar una pregunta
-    • Confirmar vista
     end note
     
     FiltrandoPreguntas -[#green]-> FiltrandoPreguntas
     note on link
     <b>Docente</b> solicita filtrar lista
-    <b>Sistema</b> actualiza resultados
+    <b>Sistema</b> permite filtrar lista
     end note
     
-    FiltrandoPreguntas -[#green]-> [*]
-    note on link
-    <b>Docente</b> selecciona destino / acción
-    end note
 }
-
-' 3. Transiciones de SALIDA (Destinos solicitados)
-
-
 
 ' Salida 2: Cargar lista general
 verPreguntas -[#green]-> PREGUNTAS_ABIERTO
 note on link
 Mostrar lista general
-(Resultados filtrados o completos)
 end note
 
 ' Salida 3: Cargar lista contextual

@@ -2,218 +2,218 @@
 
 ## Detallado de casos de uso
 
-### Corregir Examenes
+### Corregir Examenes [Docente]
 
 | ![Detallado de Corregir Examenes](corregirExamenes/corregirExamenes.svg) |
 | :--- |
 | [Código UML](corregirExamenes/corregirExamenes.puml) |
 
-### Generar Examenes
+### Generar Examenes [Docente]
 
 | ![Detallado de Generar Examenes](generarExamenes/generarExamenes.svg) |
 | :--- |
 | [Código UML](generarExamenes/generarExamenes.puml) |
 
-### Importar Configuración Global
+### Importar Configuración Global [Docente]
 
 | ![Detallado de Importar Configuración Global](importarConfiguracionGlobal/importarConfiguracionGlobal.svg) |
 | :--- |
 | [Código UML](importarConfiguracionGlobal/importarConfiguracionGlobal.puml) |
 
-### Exportar Configuración Global
+### Exportar Configuración Global [Docente]
 
 | ![Detallado de Exportar Configuración Global](exportarConfiguracionGlobal/exportarConfiguracionGlobal.svg) |
 | :--- |
 | [Código UML](exportarConfiguracionGlobal/exportarConfiguracionGlobal.puml) |
 
-### Importar Alumnos
+### Importar Alumnos [Docente]
 
 | ![Detallado de Importar Alumnos](importarAlumnos/importarAlumnos.svg) |
 | :--- |
 | [Código UML](importarAlumnos/importarAlumnos.puml) |
 
-### Importar Preguntas
+### Importar Preguntas [Docente]
 
 | ![Detallado de Importar Preguntas](importarPreguntas/importarPreguntas.svg) |
 | :--- |
 | [Código UML](importarPreguntas/importarPreguntas.puml) |
 
-### Exportar Alumnos
+### Exportar Alumnos [Docente]
 
 | ![Detallado de Exportar Alumnos](exportarAlumnos/exportarAlumnos.svg) |
 | :--- |
 | [Código UML](exportarAlumnos/exportarAlumnos.puml) |
 
-### Exportar Preguntas
+### Exportar Preguntas [Docente]
 
 | ![Detallado de Exportar Preguntas](exportarPreguntas/exportarPreguntas.svg) |
 | :--- |
 | [Código UML](exportarPreguntas/exportarPreguntas.puml) |
 
-### Asignar Exámenes
+### Asignar Exámenes [Docente]
 
 | ![Detallado de Asignar Exámenes](asignarExamenes/asignarExamenes.svg) |
 | :--- |
 | [Código UML](asignarExamenes/asignarExamenes.puml) |
 
-### Crear Pregunta
+### Crear Pregunta [Docente]
 
 | ![Detallado de Crear Pregunta](crearPregunta/crearPregunta.svg) |
 | :--- |
 | [Código UML](crearPregunta/crearPregunta.puml) |
 
-### Editar Pregunta
+### Editar Pregunta [Docente]
 
 | ![Detallado de Editar Pregunta](editarPregunta/editarPregunta.svg) |
 | :--- |
 | [Código UML](editarPregunta/editarPregunta.puml) |
 
-### Editar Asignatura
+### Editar Asignatura [Docente]
 
 | ![Detallado de Editar Asignatura](editarAsignatura/editarAsignatura.svg) |
 | :--- |
 | [Código UML](editarAsignatura/editarAsignatura.puml) |
 
-### Crear Docente
+### Crear Docente [Aministrador Institucional]
 
 | ![Detallado de Crear Docente](crearDocente/crearDocente.svg) |
 | :--- |
 | [Código UML](crearDocente/crearDocente.puml) |
 
-### Crear Alumno
+### Crear Alumno [Docente]
 
 | ![Detallado de Crear Alumno](crearAlumno/crearAlumno.svg) |
 | :--- |
 | [Código UML](crearAlumno/crearAlumno.puml) |
 
-### Editar Docente
+### Editar Docente [Aministrador Institucional]
 
 | ![Detallado de Editar Docente](editarDocente/editarDocente.svg) |
 | :--- |
 | [Código UML](editarDocente/editarDocente.puml) |
 
-### Editar Alumno
+### Editar Alumno [Docente]
 
 | ![Detallado de Editar Alumno](editarAlumno/editarAlumno.svg) |
 | :--- |
 | [Código UML](editarAlumno/editarAlumno.puml) |
 
-### Crear Grado
+### Crear Grado [Docente]
 
 | ![Detallado de Crear Grado](crearGrado/crearGrado.svg) |
 | :--- |
 | [Código UML](crearGrado/crearGrado.puml) |
 
-### Crear Asignatura
+### Crear Asignatura [Docente]
 
 | ![Detallado de Crear Asignatura](crearAsignatura/crearAsignatura.svg) |
 | :--- |
 | [Código UML](crearAsignatura/crearAsignatura.puml) |
 
-### Editar Grado
+### Editar Grado [Docente]
 
 | ![Detallado de Editar Grado](editarGrado/editarGrado.svg) |
 | :--- |
 | [Código UML](editarGrado/editarGrado.puml) |
 
-### Ver Preguntas
+### Ver Preguntas [Docente]
 
 | ![Detallado de Ver Preguntas](verPreguntas/verPreguntas.svg) |
 | :--- |
 | [Código UML](verPreguntas/verPreguntas.puml) |
 
-### Ver Asignaturas
+### Ver Asignaturas [Docente]
 
 | ![Detallado de Ver Asignaturas](verAsignaturas/verAsignaturas.svg) |
 | :--- |
 | [Código UML](verAsignaturas/verAsignaturas.puml) |
 
-### Ver Grados
+### Ver Grados [Docente]
 
 | ![Detallado de Ver Grados](verGrados/verGrados.svg) |
 | :--- |
 | [Código UML](verGrados/verGrados.puml) |
 
-### Ver Alumnos
+### Ver Alumnos [Docente]
 
 | ![Detallado de Ver Alumnos](verAlumnos/verAlumnos.svg) |
 | :--- |
 | [Código UML](verAlumnos/verAlumnos.puml) |
 
-### Ver Docentes
+### Ver Docentes [Aministrador Institucional]
 
 | ![Detallado de Ver Docentes](verDocentes/verDocentes.svg) |
 | :--- |
 | [Código UML](verDocentes/verDocentes.puml) |
 
-### Eliminar Pregunta
+### Eliminar Pregunta [Docente]
 
 | ![Detallado de Eliminar Pregunta](eliminarPregunta/eliminarPregunta.svg) |
 | :--- |
 | [Código UML](eliminarPregunta/eliminarPregunta.puml) |
 
-### Eliminar Asignatura
+### Eliminar Asignatura [Docente]
 
 | ![Detallado de Eliminar Asignatura](eliminarAsignatura/eliminarAsignatura.svg) |
 | :--- |
 | [Código UML](eliminarAsignatura/eliminarAsignatura.puml) |
 
-### Eliminar Grado
+### Eliminar Grado [Docente]
 
 | ![Detallado de Eliminar Grado](eliminarGrado/eliminarGrado.svg) |
 | :--- |
 | [Código UML](eliminarGrado/eliminarGrado.puml) |
 
-### Eliminar Alumno
+### Eliminar Alumno [Docente]
 
 | ![Detallado de Eliminar Alumno](eliminarAlumno/eliminarAlumno.svg) |
 | :--- |
 | [Código UML](eliminarAlumno/eliminarAlumno.puml) |
 
-### Eliminar Docente
+### Eliminar Docente [Aministrador Institucional]
 
 | ![Detallado de Eliminar Docente](eliminarDocente/eliminarDocente.svg) |
 | :--- |
 | [Código UML](eliminarDocente/eliminarDocente.puml) |
 
-### Iniciar Sesión
+### Iniciar Sesión [Docente y Aministrador Institucional]
 
 | ![Detallado de Iniciar Sesión](iniciarSesion/iniciarSesion.svg) |
 | :--- |
 | [Código UML](iniciarSesion/iniciarSesion.puml) |
 
-### Cerrar Sesión
+### Cerrar Sesión [Docente y Aministrador Institucional]
 
 | ![Detallado de Cerrar Sesión](cerrarSesion/cerrarSesion.svg) |
 | :--- |
 | [Código UML](cerrarSesion/cerrarSesion.puml) |
 
-### Completar Gestión
+### Completar Gestión [Docente y Aministrador Institucional]
 
 | ![Detallado de Completar Gestión](completarGestion/completarGestion.svg) |
 | :--- |
 | [Código UML](completarGestion/completarGestion.puml) |
 
-### Ver Respuestas
+### Ver Respuestas [Docente]
 
 | ![Detallado de Ver Respuestas](verRespuestas/verRespuestas.svg) |
 | :--- |
 | [Código UML](verRespuestas/verRespuestas.puml) |
 
-### Crear Respuestas
+### Crear Respuesta [Docente]
 
-| ![Detallado de Crear Respuestas](crearRespuesta/crearRespuesta.svg) |
+| ![Detallado de Crear Respuesta](crearRespuesta/crearRespuesta.svg) |
 | :--- |
 | [Código UML](crearRespuesta/crearRespuesta.puml) |
 
-### Editar Respuesta
+### Editar Respuesta [Docente]
 
 | ![Detallado de Editar Respuesta](editarRespuesta/editarRespuesta.svg) |
 | :--- |
 | [Código UML](editarRespuesta/editarRespuesta.puml) |
 
-### Eliminar Respuestas
+### Eliminar Respuesta [Docente]
 
-| ![Detallado de Eliminar Respuestas](eliminarRespuestas/eliminarRespuestas.svg) |
+| ![Detallado de Eliminar Respuesta](eliminarRespuesta/eliminarRespuesta.svg) |
 | :--- |
-| [Código UML](eliminarRespuestas/eliminarRespuestas.puml) |
+| [Código UML](eliminarRespuesta/eliminarRespuesta.puml) |

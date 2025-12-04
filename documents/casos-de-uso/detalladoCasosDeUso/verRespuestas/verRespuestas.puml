@@ -18,20 +18,12 @@ state verRespuestas as "verRespuestas()" {
     • Contenido, correcto/incorrecto
     
     • Permite solicitar filtrar lista
-    • Permite solicitar crear respuesta nueva
-    • Permite solicitar eliminar respuesta
-    • Permite solicitar editar respuesta
     end note
     
     FiltrandoRespuestas -[#green]-> FiltrandoRespuestas
     note on link
     <b>Docente</b> solicita filtrar lista
     <b>Sistema</b> presenta lista filtrada
-    end note
-    
-    FiltrandoRespuestas -[#green]-> [*]
-    note on link
-    <b>Docente</b> solicita una de las opciones
     end note
 }
 
@@ -40,35 +32,8 @@ RESPUESTA_ABIERTO -[#green]-> verRespuestas
 PREGUNTA_CONTEXTUAL_ABIERTO -[#green]-> verRespuestas
 RESPUESTA_CONTEXTUAL_ABIERTO -[#green]-> verRespuestas
 
-verRespuestas -[#green]-> RESPUESTA_ABIERTO
-note on link
-editarRespuesta()
-end note
-
-verRespuestas -[#green]-> RESPUESTA_CONTEXTUAL_ABIERTO
-note on link
-editarRespuesta()
-end note
-
-verRespuestas -[#green]-> RESPUESTA_ABIERTO
-note on link
-crearRespuesta()
-end note
-
-verRespuestas -[#green]-> RESPUESTA_CONTEXTUAL_ABIERTO
-note on link
-crearRespuesta()
-end note
-
 verRespuestas -[#green]-> RESPUESTAS_ABIERTO
-note on link
-eliminarRespuesta()
-end note
 
 verRespuestas -[#green]-> RESPUESTAS_CONTEXTUALES_ABIERTO
-note on link
-eliminarRespuesta()
-end note
-
 
 @enduml
