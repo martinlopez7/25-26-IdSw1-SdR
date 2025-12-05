@@ -1,0 +1,13 @@
+@startsalt
+{+
+  <b>IMPORTAR PREGUNTAS</b>
+
+  {^" Sistema: Error "
+    <color:red><b>Error en la importación</b></color>
+    
+    .
+    ....
+    [ Importar preguntas ] | [ Cancelar ]
+  }
+}
+@endsalt
