@@ -1,0 +1,12 @@
+@startsalt
+{+
+  <b>EXPORTAR ALUMNOS</b>
+  
+  
+  {^" Sistema: Operación Completada "
+    <color:green><b>¡Alumnos exportados con Éxito!</b></color>
+    ....
+    [ Aceptar y Salir ]
+  }
+}
+@endsalt
