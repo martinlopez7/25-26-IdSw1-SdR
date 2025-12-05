@@ -1,0 +1,13 @@
+@startsalt
+{+
+  <b>IMPORTAR ALUMNOS</b>
+
+  {^" Sistema: Error "
+    <color:red><b>Error en la importación</b></color>
+    
+    .
+    ....
+    [ Importar alumnos ] | [ Cancelar ]
+  }
+}
+@endsalt
