@@ -1,0 +1,21 @@
+@startsalt
+
+{
+    <b>Ver respuestas</b>
+    ===
+    
+    {+ CONTENIDO                             |  ¿CORRECTA?  
+      ---------------------------------------|---------------
+     Reutilizar código de clases existentes  | **Sí**    
+     Crear variables globales                | **No**    
+     Capacidad de responder al mismo mensaje | **Sí**    
+     Un tipo de variable                     | **No**    
+    }
+    
+    {
+        <b>FILTRAR CONTENIDO:</b> [                       ] 
+        [Aplicar Filtro]
+    }
+}
+
+@endsalt
