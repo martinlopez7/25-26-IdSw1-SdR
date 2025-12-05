@@ -1,0 +1,12 @@
+@startsalt
+{+
+  <b>IMPORTAR CONFIGURACIÓN GLOBAL</b>
+  
+  
+  {^" Sistema: Operación Completada "
+    <color:green><b>¡Configuración Importada con Éxito!</b></color>
+    ....
+    [ Aceptar y Salir ]
+  }
+}
+@endsalt

@@ -1,0 +1,12 @@
+@startsalt
+{+
+  <b>IMPORTAR CONFIGURACIÓN GLOBAL</b>
+  --
+  
+  [ Cargar importación ]
+  
+  --
+  
+  [ Cancelar Importación ] | [ Confirmar Importación ]
+}
+@endsalt
