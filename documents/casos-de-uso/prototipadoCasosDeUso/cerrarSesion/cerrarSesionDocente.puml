@@ -1,0 +1,16 @@
+@startsalt
+{
+    {^" Cerrar sesión "
+        ¿Desea cerrar la sesión activa?
+        
+        Usuario actual: **Docente**
+        
+        {
+            [Cancelar] | [Cerrar sesión]
+        }
+    }
+    ====
+    Sistema: Activo
+    ====
+}
+@endsalt

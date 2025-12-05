@@ -6,7 +6,7 @@
         Contraseña | "        "
         
         {
-            [Cancel] | [  OK    ]
+            [Cancelar] | [ Entrar ]
         }
         {^" Sistema: **Fallo** "
         <color:red><b>  Error al iniciar sesión  </b></color>
