@@ -1,0 +1,13 @@
+@startsalt
+{+
+  <b>GENERAR EXÁMENES</b>
+
+  
+  {^" Sistema: Error de generación "
+    <color:red><b>No se pueden generar los exámenes</b></color>
+    
+    ....
+    [ Volver al generador ]
+  }
+}
+@endsalt

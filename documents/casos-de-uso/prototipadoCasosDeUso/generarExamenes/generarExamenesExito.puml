@@ -1,0 +1,13 @@
+@startsalt
+{+
+  <b>GENERAR EXÁMENES</b>
+
+  
+  {^" Sistema: Éxito "
+    <color:green><b>¡Exámenes generados correctamente!</b></color>
+    
+    ....
+    [ Asignar a alumnos ] 
+  }
+}
+@endsalt
