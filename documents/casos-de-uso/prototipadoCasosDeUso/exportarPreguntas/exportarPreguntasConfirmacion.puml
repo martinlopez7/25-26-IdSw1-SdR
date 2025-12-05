@@ -1,0 +1,12 @@
+@startsalt
+{+
+  <b>EXPORTAR PREGUNTAS</b>
+  --
+  
+  [ Exportar preguntas ]
+  
+  --
+  
+  [ Cancelar exportación ] | [ Confirmar exportación ]
+}
+@endsalt
