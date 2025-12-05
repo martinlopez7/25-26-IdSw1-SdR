@@ -1,0 +1,12 @@
+@startsalt
+{+
+  <b>EXPORTAR CONFIGURACIÓN GLOBAL</b>
+  --
+  
+  [ Exportar configuración ]
+  
+  --
+  
+  [ Cancelar exportación ] | [ Confirmar exportación ]
+}
+@endsalt
