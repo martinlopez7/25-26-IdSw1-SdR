@@ -1,0 +1,19 @@
+@startsalt
+{
+    {^" Iniciar sesión "
+    
+        Usuario    | "        "
+        Contraseña | "        "
+        
+        {
+            [Cancel] | [  OK    ]
+        }
+        {^" Sistema: **Fallo** "
+        <color:red><b>  Error al iniciar sesión  </b></color>
+        ....
+        }
+
+    }
+    
+}
+@endsalt
