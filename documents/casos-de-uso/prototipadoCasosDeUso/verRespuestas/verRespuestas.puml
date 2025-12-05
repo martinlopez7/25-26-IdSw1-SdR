@@ -1,21 +1,19 @@
-@startsalt
-
-{
-    <b>Ver respuestas</b>
-    ===
-    
-    {+ CONTENIDO                             |  ¿CORRECTA?  
-      ---------------------------------------|---------------
-     Reutilizar código de clases existentes  | **Sí**    
-     Crear variables globales                | **No**    
-     Capacidad de responder al mismo mensaje | **Sí**    
-     Un tipo de variable                     | **No**    
-    }
-    
-    {
-        <b>FILTRAR CONTENIDO:</b> [                       ] 
-        [Aplicar Filtro]
-    }
+@startsalt abrirProfesores-wireframe
+{ 
+<b>Ver Respuestas</b>  
+===
+{+  CONTENIDO| ¿CORRECTA?| ACCIÓN
+  --|--|--
+  Reutilizar código de clases existentes | Sí| [Editar]
+  Capacidad de responder al mismo mensaje | No | [Editar]  
+  Crear variables globales | Sí | [Editar]
+  }
+  ~~
+  .
+  {<b>BUSCAR:</b> [                                       ] | [Filtrar]}
+  ~~
+  .
+  {[Crear respuesta] | [Borrar respuesta] | [Salir]}
 }
 
 @endsalt
