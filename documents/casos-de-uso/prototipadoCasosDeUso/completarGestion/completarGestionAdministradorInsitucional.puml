@@ -1,0 +1,20 @@
+@startsalt
+{
+    {^" Menú Principal "
+        .
+        [Gestionar Grados                      ]
+        [Gestionar Asignaturas                 ]
+        [Gestionar Alumnos                     ]
+        [Gestionar Preguntas                   ]
+        [Generar Exámenes                      ]
+        [Corregir Exámenes                     ]
+        [Importar/Exportar Configuracion Global]
+        [Gestionar Docentes                    ]
+        [Cerrar Sesión                         ]
+        .
+    }
+    ====
+    Usuario: AdministradorInstituciona
+    ====
+}
+@endsalt
