@@ -1,0 +1,28 @@
+@startsalt 
+{
+    <b>ELIMINAR RESPUESTA</b>
+    ===
+    {
+        <b>Datos de la Respuesta:</b>
+        --
+        {
+           
+            {
+            <b>Contenido:</b> |
+                {"Reutilizar código de clases existentes"}
+            }
+           
+            {<b>¿Es Correcta?:</b> | (X) Sí ( ) No
+            }
+              
+        }
+
+        ~~
+        <b>⚠️ ADVERTENCIA: Esta acción es irreversible</b>
+            <i>La respuesta y toda su información asociada serán eliminados permanentemente</i>
+        ~~
+
+        {[Confirmar eliminación]|[Cancelar]}
+    }
+}
+@endsalt
