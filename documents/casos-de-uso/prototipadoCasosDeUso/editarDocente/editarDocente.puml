@@ -1,0 +1,42 @@
+@startsalt editarDocente_FORMULARIO
+{
+    <b>EDITAR DOCENTE</b>
+    ===
+    {
+        <b>Datos del docente</b>
+        --
+        {
+            Código: | "PROF-001                    " | <i>(generado automáticamente)</i>
+            ..
+            Nombres (*):    | "Juan Carlos                 "
+            Apellidos (*):  | "García López                "
+            DNI (*):        | "12345678A                   "
+            ..
+            Correo electrónico: | "jgarcia@universidad.edu     "
+            Teléfono:           | "+34 600 123 456             "
+            ..
+            <b>Observaciones:</b>
+            {SI
+                "Profesor especializado en algoritmos              "
+                "y estructuras de datos. Experiencia en            "
+                "desarrollo de software educativo.                 "
+            }
+        }
+        
+        --
+        
+        <b>Asignaturas asignadas:</b>
+        {
+            <i>3 asignaturas activas</i>
+        }
+        
+        ~~
+        .
+        <i>(*) Campos obligatorios</i>
+        
+        ~~
+        .
+        {[Guardar cambios] | [Cancelar]}
+    }
+}
+@endsalt
