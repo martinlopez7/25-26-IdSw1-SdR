@@ -1,0 +1,34 @@
+@startsalt eliminarAsignatura-wireframe
+{
+    <b>ELIMINAR ASIGNATURA</b>
+    ===
+    {
+        <b>¿Está seguro de eliminar esta asignatura?</b>
+        --
+        { 
+            { 
+                {<b>Código:</b> | MAT-II}
+                {<b>Nombre:</b> | Matemáticas II}
+            }
+            { 
+                {<b>Curso:</b> | 1º Carrera universitaria}
+                
+            }
+            { 
+               
+            }
+            {
+                {<b>Alumnos matriculados:</b> | 54 alumnos activos}
+                {<b>Grados asociados:</b> | Ingeniería informática e Ingeniería de las Industrias Agrarias y Alimentarias}
+            }
+            --
+            <b>⚠️ ADVERTENCIA: Esta acción es irreversible</b>
+            <i>La asignatura y toda su información asociada serán eliminados permanentemente.</i>
+        }
+
+        ~~
+
+        {[Confirmar eliminación] | [Cancelar]}
+    }
+}
+@endsalt
