@@ -1,0 +1,44 @@
+@startsalt crearPregunta_FORMULARIO
+{
+    <b>CREAR PREGUNTA</b>
+    ===
+    {
+        <b>Datos de la pregunta</b>
+        --
+        {
+            Asignatura (*): | ^Matemáticas II^
+            Tema (*):       | "Tema 1                      "
+            ..
+            <b>Dificultad (*):</b>
+            (X) Fácil | ( ) Medio | ( ) Difícil
+            ..
+            <b>Enunciado (*):</b>
+            {SI
+                "                                                  "
+                "                                                  "
+                "                                                  "
+            }
+        }
+        
+        --
+        
+        <b>Respuestas</b>
+        {
+            Respuesta A (*): | "                                    "
+            Respuesta B (*): | "                                    "
+            Respuesta C (*): | "                                    "
+            Respuesta D (*): | "                                    "
+            ..
+            Respuesta correcta (*): | ^A^
+        }
+        
+        ~~
+        .
+        <i>(*) Campos obligatorios</i>
+        
+        ~~
+        .
+        {[Crear pregunta] | [Cancelar]}
+    }
+}
+@endsalt
