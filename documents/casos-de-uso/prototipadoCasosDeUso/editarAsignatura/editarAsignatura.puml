@@ -1,0 +1,43 @@
+@startsalt editarAsignatura_FORMULARIO
+{
+    <b>EDITAR ASIGNATURA</b>
+    ===
+    {
+        <b>Datos de la asignatura</b>
+        --
+        {
+            Código:         | "MAT-201                     " | <i>(generado automáticamente)</i>
+            Título (*):     | "Matemáticas II              "
+            Curso académico (*): | ^2024/2025^
+        }
+        
+        --
+        
+        <b>Grados asociados:</b>
+        {SI
+            [X] Ingeniería Informática
+            [X] Ingeniería Industrial
+            [ ] Ingeniería Mecánica
+            [ ] Arquitectura
+            ...
+        }
+        
+        --
+        
+        <b>Observaciones:</b>
+        {SI
+            "Asignatura de segundo cuatrimestre.                     "
+            "Requiere haber aprobado Matemáticas I.           "
+            "                                                  "
+        }
+        
+        ~~
+        .
+        <i>(*) Campos obligatorios</i>
+        
+        ~~
+        .
+        {[Guardar cambios] | [Cancelar]}
+    }
+}
+@endsalt
