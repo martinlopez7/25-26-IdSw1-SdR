@@ -1,0 +1,52 @@
+@startsalt asignarExamenes_FORMULARIO
+{
+    <b>ASIGNAR EXÁMENES GENERADOS</b>
+    ===
+    {
+        <b>Selección de exámenes generados:</b>
+        --
+        {
+            Asignatura:      | ^Matemáticas II^
+            Curso académico: | ^2024/2025^
+            Evaluación:      | ^Parcial 1^
+            ..
+           
+        }
+        
+        --
+        
+        <b>Destinatarios:</b>
+        {
+            (X) Grupos | ( ) Alumnos individuales
+            ..
+            Grados / Grupos:
+            {SI
+                [X] Ingeniería Informática - 1ºA (35 alumnos)
+                [X] Ingeniería Informática - 2ºA (50 alumnos)
+                [ ] Ingeniería Informática - 3ºA (40 alumnos)
+                ...
+            }
+            ..
+            Búsqueda de alumnos: | "Nombre, DNI o ID alumno     " | [Buscar]
+            ..
+            Alumnos seleccionados manualmente:
+            {SI
+                [X] Ana Pérez (1ºA)
+                [X] Luis Gómez (2ºA)
+                ...
+            }
+            ..
+            Total de alumnos seleccionados: <b>85</b>
+        }
+        
+        ~~
+        .
+        <i>El sistema registrará qué examen generado se asigna a cada alumno,
+        utilizando internamente su clave alfanumérica (hash).</i>
+        
+        ~~
+        .
+        {[Asignar exámenes] | [Cancelar]}
+    }
+}
+@endsalt
