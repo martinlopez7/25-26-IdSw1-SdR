@@ -1,0 +1,44 @@
+@startsalt editarPregunta_FORMULARIO
+{
+    <b>EDITAR PREGUNTA</b>
+    ===
+    {
+        <b>Datos de la pregunta</b>
+        --
+        {
+            Asignatura (*): | ^Matemáticas II^
+            Tema (*):       | "Tema 1                      "
+            ..
+            <b>Dificultad (*):</b>
+            ( ) Fácil | (X) Medio | ( ) Difícil
+            ..
+            <b>Enunciado (*):</b>
+            {SI
+                "¿Cuál es la derivada de x²?                      "
+                "                                                  "
+                "                                                  "
+            }
+        }
+        
+        --
+        
+        <b>Respuestas</b>
+        {
+            Respuesta A (*): | "2x                                  "
+            Respuesta B (*): | "x                                   "
+            Respuesta C (*): | "2x²                                 "
+            Respuesta D (*): | "x²                                  "
+            ..
+            Respuesta correcta (*): | ^A^
+        }
+        
+        ~~
+        .
+        <i>(*) Campos obligatorios</i>
+        
+        ~~
+        .
+        {[Guardar cambios] | [Cancelar]}
+    }
+}
+@endsalt
