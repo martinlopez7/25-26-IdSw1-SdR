@@ -1,0 +1,31 @@
+@startsalt verAsignaturas_WIREFRAME
+{+
+    <b>GESTIÓN DE ASIGNATURAS</b>
+    ===
+    <b>1. Criterios de Búsqueda</b>
+    <i>Filtre por curso, grado o texto libre</i>
+    .
+    {
+        Curso Académico: | ^2024/2025 (Actual)^
+        Grado Asociado:  | ^Todos los grados^
+        Búsqueda rápida: | "Nombre o código...          " | [Buscar]
+    }
+    .
+    --
+    .
+    <b>2. Listado de Asignaturas</b>
+    .
+    {#
+        <b>Código</b> | <b>Nombre de la Asignatura</b> | <b>Curso</b> | <b>Grados</b> | <b>Alumnos</b> | <b>Acciones</b>
+        MAT-101 | Cálculo I | 2024/25 | GII, GIM | 120 matr. | [Ver / Editar]
+        INF-202 | Bases de Datos | 2024/25 | GII | 85 matr. | [Ver / Editar]
+        FIS-100 | Física General | 2023/24 | GIM | 40 matr. | [Ver / Editar]
+        OPT-301 | Inteligencia Artificial | 2024/25 | GII, GID | 60 matr. | [Ver / Editar]
+        . | . | . | . | . | .
+    }
+    .
+    ~~
+    .
+    { [ + Nueva Asignatura ] | [ Volver al Menú ] }
+}
+@endsalt
