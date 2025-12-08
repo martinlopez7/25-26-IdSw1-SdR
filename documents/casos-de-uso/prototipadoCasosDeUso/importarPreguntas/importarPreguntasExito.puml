@@ -1,0 +1,12 @@
+@startsalt
+{+
+  <b>IMPORTAR PREGUNTAS</b>
+  
+  
+  {^" Sistema: Operación Completada "
+    <color:green><b>¡Preguntas importadas con Éxito!</b></color>
+    ....
+    [ Aceptar y Salir ]
+  }
+}
+@endsalt

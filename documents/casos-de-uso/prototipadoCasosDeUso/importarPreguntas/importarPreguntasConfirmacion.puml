@@ -1,0 +1,12 @@
+@startsalt
+{+
+  <b>IMPORTAR PREGUNTAS</b>
+  --
+  
+  [ Cargar preguntas ]
+  
+  --
+  
+  [ Cancelar Importación ] | [ Confirmar Importación ]
+}
+@endsalt

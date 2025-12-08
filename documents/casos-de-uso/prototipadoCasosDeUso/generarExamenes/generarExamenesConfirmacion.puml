@@ -1,0 +1,27 @@
+@startsalt
+{+
+  <b>GENERAR EXÁMENES</b>
+  --
+  Asignatura: | ^Matemáticas II^
+  Evaluación: | ^1º Parcial^
+  ..
+  
+  Tema/Temas:
+  {SI
+    [X] Tema 1
+    [X] Tema 2
+    [ ] Tema 3
+    [X] Tema 4
+    ...
+  }
+  
+  ..
+  Número de preguntas:       | "10   "
+  Cantidad de tipos (modelos): | "34   "
+  Proporción de dificultad:    | ^30% Fácil / 40% Media / 30% Difícil^
+  
+  --
+  
+  [ Cancelar Generación ] | [ Confirmar y Generar ]
+}
+@endsalt
