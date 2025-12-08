@@ -1,0 +1,28 @@
+@startsalt editarAlumno_CORREGIDO
+{+
+    <b>EDITAR DATOS DEL ALUMNO</b>
+    ===
+    <b>1. Datos Personales (Editables)</b>
+    <i>Modifique los campos necesarios</i>
+    .
+    {
+        DNI (*):       | "12345678Z             "
+        Nombre (*):    | "Juan                  "
+        Apellidos (*): | "Pérez García          "
+    }
+    .
+    --
+    .
+    <b>2. Contexto Académico</b>
+    <i>Información asociada (No editable)</i>
+    .
+    {
+        Grado Actual: | "Ingeniería Informática"
+        Asignaturas:  | "Programación I"
+    }
+    .
+    ~~
+    .
+    { [Guardar Cambios] | [Cancelar] }
+}
+@endsalt
