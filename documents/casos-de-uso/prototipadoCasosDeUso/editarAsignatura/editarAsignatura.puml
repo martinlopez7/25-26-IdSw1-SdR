@@ -6,7 +6,7 @@
         <b>Datos de la asignatura</b>
         --
         {
-            Código:         | "MAT-201                     " | <i>(generado automáticamente)</i>
+            Código:         | "MAT-201                     " 
             Título (*):     | "Matemáticas II              "
             Curso académico (*): | ^2024/2025^
         }
@@ -24,12 +24,18 @@
         
         --
         
-        <b>Observaciones:</b>
+        <b>Alumnos matriculados:</b>
         {SI
-            "Asignatura de segundo cuatrimestre.                     "
-            "Requiere haber aprobado Matemáticas I.           "
-            "                                                  "
+            [X] Pepe López
+            [X] María Sánchez
+            [ ] Adrían González
+            [ ] Claudia Hidalgo
+            ...
         }
+        
+        --
+        
+        [Ver preguntas]
         
         ~~
         .

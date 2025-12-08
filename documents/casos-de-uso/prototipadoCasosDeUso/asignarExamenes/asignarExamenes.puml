@@ -10,7 +10,6 @@
             Curso académico: | ^2024/2025^
             Evaluación:      | ^Parcial 1^
             ..
-           
         }
         
         --
@@ -22,8 +21,8 @@
             Grados / Grupos:
             {SI
                 [X] Ingeniería Informática - 1ºA (35 alumnos)
-                [X] Ingeniería Informática - 2ºA (50 alumnos)
-                [ ] Ingeniería Informática - 3ºA (40 alumnos)
+                [X] Ingeniería Informática - 1ºB (50 alumnos)
+                [ ] Ingeniería Informática - 1ºC (40 alumnos)
                 ...
             }
             ..
@@ -32,7 +31,7 @@
             Alumnos seleccionados manualmente:
             {SI
                 [X] Ana Pérez (1ºA)
-                [X] Luis Gómez (2ºA)
+                [X] Luis Gómez (2ºB)
                 ...
             }
             ..
@@ -42,7 +41,7 @@
         ~~
         .
         <i>El sistema registrará qué examen generado se asigna a cada alumno,
-        utilizando internamente su clave alfanumérica (hash).</i>
+        generando internamente su clave alfanumérica.</i>
         
         ~~
         .

@@ -13,26 +13,9 @@
             (X) Fácil | ( ) Medio | ( ) Difícil
             ..
             <b>Enunciado (*):</b>
-            {SI
                 "                                                  "
-                "                                                  "
-                "                                                  "
-            }
         }
         
-        --
-        
-        <b>Respuestas</b>
-        {
-            Respuesta A (*): | "                                    "
-            Respuesta B (*): | "                                    "
-            Respuesta C (*): | "                                    "
-            Respuesta D (*): | "                                    "
-            ..
-            Respuesta correcta (*): | ^A^
-        }
-        
-        ~~
         .
         <i>(*) Campos obligatorios</i>
         

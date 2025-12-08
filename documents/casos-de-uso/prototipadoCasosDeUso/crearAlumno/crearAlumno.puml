@@ -6,37 +6,14 @@
         <b>Datos mínimos del alumno</b>
         --
         {
-            Código del alumno (*): | "                            "
-            .
-            <i>El código se generará automáticamente</i>
-            ..
             Nombres (*):    | "                            "
             Apellidos (*):  | "                            "
             DNI (*):        | "                            "
-            ..
-            Correo electrónico: | "                            "
-            Teléfono:           | "                            "
         }
         
         --
-        
-        <b>Asignación inicial:</b>
-        {
-            Grado: | ^Ingeniería Informática^
-            ..
-            Asignaturas:
-            {SI
-                [ ] Matemáticas II
-                [ ] Física I
-                [ ] Programación I
-                ...
-            }
-        }
-        
-        ~~
-        .
+
         <i>(*) Campos obligatorios</i>
-        <i>Las asignaciones se pueden modificar posteriormente</i>
         
         ~~
         .
