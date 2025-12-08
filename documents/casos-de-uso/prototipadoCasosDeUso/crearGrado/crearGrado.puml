@@ -1,0 +1,31 @@
+@startsalt crearGrado_FORMULARIO
+{+
+    <b>CREAR NUEVO GRADO</b>
+    ===
+    <b>1. Datos Identificativos</b>
+    <i>Ingrese los datos obligatorios para registrar el grado</i>
+    .
+    {
+        Nombre del Grado (*): | "                                     "
+        Código (*):   | "                                     "
+    }
+    .
+    --
+    .
+    <b>2. Alumnos enlistados (Selección Inicial)</b>
+    <i>Marque los alumnos que desea vincular inmediatamente</i>
+    .
+    {SI
+        [ ] Seleccionar todos los disponibles
+        .
+        [ ] 12345678Z - Pérez, Juan
+        [ ] 87654321X - García, María
+        [ ] 11223344C - López, Carlos
+        [ ] ... (Cargar más alumnos)
+    }
+    .
+    ~~
+    .
+    { [Crear Grado] | [Cancelar] }
+}
+@endsalt
