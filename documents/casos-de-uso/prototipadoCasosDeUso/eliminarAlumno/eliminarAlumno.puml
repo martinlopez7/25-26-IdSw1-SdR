@@ -1,0 +1,23 @@
+@startsalt eliminarAlumno-wireframe
+{
+    <b>ELIMINAR ALUMNO</b>
+    ===
+    {
+        <b>¿Está seguro de eliminar a este alumno?</b>
+        --
+        {
+            {
+                {<b>DNI:</b> | 12345678A}
+                {<b>Nombre:</b> | Ana }
+                {<b>Apellidos:</b> | García Pérez}
+            }
+          
+            --
+            <b>⚠️ ADVERTENCIA: Esta acción es irreversible</b>
+            <i>Se eliminará permanentemente el registro académico y datos personales del alumno.</i>
+        }
+        ~~
+        {[Confirmar eliminación] | [Cancelar]}
+    }
+}
+@endsalt

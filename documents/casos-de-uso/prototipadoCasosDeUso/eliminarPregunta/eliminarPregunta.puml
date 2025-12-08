@@ -1,0 +1,39 @@
+@startsalt eliminarPregunta-wireframe
+{
+    <b>ELIMINAR PREGUNTA</b>
+    ===
+    {
+        <b>¿Está seguro de eliminar esta pregunta?</b>
+        --
+        { 
+            { 
+              
+                {<b>Asignatura:</b> | Matemáticas II}
+            }
+            { 
+                {<b>Tema:</b> | Derivadas}
+                {<b>Dificultad:</b> | Media}
+            }
+            { 
+                <b>Enunciado:</b> |
+                {
+                    Calcular la derivada de la función
+                    f(x) = 3x^2 + 5x - 2 en el punto x=2.
+                    Seleccione la respuesta correcta.
+                }
+            }
+            { 
+                {<b>Respuestas:</b> | a) 1 b) 5 c) 17 (Verdadera) d) 15}
+               
+            }
+            --
+            <b>⚠️ ADVERTENCIA: Esta acción es irreversible</b>
+            <i>La pregunta y toda su información asociada serán eliminados permanentemente.</i>
+        } 
+
+        ~~
+
+        {[Confirmar eliminación] | [Cancelar]}
+    }
+}
+@endsalt
