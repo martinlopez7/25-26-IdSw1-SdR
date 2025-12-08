@@ -9,7 +9,7 @@
 ## ➕RECURSOS ADICIONALES
 
 Aquí puedes encontrar imágenes, notas de audio y distintos tipos de recursos que pueden ayudar a comprender mejor el objetivo del proyecto
-|REUNIÓN 1|REUNIÓN 2| CONVENCIONES DE TRABAJO|
-|---------|---------|---------|
-|[Notas primera reunión](/documents/evidencias/reunion-01/Enlaces.md)|[Notas segunda reunión](/documents/evidencias/reunion-01/Enlaces.md)|[Convenciones de trabajo](/documents/CONVENCIONES.md)|
+|REUNIÓN 1| REUNIÓN 2 | REUNIÓN 3| CONVENCIONES DE TRABAJO|
+|---------|---------|---------|---------|
+|[Notas primera reunión](/documents/evidencias/reunion-01/Enlaces.md)|[Notas segunda reunión](/documents/evidencias/reunion-01/Enlaces.md)| [Notas tercera reunión](/documents/evidencias/reunion-03/Enlaces.md) |[Convenciones de trabajo](/documents/CONVENCIONES.md)|
 
