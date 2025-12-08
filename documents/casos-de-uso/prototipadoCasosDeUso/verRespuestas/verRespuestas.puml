@@ -1,0 +1,19 @@
+@startsalt abrirProfesores-wireframe
+{ 
+<b>Ver Respuestas</b>  
+===
+{+  CONTENIDO| ¿CORRECTA?| ACCIÓN
+  --|--|--
+  Reutilizar código de clases existentes | Sí| [Editar]
+  Capacidad de responder al mismo mensaje | No | [Editar]  
+  Crear variables globales | Sí | [Editar]
+  }
+  ~~
+  .
+  {<b>BUSCAR:</b> [                                       ] | [Filtrar]}
+  ~~
+  .
+  {[Crear respuesta] | [Borrar respuesta] | [Salir]}
+}
+
+@endsalt

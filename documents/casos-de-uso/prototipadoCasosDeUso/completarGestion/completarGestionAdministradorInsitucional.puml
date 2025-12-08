@@ -1,0 +1,15 @@
+@startsalt
+{
+    {^" Menú Principal "
+        .
+        **Gestión de Datos Maestros**
+        [Gestionar Docentes                    ]
+        **Sistema**
+        [Cerrar Sesión                         ]
+        .
+    }
+    ====
+    Usuario: AdministradorInstitucional
+    ====
+}
+@endsalt

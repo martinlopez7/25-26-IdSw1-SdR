@@ -1,0 +1,27 @@
+@startsalt crearRespuesta_FORMULARIO
+{
+    <b>CREAR RESPUESTA</b>
+    ===
+    {
+        <b>Datos mínimos de la Respuesta</b>
+        --
+        {
+            .
+            <b>Contenido de la Respuesta (*):</b>
+            
+           "                                    "
+            .
+            <b>¿Es Correcta? (*):</b>
+            (o) Sí ( ) No
+            
+            --
+            .
+            <i>(*) Campos obligatorios</i>
+        }
+
+        ~~
+        .
+        {[Crear Respuesta] | [Cancelar]}
+    }
+}
+@endsalt
