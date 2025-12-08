@@ -1,0 +1,44 @@
+@startsalt crearAsignatura_FORMULARIO
+{+
+    <b>CREAR NUEVA ASIGNATURA</b>
+    ===
+    <b>1. Datos Generales</b>
+    <i>Información básica obligatoria</i>
+    .
+    {
+        Título (*):          | "                                     "
+        Código (*):          | "           "
+        Curso Académico (*): | ^2024/2025^
+    }
+    .
+    --
+    .
+    <b>2. Vinculación a Grados</b>
+    <i>¿A qué titulaciones pertenece esta materia?</i>
+    .
+    {SI
+        [ ] Grado en Ingeniería Informática
+        [ ] Grado en Ingeniería de Datos
+        [ ] Grado en Matemáticas
+        [ ] ...
+    }
+    .
+    --
+    .
+    <b>3. Matriculación Inicial</b>
+    <i>Seleccione alumnos para inscribir ahora (opcional)</i>
+    .
+    {SI
+        [ ] Seleccionar todos los disponibles
+        .
+        [ ] 001 - Abad, Luisa
+        [ ] 002 - Barroso, Carlos
+        [ ] 003 - Cano, David
+        [ ] ...
+    }
+    .
+    ~~
+    .
+    { [Crear Asignatura] | [Cancelar] }
+}
+@endsalt
