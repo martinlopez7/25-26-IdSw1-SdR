@@ -1,0 +1,23 @@
+@startsalt crearAlumno_FORMULARIO
+{
+    <b>CREAR ALUMNO</b>
+    ===
+    {
+        <b>Datos mínimos del alumno</b>
+        --
+        {
+            Nombres (*):    | "                            "
+            Apellidos (*):  | "                            "
+            DNI (*):        | "                            "
+        }
+        
+        --
+
+        <i>(*) Campos obligatorios</i>
+        
+        ~~
+        .
+        {[Crear alumno] | [Cancelar]}
+    }
+}
+@endsalt

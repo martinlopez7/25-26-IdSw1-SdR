@@ -1,0 +1,25 @@
+@startsalt crearDocente_FORMULARIO
+{
+    <b>CREAR DOCENTE</b>
+    ===
+    {
+        <b>Datos mínimos del docente</b>
+        --
+        {
+            Nombres (*):    | "                            "
+            Apellidos (*):  | "                            "
+            DNI (*):        | "                            "
+            Correo electrónico (*): | "                            "
+            Nombre de usuario (*): | "                            "
+            Contraseña (*): | "                            "
+        }
+        
+        ~~
+        <i>(*) Campos obligatorios</i>
+        
+        ~~
+        .
+        {[Crear docente] | [Cancelar]}
+    }
+}
+@endsalt
