@@ -2,7 +2,7 @@
 
 | Orden de priorización de casos de uso |
 |---------|
-| 1. <a href="..\detalladoCasosDeUso\README.md#corregir-examenes">corregirExamenes()</a> [Docente]|
+| 1. <a href="..\detalladoCasosDeUso\README.md#corregir-examenes-[docente]"> corregirExamenes() </a> [Docente]|
 | 2. <a href="..\detalladoCasosDeUso\README.md#generar-examenes">generarExamenes()</a> [Docente]|
 | 3. <a href="..\detalladoCasosDeUso\README.md#importar-configuración-global">importarConfiguracionGlobal()</a> [Docente]|
 | 4. <a href="..\detalladoCasosDeUso\README.md#exportar-configuración-global">exportarConfiguraci[Docente]onGlobal()</a> [Docente]|
