@@ -20,9 +20,9 @@
             ..
             Grados / Grupos:
             {SI
-                [X] Ingeniería Informática - 1ºA (35 alumnos)
-                [X] Ingeniería Informática - 1ºB (50 alumnos)
-                [ ] Ingeniería Informática - 1ºC (40 alumnos)
+                [X] Ingeniería Informática (35 alumnos)
+                [X] Ingeniería Industrial (50 alumnos)
+                [ ] Medicina (40 alumnos)
                 ...
             }
             ..
@@ -30,8 +30,8 @@
             ..
             Alumnos seleccionados manualmente:
             {SI
-                [X] Ana Pérez (1ºA)
-                [X] Luis Gómez (2ºB)
+                [X] Ana Pérez
+                [X] Luis Gómez
                 ...
             }
             ..
@@ -41,7 +41,7 @@
         ~~
         .
         <i>El sistema registrará qué examen generado se asigna a cada alumno,
-        generando internamente su clave alfanumérica.</i>
+        generando internamente su clave alfanumérica.
         
         ~~
         .

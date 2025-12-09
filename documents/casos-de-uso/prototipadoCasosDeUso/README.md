@@ -2,23 +2,23 @@
 
 ## Prototipado de casos de uso
 
-### Corregir Examenes [Docente]
+### Corregir Exámenes [Docente]
 
-| ![Prototipado de Corregir Examenes](corregirExamenes/corregirExamenesConfirmacion.svg) |
+| ![Prototipado de Corregir Exámenes](corregirExamenes/corregirExamenesConfirmacion.svg) |
 | :--- |
 | [Código UML](corregirExamenes/corregirExamenesConfirmacion.puml) |
 
-| ![Prototipado de Corregir Examenes](corregirExamenes/corregirExamenesError.svg) |
+| ![Prototipado de Corregir Exámenes](corregirExamenes/corregirExamenesError.svg) |
 | :--- |
 | [Código UML](corregirExamenes/corregirExamenesError.puml) |
 
-### Generar Examenes [Docente]
+### Generar Exámenes [Docente]
 
-| ![Prototipado de Generar Examenes](generarExamenes/generarExamenesConfirmacion.svg) |
+| ![Prototipado de Generar Exámenes](generarExamenes/generarExamenesConfirmacion.svg) |
 | :--- |
 | [Código UML](generarExamenes/generarExamenesConfirmacion.puml) |
 
-| ![Prototipado de Generar Examenes](generarExamenes/generarExamenesError.svg) |
+| ![Prototipado de Generar Exámenes](generarExamenes/generarExamenesError.svg) |
 | :--- |
 | [Código UML](generarExamenes/generarExamenesConfirmacionError.puml) |
 
