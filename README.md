@@ -46,7 +46,7 @@ _Jorgestor_ es una sistema mediante el cual un docente puede generar exámenes p
       <li> <a href="documents\casos-de-uso\diagramasDeContexto\README.md">Diagramas de contexto</a> </li> 
       <li> <a href="documents\casos-de-uso\priorizarCasosDeUso\CasosDeUsoPriorizados.md">Priorización de casos de uso</a> </li> 
       <li> <a href="documents\casos-de-uso\detalladoCasosDeUso\README.md">Detallado de casos de uso</a> </li>
-      <li> <a href="">Prototipado de casos de uso</a> </li> </li>
+      <li> <a href="documents\casos-de-uso\prototipadoCasosDeUso\README.md">Prototipado de casos de uso</a> </li> </li>
     </ul>
   </td>
      
