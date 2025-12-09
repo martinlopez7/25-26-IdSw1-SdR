@@ -13,11 +13,11 @@ state eliminarDocente as "eliminarDocente()" {
     
     ConfirmandoEliminacion -[#green]-> EliminandoDocente
     note on link
-    <b>Sistema</b> presenta información del alumno a eliminar
+    <b>Sistema</b> presenta información del docente a eliminar
     • Nombre
     • Apellidos
     • DNI 
-    • nombre de usuario
+    • Nombre de usuario
     • Email 
     • Password 
     

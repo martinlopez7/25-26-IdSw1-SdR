@@ -23,7 +23,7 @@ state editarDocente as "editarDocente()" {
     • Nombre 
     • Apellidos 
     • DNI 
-    • nombre de usuario 
+    • Nombre de usuario 
     • Email 
     • Password
     
