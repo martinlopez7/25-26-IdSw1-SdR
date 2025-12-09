@@ -20,7 +20,7 @@
 | 16. <a href="..\detalladoCasosDeUso\README.md#editar-alumno">editarAlumno()</a> [Docente]|
 | 17. <a href="..\detalladoCasosDeUso\README.md#crear-grado">crearGrado()</a> [Docente]|
 | 18. <a href="..\detalladoCasosDeUso\README.md#crear-asignatura">crearAsignatura()</a> [Docente]|
-| 19. <a href="..\detalladoCasosDeUso\README.md#editar-grado">editarGrado()</a> [Docente]|
+| 19. <a href="..\detalladoCasosDeUso\README.md#editar-grado-[docente]">editarGrado()</a> [Docente]|
 | 20. <a href="..\detalladoCasosDeUso\README.md#ver-preguntas">verPreguntas()</a> [Docente]|
 | 21. <a href="..\detalladoCasosDeUso\README.md#ver-asignaturas">verAsignaturas()</a> [Docente]|
 | 22. <a href="..\detalladoCasosDeUso\README.md#ver-grados">verGrados()</a> [Docente]|
