@@ -2,15 +2,15 @@
 
 ## Detallado de casos de uso
 
-### Corregir Examenes [Docente]
+### Corregir Exámenes [Docente]
 
-| ![Detallado de Corregir Examenes](corregirExamenes/corregirExamenes.svg) |
+| ![Detallado de Corregir Exámenes](corregirExamenes/corregirExamenes.svg) |
 | :--- |
 | [Código UML](corregirExamenes/corregirExamenes.puml) |
 
-### Generar Examenes [Docente]
+### Generar Exámenes [Docente]
 
-| ![Detallado de Generar Examenes](generarExamenes/generarExamenes.svg) |
+| ![Detallado de Generar Exámenes](generarExamenes/generarExamenes.svg) |
 | :--- |
 | [Código UML](generarExamenes/generarExamenes.puml) |
 
@@ -74,7 +74,7 @@
 | :--- |
 | [Código UML](editarAsignatura/editarAsignatura.puml) |
 
-### Crear Docente [Aministrador Institucional]
+### Crear Docente [Administrador Institucional]
 
 | ![Detallado de Crear Docente](crearDocente/crearDocente.svg) |
 | :--- |
@@ -86,7 +86,7 @@
 | :--- |
 | [Código UML](crearAlumno/crearAlumno.puml) |
 
-### Editar Docente [Aministrador Institucional]
+### Editar Docente [Administrador Institucional]
 
 | ![Detallado de Editar Docente](editarDocente/editarDocente.svg) |
 | :--- |
@@ -140,7 +140,7 @@
 | :--- |
 | [Código UML](verAlumnos/verAlumnos.puml) |
 
-### Ver Docentes [Aministrador Institucional]
+### Ver Docentes [Administrador Institucional]
 
 | ![Detallado de Ver Docentes](verDocentes/verDocentes.svg) |
 | :--- |
@@ -170,25 +170,25 @@
 | :--- |
 | [Código UML](eliminarAlumno/eliminarAlumno.puml) |
 
-### Eliminar Docente [Aministrador Institucional]
+### Eliminar Docente [Administrador Institucional]
 
 | ![Detallado de Eliminar Docente](eliminarDocente/eliminarDocente.svg) |
 | :--- |
 | [Código UML](eliminarDocente/eliminarDocente.puml) |
 
-### Iniciar Sesión [Docente y Aministrador Institucional]
+### Iniciar Sesión [Docente y Administrador Institucional]
 
 | ![Detallado de Iniciar Sesión](iniciarSesion/iniciarSesion.svg) |
 | :--- |
 | [Código UML](iniciarSesion/iniciarSesion.puml) |
 
-### Cerrar Sesión [Docente y Aministrador Institucional]
+### Cerrar Sesión [Docente y Administrador Institucional]
 
 | ![Detallado de Cerrar Sesión](cerrarSesion/cerrarSesion.svg) |
 | :--- |
 | [Código UML](cerrarSesion/cerrarSesion.puml) |
 
-### Completar Gestión [Docente y Aministrador Institucional]
+### Completar Gestión [Docente y Administrador Institucional]
 
 | ![Detallado de Completar Gestión](completarGestion/completarGestion.svg) |
 | :--- |

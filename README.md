@@ -33,7 +33,7 @@ _Jorgestor_ es una sistema mediante el cual un docente puede generar exámenes p
       <ul>
         <li><a href="documents\modelos\diagramas\README.md#diagrama-de-entidades">Diagrama de Entidades</a></li>
         <li><a href="documents\modelos\diagramas\README.md#diagrama-de-objetos">Diagrama de Objetos</a></li>
-        <li><a href="documents\modelos\diagramas\README.md#entidad-examen">Diagrama de Estados de Examen</a></li>
+        <li><a href="documents\modelos\diagramas\README.md#entidad-exámen">Diagrama de Estados de Exámen</a></li>
         <li><a href="documents\modelos\diagramas\README.md#entidad-pregunta">Diagrama de Estados de Pregunta</a></li>
         <li><a href="documents\modelos\Glosario.md">Glosario</a></li>
       </ul>
@@ -46,7 +46,7 @@ _Jorgestor_ es una sistema mediante el cual un docente puede generar exámenes p
       <li> <a href="documents\casos-de-uso\diagramasDeContexto\README.md">Diagramas de contexto</a> </li> 
       <li> <a href="documents\casos-de-uso\priorizarCasosDeUso\CasosDeUsoPriorizados.md">Priorización de casos de uso</a> </li> 
       <li> <a href="documents\casos-de-uso\detalladoCasosDeUso\README.md">Detallado de casos de uso</a> </li>
-      <li> <a href="">Prototipado de casos de uso</a> </li> </li>
+      <li> <a href="documents\casos-de-uso\prototipadoCasosDeUso\README.md">Prototipado de casos de uso</a> </li> </li>
     </ul>
   </td>
      

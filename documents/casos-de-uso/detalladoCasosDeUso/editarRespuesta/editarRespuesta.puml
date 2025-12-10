@@ -24,7 +24,7 @@ state editarRespuesta as "editarRespuesta()" {
     EditandoDatos -[#green]-> GuardandoDatos
     note on link
     <b>Sistema</b> presenta datos de edición
-    • Contenido y si es correcta/incorrecta)
+    • Contenido
     • Correcta/incorrecta
 
     <b>Sistema</b> permite solicitar:

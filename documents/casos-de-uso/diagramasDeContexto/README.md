@@ -2,7 +2,7 @@
 
 ---
 
-## Diagramas de contexto para los distintos actores que atacan el sistema
+## Diagramas de contexto para los distintos actores que atacan al sistema
 
 ### Actor **Docente**
 

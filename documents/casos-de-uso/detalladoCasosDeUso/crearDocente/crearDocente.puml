@@ -22,7 +22,7 @@ state crearDocente as "crearDocente()" {
     • Nombre (obligatorio)
     • Apellidos (obligatorio)
     • DNI (obligatorio)
-    • nombre de usuario (obligatorio)
+    • Nombre de usuario (obligatorio)
     • Email (obligatorio)
     • Password (obligatorio)
     

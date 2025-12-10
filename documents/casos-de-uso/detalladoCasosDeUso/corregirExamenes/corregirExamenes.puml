@@ -11,18 +11,18 @@ state corregirExamenes as "corregirExamenes()" {
 
     [*] -[#green]-> RequiringCorrection
     note on link
-    <b>Docente</b> solicita corregir examenes
+    <b>Docente</b> solicita corregir exámenes
     end note    
     
     RequiringCorrection -[#green]-> ProvidingDoneExams
     note on link
     <b>Sistema</b> permite introducir
-    • examenes realizados por alumnos
+    • exámenes realizados por alumnos
     end note
     
     ProvidingDoneExams -[#green]-> ProvidingConfirmation
     note on link
-    <b>Docente</b> introduce examenes realizados
+    <b>Docente</b> introduce exámenes realizados
     end note
     
     ProvidingConfirmation -[#green]-> c
