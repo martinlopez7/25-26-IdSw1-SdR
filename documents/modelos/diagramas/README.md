@@ -10,7 +10,15 @@ A continuación se muestra el diagrama de entidades propuesto del proyecto
 <table>
   <tr>
     <td align="center">
-      <strong>Diagrama de entidades</strong><br><br>
+      <strong>Diagrama de entidades simplificado</strong><br><br>
+      <img src="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidadSimplificado.svg">
+      <br><br>
+      <a href="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidadSimplificado.puml">
+        Enlace al código del diagrama de entidades simplificado
+      </a>
+    </td>
+    <td align="center">
+      <strong>Diagrama de entidades completo</strong><br><br>
       <img src="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.svg">
       <br><br>
       <a href="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidadConsideraciones.md">
@@ -18,14 +26,6 @@ A continuación se muestra el diagrama de entidades propuesto del proyecto
       </a><br>
       <a href="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.puml">
         Enlace al código del diagrama de entidades
-      </a>
-    </td>
-    <td align="center">
-      <strong>Diagrama de entidades simplificado</strong><br><br>
-      <img src="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidadSimplificado.svg">
-      <br><br>
-      <a href="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidadSimplificado.puml">
-        Enlace al código del diagrama de entidades simplificado
       </a>
     </td>
   </tr>
