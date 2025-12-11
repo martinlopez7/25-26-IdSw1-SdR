@@ -6,12 +6,30 @@
 
 ## Diagrama de entidades
 A continuación se muestra el diagrama de entidades propuesto del proyecto
-<p align="center">
-  <img src="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.svg">
 
-[Consideraciones sobre el diagrama](/documents/modelos/diagramas/diagramaEntidad/diagramaEntidadConsideraciones.md)
-
-[Enlace al código del diagrama de entidades](/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.puml)
+<table>
+  <tr>
+    <td align="center">
+      <strong>Diagrama de entidades</strong><br><br>
+      <img src="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.svg">
+      <br><br>
+      <a href="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidadConsideraciones.md">
+        Consideraciones sobre el diagrama
+      </a><br>
+      <a href="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.puml">
+        Enlace al código del diagrama de entidades
+      </a>
+    </td>
+    <td align="center">
+      <strong>Diagrama de entidades simplificado</strong><br><br>
+      <img src="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidadSimplificado.svg">
+      <br><br>
+      <a href="/documents/modelos/diagramas/diagramaEntidad/diagramaEntidadSimplificado.puml">
+        Enlace al código del diagrama de entidades simplificado
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## Diagrama de objetos
 A continuación se muestra un diagrama de objetos parcializado en diferentes secciones
