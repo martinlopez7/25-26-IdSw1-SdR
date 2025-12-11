@@ -1,0 +1,53 @@
+@startuml cancelarGeneracion
+
+skinparam linetype polyline
+
+state EXAMENES_GENERADOS2 as "EXAMENES_GENERADOS"
+state EXAMENES_GENERADOS_CONTEXTUALES2 as "EXAMENES_GENERADOS_CONTEXTUALES"
+
+state cancelarGeneracion as "cancelarGeneracion()" {
+
+    state " " as RequiringCancelGeneration
+    state " " as ProvidingConfirmation
+
+    [*] -[#green]-> RequiringCancelGeneration 
+    note on link
+    <b>Docente</b> solicita cancelar generación de exámenes
+    end note    
+    
+    RequiringCancelGeneration -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Sistema</b> permite 
+    • confirmar la cancelación de generación de exámenes
+    • denegar la cancelación de generación de exámenes
+    end note
+    
+    ProvidingConfirmation -[#green]-> [*]
+    
+}
+
+EXAMENES_GENERADOS -[#green]-> cancelarGeneracion
+
+EXAMENES_GENERADOS_CONTEXTUALES -[#green]-> cancelarGeneracion
+
+cancelarGeneracion -[#green]-> SISTEMA_DISPONIBLE
+note on link
+  docente cancela
+end note
+
+cancelarGeneracion -[#green]-> ASIGNATURA_ABIERTO
+note on link
+  docente cancela
+end note
+
+cancelarGeneracion -[#red]-> EXAMENES_GENERADOS2
+note on link
+  docente no cancela
+end note
+
+cancelarGeneracion -[#red]-> EXAMENES_GENERADOS_CONTEXTUALES2
+note on link
+  docente no cancela
+end note
+
+@enduml

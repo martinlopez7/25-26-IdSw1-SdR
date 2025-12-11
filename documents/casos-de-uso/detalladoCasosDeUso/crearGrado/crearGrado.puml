@@ -2,6 +2,9 @@
 
 skinparam linetype polyline
 
+state GRADOS_ABIERTO
+state GRADOS_ABIERTO2 as "GRADOS_ABIERTO"
+
 state crearGrado as "crearGrado()" {
 
     state " " as SolicitandoDatosGrado
@@ -37,7 +40,7 @@ note on link
 editarGrado(gradoNuevo)
 end note
 
-crearGrado -[#blue]-> GRADOS_ABIERTO
+crearGrado -[#blue]-> GRADOS_ABIERTO2
 note on link
 cancelar creación
 end note

@@ -58,4 +58,8 @@ SISTEMA_DISPONIBLE -[#green]-> generarExamenes
 
 generarExamenes -[#green]-> EXAMENES_GENERADOS
 
+ASIGNATURA_ABIERTO -[#green]-> generarExamenes
+
+generarExamenes -[#green]-> EXAMENES_GENERADOS_CONTEXTUALES
+
 @enduml

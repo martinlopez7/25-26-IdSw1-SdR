@@ -217,3 +217,39 @@
 | ![Detallado de Eliminar Respuesta](eliminarRespuesta/eliminarRespuesta.svg) |
 | :--- |
 | [Código UML](eliminarRespuesta/eliminarRespuesta.puml) |
+
+### Cancelar Generación [Docente]
+
+| ![Detallado de Cancelar Generación](cancelarGeneracion/cancelarGeneracion.svg) |
+| :--- |
+| [Código UML](cancelarGeneracion/cancelarGeneracion.puml) |
+
+### Validar Exámenes [Docente]
+
+| ![Detallado de Validar Exámenes](validarExamenes/validarExamenes.svg) |
+| :--- |
+| [Código UML](validarExamenes/validarExamenes.puml) |
+
+### Importar Asignaturas [Docente]
+
+| ![Detallado de Importar Asignaturas](importarAsignaturas/importarAsignaturas.svg) |
+| :--- |
+| [Código UML](importarAsignaturas/importarAsignaturas.puml) |
+
+### Importar Grados [Docente]
+
+| ![Detallado de Importar Grados](importarGrados/importarGrados.svg) |
+| :--- |
+| [Código UML](importarGrados/importarGrados.puml) |
+
+### Exportar Asignaturas [Docente]
+
+| ![Detallado de Exportar Asignaturas](exportarAsignaturas/exportarAsignaturas.svg) |
+| :--- |
+| [Código UML](exportarAsignaturas/exportarAsignaturas.puml) |
+
+### Exportar Grados [Docente]
+
+| ![Detallado de Exportar Grados](exportarGrados/exportarGrados.svg) |
+| :--- |
+| [Código UML](exportarGrados/exportarGrados.puml) |

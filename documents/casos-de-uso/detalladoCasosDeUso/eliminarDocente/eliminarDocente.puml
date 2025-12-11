@@ -1,6 +1,11 @@
 @startuml eliminarDocente
 skinparam linetype polyline
 
+state DOCENTE_ABIERTO
+state DOCENTES_ABIERTO2 as "DOCENTES_ABIERTO"
+state DOCENTES_ABIERTO3 as "DOCENTES_ABIERTO"
+state DOCENTES_ABIERTO4 as "DOCENTES_ABIERTO"
+
 state eliminarDocente as "eliminarDocente()" {
 
     state " " as ConfirmandoEliminacion
@@ -34,13 +39,19 @@ state eliminarDocente as "eliminarDocente()" {
 }
 
 DOCENTES_ABIERTO -[#green]-> eliminarDocente
+DOCENTE_ABIERTO -[#green]-> eliminarDocente
 
-eliminarDocente -[#green]-> DOCENTES_ABIERTO
+eliminarDocente -[#green]-> DOCENTES_ABIERTO2
 note on link
 lista actualizada
 end note
 
-eliminarDocente -[#blue]-> DOCENTES_ABIERTO
+eliminarDocente -[#blue]-> DOCENTES_ABIERTO3
+note on link
+cancelar eliminación
+end note
+
+eliminarDocente -[#blue]-> DOCENTES_ABIERTO4
 note on link
 cancelar eliminación
 end note
