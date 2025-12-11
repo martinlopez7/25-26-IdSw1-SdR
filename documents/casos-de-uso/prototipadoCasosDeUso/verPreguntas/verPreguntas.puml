@@ -1,0 +1,31 @@
+@startsalt verPreguntas_WIREFRAME
+{+
+    <b>BANCO DE PREGUNTAS</b>
+    ===
+    <b>1. Filtros y Búsqueda</b>
+    <i>Utilice los filtros para refinar el listado</i>
+    .
+    {
+        Asignatura (Contexto): | ^Todas las Asignaturas (Vista Global)^
+        Tema:                  | ^Todos los temas^
+        Dificultad:            | ^Cualquiera^
+        Búsqueda por texto:    | "                                   " | [Buscar / Filtrar]
+    }
+    .
+    --
+    .
+    <b>2. Resultados de la Búsqueda</b>
+    .
+    {#
+        <b>ID</b> | <b>Asignatura</b> | <b>Enunciado (Vista previa)</b> | <b>Tema</b> | <b>Dificultad</b> | <b>Acciones</b>
+        #4029 | Ing. Software | ¿Cuál patrón pertenece a... | Patrones | Medio | [Ver / Editar]
+        #4030 | Matemáticas I | Calcular la derivada de... | Cálculo | Fácil | [Ver / Editar]
+        #4105 | Ing. Software | Diagrama que representa... | UML | Difícil | [Ver / Editar]
+        . | . | . | . | . | .
+    }
+    .
+    ~~
+    .
+    { [ + Crear Nueva Pregunta ] | [ Volver ] }
+}
+@endsalt

@@ -1,0 +1,30 @@
+@startsalt editarGrado_FORMULARIO
+{+
+    <b>EDITAR GRADO (Código: GII-2024)</b>
+    ===
+    <b>1. Datos Identificativos</b>
+    <i>Puede modificar el nombre o el código oficial</i>
+    .
+    {
+        Nombre del Grado (*): | "Ingeniería Informática       "
+        Código Oficial (*):   | "GII-2024                     "
+    }
+    .
+    --
+    .
+    <b>2. Gestión de Alumnos Enlistados</b>
+    <i>Desmarque para desvincular o marque para añadir nuevos</i>
+    .
+    {SI
+        [X] 12345678Z - Pérez, Juan (Inscrito)
+        [X] 87654321X - García, María (Inscrito)
+        [ ] 11223344C - López, Carlos
+        [ ] 99887766V - Ruiz, Ana
+        [ ] ...
+    }
+    .
+    ~~
+    .
+    { [Guardar cambios] | [Cancelar] }
+}
+@endsalt

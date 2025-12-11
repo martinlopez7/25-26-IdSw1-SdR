@@ -1,0 +1,30 @@
+@startsalt eliminarGrado-wireframe
+{
+    <b>ELIMINAR GRADO</b>
+    ===
+    {
+        <b>¿Está seguro de eliminar este grado académico?</b>
+        --
+        {
+            {
+                {<b>Nombre:</b> | Grado en Ingeniería informática}
+            }
+            {
+               {<b>Código:</b> | GII}
+            }
+            {
+                
+            }
+            {
+                
+                {<b>Alumnos enlistados:</b> | 120}
+            }
+            --
+            <b>⚠️ ADVERTENCIA: Esta acción es irreversible</b>
+            <i>El grado y toda su información asociada serán eliminados permanentemente.</i>
+        }
+        ~~
+        {[Confirmar eliminación] | [Cancelar]}
+    }
+}
+@endsalt

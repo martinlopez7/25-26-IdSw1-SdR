@@ -1,9 +1,19 @@
 @startuml
 skinparam linetype polyline
 
+state RESPUESTAS_ABIERTO
+state RESPUESTAS_CONTEXTUALES_ABIERTO
 state PREGUNTAS_ABIERTO
+state PREGUNTAS_CONTEXTUALES_ABIERTO
+state PREGUNTA_ABIERTO
+state PREGUNTA_CONTEXTUAL_ABIERTO
 
+RESPUESTAS_ABIERTO -[#green]-> editarPregunta
+RESPUESTAS_CONTEXTUALES_ABIERTO -[#green]-> editarPregunta
 PREGUNTAS_ABIERTO -[#green]-> editarPregunta
+PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> editarPregunta
+PREGUNTA_ABIERTO -[#green]-> editarPregunta
+PREGUNTA_CONTEXTUAL_ABIERTO -[#green]-> editarPregunta
 
 state editarPregunta as "editarPregunta()" {
 
@@ -12,7 +22,7 @@ state editarPregunta as "editarPregunta()" {
 
     [*] -[#green]-> EditandoDatos 
     note on link
-    <b>Docente</b> solicita editar pregunta
+    <b>Docente</b> solicita editar
     end note    
     
     EditandoDatos -[#green]-> GuardandoDatos
@@ -46,14 +56,17 @@ state editarPregunta as "editarPregunta()" {
     end note
 }
 
-editarPregunta -[#green]-> PREGUNTAS_ABIERTO
-note on link
-verPreguntas()
-end note
+' 3. Transiciones DE SALIDA desde editarPregunta
 
-editarPregunta -[#red]-> PREGUNTAS_ABIERTO
-note on link
-cancelar edición
-end note
+editarPregunta -[#green]-> PREGUNTA_ABIERTO
+
+
+editarPregunta -[#green]-> PREGUNTA_CONTEXTUAL_ABIERTO
+
+
+' Salida de cancelación (Opcional: regresa a la lista general o al origen)
+editarPregunta -[#red]-> PREGUNTAS_ABIERTO : Cancelar
+
+editarPregunta -[#red]-> PREGUNTAS_CONTEXTUALES_ABIERTO : Cancelar
 
 @enduml

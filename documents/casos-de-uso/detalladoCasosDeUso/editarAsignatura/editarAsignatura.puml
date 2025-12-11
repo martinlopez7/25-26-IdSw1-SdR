@@ -1,9 +1,15 @@
 @startuml
 skinparam linetype polyline
 
-state ASIGNATURAS_ABIERTO
 
+state PREGUNTAS_CONTEXTUALES_ABIERTO
+state ASIGNATURAS_ABIERTO
+state ASIGNATURA_ABIERTO
+
+
+PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> editarAsignatura
 ASIGNATURAS_ABIERTO -[#green]-> editarAsignatura
+ASIGNATURA_ABIERTO -[#green]-> editarAsignatura
 
 state editarAsignatura as "editarAsignatura()" {
 
@@ -25,6 +31,7 @@ state editarAsignatura as "editarAsignatura()" {
     • Curso Académico
     • Alumnos matriculados
     • Grados asociados
+    • Batería de preguntas
     
     <b>Sistema</b> permite solicitar:
     • modificar campos
@@ -48,13 +55,16 @@ state editarAsignatura as "editarAsignatura()" {
     end note
 }
 
-editarAsignatura -[#green]-> ASIGNATURAS_ABIERTO
-note on link
-verAsignaturas()
-end note
 
+
+editarAsignatura -[#green]-> ASIGNATURA_ABIERTO
+
+' Nota: He mantenido la cancelación hacia la lista general, 
+' pero si prefieres que al cancelar también vaya a ASIGNATURA_ABIERTO, 
+' puedes cambiar el destino abajo.
 editarAsignatura -[#red]-> ASIGNATURAS_ABIERTO
 note on link
 cancelar edición
 end note
+
 @enduml

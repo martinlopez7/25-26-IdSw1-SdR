@@ -1,0 +1,14 @@
+@startsalt
+{
+    {^" Iniciar sesión "
+
+        Usuario    | "        "
+
+        Contraseña | "        "
+
+        {
+            [Cancelar] | [ Entrar ]
+        }
+    }
+}
+@endsalt

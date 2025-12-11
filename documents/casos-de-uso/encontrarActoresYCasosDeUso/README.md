@@ -14,7 +14,7 @@ La personalización de estos exámenes incluye la definición de:
 
 - Cantidad de preguntas.
 
-- Número de variantes del examen.
+- Número de variantes del exámen.
 
 - Selección específica de tema o temas.
 

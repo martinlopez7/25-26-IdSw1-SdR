@@ -1,0 +1,13 @@
+@startsalt
+{+
+  <b>IMPORTAR CONFIGURACIÓN GLOBAL</b>
+
+  {^" Sistema: Error "
+    <color:red><b>Error en la importación</b></color>
+    
+    .
+    ....
+    [ Importar configuración global ] | [ Cancelar ]
+  }
+}
+@endsalt

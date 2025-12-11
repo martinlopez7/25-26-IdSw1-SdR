@@ -5,6 +5,8 @@ state DOCENTES_ABIERTO
 
 DOCENTES_ABIERTO -[#green]-> editarDocente
 
+DOCENTE_ABIERTO -[#green]-> editarDocente
+
 state editarDocente as "editarDocente()" {
 
     state " " as EditandoDatos
@@ -21,7 +23,7 @@ state editarDocente as "editarDocente()" {
     • Nombre 
     • Apellidos 
     • DNI 
-    • nombre de usuario 
+    • Nombre de usuario 
     • Email 
     • Password
     
@@ -47,10 +49,7 @@ state editarDocente as "editarDocente()" {
     end note
 }
 
-editarDocente -[#green]-> DOCENTES_ABIERTO
-note on link
-verDocentes()
-end note
+editarDocente -[#green]-> DOCENTE_ABIERTO
 
 editarDocente -[#red]-> DOCENTES_ABIERTO
 note on link

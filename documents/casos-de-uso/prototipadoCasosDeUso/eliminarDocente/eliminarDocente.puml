@@ -1,0 +1,31 @@
+@startsalt eliminarDocente-wireframe
+{
+    <b>ELIMINAR DOCENTE</b>
+    ===
+    {
+        <b>¿Está seguro de eliminar a este docente?</b>
+        --
+        {
+            {
+               
+                {<b>Nombre :</b> | Roberto }
+                 {<b>Apellidos:</b> | Castro Gutiérrez}
+                 {<b>DNI:</b> | 4566590J}
+                 {<b>Usuario:</b> | roberto.castro2}
+            }
+            {
+      
+                {<b>Email:</b> | rcastro@uneatlantico.es}
+                {<b>Password:</b> | JAU3uHgC}
+            }
+            
+            
+            --
+            <b>⚠️ ADVERTENCIA: Esta acción es irreversible</b>
+            <i>El docente y toda su información asociada serán eliminados permanentemente.</i>
+        }
+        ~~
+        {[Confirmar eliminación] | [Cancelar]}
+    }
+}
+@endsalt

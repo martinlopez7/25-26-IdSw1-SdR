@@ -14,16 +14,27 @@ A continuación se muestra el diagrama de entidades propuesto del proyecto
 [Enlace al código del diagrama de entidades](/documents/modelos/diagramas/diagramaEntidad/diagramaEntidad.puml)
 
 ## Diagrama de objetos
-A continuación se muestra el diagrama de objetos del proyecto 
+A continuación se muestra un diagrama de objetos parcializado en diferentes secciones
+
 <p align="center">
-  <img src="/documents/modelos/diagramas/diagramaObjetos/diagramaObjetos.svg">
+  <img src="/documents/modelos/diagramas/diagramaObjetos/diagramaObjetosParcial1/diagramaObjetos.svg">
+
+[Enlace al código del diagrama](/documents/modelos/diagramas/diagramaObjetos/diagramaObjetosParcial1/diagramaObjetos.puml)
+
+<p align="center">
+  <img src="/documents/modelos/diagramas/diagramaObjetos/diagramaObjetosParcial2/diagramaObjetos.svg">
+
+[Enlace al código del diagrama](/documents/modelos/diagramas/diagramaObjetos/diagramaObjetosParcial2/diagramaObjetos.puml)
+
+<p align="center">
+  <img src="/documents/modelos/diagramas/diagramaObjetos/diagramaObjetosParcial3/diagramaObjetos.svg">
   
-[Enlace al código del diagrama de objetos](/documents/modelos/diagramas/diagramaObjetos/diagramaObjetos.puml)
+[Enlace al código del diagrama](/documents/modelos/diagramas/diagramaObjetos/diagramaObjetosParcial3/diagramaObjetos.puml)
 
 ## Diagramas de estados
 
-### Entidad Examen
-A continuación se muestra el diagrama de estados de la entidad examen
+### Entidad Exámen
+A continuación se muestra el diagrama de estados de la entidad exámen
 <p align="center">
   <img src="/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamen/diagramaEstadosExamen.svg">
 

@@ -1,0 +1,21 @@
+@startsalt
+{+
+  <b>CORREGIR EXÁMENES</b>
+  --
+  
+  <b>Introduzca los exámenes realizados</b>
+
+  [ Cargar exámenes realizados ]
+  
+  ====
+  
+  Corrigiendo...
+  .
+  .
+  .
+  
+  {^" Sistema: Error "
+    <color:red><b>Ha ocurrido un error en la corrección</b></color>
+  }
+}
+@endsalt

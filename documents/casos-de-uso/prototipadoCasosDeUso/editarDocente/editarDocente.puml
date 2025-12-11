@@ -1,0 +1,26 @@
+@startsalt editarDocente_FORMULARIO
+{
+    <b>EDITAR DOCENTE</b>
+    ===
+    {
+        <b>Datos del docente</b>
+        --
+        {
+            Nombres (*):    | "Juan Carlos                 "
+            Apellidos (*):  | "García López                "
+            DNI (*):        | "12345678A                   "
+            Correo electrónico (*): | "jgarcia@universidad.edu     "
+            Nombre de usuario (*):           | "jgarcia123             "
+            Contraseña (*):           | "dfgHG76             "
+        }
+        
+        ~~
+        .
+        <i>(*) Campos obligatorios</i>
+        
+        ~~
+        .
+        {[Guardar cambios] | [Cancelar]}
+    }
+}
+@endsalt

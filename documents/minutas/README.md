@@ -5,11 +5,9 @@
 </div>
 
 
-## 👤💻 SESIONES DE REQUISITADO
+## SESIONES DE REQUISITADO
 | Sesión | Fecha | Miembros presentes | Temas Tratados | Observaciones |
 |--------|-------|--------------------|----------------|---------------|
-| 1      | [24-10-2025](/documents/minutas/reunion-01/Notas.MD)  | Martin López, Marcos Gutierrez, Raul García, Liam Anderson, Pablo Rey | Introducción al proyecto, se nos plantea un problema y los objetivos a llevar a cabo.  | Se trataron las posibles soluciones al problema asi como la parte esencial del proyecto y sobre el alcance del mismo            |
-| 2      | [10-11-2025](/documents/minutas/reunion-02/Notas.md)  | Martin López, Marcos Gutierrez, Raul García, Liam Anderson, Pablo Rey | Dudas sobre la primera reunión y correcciones del modelo del dominio, casos de uso y diagramas de estado  | Se resolvieron las dudas generadas y se especificaron errores en la toma de decisiones sobre casos de uso, modelo del dominio y diagrama de estados |             |
-
-
-
+| 1      | [24-10-2025](/documents/minutas/reunion-01/Notas.MD)  | Martin López, Marcos Gutiérrez, Raúl García, Liam Anderson, Pablo Rey | Introducción al proyecto, se nos plantea el problema y los objetivos a llevar a cabo.  | Se trataron las posibles soluciones al problema asi como la parte esencial del proyecto y sobre el alcance del mismo. |
+| 2      | [10-11-2025](/documents/minutas/reunion-02/Notas.md)  | Martin López, Marcos Gutiérrez, Raúl García, Liam Anderson, Pablo Rey | Dudas sobre la primera reunión y correcciones del modelo del dominio, casos de uso y diagramas de estado. | Se resolvieron las dudas generadas y se especificaron errores en la toma de decisiones sobre casos de uso, modelo del dominio y diagrama de estados. |
+| 3      | [04-12-2025](/documents/minutas/reunion-03/Notas.md)  | Martin López, Marcos Gutiérrez, Raúl García, Pablo Rey | Diagramas de contexto y detallado de los casos de uso.  | Se revisó y se validó los diagramas de contexto del sistema para cada actor y la lógica de los detallados de los casos de uso. |

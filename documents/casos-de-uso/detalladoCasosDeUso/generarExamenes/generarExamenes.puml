@@ -11,7 +11,7 @@ state generarExamenes as "generarExamenes()" {
 
     [*] -[#green]-> RequiringGeneration 
     note on link
-    <b>Docente</b> solicita generar examenes
+    <b>Docente</b> solicita generar exámenes
     end note    
     
     RequiringGeneration -[#green]-> ProvidingData
@@ -22,7 +22,13 @@ state generarExamenes as "generarExamenes()" {
     
     ProvidingData -[#green]-> ProvidingConfirmation
     note on link
-    <b>Docente</b> introduce datos para la generación
+    <b>Docente</b> introduce datos mínimos para la generación
+    • Asignatura (obligatorio)
+    • Tema/Temas (obligatorio)
+    • Número de preguntas (obligatorio)
+    • Cantidad de tipos de exámen (obligatorio)
+    • Proporción de dificultad (obligatorio)
+    • Evaluación (obligatorio)
     end note
     
     ProvidingConfirmation -[#green]-> c

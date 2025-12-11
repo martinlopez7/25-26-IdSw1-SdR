@@ -1,0 +1,12 @@
+@startsalt
+{+
+  <b>EXPORTAR CONFIGURACIÓN GLOBAL</b>
+  
+  
+  {^" Sistema: Operación Completada "
+    <color:green><b>¡Configuración Exportada con Éxito!</b></color>
+    ....
+    [ Aceptar y Salir ]
+  }
+}
+@endsalt

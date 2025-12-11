@@ -1,0 +1,12 @@
+@startsalt
+{+
+  <b>IMPORTAR ALUMNOS</b>
+  --
+  
+  [ Cargar alumnos ]
+  
+  --
+  
+  [ Cancelar Importación ] | [ Confirmar Importación ]
+}
+@endsalt

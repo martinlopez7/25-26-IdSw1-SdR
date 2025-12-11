@@ -41,12 +41,11 @@ state editarGrado as "editarGrado()" {
 
 }
 
+GRADO_ABIERTO -[#green]-> editarGrado
+
 GRADOS_ABIERTO -[#green]-> editarGrado
 
-editarGrado -[#green]-> GRADOS_ABIERTO
-note on link
-verGrados()
-end note
+editarGrado -[#green]-> GRADO_ABIERTO
 
 editarGrado -[#red]-> GRADOS_ABIERTO
 note on link

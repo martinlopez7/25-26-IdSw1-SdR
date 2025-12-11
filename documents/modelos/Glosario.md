@@ -11,14 +11,14 @@
 |---|---|
 | **Grado** | Programa universitario al que pertenecen los alumnos y las asignaturas. Sirve para organizar los cursos y exámenes. |
 | **Asignatura** | Materia concreta dentro de un grado. Cada asignatura tiene sus propios temas y exámenes. |
-| **Curso académico** | Periodo temporal (ej. 2024-2025) definido en la asignatura para organizar la matriculación de alumnos y la docencia. |
+| **Curso académico** | Periodo temporal (ej. 2024-2025) definido en la asignatura para organizar la matriculación de alumnos. |
 | **Profesor** | Persona encargada de crear y corregir los exámenes tipo test. |
-| **Alumno** | Persona que realiza el examen en formato papel. |
+| **Alumno** | Persona que realiza el exámen en formato papel. |
 | **Matrícula** | Vínculo formal que asocia a un alumno con una asignatura específica, permitiéndole presentarse a los exámenes de dicha materia. |
 | **Batería de preguntas** | Conjunto de preguntas preparadas por un docente para generar exámenes tipo test. |
 | **Tema** | Parte o unidad dentro de una asignatura que agrupa varias preguntas relacionadas. Sirve para organizar la batería de preguntas del profesor. |
-| **Pregunta** | Elemento básico del examen tipo test creado por el profesor. Cada pregunta tiene una asignatura, un tema, enunciado, opciones, respuesta correcta y dificultad. |
+| **Pregunta** | Elemento básico del exámen tipo test creado por el profesor. Cada pregunta tiene una asignatura, un tema, enunciado, opciones, respuesta correcta y dificultad. |
 | **Respuesta** | Opción individual que forma parte de una pregunta. Indica una posible solución al enunciado y define si es la opción correcta o incorrecta. |
 | **Examen** | Documento de evaluación tipo test que un docente genera a partir de una batería de preguntas previamente preparada. |
-| **Clave de corrección** | Conjunto de respuestas correctas asociadas a un modelo de examen que permite al sistema corregir automáticamente las pruebas. |
-| **Evaluación** | Actividad mediante la cual el profesor califica al alumno (Examen parcial 1-3, final o extraordinario). |
+| **Clave de corrección** | Conjunto de respuestas correctas asociadas a un modelo de exámen que permite al sistema corregir automáticamente las pruebas. |
+| **Evaluación** | Actividad mediante la cual el profesor califica al alumno (Exámen parcial 1-3, Final o Extraordinario). |

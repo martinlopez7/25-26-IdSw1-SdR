@@ -1,0 +1,67 @@
+@startuml
+skinparam linetype polyline
+
+state RESPUESTAS_ABIERTO
+state RESPUESTA_ABIERTO
+state RESPUESTAS_CONTEXTUALES_ABIERTO
+state RESPUESTA_CONTEXTUAL_ABIERTO
+
+RESPUESTAS_ABIERTO -[#green]-> editarRespuesta
+RESPUESTA_ABIERTO -[#green]-> editarRespuesta
+RESPUESTAS_CONTEXTUALES_ABIERTO -[#green]-> editarRespuesta
+RESPUESTA_CONTEXTUAL_ABIERTO -[#green]-> editarRespuesta
+
+state editarRespuesta as "editarRespuesta()" {
+
+    state " " as EditandoDatos
+    state " " as GuardandoDatos 
+
+    [*] -[#green]-> EditandoDatos 
+    note on link
+    <b>Docente</b> solicita editar respuesta
+    end note    
+    
+    EditandoDatos -[#green]-> GuardandoDatos
+    note on link
+    <b>Sistema</b> presenta datos de edición
+    • Contenido
+    • Correcta/incorrecta
+
+    <b>Sistema</b> permite solicitar:
+    • modificar campos
+    • guardar respuesta
+    • cancelar edición
+    end note
+    
+    GuardandoDatos -[#green]-> EditandoDatos
+    note on link
+    <b>Docente</b> solicita modificar campos
+    end note
+    
+    GuardandoDatos -[#green]-> [*]
+    note on link
+    <b>Docente</b> solicita guardar y salir
+    end note
+
+    GuardandoDatos -[#red]-> [*]
+    note on link
+    <b>Docente</b> solicita cancelar edición
+    end note
+}
+
+' 3. Transiciones DE SALIDA desde editarPregunta
+
+editarRespuesta -[#green]-> RESPUESTA_CONTEXTUAL_ABIERTO
+editarRespuesta -[#green]-> RESPUESTA_ABIERTO
+
+editarRespuesta -[#blue]-> RESPUESTAS_ABIERTO
+note on link
+cancelar edición
+end note
+
+editarRespuesta -[#blue]-> RESPUESTAS_CONTEXTUALES_ABIERTO
+note on link
+cancelar edición
+end note
+
+@enduml

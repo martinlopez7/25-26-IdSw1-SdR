@@ -1,0 +1,23 @@
+@startsalt
+{+
+  <b>CORREGIR EXÁMENES</b>
+  --
+  
+  <b>Introduzca los exámenes realizados</b>
+
+  [ Cargar exámenes realizados ]
+  
+  ====
+  
+  Corrigiendo...
+  .
+  .
+  .
+  
+  {^" Sistema: Éxito "
+    <color:green><b>¡Los exámenes se han corregido correctamente!</b></color>
+    ....
+    [ Finalizar y Salir ]
+  }
+}
+@endsalt

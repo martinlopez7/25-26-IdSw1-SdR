@@ -1,0 +1,16 @@
+@startsalt
+{+
+  <b>CORREGIR EXÁMENES</b>
+  --
+  
+  <b>Introduzca los exámenes realizados</b>
+
+  [ Cargar exámenes realizados ]
+  
+  ====
+  <color:red><b>¿Confirma corregir exámenes?</b></color>
+  ====
+  [ <color:red><b>Corregir exámenes</b></color> ] | [ Cancelar ]
+
+}
+@endsalt

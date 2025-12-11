@@ -1,0 +1,25 @@
+@startsalt editarRespuesta_FORMULARIO
+{
+    <b>EDITAR RESPUESTA</b>
+    ===
+    {
+        <b>Datos de la Respuesta:</b>
+        --
+        {
+           
+            {
+            <b>Contenido:</b> |
+                {"Reutilizar código de clases existentes"}
+            }
+           
+            {<b>¿Es Correcta?:</b> | (X) Sí ( ) No
+            }
+              
+        }
+
+        ~~
+
+        {[Guardar cambios]|[Continuar editanto]|[Cancelar Edición]}
+    }
+}
+@endsalt

@@ -1,0 +1,23 @@
+@startsalt
+{
+    {^" Menú Principal "
+        .
+        **Gestión de Datos Maestros**
+        [Gestionar Grados                      ]
+        [Gestionar Asignaturas                 ]
+        [Gestionar Alumnos                     ]
+        [Gestionar Preguntas                   ]
+        **Funcionalidades Especiales**
+        [Generar Exámenes                      ]
+        [Corregir Exámenes                     ]
+        **Sistema**
+        [Importar Configuracion Global         ]
+        [Exportar Configuracion Global         ]
+        [Cerrar Sesión                         ]
+        .
+    }
+    ====
+    Usuario: Docente
+    ====
+}
+@endsalt

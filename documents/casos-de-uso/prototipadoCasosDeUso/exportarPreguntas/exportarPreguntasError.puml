@@ -1,0 +1,13 @@
+@startsalt
+{+
+  <b>EXPORTAR PREGUNTAS</b>
+
+  {^" Sistema: Error "
+    <color:red><b>Error en la exportación</b></color>
+    
+    .
+    ....
+    [ Volver a exportar ]
+  }
+}
+@endsalt
