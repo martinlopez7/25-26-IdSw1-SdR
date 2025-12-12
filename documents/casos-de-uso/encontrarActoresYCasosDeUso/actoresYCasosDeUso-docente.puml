@@ -96,14 +96,13 @@ doc -u-> UC10
 doc -u-> UC11
 doc -u-> UC12
 doc --> UC13
-doc -u-> UC17
 doc -u-> UC19
 doc -d-> UC20
 doc -d-> UC21
 doc -d-> UC22
 doc -d-> UC23
 doc -d-> UC24
-doc -d-> UC25
+
 doc -u-> UC26
 doc -u-> UC27
 doc --> UC28
@@ -114,9 +113,7 @@ doc -d-> UC33
 doc -d-> UC34
 doc -d-> UC35
 doc -l-> UC36
-doc -l-> UC37
 doc -l-> UC38
-doc -l-> UC39
 doc --> UC40
 doc --> UC41
 doc --> UC42
