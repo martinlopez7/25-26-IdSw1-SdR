@@ -9,9 +9,8 @@
  PXYZ | Nombre del alumno | Apellidos del alumno | [Editar]
   }
   ~~
-  {<b>BUSCAR:</b> [                                       ] | [Filtrar]}
+  {<b>BUSCAR:</b> [                                      ] | [Filtrar]}
   ~~
-  {[Crear nuevo] | [Borrar seleccionado] | [Salir]}
+  { [Crear nuevo] | [Borrar seleccionado] | [Importar] | [Exportar] | . | [Salir] }
 }
-
 @endsalt
