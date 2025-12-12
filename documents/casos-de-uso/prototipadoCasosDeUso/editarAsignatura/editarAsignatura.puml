@@ -43,7 +43,7 @@
         
         ~~
         .
-        {[Guardar cambios] | [ Eliminar ] | [Cancelar]}
+        {[Guardar cambios] | [ Eliminar ] | [ Generar Examenes ] | [Cancelar]}
     }
 }
 @endsalt
