@@ -1,0 +1,53 @@
+@startuml
+
+hide empty members
+
+class Examen{
+clave corrección
+}
+
+class Asignatura{
+curso académico
+}
+
+enum TipoExamen{
+Parcial 1
+Parcial 2
+Parcial 3
+Examen final
+Examen extraordinario
+}
+
+enum DificultadPregunta{
+facil
+medio
+dificil
+}
+
+package PackPreguntaRespuesta{
+  class Pregunta{
+  enunciado
+  }
+  class Respuesta{
+  opción
+  esCorrecta
+  }
+}
+
+enum Tema{
+}
+
+Respuesta -u-* Pregunta
+Pregunta ..> DificultadPregunta
+Pregunta -u-o Examen : contiene
+Pregunta -u-* BateriaDePreguntas : contiene
+Examen ..> TipoExamen
+BateriaDePreguntas -u-* Asignatura : tiene
+Examen -u-* Asignatura : tiene
+Profesor o-r- Asignatura : tiene
+Asignatura --> Grado : pertenece
+Alumno -u-o Examen : realiza
+Alumno -u-* Asignatura : se imparte
+Alumno -u-* Grado : se cursa
+Pregunta ..> Tema
+@enduml
