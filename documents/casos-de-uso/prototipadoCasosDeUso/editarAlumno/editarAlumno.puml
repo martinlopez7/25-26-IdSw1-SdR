@@ -23,6 +23,6 @@
     .
     ~~
     .
-    { [Guardar Cambios] | [Cancelar] }
+    { [Guardar Cambios] | [ Eliminar ] | [Cancelar] }
 }
 @endsalt
