@@ -54,8 +54,19 @@ state generarExamenes as "generarExamenes()" {
     end note
 }
 
+state EXAMENES_GENERADOS
+state EXAMENES_GENERADOS_CONTEXTUALES
+
 SISTEMA_DISPONIBLE -[#green]-> generarExamenes
 
 generarExamenes -[#green]-> EXAMENES_GENERADOS
+note on link
+  vista de examenes generados
+end note
+
+generarExamenes -[#green]-> EXAMENES_GENERADOS_CONTEXTUALES
+note on link
+  vista de examenes generados
+end note
 
 @enduml
