@@ -6,13 +6,12 @@
     .
     <b>Estado del proceso:</b>
     Generación completada. Esperando validación o guardado.
-    [=============================================] 100%
     .
     {#
-        <b>ID</b> | <b>Variante</b> | <b>Preguntas</b> | <b>Estado</b>
-        EX-01 | Grupo A | 10 Preguntas | Listo
-        EX-02 | Grupo B | 10 Preguntas | Listo
-        EX-03 | Recuperación | 8 Preguntas | Listo
+        <b>ID</b> | <b>Tipo</b> | <b>Preguntas</b>
+        EX-01 | Parcial 1 | 10 Preguntas
+        EX-02 | Parcial 1 | 10 Preguntas
+        EX-03 | Parcial 1 | 10 Preguntas
     }
     .
     .
@@ -25,9 +24,7 @@
         .
         <color:red><b>⚠ ADVERTENCIA:</b></color>
         Si confirma la cancelación, los 3 exámenes generados en esta
-        sesión se descartarán y los datos no guardados se perderán.
-        .
-        Esta acción devolverá el sistema al estado: <b>ASIGNATURA_ABIERTO</b>
+        sesión se perderán.
         .
         ====
         .
