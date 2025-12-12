@@ -1,0 +1,39 @@
+@startsalt cancelarGeneracion_WIREFRAME
+{+
+    <b>GENERACIÓN DE EXÁMENES | <b>VISTA PREVIA</b>
+    Asignatura: <b>Estructura de Datos (GII-24)</b> | Fecha: <b>12/12/2024</b>
+    ===
+    .
+    <b>Estado del proceso:</b>
+    Generación completada. Esperando validación o guardado.
+    [=============================================] 100%
+    .
+    {#
+        <b>ID</b> | <b>Variante</b> | <b>Preguntas</b> | <b>Estado</b>
+        EX-01 | Grupo A | 10 Preguntas | Listo
+        EX-02 | Grupo B | 10 Preguntas | Listo
+        EX-03 | Recuperación | 8 Preguntas | Listo
+    }
+    .
+    .
+    --
+    .
+    ^<b>CONFIRMACIÓN DE CANCELACIÓN</b>^
+    .
+    {
+        ¿Está seguro que desea cancelar la generación actual?
+        .
+        <color:red><b>⚠ ADVERTENCIA:</b></color>
+        Si confirma la cancelación, los 3 exámenes generados en esta
+        sesión se descartarán y los datos no guardados se perderán.
+        .
+        Esta acción devolverá el sistema al estado: <b>ASIGNATURA_ABIERTO</b>
+        .
+        ====
+        .
+        [ <b>(X) NO, VOLVER</b> ] | [ <b>(✓) SÍ, CANCELAR PROCESO</b> ]
+    }
+    .
+    .
+}
+@endsalt
