@@ -6,7 +6,7 @@
     <i>Busque por código oficial o nombre del título</i>
     .
     {
-        Búsqueda: | "                                   " | [Filtrar Lista]
+        Búsqueda: | "                    " | [Filtrar Lista]
     }
     .
     --
@@ -24,6 +24,7 @@
     .
     ~~
     .
-    { [ + Nuevo Grado ] | [ Volver al Inicio ] }
+    "Acciones de Gestión:"
+    { [ + Nuevo Grado ] | [ Importar ] | [ Exportar ] | . | [ Volver al Inicio ] }
 }
 @endsalt
