@@ -2,6 +2,11 @@
 
 skinparam linetype polyline
 
+state GRADO_ABIERTO as "GRADO_ABIERTO"
+state GRADO_ABIERTO2 as "GRADO_ABIERTO"
+state GRADOS_ABIERTO as "GRADOS_ABIERTO"
+state GRADOS_ABIERTO2 as "GRADOS_ABIERTO"
+
 state editarGrado as "editarGrado()" {
 
     state " " as EditandoDatos
@@ -45,9 +50,9 @@ GRADO_ABIERTO -[#green]-> editarGrado
 
 GRADOS_ABIERTO -[#green]-> editarGrado
 
-editarGrado -[#green]-> GRADO_ABIERTO
+editarGrado -[#green]-> GRADO_ABIERTO2
 
-editarGrado -[#red]-> GRADOS_ABIERTO
+editarGrado -[#red]-> GRADOS_ABIERTO2
 note on link
 cancelar edición
 end note

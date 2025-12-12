@@ -1,12 +1,14 @@
 @startuml
 skinparam linetype polyline
 
-
+state EXAMENES_ASIGNADOS_CONTEXTUALES
 state PREGUNTAS_CONTEXTUALES_ABIERTO
 state ASIGNATURAS_ABIERTO
 state ASIGNATURA_ABIERTO
+state ASIGNATURAS_ABIERTO2 as "ASIGNATURAS_ABIERTO"
+state ASIGNATURA_ABIERTO2 as "ASIGNATURA_ABIERTO"
 
-
+EXAMENES_ASIGNADOS_CONTEXTUALES -[#green]-> editarAsignatura
 PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> editarAsignatura
 ASIGNATURAS_ABIERTO -[#green]-> editarAsignatura
 ASIGNATURA_ABIERTO -[#green]-> editarAsignatura
@@ -55,14 +57,12 @@ state editarAsignatura as "editarAsignatura()" {
     end note
 }
 
-
-
-editarAsignatura -[#green]-> ASIGNATURA_ABIERTO
+editarAsignatura -[#green]-> ASIGNATURA_ABIERTO2
 
 ' Nota: He mantenido la cancelación hacia la lista general, 
 ' pero si prefieres que al cancelar también vaya a ASIGNATURA_ABIERTO, 
 ' puedes cambiar el destino abajo.
-editarAsignatura -[#red]-> ASIGNATURAS_ABIERTO
+editarAsignatura -[#red]-> ASIGNATURAS_ABIERTO2
 note on link
 cancelar edición
 end note

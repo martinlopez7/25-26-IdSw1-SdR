@@ -2,6 +2,9 @@
 
 skinparam linetype polyline
 
+state ASIGNATURAS_ABIERTO
+state ASIGNATURAS_ABIERTO2 as "ASIGNATURAS_ABIERTO"
+
 state crearAsignatura as "crearAsignatura()" {
 
     state " " as SolicitandoDatosAsignatura
@@ -39,7 +42,7 @@ note on link
 editarAsignatura(asignaturaNueva)
 end note
 
-crearAsignatura -[#blue]-> ASIGNATURAS_ABIERTO
+crearAsignatura -[#blue]-> ASIGNATURAS_ABIERTO2
 note on link
 cancelar creación
 end note

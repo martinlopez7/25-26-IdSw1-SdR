@@ -2,6 +2,8 @@
 
 skinparam linetype polyline
 
+state ALUMNOS_ABIERTO2 as "ALUMNOS_ABIERTO"
+
 state exportarAlumnos as "exportarAlumnos()" {
 
     state " " as RequiringExport
@@ -49,6 +51,6 @@ state exportarAlumnos as "exportarAlumnos()" {
 }
 
 ALUMNOS_ABIERTO -[#green]-> exportarAlumnos
-exportarAlumnos -[#green]-> ALUMNOS_ABIERTO
+exportarAlumnos -[#green]-> ALUMNOS_ABIERTO2
 
 @enduml

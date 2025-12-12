@@ -2,6 +2,8 @@
 
 skinparam linetype polyline
 
+state ALUMNOS_ABIERTO2 as "ALUMNOS_ABIERTO"
+
 state importarAlumnos as "importarAlumnos()" {
 
     state " " as RequiringImport
@@ -49,6 +51,6 @@ state importarAlumnos as "importarAlumnos()" {
 }
 
 ALUMNOS_ABIERTO -[#green]-> importarAlumnos
-importarAlumnos -[#green]-> ALUMNOS_ABIERTO
+importarAlumnos -[#green]-> ALUMNOS_ABIERTO2
 
 @enduml

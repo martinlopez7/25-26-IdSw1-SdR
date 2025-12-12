@@ -7,6 +7,10 @@ state PREGUNTAS_ABIERTO
 state PREGUNTAS_CONTEXTUALES_ABIERTO
 state PREGUNTA_ABIERTO
 state PREGUNTA_CONTEXTUAL_ABIERTO
+state PREGUNTAS_ABIERTO2 as "PREGUNTAS_ABIERTO"
+state PREGUNTAS_CONTEXTUALES_ABIERTO2 as "PREGUNTAS_CONTEXTUALES_ABIERTO"
+state PREGUNTA_ABIERTO2 as "PREGUNTA_ABIERTO"
+state PREGUNTA_CONTEXTUAL_ABIERTO2 as "PREGUNTA_CONTEXTUAL_ABIERTO"
 
 RESPUESTAS_ABIERTO -[#green]-> editarPregunta
 RESPUESTAS_CONTEXTUALES_ABIERTO -[#green]-> editarPregunta
@@ -58,15 +62,15 @@ state editarPregunta as "editarPregunta()" {
 
 ' 3. Transiciones DE SALIDA desde editarPregunta
 
-editarPregunta -[#green]-> PREGUNTA_ABIERTO
+editarPregunta -[#green]-> PREGUNTA_ABIERTO2
 
 
-editarPregunta -[#green]-> PREGUNTA_CONTEXTUAL_ABIERTO
+editarPregunta -[#green]-> PREGUNTA_CONTEXTUAL_ABIERTO2
 
 
 ' Salida de cancelación (Opcional: regresa a la lista general o al origen)
-editarPregunta -[#red]-> PREGUNTAS_ABIERTO : Cancelar
+editarPregunta -[#red]-> PREGUNTAS_ABIERTO2 : Cancelar
 
-editarPregunta -[#red]-> PREGUNTAS_CONTEXTUALES_ABIERTO : Cancelar
+editarPregunta -[#red]-> PREGUNTAS_CONTEXTUALES_ABIERTO2 : Cancelar
 
 @enduml

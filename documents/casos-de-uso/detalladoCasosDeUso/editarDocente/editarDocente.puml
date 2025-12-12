@@ -1,7 +1,10 @@
 @startuml
 skinparam linetype polyline
 
-state DOCENTES_ABIERTO
+state DOCENTES_ABIERTO as "DOCENTES_ABIERTO"
+state DOCENTES_ABIERTO2 as "DOCENTES_ABIERTO"
+state DOCENTE_ABIERTO as "DOCENTE_ABIERTO"
+state DOCENTES_ABIERTO2 as "DOCENTE_ABIERTO"
 
 DOCENTES_ABIERTO -[#green]-> editarDocente
 
@@ -49,9 +52,9 @@ state editarDocente as "editarDocente()" {
     end note
 }
 
-editarDocente -[#green]-> DOCENTE_ABIERTO
+editarDocente -[#green]-> DOCENTE_ABIERTO2
 
-editarDocente -[#red]-> DOCENTES_ABIERTO
+editarDocente -[#red]-> DOCENTES_ABIERTO2
 note on link
 cancelar edición
 end note

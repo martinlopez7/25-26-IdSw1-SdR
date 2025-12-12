@@ -2,7 +2,10 @@
 
 skinparam linetype polyline
 
+state PREGUNTAS_ABIERTO
 state PREGUNTAS_CONTEXTUALES_ABIERTO
+state PREGUNTAS_CONTEXTUALES_ABIERTO2 as "PREGUNTAS_CONTEXTUALES_ABIERTO"
+state PREGUNTAS_ABIERTO2 as "PREGUNTAS_ABIERTO"
 
 state exportarPreguntas as "exportarPreguntas()" {
 
@@ -52,10 +55,10 @@ state exportarPreguntas as "exportarPreguntas()" {
 
 ' Conexiones existentes
 PREGUNTAS_ABIERTO -[#green]-> exportarPreguntas
-exportarPreguntas -[#green]-> PREGUNTAS_ABIERTO
+exportarPreguntas -[#green]-> PREGUNTAS_ABIERTO2
 
 ' Conexiones NUEVAS (Contextuales)
 PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> exportarPreguntas
-exportarPreguntas -[#green]-> PREGUNTAS_CONTEXTUALES_ABIERTO
+exportarPreguntas -[#green]-> PREGUNTAS_CONTEXTUALES_ABIERTO2
 
 @enduml

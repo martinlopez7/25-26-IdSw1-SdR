@@ -3,6 +3,7 @@
 skinparam linetype polyline
 
 state ALUMNOS_ABIERTO
+state ALUMNOS_ABIERTO2 as "ALUMNOS_ABIERTO"
 
 ALUMNOS_ABIERTO -[#green]-> crearAlumno
 
@@ -39,7 +40,7 @@ note on link
 editarAlumno(alumnoNuevo)
 end note
 
-crearAlumno -[#blue]-> ALUMNOS_ABIERTO
+crearAlumno -[#blue]-> ALUMNOS_ABIERTO2
 note on link
 cancelar creación
 end note

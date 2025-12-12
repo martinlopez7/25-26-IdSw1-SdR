@@ -3,7 +3,11 @@ skinparam linetype polyline
 
 ' 1. Definición de Estados Externos
 state PREGUNTAS_ABIERTO
+state PREGUNTAS_ABIERTO2 as "PREGUNTAS_ABIERTO"
+state PREGUNTAS_ABIERTO3 as "PREGUNTAS_ABIERTO"
 state PREGUNTAS_CONTEXTUALES_ABIERTO
+state PREGUNTAS_CONTEXTUALES_ABIERTO2 as "PREGUNTAS_CONTEXTUALES_ABIERTO"
+state PREGUNTAS_CONTEXTUALES_ABIERTO3 as "PREGUNTAS_CONTEXTUALES_ABIERTO"
 
 ' 2. Transiciones de ENTRADA
 PREGUNTAS_ABIERTO -[#green]-> eliminarPregunta
@@ -45,18 +49,18 @@ state eliminarPregunta as "eliminarPregunta()" {
 
 ' 3. Transiciones de SALIDA (Caso: Lista General)
 
-eliminarPregunta -[#green]-> PREGUNTAS_ABIERTO
+eliminarPregunta -[#green]-> PREGUNTAS_ABIERTO2
 
-eliminarPregunta -[#blue]-> PREGUNTAS_ABIERTO
+eliminarPregunta -[#blue]-> PREGUNTAS_ABIERTO3
 note on link
 Cancelar operación
 end note
 
 ' 4. Transiciones de SALIDA (Caso: Lista Contextual)
 
-eliminarPregunta -[#green]-> PREGUNTAS_CONTEXTUALES_ABIERTO
+eliminarPregunta -[#green]-> PREGUNTAS_CONTEXTUALES_ABIERTO2
 
-eliminarPregunta -[#blue]-> PREGUNTAS_CONTEXTUALES_ABIERTO
+eliminarPregunta -[#blue]-> PREGUNTAS_CONTEXTUALES_ABIERTO3
 note on link
 Cancelar operación
 end note
