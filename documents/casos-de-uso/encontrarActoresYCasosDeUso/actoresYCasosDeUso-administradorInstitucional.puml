@@ -11,12 +11,6 @@ package "Módulo Docentes" {
   usecase "eliminarDocente()" as UC35
 }
 
-package "Módulo Gestión Licencias(intencion)" {
-  usecase "adquirirLicencia()" as UC36
-  usecase "verLicencias()" as UC37
-  usecase "editarLicencia()" as UC38
-  usecase "eliminarLicencia()" as UC39
-}
 
 package "Módulo Sesión" {
   usecase "iniciarSesion()" as UC41
@@ -32,10 +26,6 @@ admin --> UC32
 admin --> UC33
 admin --> UC34
 admin --> UC35
-admin --> UC36
-admin --> UC37
-admin --> UC38
-admin --> UC39
 admin --> UC41
 admin --> UC42
 
