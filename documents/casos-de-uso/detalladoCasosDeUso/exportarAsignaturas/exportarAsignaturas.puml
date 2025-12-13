@@ -1,0 +1,56 @@
+@startuml exportarAsignaturas
+
+skinparam linetype polyline
+
+state ASIGNATURAS_ABIERTO2 as "ASIGNATURAS_ABIERTO"
+
+state exportarAsignaturas as "exportarAsignaturas()" {
+
+    state " " as RequiringExport
+    state " " as ProvidingAsignaturas
+    state " " as ProvidingConfirmation
+    state c <<choice>>
+
+    [*] -[#green]-> RequiringExport
+    note on link
+    <b>Docente</b> solicita exportar asignaturas
+    end note    
+
+    RequiringExport -[#green]-> ProvidingAsignaturas
+    note on link
+    <b>Sistema</b> permite introducir
+    • asignaturas a exportar
+    end note
+
+    ProvidingAsignaturas -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Docente</b> introduce asignaturas a exportar
+    end note
+
+    ProvidingConfirmation -[#green]-> c
+    note on link
+    <b>Docente</b> solicita
+    • confirmar exportación
+    • cancelar exportación
+    end note
+
+    c -[#red]-> ProvidingAsignaturas
+    note on link
+    Docente cancela exportación
+    end note
+
+    c -[#red]-> ProvidingAsignaturas
+    note on link
+    Docente confirma exportación: error en la exportación
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    Docente confirma exportación: exportación exitosa
+    end note
+}
+
+ASIGNATURAS_ABIERTO -[#green]-> exportarAsignaturas
+exportarAsignaturas -[#green]-> ASIGNATURAS_ABIERTO2
+
+@enduml

@@ -1,6 +1,11 @@
 @startuml eliminarRespuesta
 skinparam linetype polyline
 
+state RESPUESTAS_ABIERTO2 as "RESPUESTAS_ABIERTO"
+state RESPUESTAS_ABIERTO3 as "RESPUESTAS_ABIERTO"
+state RESPUESTAS_CONTEXTUALES_ABIERTO2 as "RESPUESTAS_CONTEXTUALES_ABIERTO"
+state RESPUESTAS_CONTEXTUALES_ABIERTO3 as "RESPUESTAS_CONTEXTUALES_ABIERTO"
+
 state eliminarRespuesta as "eliminarRespuesta()" {
 
     state " " as ConfirmandoEliminacion
@@ -33,22 +38,22 @@ state eliminarRespuesta as "eliminarRespuesta()" {
 RESPUESTAS_ABIERTO -[#green]-> eliminarRespuesta
 RESPUESTAS_CONTEXTUALES_ABIERTO -[#green]-> eliminarRespuesta
 
-eliminarRespuesta -[#green]-> RESPUESTAS_ABIERTO
+eliminarRespuesta -[#green]-> RESPUESTAS_ABIERTO2
 note on link
 lista actualizada
 end note
 
-eliminarRespuesta -[#green]-> RESPUESTAS_CONTEXTUALES_ABIERTO
+eliminarRespuesta -[#green]-> RESPUESTAS_CONTEXTUALES_ABIERTO2
 note on link
 lista actualizada
 end note
 
-eliminarRespuesta -[#blue]-> RESPUESTAS_ABIERTO
+eliminarRespuesta -[#blue]-> RESPUESTAS_ABIERTO3
 note on link
 cancelar eliminación
 end note
 
-eliminarRespuesta -[#blue]-> RESPUESTAS_CONTEXTUALES_ABIERTO
+eliminarRespuesta -[#blue]-> RESPUESTAS_CONTEXTUALES_ABIERTO3
 note on link
 cancelar eliminación
 end note

@@ -4,6 +4,8 @@ skinparam linetype polyline
 
 state PREGUNTAS_ABIERTO
 state PREGUNTAS_CONTEXTUALES_ABIERTO
+state PREGUNTAS_ABIERTO2 as "PREGUNTAS_ABIERTO"
+state PREGUNTAS_CONTEXTUALES_ABIERTO2 as "PREGUNTAS_CONTEXTUALES_ABIERTO"
 state PREGUNTA_ABIERTO
 state PREGUNTA_CONTEXTUAL_ABIERTO
 
@@ -55,12 +57,12 @@ note on link
 editarPregunta(nuevaPregunta)
 end note
 
-crearPregunta -[#blue]-> PREGUNTAS_ABIERTO
+crearPregunta -[#blue]-> PREGUNTAS_ABIERTO2
 note on link
 cancelar creación
 end note
 
-crearPregunta -[#blue]-> PREGUNTAS_CONTEXTUALES_ABIERTO
+crearPregunta -[#blue]-> PREGUNTAS_CONTEXTUALES_ABIERTO2
 note on link
 cancelar creación
 end note

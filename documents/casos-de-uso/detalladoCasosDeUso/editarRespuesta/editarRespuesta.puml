@@ -5,6 +5,10 @@ state RESPUESTAS_ABIERTO
 state RESPUESTA_ABIERTO
 state RESPUESTAS_CONTEXTUALES_ABIERTO
 state RESPUESTA_CONTEXTUAL_ABIERTO
+state RESPUESTAS_ABIERTO2 as "RESPUESTAS_ABIERTO"
+state RESPUESTA_ABIERTO2 as "RESPUESTA_ABIERTO"
+state RESPUESTAS_CONTEXTUALES_ABIERTO2 as "RESPUESTAS_CONTEXTUALES_ABIERTO"
+state RESPUESTA_CONTEXTUAL_ABIERTO2 as "RESPUESTA_CONTEXTUAL_ABIERTO"
 
 RESPUESTAS_ABIERTO -[#green]-> editarRespuesta
 RESPUESTA_ABIERTO -[#green]-> editarRespuesta
@@ -51,15 +55,15 @@ state editarRespuesta as "editarRespuesta()" {
 
 ' 3. Transiciones DE SALIDA desde editarPregunta
 
-editarRespuesta -[#green]-> RESPUESTA_CONTEXTUAL_ABIERTO
-editarRespuesta -[#green]-> RESPUESTA_ABIERTO
+editarRespuesta -[#green]-> RESPUESTA_CONTEXTUAL_ABIERTO2
+editarRespuesta -[#green]-> RESPUESTA_ABIERTO2
 
-editarRespuesta -[#blue]-> RESPUESTAS_ABIERTO
+editarRespuesta -[#red]-> RESPUESTAS_ABIERTO2
 note on link
 cancelar edición
 end note
 
-editarRespuesta -[#blue]-> RESPUESTAS_CONTEXTUALES_ABIERTO
+editarRespuesta -[#red]-> RESPUESTAS_CONTEXTUALES_ABIERTO2
 note on link
 cancelar edición
 end note

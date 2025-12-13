@@ -69,4 +69,8 @@ note on link
   vista de examenes generados
 end note
 
+ASIGNATURA_ABIERTO -[#green]-> generarExamenes
+
+generarExamenes -[#green]-> EXAMENES_GENERADOS_CONTEXTUALES
+
 @enduml

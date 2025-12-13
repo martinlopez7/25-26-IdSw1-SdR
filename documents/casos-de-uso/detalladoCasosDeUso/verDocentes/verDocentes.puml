@@ -29,6 +29,8 @@ state verDocentes as "verDocentes()" {
 
 SISTEMA_DISPONIBLE -[#green]-> verDocentes
 
+DOCENTE_ABIERTO -[#green]-> verDocentes
+
 verDocentes -[#green]-> DOCENTES_ABIERTO
 
 @enduml

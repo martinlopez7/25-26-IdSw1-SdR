@@ -1,0 +1,56 @@
+@startuml importarAsignaturas
+
+skinparam linetype polyline
+
+state ASIGNATURAS_ABIERTO2 as "ASIGNATURAS_ABIERTO"
+
+state importarAsignaturas as "importarAsignaturas()" {
+
+    state " " as RequiringImport
+    state " " as ProvidingAsignaturas
+    state " " as ProvidingConfirmation
+    state c <<choice>>
+
+    [*] -[#green]-> RequiringImport
+    note on link
+    <b>Docente</b> solicita importar asignaturas
+    end note    
+
+    RequiringImport -[#green]-> ProvidingAsignaturas
+    note on link
+    <b>Sistema</b> permite introducir
+    • asignaturas a importar
+    end note
+
+    ProvidingAsignaturas -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Docente</b> introduce asignaturas a importar
+    end note
+
+    ProvidingConfirmation -[#green]-> c
+    note on link
+    <b>Docente</b> solicita
+    • confirmar importación
+    • cancelar importación
+    end note
+
+    c -[#red]-> ProvidingAsignaturas
+    note on link
+    Docente cancela importación
+    end note
+
+    c -[#red]-> ProvidingAsignaturas
+    note on link
+    Docente confirma importación: error en la importación
+    end note
+
+    c -[#green]-> [*]
+    note on link
+    Docente confirma importación: importación exitosa
+    end note
+}
+
+ASIGNATURAS_ABIERTO -[#green]-> importarAsignaturas
+importarAsignaturas -[#green]-> ASIGNATURAS_ABIERTO2
+
+@enduml

@@ -50,6 +50,8 @@ state asignarExamenes as "asignarExamenes()" {
 }
 
 EXAMENES_GENERADOS -[#green]-> asignarExamenes
+EXAMENES_GENERADOS_CONTEXTUALES -[#green]-> asignarExamenes
 asignarExamenes -[#green]-> EXAMENES_ASIGNADOS
+asignarExamenes -[#green]-> EXAMENES_ASIGNADOS_CONTEXTUALES
 
 @enduml

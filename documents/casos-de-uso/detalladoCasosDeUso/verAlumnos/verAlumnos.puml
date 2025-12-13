@@ -2,6 +2,8 @@
 
 skinparam linetype polyline
 
+state ALUMNO_ABIERTO
+
 state verAlumnos as "verAlumnos()" {
 
     state " " as MostrandoAlumnos
@@ -29,6 +31,8 @@ state verAlumnos as "verAlumnos()" {
 }
 
 SISTEMA_DISPONIBLE -[#green]-> verAlumnos
+
+ALUMNO_ABIERTO -[#green]-> verAlumnos
 
 verAlumnos -[#green]-> ALUMNOS_ABIERTO
 

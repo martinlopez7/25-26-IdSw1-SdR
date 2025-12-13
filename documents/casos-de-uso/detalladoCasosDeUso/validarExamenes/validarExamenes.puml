@@ -1,0 +1,35 @@
+@startuml validarExamenes
+
+skinparam linetype polyline
+
+state EXAMENES_GENERADOS2 as "EXAMENES_GENERADOS"
+state EXAMENES_GENERADOS_CONTEXTUALES2 as "EXAMENES_GENERADOS_CONTEXTUALES"
+
+state validarExamenes as "validarExamenes()" {
+
+    state " " as RequiringCancelGeneration
+    state " " as ProvidingConfirmation
+
+    [*] -[#green]-> RequiringCancelGeneration 
+    note on link
+    <b>Docente</b> solicita validación de exámenes generados
+    end note    
+    
+    RequiringCancelGeneration -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Sistema</b> permite validación de exámenes generados
+    end note
+    
+    ProvidingConfirmation -[#green]-> [*]
+    
+}
+
+EXAMENES_GENERADOS -[#green]-> validarExamenes
+
+EXAMENES_GENERADOS_CONTEXTUALES -[#green]-> validarExamenes
+
+validarExamenes -[#green]-> EXAMENES_GENERADOS2
+
+validarExamenes -[#green]-> EXAMENES_GENERADOS_CONTEXTUALES2
+
+@enduml
