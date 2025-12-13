@@ -22,6 +22,6 @@
   
   --
   
-  [ Cancelar Generación ] | [ Confirmar y Generar ]
+  [ Salir ] | [ Confirmar y Generar ]
 }
 @endsalt

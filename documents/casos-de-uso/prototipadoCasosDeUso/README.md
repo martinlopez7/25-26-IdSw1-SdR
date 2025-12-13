@@ -62,26 +62,6 @@
 | :--- |
 | [Código UML](importarPreguntas/importarPreguntasError.puml) |
 
-### Exportar Alumnos [Docente]
-
-| ![Prototipado de Exportar Alumnos](exportarAlumnos/exportarAlumnosConfirmacion.svg) |
-| :--- |
-| [Código UML](exportarAlumnos/exportarAlumnosConfirmacion.puml) |
-
-| ![Prototipado de Exportar Alumnos](exportarAlumnos/exportarAlumnosError.svg) |
-| :--- |
-| [Código UML](exportarAlumnos/exportarAlumnosError.puml) |
-
-### Exportar Preguntas [Docente]
-
-| ![Prototipado de Exportar Preguntas](exportarPreguntas/exportarPreguntasConfirmacion.svg) |
-| :--- |
-| [Código UML](exportarPreguntas/exportarPreguntasConfirmacion.puml) |
-
-| ![Prototipado de Exportar Preguntas](exportarPreguntas/exportarPreguntasError.svg) |
-| :--- |
-| [Código UML](exportarPreguntas/exportarPreguntasError.puml) |
-
 ### Asignar Exámenes [Docente]
 
 | ![Prototipado de Asignar Exámenes](asignarExamenes/asignarExamenes.svg) |
@@ -261,3 +241,21 @@
 | ![Prototipado de Eliminar Respuesta](eliminarRespuesta/eliminarRespuesta.svg) |
 | :--- |
 | [Código UML](eliminarRespuesta/eliminarRespuesta.puml) |
+
+### Cancelar Generación [Docente]
+
+| ![Prototipado de Cancelar Generación](cancelarGeneracion/cancelarGeneracion.svg) |
+| :--- |
+| [Código UML](cancelarGeneracion/cancelarGeneracion.puml) |
+
+### Importar Asignaturas [Docente]
+
+| ![Prototipado de Importar Asignaturas](importarAsignaturas/importarAsignaturas.svg) |
+| :--- |
+| [Código UML](importarAsignaturas/importarAsignaturas.puml) |
+
+### Importar Grados [Docente]
+
+| ![Prototipado de Importar Grados](importarGrados/importarGrados.svg) |
+| :--- |
+| [Código UML](importarGrados/importarGrados.puml) |

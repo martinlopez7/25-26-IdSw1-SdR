@@ -16,8 +16,9 @@ state corregirExamenes as "corregirExamenes()" {
     
     RequiringCorrection -[#green]-> ProvidingDoneExams
     note on link
-    <b>Sistema</b> permite introducir
-    • exámenes realizados por alumnos
+    <b>Sistema</b> permite 
+    • introducir exámenes realizados
+    • salir de corrección
     end note
     
     ProvidingDoneExams -[#green]-> ProvidingConfirmation
@@ -27,7 +28,7 @@ state corregirExamenes as "corregirExamenes()" {
     
     ProvidingConfirmation -[#green]-> c
     note on link
-    <b>Docente</b> solicita
+    <b>Sistema</b> permite
     • confirmar corrección
     • cancelar corrección
     end note
@@ -45,6 +46,11 @@ state corregirExamenes as "corregirExamenes()" {
     c -[#green]-> [*]
     note on link
     Docente confirma corrección: corrección exitosa
+    end note
+    
+    ProvidingDoneExams -[#blue]-> [*]
+    note on link
+    Docente solicita salir de corrección
     end note
 }
 

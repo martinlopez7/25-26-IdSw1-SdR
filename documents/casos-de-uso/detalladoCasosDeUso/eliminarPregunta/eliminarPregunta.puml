@@ -50,19 +50,25 @@ state eliminarPregunta as "eliminarPregunta()" {
 ' 3. Transiciones de SALIDA (Caso: Lista General)
 
 eliminarPregunta -[#green]-> PREGUNTAS_ABIERTO2
+note on link
+lista actualizada
+end note
 
 eliminarPregunta -[#blue]-> PREGUNTAS_ABIERTO3
 note on link
-Cancelar operación
+cancelar eliminación
 end note
 
 ' 4. Transiciones de SALIDA (Caso: Lista Contextual)
 
 eliminarPregunta -[#green]-> PREGUNTAS_CONTEXTUALES_ABIERTO2
+note on link
+lista actualizada
+end note
 
 eliminarPregunta -[#blue]-> PREGUNTAS_CONTEXTUALES_ABIERTO3
 note on link
-Cancelar operación
+cancelar eliminación
 end note
 
 @enduml

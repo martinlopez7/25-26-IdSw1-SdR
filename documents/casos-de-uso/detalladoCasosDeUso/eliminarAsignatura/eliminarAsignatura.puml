@@ -22,7 +22,6 @@ state eliminarAsignatura as "eliminarAsignatura()" {
     • Nombre 
     • Código 
     • Curso académico 
-    • Alumnos matriculados
     • Batería de preguntas
 
     • Presenta advertencia de eliminación

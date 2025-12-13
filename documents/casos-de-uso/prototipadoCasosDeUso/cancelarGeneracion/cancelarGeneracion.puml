@@ -4,8 +4,7 @@
     Asignatura: <b>Estructura de Datos (GII-24)</b> | Fecha: <b>12/12/2024</b>
     ===
     .
-    <b>Estado del proceso:</b>
-    Generación completada. Esperando validación o guardado.
+    Generación completada. 
     .
     {#
         <b>ID</b> | <b>Tipo</b> | <b>Preguntas</b>
@@ -14,21 +13,15 @@
         EX-03 | Parcial 1 | 10 Preguntas
     }
     .
-    .
-    --
-    .
-    ^<b>CONFIRMACIÓN DE CANCELACIÓN</b>^
-    .
     {
         ¿Está seguro que desea cancelar la generación actual?
         .
         <color:red><b>⚠ ADVERTENCIA:</b></color>
-        Si confirma la cancelación, los 3 exámenes generados en esta
-        sesión se perderán.
+        Si confirma la cancelación, los 3 exámenes generados en esta sesión se perderán.
         .
-        ====
+        ---
         .
-        [ <b>(X) NO, VOLVER</b> ] | [ <b>(✓) SÍ, CANCELAR PROCESO</b> ]
+        [ <b>No cancelar</b> ] | [ <b>Cancelar generación</b> ]
     }
     .
     .

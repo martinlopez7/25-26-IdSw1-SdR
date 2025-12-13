@@ -60,13 +60,16 @@ state editarDocente as "editarDocente()" {
 }
 
 editarDocente -[#green]-> DOCENTE_ABIERTO2
+note on link
+guardar
+end note
 
 editarDocente -[#red]-> DOCENTES_ABIERTO2
 note on link
 cancelar edición
 end note
 
-editarDocente -[#red]-> DOCENTES_ABIERTO3
+editarDocente -[#blue]-> DOCENTES_ABIERTO3
 note on link
 eliminar
 end note

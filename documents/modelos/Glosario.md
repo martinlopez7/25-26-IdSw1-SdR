@@ -5,7 +5,7 @@
 
 </div>
 
-# 📘 Glosario
+# Glosario
 
 | Término | Definición |
 |---|---|

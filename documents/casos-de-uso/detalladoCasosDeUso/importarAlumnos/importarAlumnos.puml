@@ -18,8 +18,9 @@ state importarAlumnos as "importarAlumnos()" {
 
     RequiringImport -[#green]-> ProvidingAlumnos
     note on link
-    <b>Sistema</b> permite introducir
-    • alumnos a importar
+    <b>Sistema</b> permite
+    • introducir alumnos a importar
+    • salir de importación
     end note
 
     ProvidingAlumnos -[#green]-> ProvidingConfirmation
@@ -29,7 +30,7 @@ state importarAlumnos as "importarAlumnos()" {
 
     ProvidingConfirmation -[#green]-> c
     note on link
-    <b>Docente</b> solicita
+    <b>Sistema</b> permite
     • confirmar importación
     • cancelar importación
     end note
@@ -47,6 +48,11 @@ state importarAlumnos as "importarAlumnos()" {
     c -[#green]-> [*]
     note on link
     Docente confirma importación: importación exitosa
+    end note
+    
+    ProvidingAlumnos -[#blue]-> [*]
+    note on link
+    Docente solicita salir de importación
     end note
 }
 

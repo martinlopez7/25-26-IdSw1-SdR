@@ -18,14 +18,17 @@ state exportarConfiguracionGlobal as "exportarConfiguracionGlobal()" {
     
     RequiringGlobalConfigurationExport -[#green]-> ProvidingGlobalConfiguration
     note on link
-    <b>Sistema</b> permite exportar
-    • alumnos
-    • grados
-    • asignaturas
-    • preguntas
+    <b>Sistema</b> permite 
+    • exportar alumnos, grados, asignaturas, preguntas
+    • salir de exportación
     end note
     
-    ProvidingGlobalConfiguration -[#green]-> c
+    ProvidingGlobalConfiguration -[#green]-> ProvidingConfirmation
+    note on link
+    <b>Docente</b> solicita exportar configuración global
+    end note
+    
+    ProvidingConfirmation -[#green]-> c
     note on link
     <b>Docente</b> solicita
     • confirmar exportación
@@ -45,6 +48,11 @@ state exportarConfiguracionGlobal as "exportarConfiguracionGlobal()" {
     c -[#green]-> [*]
     note on link
     Docente confirma exportación: exportación exitosa
+    end note
+    
+    ProvidingGlobalConfiguration -[#blue]-> [*]
+    note on link
+    Docente solicita salir de exportación
     end note
 }
 

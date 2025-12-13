@@ -4,16 +4,16 @@
 ===
 {+  CONTENIDO| ¿CORRECTA?| ACCIÓN
   --|--|--
-  Reutilizar código de clases existentes | Sí| [Editar]
-  Capacidad de responder al mismo mensaje | No | [Editar]  
-  Crear variables globales | Sí | [Editar]
+  Reutilizar código de clases existentes | Sí| [Editar] | [Eliminar]
+  Capacidad de responder al mismo mensaje | No | [Editar]  | [Eliminar]
+  Crear variables globales | Sí | [Editar] | [Eliminar]
   }
   ~~
   .
   {<b>BUSCAR:</b> [                                       ] | [Filtrar]}
   ~~
   .
-  {[Crear respuesta] | [Borrar respuesta] | [Salir]}
+  {[Crear respuesta] | [Salir]}
 }
 
 @endsalt

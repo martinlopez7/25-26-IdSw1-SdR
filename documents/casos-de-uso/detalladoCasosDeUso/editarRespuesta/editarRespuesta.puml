@@ -65,14 +65,25 @@ state editarRespuesta as "editarRespuesta()" {
 ' 3. Transiciones DE SALIDA desde editarPregunta
 
 editarRespuesta -[#green]-> RESPUESTA_CONTEXTUAL_ABIERTO2
+note on link
+guardar
+end note
+
 editarRespuesta -[#green]-> RESPUESTA_ABIERTO2
+note on link
+guardar
+end note
 
 editarRespuesta -[#red]-> RESPUESTAS_ABIERTO2
+note on link
+cancelar edición
+end note
 
 editarRespuesta -[#blue]-> RESPUESTAS_ABIERTO3
 note on link
 eliminar
 end note
+
 editarRespuesta -[#blue]-> RESPUESTAS_CONTEXTUAL_ABIERTO3
 note on link
 eliminar

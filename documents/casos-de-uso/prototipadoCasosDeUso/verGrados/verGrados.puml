@@ -15,10 +15,10 @@
     .
     {#
         <b>Código</b> | <b>Título del Grado</b> | <b>Alumnos Enlistados</b> | <b>Acciones</b>
-        GII-24 | Grado en Ing. Informática | 450 inscritos | [Editar]
-        GIM-10 | Grado en Ing. Mecánica | 320 inscritos | [Editar]
-        ADE-19 | Admin. y Dirección Empresas | 600 inscritos | [Editar]
-        ARC-21 | Grado en Arquitectura | 150 inscritos | [Editar]
+        GII-24 | Grado en Ing. Informática | 450 inscritos | [Editar] | [Eliminar]
+        GIM-10 | Grado en Ing. Mecánica | 320 inscritos | [Editar] | [Eliminar]
+        ADE-19 | Admin. y Dirección Empresas | 600 inscritos | [Editar] | [Eliminar]
+        ARC-21 | Grado en Arquitectura | 150 inscritos | [Editar] | [Eliminar]
         . | . | . | .
     }
     .

@@ -18,11 +18,9 @@ state importarConfiguracionGlobal as "importarConfiguracionGlobal()" {
     
     RequiringGlobalConfigurationImport -[#green]-> ProvidingGlobalConfiguration
     note on link
-    <b>Sistema</b> permite introducir
-    • alumnos
-    • grados
-    • asignaturas
-    • preguntas
+    <b>Sistema</b> permite 
+    • importar alumnos, grados, asignaturas, preguntas
+    • salir de importación
     end note
     
     ProvidingGlobalConfiguration -[#green]-> ProvidingConfirmation
@@ -32,7 +30,7 @@ state importarConfiguracionGlobal as "importarConfiguracionGlobal()" {
     
     ProvidingConfirmation -[#green]-> c
     note on link
-    <b>Docente</b> solicita
+    <b>Sistema</b> permite
     • confirmar importación
     • cancelar importación
     end note
@@ -50,6 +48,11 @@ state importarConfiguracionGlobal as "importarConfiguracionGlobal()" {
     c -[#green]-> [*]
     note on link
     Docente confirma importación: importación exitosa
+    end note
+    
+    ProvidingGlobalConfiguration -[#blue]-> [*]
+    note on link
+    Docente solicita salir de importación
     end note
 }
 

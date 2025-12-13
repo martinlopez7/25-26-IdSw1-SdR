@@ -17,10 +17,10 @@
     .
     {#
         <b>Código</b> | <b>Nombre de la Asignatura</b> | <b>Curso</b> | <b>Grados</b> | <b>Alumnos</b> | <b>Acciones</b>
-        MAT-101 | Cálculo I | 2024/25 | GII, GIM | 120 matr. | [Editar]
-        INF-202 | Bases de Datos | 2024/25 | GII | 85 matr. | [Editar]
-        FIS-100 | Física General | 2023/24 | GIM | 40 matr. | [Editar]
-        OPT-301 | Inteligencia Artificial | 2024/25 | GII, GID | 60 matr. | [Editar]
+        MAT-101 | Cálculo I | 2024/25 | GII, GIM | 120 matr. | [Editar] | [Eliminar]
+        INF-202 | Bases de Datos | 2024/25 | GII | 85 matr. | [Editar] | [Eliminar]
+        FIS-100 | Física General | 2023/24 | GIM | 40 matr. | [Editar] | [Eliminar]
+        OPT-301 | Inteligencia Artificial | 2024/25 | GII, GID | 60 matr. | [Editar] | [Eliminar]
         . | . | . | . | . | .
     }
     .

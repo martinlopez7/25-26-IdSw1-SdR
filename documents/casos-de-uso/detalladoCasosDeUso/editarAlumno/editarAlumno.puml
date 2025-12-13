@@ -56,6 +56,9 @@ state editarAlumno as "editarAlumno()" {
 }
 
 editarAlumno -[#green]-> ALUMNOS_ABIERTO2
+note on link
+guardar
+end note
 
 editarAlumno -[#red]-> ALUMNOS_ABIERTO3
 note on link

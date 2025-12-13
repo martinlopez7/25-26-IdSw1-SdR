@@ -4,13 +4,13 @@
 ===
 {+  DNI | NOMBRE | APELLIDOS | ACCIÓN
   --|--|--|--
-  12345678A | Roberto | Sánz Roca | [Editar]
-  87654321B | Raúl | González Gurruchaga | [Editar]  
- PXYZ | Nombre del alumno | Apellidos del alumno | [Editar]
+  12345678A | Roberto | Sánz Roca | [Editar] |[Eliminar]
+  87654321B | Raúl | González Gurruchaga | [Editar] |[Eliminar]
+ PXYZ | Pepe | López | [Editar] |[Eliminar]
   }
   ~~
   {<b>BUSCAR:</b> [                                      ] | [Filtrar]}
   ~~
-  { [Crear nuevo] | [Borrar seleccionado] | [Importar] | . | [Salir] }
+  { [Crear nuevo] | [Importar] | . | [Salir] }
 }
 @endsalt

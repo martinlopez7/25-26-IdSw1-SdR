@@ -18,10 +18,9 @@
     .
     {#
         <b>ID</b> | <b>Asignatura</b> | <b>Enunciado (Vista previa)</b> | <b>Tema</b> | <b>Dificultad</b> | <b>Acciones</b>
-        #4029 | Ing. Software | ¿Cuál patrón pertenece a... | Patrones | Medio | [Editar]
-        #4030 | Matemáticas I | Calcular la derivada de... | Cálculo | Fácil | [Editar]
-        #4105 | Ing. Software | Diagrama que representa... | UML | Difícil | [Editar]
-        . | . | . | . | . | .
+        #4029 | Ing. Software | ¿Cuál patrón pertenece a... | Patrones | Medio | [Editar] | [Eliminar]
+        #4030 | Matemáticas I | Calcular la derivada de... | Cálculo | Fácil | [Editar] | [Eliminar]
+        #4105 | Ing. Software | Diagrama que representa... | UML | Difícil | [Editar] | [Eliminar]
     }
     .
     ~~

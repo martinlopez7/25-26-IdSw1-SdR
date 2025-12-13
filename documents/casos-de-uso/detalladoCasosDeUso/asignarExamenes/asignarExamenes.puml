@@ -16,19 +16,19 @@ state asignarExamenes as "asignarExamenes()" {
 
     RequiringAssignment -[#green]-> ProvidingAssignment
     note on link
-    <b>Sistema</b> permite introducir
-    • exámenes a asignar
-    • alumnos o grupos destinatarios
+    <b>Sistema</b> permite 
+    • introducir alumnos o grupos destinatarios
+    • salir de asignación
     end note
 
     ProvidingAssignment -[#green]-> ProvidingConfirmation
     note on link
-    <b>Docente</b> introduce asignación de exámenes
+    <b>Docente</b> introduce alumnos o grupos destinatarios
     end note
 
     ProvidingConfirmation -[#green]-> c
     note on link
-    <b>Docente</b> solicita
+    <b>Sistema</b> permite
     • confirmar asignación
     • cancelar asignación
     end note
@@ -46,6 +46,11 @@ state asignarExamenes as "asignarExamenes()" {
     c -[#green]-> [*]
     note on link
     Docente confirma asignación: asignación exitosa
+    end note
+    
+    ProvidingAssignment -[#blue]-> [*]
+    note on link
+    Docente solicita salir de asignación
     end note
 }
 

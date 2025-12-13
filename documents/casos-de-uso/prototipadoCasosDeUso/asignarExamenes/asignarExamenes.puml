@@ -3,16 +3,6 @@
     <b>ASIGNAR EXÁMENES GENERADOS</b>
     ===
     {
-        <b>Selección de exámenes generados:</b>
-        --
-        {
-            Asignatura:      | ^Matemáticas II^
-            Curso académico: | ^2024/2025^
-            Evaluación:      | ^Parcial 1^
-            ..
-        }
-        
-        --
         
         <b>Destinatarios:</b>
         {
@@ -40,12 +30,11 @@
         
         ~~
         .
-        <i>El sistema registrará qué examen generado se asigna a cada alumno,
-        generando internamente su clave alfanumérica.
+        <i>El sistema generará una clave alfanumérica al examen de cada alumno.
         
         ~~
         .
-        {[Asignar exámenes] | [Cancelar]}
+        {[Asignar exámenes] | [Salir]}
     }
 }
 @endsalt

@@ -224,12 +224,6 @@
 | :--- |
 | [Código UML](cancelarGeneracion/cancelarGeneracion.puml) |
 
-### Validar Exámenes [Docente]
-
-| ![Detallado de Validar Exámenes](validarExamenes/validarExamenes.svg) |
-| :--- |
-| [Código UML](validarExamenes/validarExamenes.puml) |
-
 ### Importar Asignaturas [Docente]
 
 | ![Detallado de Importar Asignaturas](importarAsignaturas/importarAsignaturas.svg) |

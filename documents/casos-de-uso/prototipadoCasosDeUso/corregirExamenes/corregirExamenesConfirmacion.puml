@@ -10,7 +10,7 @@
   ====
   <color:red><b>¿Confirma corregir exámenes?</b></color>
   ====
-  [ <color:red><b>Corregir exámenes</b></color> ] | [ Cancelar ]
+  [ Corregir exámenes ] | [ Cancelar ]
 
 }
 @endsalt

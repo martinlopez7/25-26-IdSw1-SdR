@@ -18,8 +18,9 @@ state importarGrados as "importarGrados()" {
 
     RequiringImport -[#green]-> ProvidingGrados
     note on link
-    <b>Sistema</b> permite introducir
-    • grados a importar
+    <b>Sistema</b> permite 
+    • introducir grados a importar
+    • salir de importación
     end note
 
     ProvidingGrados -[#green]-> ProvidingConfirmation
@@ -29,7 +30,7 @@ state importarGrados as "importarGrados()" {
 
     ProvidingConfirmation -[#green]-> c
     note on link
-    <b>Docente</b> solicita
+    <b>Sistema</b> permite
     • confirmar importación
     • cancelar importación
     end note
@@ -47,6 +48,11 @@ state importarGrados as "importarGrados()" {
     c -[#green]-> [*]
     note on link
     Docente confirma importación: importación exitosa
+    end note
+    
+    ProvidingGrados -[#blue]-> [*]
+    note on link
+    Docente solicita salir de importación
     end note
 }
 

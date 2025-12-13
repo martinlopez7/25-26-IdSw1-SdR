@@ -11,8 +11,10 @@ state PREGUNTAS_ABIERTO2 as "PREGUNTAS_ABIERTO"
 state PREGUNTAS_CONTEXTUALES_ABIERTO2 as "PREGUNTAS_CONTEXTUALES_ABIERTO"
 state PREGUNTA_ABIERTO2 as "PREGUNTA_ABIERTO"
 state PREGUNTA_CONTEXTUAL_ABIERTO2 as "PREGUNTA_CONTEXTUAL_ABIERTO"
-state PREGUNTA_ABIERTO3 as "PREGUNTA_ABIERTO"
-state PREGUNTAS_CONTEXTUALES_ABIERTO3 as "PREGUNTA_CONTEXTUAL_ABIERTO"
+state PREGUNTAS_ABIERTO3 as "PREGUNTAS_ABIERTO"
+state PREGUNTAS_CONTEXTUALES_ABIERTO3 as "PREGUNTAS_CONTEXTUAL_ABIERTO"
+state RESPUESTAS_ABIERTO2 as "RESPUESTAS_ABIERTO"
+state RESPUESTAS_CONTEXTUALES_ABIERTO2 as "RESPUESTAS_CONTEXTUALES_ABIERTO"
 
 RESPUESTAS_ABIERTO -[#green]-> editarPregunta
 RESPUESTAS_CONTEXTUALES_ABIERTO -[#green]-> editarPregunta
@@ -44,6 +46,7 @@ state editarPregunta as "editarPregunta()" {
     • modificar campos
     • guardar pregunta
     • cancelar edición
+    • ver respuestas
     • eliminar
     end note
     
@@ -66,21 +69,54 @@ state editarPregunta as "editarPregunta()" {
     note on link
     <b>Docente</b> solicita eliminar
     end note
+    
+    GuardandoDatos -[#orange]-> [*]
+    note on link
+    <b>Docente</b> solicita ver respuetas
+    end note
 }
 
 ' 3. Transiciones DE SALIDA desde editarPregunta
 
 editarPregunta -[#green]-> PREGUNTA_ABIERTO2
-
+note on link
+guardar
+end note
 
 editarPregunta -[#green]-> PREGUNTA_CONTEXTUAL_ABIERTO2
-
+note on link
+guardar
+end note
 
 ' Salida de cancelación (Opcional: regresa a la lista general o al origen)
-editarPregunta -[#red]-> PREGUNTAS_ABIERTO2 : Cancelar
+editarPregunta -[#red]-> PREGUNTAS_ABIERTO2 
+note on link
+cancelar
+end note
 
-editarPregunta -[#red]-> PREGUNTAS_CONTEXTUALES_ABIERTO2 : Cancelar
+editarPregunta -[#red]-> PREGUNTAS_CONTEXTUALES_ABIERTO2
+note on link
+cancelar
+end note
 
-editarPregunta -[#blue]-> PREGUNTAS_CONTEXTUALES_ABIERTO3 : Elimnar
-editarPregunta -[#blue]-> PREGUNTA_ABIERTO3 : Elimnar
+editarPregunta -[#blue]-> PREGUNTAS_CONTEXTUALES_ABIERTO3
+note on link
+eliminar
+end note
+
+editarPregunta -[#blue]-> PREGUNTAS_ABIERTO3
+note on link
+eliminar
+end note
+
+editarPregunta -[#orange]-> RESPUESTAS_ABIERTO2
+note on link
+ver respuestas
+end note
+
+editarPregunta -[#orange]-> RESPUESTAS_CONTEXTUALES_ABIERTO2
+note on link
+ver respuestas
+end note
+
 @enduml

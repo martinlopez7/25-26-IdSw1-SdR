@@ -58,6 +58,9 @@ GRADO_ABIERTO -[#green]-> editarGrado
 GRADOS_ABIERTO -[#green]-> editarGrado
 
 editarGrado -[#green]-> GRADO_ABIERTO2
+note on link
+guardar
+end note
 
 editarGrado -[#red]-> GRADOS_ABIERTO2
 note on link

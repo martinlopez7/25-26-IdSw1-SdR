@@ -29,12 +29,12 @@ state iniciarSesion as "iniciarSesion()" {
     
     c -[#red]-> SolicitandoAcceso
     note on link
-    usuario:contraseña no válida
+    credenciales invalidas
     end note
 
     c -[#green]-> [*]
     note on link
-    usuario:contraseña válida
+    credenciales validas
     end note
 }
 
@@ -43,7 +43,6 @@ SESION_CERRADA -[#green]-> iniciarSesion
 iniciarSesion -[#green]-> SISTEMA_DISPONIBLE
 note on link
 UsuarioNoRegistrado → Administrador institucional o Docente
-completarGestion()
 end note
 
 @enduml

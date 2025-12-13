@@ -39,7 +39,7 @@
 | 35. <a href="..\detalladoCasosDeUso\README.md#editar-respuesta-docente">editarRespuesta()</a> [Docente]|
 | 36. <a href="..\detalladoCasosDeUso\README.md#eliminar-respuesta-docente">eliminarRespuesta()</a> [Docente]|
 | 37. <a href="..\detalladoCasosDeUso\README.md#cancelar-generación-docente">cancelarGeneracion()</a> [Docente]|
-| 38. <a href="..\detalladoCasosDeUso\README.md#importar-asignatura-docente">importarAsignatura()</a> [Docente]|
+| 38. <a href="..\detalladoCasosDeUso\README.md#importar-asignaturas-docente">importarAsignaturas()</a> [Docente]|
 | 39. <a href="..\detalladoCasosDeUso\README.md#importar-grados-docente">importarGrados()</a> [Docente]|
-| 40. <a href="..\detalladoCasosDeUso\README.md#exportar-asignatura-docente">exportarAsignatura()</a> [Abstracto]|
+| 40. <a href="..\detalladoCasosDeUso\README.md#exportar-asignaturas-docente">exportarAsignaturas()</a> [Abstracto]|
 | 41. <a href="..\detalladoCasosDeUso\README.md#exportar-grados-docente">exportarGrados()</a> [Abstracto]|

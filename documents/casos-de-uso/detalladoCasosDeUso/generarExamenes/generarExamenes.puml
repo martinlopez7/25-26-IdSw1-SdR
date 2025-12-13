@@ -16,8 +16,9 @@ state generarExamenes as "generarExamenes()" {
     
     RequiringGeneration -[#green]-> ProvidingData
     note on link
-    <b>Sistema</b> presenta
-    • datos disponibles para la generación
+    <b>Sistema</b> permite
+    • introducir datos disponibles para la generación
+    • salir de generación
     end note
     
     ProvidingData -[#green]-> ProvidingConfirmation
@@ -33,7 +34,7 @@ state generarExamenes as "generarExamenes()" {
     
     ProvidingConfirmation -[#green]-> c
     note on link
-    <b>Docente</b> solicita
+    <b>Sistema</b> permite
     • confirmar generación
     • cancelar generación
     end note
@@ -52,6 +53,11 @@ state generarExamenes as "generarExamenes()" {
     note on link
     Docente confirma generación: generación exitosa
     end note
+    
+    ProvidingData -[#blue]-> [*]
+    note on link
+    Docente solicta salir de generación
+    end note
 }
 
 state EXAMENES_GENERADOS
@@ -61,16 +67,15 @@ SISTEMA_DISPONIBLE -[#green]-> generarExamenes
 
 generarExamenes -[#green]-> EXAMENES_GENERADOS
 note on link
-  vista de examenes generados
+vista de examenes generados
 end note
 
 generarExamenes -[#green]-> EXAMENES_GENERADOS_CONTEXTUALES
 note on link
-  vista de examenes generados
+vista de examenes generados
 end note
 
 ASIGNATURA_ABIERTO -[#green]-> generarExamenes
 
-generarExamenes -[#green]-> EXAMENES_GENERADOS_CONTEXTUALES
 
 @enduml
