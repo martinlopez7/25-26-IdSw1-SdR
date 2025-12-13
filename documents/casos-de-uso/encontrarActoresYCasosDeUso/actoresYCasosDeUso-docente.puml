@@ -53,10 +53,6 @@ package "Módulo Examen" {
   usecase "generarExamenes()" as UC28
   usecase "asignarExamenes()" as UC29
   usecase "cancelarGeneracion()" as UC40
-  usecase "validarExamenes()" as UC41
-}
-
-package "Módulo Corrección" {
   usecase "corregirExamenes()" as UC31
 }
 
@@ -115,7 +111,6 @@ doc -d-> UC35
 doc -l-> UC36
 doc -l-> UC38
 doc --> UC40
-doc --> UC41
 doc --> UC42
 doc --> UC43
 ME44<.r.UC26 :include

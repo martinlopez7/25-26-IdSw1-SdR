@@ -11,6 +11,8 @@ state PREGUNTAS_ABIERTO2 as "PREGUNTAS_ABIERTO"
 state PREGUNTAS_CONTEXTUALES_ABIERTO2 as "PREGUNTAS_CONTEXTUALES_ABIERTO"
 state PREGUNTA_ABIERTO2 as "PREGUNTA_ABIERTO"
 state PREGUNTA_CONTEXTUAL_ABIERTO2 as "PREGUNTA_CONTEXTUAL_ABIERTO"
+state PREGUNTA_ABIERTO3 as "PREGUNTA_ABIERTO"
+state PREGUNTAS_CONTEXTUALES_ABIERTO3 as "PREGUNTA_CONTEXTUAL_ABIERTO"
 
 RESPUESTAS_ABIERTO -[#green]-> editarPregunta
 RESPUESTAS_CONTEXTUALES_ABIERTO -[#green]-> editarPregunta
@@ -42,6 +44,7 @@ state editarPregunta as "editarPregunta()" {
     • modificar campos
     • guardar pregunta
     • cancelar edición
+    • eliminar
     end note
     
     GuardandoDatos -[#green]-> EditandoDatos
@@ -58,6 +61,11 @@ state editarPregunta as "editarPregunta()" {
     note on link
     <b>Docente</b> solicita cancelar edición
     end note
+    
+    GuardandoDatos -[#blue]-> [*]
+    note on link
+    <b>Docente</b> solicita eliminar
+    end note
 }
 
 ' 3. Transiciones DE SALIDA desde editarPregunta
@@ -73,4 +81,6 @@ editarPregunta -[#red]-> PREGUNTAS_ABIERTO2 : Cancelar
 
 editarPregunta -[#red]-> PREGUNTAS_CONTEXTUALES_ABIERTO2 : Cancelar
 
+editarPregunta -[#blue]-> PREGUNTAS_CONTEXTUALES_ABIERTO3 : Elimnar
+editarPregunta -[#blue]-> PREGUNTA_ABIERTO3 : Elimnar
 @enduml

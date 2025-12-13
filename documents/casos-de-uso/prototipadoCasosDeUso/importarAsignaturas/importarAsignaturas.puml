@@ -1,35 +1,12 @@
-@startsalt importarAsignaturas_WIREFRAME
+@startsalt
 {+
-    <b>IMPORTAR ASIGNATURAS | ASISTENTE</b>
-    ===
-    .
-    <b>PASO 1: Selección de Fichero (Completado)</b>
-    .
-    Archivo cargado: "plan_estudios_2025_vFinal.csv"
-    Estado: <color:green>Validación de formato correcta.</color>
-    .
-    [ Cambiar fichero (Volver al paso anterior) ]
-    .
-    --
-    .
-    <b>PASO 2: Confirmación y Vista Previa</b>
-    .
-    <i>El sistema ha detectado las siguientes asignaturas para importar. Por favor, revise los datos antes de confirmar.</i>
-    .
-    <b>Resumen:</b> 4 asignaturas nuevas detectadas. 0 conflictos.
-    .
-    {#
-        <b>Código</b> | <b>Nombre Asignatura</b> | <b>Departamento</b> | <b>Créditos ECTS</b>
-        ING-101 | Introducción a la IA | Informática | 6.0
-        MAT-204 | Estadística Avanzada | Matemáticas | 4.5
-        FIS-301 | Mecánica Cuántica II | Física | 6.0
-        HUM-105 | Ética y Tecnología | Humanidades | 3.0
-    }
-    .
-    .
-    ====
-    .
-    "Acciones Finales:"
-    { [ X Cancelar Importación ] | [ ✓ Confirmar e Importar Datos ] }
+  <b>IMPORTAR Asignaturas</b>
+  --
+  
+  [ Cargar Asignaturas ]
+  
+  --
+  
+  [ Cancelar Importación ] | [ Confirmar Importación ]
 }
 @endsalt

@@ -4,6 +4,7 @@ skinparam linetype polyline
 state ALUMNOS_ABIERTO
 state ALUMNOS_ABIERTO2 as "ALUMNOS_ABIERTO"
 state ALUMNOS_ABIERTO3 as "ALUMNOS_ABIERTO"
+state ALUMNOS_ABIERTO4 as "ALUMNOS_ABIERTO"
 
 ALUMNOS_ABIERTO -[#green]-> editarAlumno
 
@@ -30,6 +31,7 @@ state editarAlumno as "editarAlumno()" {
     • modificar campos
     • guardar alumno
     • cancelar edición
+    • eliminar
     end note
     
     GuardandoDatos -[#green]-> EditandoDatos
@@ -40,6 +42,11 @@ state editarAlumno as "editarAlumno()" {
     GuardandoDatos -[#green]-> [*]
     note on link
     <b>Docente</b> solicita guardar y salir
+    end note
+    
+    GuardandoDatos -[#blue]-> [*]
+    note on link
+    <b>Docente</b> solicita eliminar
     end note
 
     GuardandoDatos -[#red]-> [*]
@@ -53,6 +60,11 @@ editarAlumno -[#green]-> ALUMNOS_ABIERTO2
 editarAlumno -[#red]-> ALUMNOS_ABIERTO3
 note on link
 cancelar edición
+end note
+
+editarAlumno -[#blue]-> ALUMNOS_ABIERTO4
+note on link
+eliminar
 end note
 
 @enduml

@@ -1,32 +1,12 @@
-@startsalt importarGrados_WIREFRAME
+@startsalt
 {+
-    <b>IMPORTAR GRADOS | ASISTENTE</b>
-    ===
-    .
-    <b>PASO 1: Carga de Fichero (Completado)</b>
-    .
-    Archivo seleccionado: "oferta_academica_2025.xlsx"
-    Estado: <color:green>Formato correcto. 3 registros válidos.</color>
-    .
-    [ Cambiar archivo / Volver ]
-    .
-    --
-    .
-    <b>PASO 2: Confirmación y Vista Previa</b>
-    .
-    <i>Verifique los grados detectados antes de incorporarlos al sistema.</i>
-    .
-    {#
-        <b>Código</b> | <b>Nombre del Título</b> | <b>Rama</b> | <b>Duración</b>
-        BIO-25 | Grado en Biotecnología | Ciencias | 4 Años
-        CIB-25 | Grado en Ciberseguridad | Ingeniería | 4 Años
-        DAT-25 | Grado en Ciencia de Datos | Ingeniería | 4 Años
-    }
-    .
-    .
-    ====
-    .
-    "Acciones Finales:"
-    { [ X Cancelar Operación ] | [ ✓ Confirmar e Importar ] }
+  <b>IMPORTAR Grados</b>
+  --
+  
+  [ Cargar Grados ]
+  
+  --
+  
+  [ Cancelar Importación ] | [ Confirmar Importación ]
 }
 @endsalt

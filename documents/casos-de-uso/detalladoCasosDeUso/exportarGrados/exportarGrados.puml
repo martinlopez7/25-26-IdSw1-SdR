@@ -1,56 +1,26 @@
-@startuml exportarGrados
+@startuml 
 
 skinparam linetype polyline
 
-state GRADOS_ABIERTO2 as "GRADOS_ABIERTO"
+state exportarConfiguracionGlobal as "exportarConfiguracionGlobal"
 
 state exportarGrados as "exportarGrados()" {
 
     state " " as RequiringExport
     state " " as ProvidingGrados
-    state " " as ProvidingConfirmation
-    state c <<choice>>
 
     [*] -[#green]-> RequiringExport
     note on link
-    <b>Docente</b> solicita exportar grados
+    <b>exportarConfiguracionGlobal</b> solicita exportar Grados
     end note    
 
     RequiringExport -[#green]-> ProvidingGrados
     note on link
-    <b>Sistema</b> permite introducir
-    • grados a exportar
+    <b>Sistema</b> permite exportar Grados
     end note
 
-    ProvidingGrados -[#green]-> ProvidingConfirmation
-    note on link
-    <b>Docente</b> introduce grados a exportar
-    end note
-
-    ProvidingConfirmation -[#green]-> c
-    note on link
-    <b>Docente</b> solicita
-    • confirmar exportación
-    • cancelar exportación
-    end note
-
-    c -[#red]-> ProvidingGrados
-    note on link
-    Docente cancela exportación
-    end note
-
-    c -[#red]-> ProvidingGrados
-    note on link
-    Docente confirma exportación: error en la exportación
-    end note
-
-    c -[#green]-> [*]
-    note on link
-    Docente confirma exportación: exportación exitosa
-    end note
 }
 
-GRADOS_ABIERTO -[#green]-> exportarGrados
-exportarGrados -[#green]-> GRADOS_ABIERTO2
+exportarConfiguracionGlobal -[#green]-> exportarGrados
 
 @enduml

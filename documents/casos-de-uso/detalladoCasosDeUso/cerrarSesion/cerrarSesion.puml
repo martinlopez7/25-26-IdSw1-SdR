@@ -37,7 +37,7 @@ state cerrarSesion as "cerrarSesion()" {
     <b>Administrador institucional o Docente</b> solicita cancelar cierre
     end note
     
-    c -[#green]-> [*]
+    c -[#green]-> SESION_CERRADA
     note on link
     Administrador institucional o Docente → UsuarioNoRegistrado
     iniciarSesion()

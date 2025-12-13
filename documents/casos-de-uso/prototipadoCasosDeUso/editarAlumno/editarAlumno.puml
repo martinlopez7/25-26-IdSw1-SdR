@@ -12,17 +12,6 @@
     }
     .
     --
-    .
-    <b>2. Contexto Académico</b>
-    <i>Información asociada (No editable)</i>
-    .
-    {
-        Grado Actual: | "Ingeniería Informática"
-        Asignaturas:  | "Programación I"
-    }
-    .
-    ~~
-    .
     { [Guardar Cambios] | [ Eliminar ] | [Cancelar] }
 }
 @endsalt

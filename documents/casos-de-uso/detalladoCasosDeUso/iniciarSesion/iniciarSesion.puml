@@ -38,7 +38,7 @@ state iniciarSesion as "iniciarSesion()" {
     end note
 }
 
-[*] -[#green]-> iniciarSesion
+SESION_CERRADA -[#green]-> iniciarSesion
 
 iniciarSesion -[#green]-> SISTEMA_DISPONIBLE
 note on link

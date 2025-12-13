@@ -36,10 +36,6 @@ state "RESPUESTA_CONTEXTUAL_ABIERTO" as EditRespuestaContextual
 state "EXAMENES_GENERADOS_CONTEXTUALES" as ExamenesGeneradosContextuales
 state "EXAMENES_ASIGNADOS_CONTEXTUALES" as ExamenesAsignadosContextuales
 
-'Transiciones'
-
-[*] --> NoAuth
-
 'Modulo sesion'
 
 NoAuth --> Menu : iniciarSesion()

@@ -11,6 +11,6 @@
   ~~
   {<b>BUSCAR:</b> [                                      ] | [Filtrar]}
   ~~
-  { [Crear nuevo] | [Borrar seleccionado] | [Importar] | [Exportar] | . | [Salir] }
+  { [Crear nuevo] | [Borrar seleccionado] | [Importar] | . | [Salir] }
 }
 @endsalt
