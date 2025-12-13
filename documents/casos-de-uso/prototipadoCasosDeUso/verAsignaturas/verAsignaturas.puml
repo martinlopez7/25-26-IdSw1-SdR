@@ -26,6 +26,7 @@
     .
     ~~
     .
-    { [ + Nueva Asignatura ] | [ Volver al Menú ] }
+    { [ + Nuevo Grado ] | [ ^Importar^ ] | [ ^Exportar^ ] | . | [ Volver al Inicio ] }
+}
 }
 @endsalt

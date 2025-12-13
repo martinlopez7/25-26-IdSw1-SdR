@@ -26,6 +26,6 @@
     .
     ~~
     .
-    { [ + Crear Nueva Pregunta ] | [ Volver ] }
+    { [ + Crear Nueva Pregunta ] | [Importar] | [Exportar] | | [ Volver ] }
 }
 @endsalt
