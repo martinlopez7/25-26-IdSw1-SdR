@@ -9,16 +9,19 @@
 
 | Término | Definición |
 |---|---|
-| **Grado** | Programa universitario al que pertenecen los alumnos y las asignaturas. Sirve para organizar los cursos y exámenes. |
-| **Asignatura** | Materia concreta dentro de un grado. Cada asignatura tiene sus propios temas y exámenes. |
+| **Grado** | Programa universitario que agrupa alumnos y asignaturas. |
+| **Asignatura** | Materia concreta dentro de un grado. Cada asignatura tiene unos alumnos matriculados. |
 | **Curso académico** | Periodo temporal (ej. 2024-2025) definido en la asignatura para organizar la matriculación de alumnos. |
-| **Profesor** | Persona encargada de crear y corregir los exámenes tipo test. |
-| **Alumno** | Persona que realiza el exámen en formato papel. |
-| **Matrícula** | Vínculo formal que asocia a un alumno con una asignatura específica, permitiéndole presentarse a los exámenes de dicha materia. |
-| **Batería de preguntas** | Conjunto de preguntas preparadas por un docente para generar exámenes tipo test. |
+| **Profesor** | Docente encargado de llevar una asignatura. |
+| **Alumno** | Persona que cursa una o varias asignaturas y realiza el exámenes tipo test. |
+| **Batería de preguntas** | Conjunto de preguntas de un asignatura concreta preparadas por un docente para generar exámenes tipo test. |
 | **Tema** | Parte o unidad dentro de una asignatura que agrupa varias preguntas relacionadas. Sirve para organizar la batería de preguntas del profesor. |
-| **Pregunta** | Elemento básico del exámen tipo test creado por el profesor. Cada pregunta tiene una asignatura, un tema, enunciado, opciones, respuesta correcta y dificultad. |
+| **Pregunta** | Elemento básico del exámen tipo test creado por el profesor. Cada pregunta tiene una asignatura, un tema, enunciado, dificultad y las posibles respuestas . |
 | **Respuesta** | Opción individual que forma parte de una pregunta. Indica una posible solución al enunciado y define si es la opción correcta o incorrecta. |
-| **Examen** | Documento de evaluación tipo test que un docente genera a partir de una batería de preguntas previamente preparada. |
-| **Clave de corrección** | Conjunto de respuestas correctas asociadas a un modelo de exámen que permite al sistema corregir automáticamente las pruebas. |
-| **Evaluación** | Actividad mediante la cual el profesor califica al alumno (Exámen parcial 1-3, Final o Extraordinario). |
+| **Exámen** | Documento de evaluación de la asignatura tipo test que un docente genera instroduciendo varios parámetros a partir de una batería de preguntas previamente preparada. |
+| **Clave de corrección** | Clave alfanumérica que está en cada exámen asignado que guarda: datos del alumno para que no haya manipulaciones fraudulentas durante la realización del exámen y el orden concreto de soluciones del exámen. Esta clave se utilizará por el propio sistema para la futura corrección por inteligencia artificial mediante detección de imágenes. |
+| **Evaluación** | Actividad mediante la cual el profesor califica al alumno (Exámen parcial 1-3, Exámen Final o Exámen Extraordinario). |
+| **Exámenes generados** | Conjunto de exámenes con un orden de preguntas concreto. Todavía sin claves alfanuméricas que asigne cada exámen a cada alumno. |
+| **Exámenes asignados** | Conjunto de exámenes generados con claves alfanuméricas incorporadas. |
+| **Pregunta habilitada** | Una pregunta habilitada se tendrá en cuenta por el sistema para la generación de exámenes. |
+| **Pregunta inhabilitada** | Una pregunta inhabilitada no se tendrá en cuenta por el sistema para la generación de exámenes. |

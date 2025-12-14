@@ -6,23 +6,22 @@
         
         <b>Destinatarios:</b>
         {
-            (X) Grupos | ( ) Alumnos individuales
-            ..
-            Grados / Grupos:
-            {SI
-                [X] Ingeniería Informática (35 alumnos)
-                [X] Ingeniería Industrial (50 alumnos)
-                [ ] Medicina (40 alumnos)
-                ...
-            }
             ..
             Búsqueda de alumnos: | "Nombre, DNI o ID alumno     " | [Buscar]
             ..
+            [X] Seleccionar todos
+            ..
             Alumnos seleccionados manualmente:
             {SI
-                [X] Ana Pérez
-                [X] Luis Gómez
-                ...
+              [X] Ana Pérez
+              [X] Luis Gómez
+              [X] María Fernández
+              [X] Javier Torres
+              [X] Elena Rubio
+              [X] Pablo Marín
+              [X] Sofía Castro
+              [X] Daniel Vico
+              [X] Carmen Ruiz
             }
             ..
             Total de alumnos seleccionados: <b>85</b>

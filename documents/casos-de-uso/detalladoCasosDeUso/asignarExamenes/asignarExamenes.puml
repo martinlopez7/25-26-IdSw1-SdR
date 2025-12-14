@@ -17,13 +17,13 @@ state asignarExamenes as "asignarExamenes()" {
     RequiringAssignment -[#green]-> ProvidingAssignment
     note on link
     <b>Sistema</b> permite 
-    • introducir alumnos o grupos destinatarios
+    • introducir alumnos destinatarios
     • salir de asignación
     end note
 
     ProvidingAssignment -[#green]-> ProvidingConfirmation
     note on link
-    <b>Docente</b> introduce alumnos o grupos destinatarios
+    <b>Docente</b> introduce alumnos destinatarios
     end note
 
     ProvidingConfirmation -[#green]-> c
