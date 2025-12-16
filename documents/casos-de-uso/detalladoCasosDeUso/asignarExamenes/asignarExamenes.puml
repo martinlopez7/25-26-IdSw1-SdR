@@ -11,19 +11,19 @@ state asignarExamenes as "asignarExamenes()" {
 
     [*] -[#green]-> RequiringAssignment
     note on link
-    <b>Docente</b> solicita asignar exámenes
+    <b>Docente</b> solicita asignar exámenes 
     end note    
 
     RequiringAssignment -[#green]-> ProvidingAssignment
     note on link
     <b>Sistema</b> permite 
-    • introducir alumnos destinatarios
+    • introducir alumnos destinatarios para los exámenes de cada grado
     • salir de asignación
     end note
 
     ProvidingAssignment -[#green]-> ProvidingConfirmation
     note on link
-    <b>Docente</b> introduce alumnos destinatarios
+    <b>Docente</b> introduce alumnos destinatarios para los exámenes de cada grado
     end note
 
     ProvidingConfirmation -[#green]-> c

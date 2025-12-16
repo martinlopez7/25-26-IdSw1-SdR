@@ -26,10 +26,10 @@ state generarExamenes as "generarExamenes()" {
     <b>Docente</b> introduce datos mínimos para la generación
     • Asignatura (obligatorio)
     • Tema/Temas (obligatorio)
-    • Número de exámenes (obligatorio)
+    • Número de exámenes para cada grado de la asignatura seleccionada (obligatorio)
     • Número de preguntas (obligatorio)
-    • Cantidad de tipos de exámen (obligatorio)
-    • Proporción de dificultad (obligatorio)
+    • Cantidad de tipos de exámen para cada grado de la asignatura seleccionada (obligatorio)
+    • Proporción de dificultad de cada grado de la asignatura seleccionada (obligatorio)
     • Evaluación (obligatorio)
     end note
     

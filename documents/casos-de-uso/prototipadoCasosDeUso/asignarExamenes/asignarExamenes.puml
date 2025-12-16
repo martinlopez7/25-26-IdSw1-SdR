@@ -5,9 +5,11 @@
     {
         
         <b>Destinatarios:</b>
+        ..
+        <b>Ingeniería Informática:</b>
         {
             ..
-            Búsqueda de alumnos: | "Nombre, DNI o ID alumno     " | [Buscar]
+            Búsqueda de alumnos: | "Nombre o DNI    " | [Buscar]
             ..
             [X] Seleccionar todos
             ..
@@ -24,7 +26,30 @@
               [X] Carmen Ruiz
             }
             ..
-            Total de alumnos seleccionados: <b>85</b>
+            Total de alumnos seleccionados: <b>45</b>
+        }
+        --
+        <b>Ingeniería de Organización Industrial:</b>
+        {
+            ..
+            Búsqueda de alumnos: | "Nombre o DNI     " | [Buscar]
+            ..
+            [X] Seleccionar todos
+            ..
+            Alumnos seleccionados manualmente:
+            {SI
+            [X] Marta Soler
+            [X] David Ríos
+            [X] Laura Vega
+            [X] Hugo Sanz
+            [X] Paula Nieto
+            [X] Rubén Castro
+            [X] Andrea Bravo
+            [X] Jorge Peña
+            [X] Clara Díaz
+        }
+            ..
+            Total de alumnos seleccionados: <b>40</b>
         }
         
         ~~

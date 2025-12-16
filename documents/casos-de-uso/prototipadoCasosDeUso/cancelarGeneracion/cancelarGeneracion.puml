@@ -7,23 +7,22 @@
     Generación completada. 
     .
     {#
-        <b>ID</b> | <b>Tipo</b> | <b>Preguntas</b>
-        EX-01 | Parcial 1 | 10 Preguntas
-        EX-02 | Parcial 1 | 10 Preguntas
-        EX-03 | Parcial 1 | 10 Preguntas
+        <b>ID</b> | <b>Grado</b> | <b>Dificultad</b>
+        EX-MATES2 | II | 15% Facil 35% Medio 50% Difícil
+        EX-MATES2 | IOI | 30% Facil 40% Medio 30% Difícil
     }
     .
     {
+    
+        [ <b>Cancelar generación</b> ] | [ <b>Asignar a alumnos</b> ]
+        
         ¿Está seguro que desea cancelar la generación actual?
         .
         <color:red><b>⚠ ADVERTENCIA:</b></color>
-        Si confirma la cancelación, los 3 exámenes generados en esta sesión se perderán.
-        .
-        ---
-        .
-        [ <b>No cancelar</b> ] | [ <b>Cancelar generación</b> ]
+        Si confirma la cancelación, los exámenes generados se perderán.
+        
+        [Si, cancelar] | [No]
+        
     }
-    .
-    .
 }
 @endsalt
