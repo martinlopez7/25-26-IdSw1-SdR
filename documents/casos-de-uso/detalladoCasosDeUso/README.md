@@ -38,13 +38,13 @@
 | :--- |
 | [Código UML](importarPreguntas/importarPreguntas.puml) |
 
-### Exportar Alumnos [Docente]
+### Exportar Alumnos [Abstracto]
 
 | ![Detallado de Exportar Alumnos](exportarAlumnos/exportarAlumnos.svg) |
 | :--- |
 | [Código UML](exportarAlumnos/exportarAlumnos.puml) |
 
-### Exportar Preguntas [Docente]
+### Exportar Preguntas [Abstractos]
 
 | ![Detallado de Exportar Preguntas](exportarPreguntas/exportarPreguntas.svg) |
 | :--- |
@@ -236,13 +236,13 @@
 | :--- |
 | [Código UML](importarGrados/importarGrados.puml) |
 
-### Exportar Asignaturas [Docente]
+### Exportar Asignaturas [Abstracto]
 
 | ![Detallado de Exportar Asignaturas](exportarAsignaturas/exportarAsignaturas.svg) |
 | :--- |
 | [Código UML](exportarAsignaturas/exportarAsignaturas.puml) |
 
-### Exportar Grados [Docente]
+### Exportar Grados [Abstracto]
 
 | ![Detallado de Exportar Grados](exportarGrados/exportarGrados.svg) |
 | :--- |
