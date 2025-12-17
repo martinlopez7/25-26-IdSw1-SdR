@@ -44,7 +44,7 @@
 | :--- |
 | [Código UML](exportarAlumnos/exportarAlumnos.puml) |
 
-### Exportar Preguntas [Abstractos]
+### Exportar Preguntas [Abstracto]
 
 | ![Detallado de Exportar Preguntas](exportarPreguntas/exportarPreguntas.svg) |
 | :--- |
