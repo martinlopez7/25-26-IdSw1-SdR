@@ -11,5 +11,6 @@
 Aquí puedes encontrar imágenes, notas de audio y distintos tipos de recursos que pueden ayudar a comprender mejor el objetivo del proyecto
 |REUNIÓN 1| REUNIÓN 2 | REUNIÓN 3| CONVENCIONES DE TRABAJO|
 |---------|---------|---------|---------|
-|[Recursos primera reunión](/documents/evidencias/reunion-01/Enlaces.md)|[Recursos segunda reunión](/documents/evidencias/reunion-01/Enlaces.md)| [Recursos tercera reunión](/documents/evidencias/reunion-03/Enlaces.md) |[Convenciones internas de trabajo](/documents/CONVENCIONES.md)|
+|[Recursos primera reunión](/documents/evidencias/reunion-01/Enlaces.md)|[Recursos segunda reunión](/documents/evidencias/reunion-02/Enlaces.md)| [Recursos tercera reunión](/documents/evidencias/reunion-03/Enlaces.md) |[Convenciones internas de trabajo](/documents/CONVENCIONES.md)|
+
 

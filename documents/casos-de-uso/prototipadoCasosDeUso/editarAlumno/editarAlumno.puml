@@ -2,7 +2,7 @@
 {+
     <b>EDITAR DATOS DEL ALUMNO</b>
     ===
-    <b>1. Datos Personales (Editables)</b>
+    <b>Datos Personales</b>
     <i>Modifique los campos necesarios</i>
     .
     {
@@ -12,17 +12,6 @@
     }
     .
     --
-    .
-    <b>2. Contexto Académico</b>
-    <i>Información asociada (No editable)</i>
-    .
-    {
-        Grado Actual: | "Ingeniería Informática"
-        Asignaturas:  | "Programación I"
-    }
-    .
-    ~~
-    .
-    { [Guardar Cambios] | [Cancelar] }
+    { [Guardar Cambios] | [ Eliminar ] | [Cancelar] }
 }
 @endsalt

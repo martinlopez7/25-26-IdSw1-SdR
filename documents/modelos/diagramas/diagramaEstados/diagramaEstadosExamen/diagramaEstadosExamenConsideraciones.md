@@ -2,7 +2,7 @@
 
 | Relación entre Estados | Tipo | Justificación contextualizada |
 |------------------------|------|-------------------------------|
-| **[*] → Creado** | Generación | El sistema genera los exámenes teniendo en cuenta el nº de preguntas, el nº de exámenes, la asignatura, temas, proporcion de dificultad y demás.
-| **Creado → Asignado** | Asignación | El exámen se asigna formalmente a los estudiantes de la asignatura mediante la vinculación del orden de respuestas correspondiente a cada alumno y guarda un hash único asignado a cada estudiante. De este modo, se asegura que no haya cambios en las respuestas o en los criterios de corrección. |
+| **[*] → Generado** | Generación | El sistema genera los exámenes teniendo en cuenta el nº de preguntas, el nº de exámenes, el nº de tipos de exámenes, la asignatura, temas, proporcion de dificultad y la evaluación.
+| **Generado → Asignado** | Asignación | Cada exámen se asigna formalmente a cada estudiante mediante la generación de un hash que combina los datos del examen (asignatura, año académico, evaluación), el orden de las respuestas correctas y los datos del alumno. |
 | **Asignado → Resuelto** | Resolución | Los alumnos realizan el exámen y rellenan sus respuestas. |
-| **Resuelto → Corregido** | Corrección | El sistema detecta el hash, identifica el orden de respuestas al que se debe de ceñir y emplea IA de detección de imágenes para leer las respuestas marcadas por el alumno. |
+| **Resuelto → Corregido** | Corrección | El sistema detecta el hash, identifica el orden de respuestas al que se debe de ceñir y emplea IA de detección de imágenes para leer las respuestas marcadas por el alumno y corregir su examen. |

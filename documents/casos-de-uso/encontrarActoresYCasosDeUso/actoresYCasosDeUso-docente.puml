@@ -23,20 +23,15 @@ package "Módulo Alumno" {
   usecase "verAlumnos()" as UC10
   usecase "editarAlumno()" as UC11
   usecase "eliminarAlumno()" as UC12
-   usecase "importarAlumnos()" as UC19
-   usecase "exportarAlumnos()" as UC17
 }
 
-
-
-package "Módulo Gestión de Preguntas" {
+package "Módulo Preguntas-Respuestas" {
   usecase "crearPregunta()" as UC20
   usecase "verPreguntas()" as UC21
   usecase "editarPregunta" as UC22
   usecase "eliminarPregunta()" as UC23
-  usecase "importarPreguntas()" as UC24
-  usecase "exportarPreguntas()" as UC25
- usecase "crearRespuesta()" as UC32
+ 
+  usecase "crearRespuesta()" as UC32
   usecase "verRespuestas()" as UC33
   usecase "editarRespuesta()" as UC34
   usecase "eliminarRespuesta()" as UC35
@@ -47,57 +42,78 @@ package "Módulo Configuración General" {
   usecase "importarConfiguracionGlobal()" as UC27
 }
 
-package "Módulo Examen" {
+package "Módulo Exámen" {
   usecase "generarExamenes()" as UC28
   usecase "asignarExamenes()" as UC29
- 
-}
-
-package "Módulo Corrección" {
+  usecase "cancelarGeneracion()" as UC40
   usecase "corregirExamenes()" as UC31
 }
 
 package "Módulo Sesión" {
-  usecase "iniciarSesion()" as UC41
-  usecase "cerrarSesion()" as UC42
+  usecase "iniciarSesion()" as UC42
+  usecase "cerrarSesion()" as UC43
 }
 
 package "Módulo Gestión" {
   usecase "completarGestion()" as UC13
 
 }
+package "Módulo Importación" as MI45{
+  usecase "importarAsignaturas()" as UC38
+  usecase "importarPreguntas()" as UC24
+  usecase "importarAlumnos()" as UC19
+  usecase "importarGrados()" as UC36
+}
+package "Módulo Exportación [Abstracto]" as ME44{
+usecase "exportarPreguntas()" as UC25
+usecase "exportarAlumnos()" as UC17
+usecase "exportarAsignaturas()" as UC39
+usecase "exportarGrados()" as UC37
+}
+
 
 doc --> UC1
 doc --> UC2
 doc --> UC3
 doc --> UC4
+
 doc --> UC5
 doc --> UC6
 doc --> UC7
 doc --> UC8
+
 doc --> UC9
 doc --> UC10
 doc --> UC11
 doc --> UC12
-doc --> UC13
-doc --> UC17
-doc --> UC19
-doc --> UC20
-doc --> UC21
-doc --> UC22
-doc --> UC23
-doc --> UC24
-doc --> UC25
-doc --> UC26
-doc --> UC27
-doc --> UC28
-doc --> UC29
-doc --> UC31
-doc --> UC32
-doc --> UC33
-doc --> UC34
-doc --> UC35
-doc --> UC41
-doc --> UC42
+
+doc -u-> UC13
+doc -u-> UC19
+doc -d-> UC20
+doc -d-> UC21
+doc -d-> UC22
+doc -d-> UC23
+doc -d-> UC24
+
+doc -u-> UC26
+doc -u-> UC27
+doc -l-> UC28
+doc -l-> UC29
+doc -l-> UC31
+doc -d-> UC32
+doc -d-> UC33
+doc -d-> UC34
+doc -d-> UC35
+doc -l-> UC36
+doc -l-> UC38
+doc -l-> UC40
+doc -u-> UC42
+doc -u-> UC43
+ME44<.r.UC26 : <<include>>
+MI45<.r.UC27 : <<include>>
+UC38 .> UC5 : <<include>>
+UC36 .> UC1 : <<include>>
+UC24 .> UC20 : <<include>>
+UC19 .> UC9 : <<include>>
 
 @enduml

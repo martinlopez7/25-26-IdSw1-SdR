@@ -2,6 +2,9 @@
 
 skinparam linetype polyline
 
+state SISTEMA_DISPONIBLE
+state SISTEMA_DISPONIBLE2 as "SISTEMA_DISPONIBLE"
+
 state cerrarSesion as "cerrarSesion()" {
 
     state " " as SolicitandoCierre
@@ -15,29 +18,25 @@ state cerrarSesion as "cerrarSesion()" {
     
     SolicitandoCierre -[#green]-> ConfirmandoCierre
     note on link
-    <b>Sistema</b> presenta confirmación
-    ¿Desea cerrar la sesión activa?
+    <b>Sistema</b> permite
+    • confirmar cerrar sesión
+    • cancelar cerrar sesión
     end note
     
     ConfirmandoCierre -[#green]-> c
-    note on link
-    <b>Sistema</b> permite confirmar y cancelar
-    end note
-    
 
 }
 
     SISTEMA_DISPONIBLE -[#green]-> cerrarSesion
 
-    c -[#blue]-> SISTEMA_DISPONIBLE
+    c -[#blue]-> SISTEMA_DISPONIBLE2
     note on link
-    <b>Administrador institucional o Docente</b> solicita cancelar cierre
+    <b>Administrador institucional o Docente</b> solicita cancelar cerrar sesión
     end note
     
-    c -[#green]-> [*]
+    c -[#green]-> SESION_CERRADA
     note on link
-    Administrador institucional o Docente → UsuarioNoRegistrado
-    iniciarSesion()
+    <b>Administrador institucional o Docente</b> solicita confirmar cerrar sesión → UsuarioNoRegistrado
     end note
 
 

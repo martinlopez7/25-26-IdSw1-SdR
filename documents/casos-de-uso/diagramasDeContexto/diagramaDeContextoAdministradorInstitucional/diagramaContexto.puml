@@ -23,6 +23,7 @@ ListDocentes --> EditDocentes: editarDocente()
 ListDocentes --> ListDocentes: eliminarDocente()
 EditDocentes --> EditDocentes: editarDocente()
 EditDocentes --> ListDocentes: verDocentes()
+EditDocentes --> ListDocentes: eliminarDocente()
 ListDocentes --> Menu: completarGestion()
 
 @enduml

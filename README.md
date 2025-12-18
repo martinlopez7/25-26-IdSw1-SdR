@@ -10,7 +10,7 @@
 
 ##  DESCRIPCIÓN GENERAL
 
-_Jorgestor_ es una sistema mediante el cual un docente puede generar exámenes personalizados y asignárselos a cada alumno mediante una clave única para cada uno. La personalización de estos exámenes incluye: cantidad de preguntas, cantidad de tipos de exámenes, selección de tema/temas en concreto y proporción de dificultad. Para generar los exámenes el sistema se basa en una batería de preguntas que el profesor ha poblado previamente. Este sistema también puede corregir los exámenes ya realizados por los alumnos utilizando inteligencia artificial de detección de imágenes para leer la clave de los exámenes, que guarda la corrección a las preguntas del examen, y las respuestas que ha dado el alumno.
+_Jorgestor_ es una sistema mediante el cual un docente puede generar exámenes personalizados y asignárselos a cada alumno mediante una clave única para cada uno. Los parámetros de generación de los exámenes incluye: asignatura, selección de tema/temas, selección de evaluación, cantidad de exámenes, número de preguntas, cantidad de tipos de exámenes y proporción de dificultad. Para generar los exámenes el sistema se basa en una batería de preguntas de la asignatura seleccionada que el profesor ha poblado previamente. Este sistema también puede corregir los exámenes ya realizados por los alumnos utilizando inteligencia artificial de detección de imágenes para leer la clave de los exámenes, que guarda, entre otras cosas, el orden concreto de soluciones del exámen del alumno.
 
 <table>
 <tr>
@@ -40,7 +40,7 @@ _Jorgestor_ es una sistema mediante el cual un docente puede generar exámenes p
     </td>
   <td valign=top>
     <p>En esta sección se describen los actores principales que interactúan con el sistema y los casos de uso que representan las funcionalidades clave del proyecto.</p>
-    <p>Se pueden ver más detalles sobre esto con los siguientes artefactos:</p>
+    <p>Los artefactos resultantes de las actividades de esta disciplina son:</p>
     <ul>
       <li> <a href="documents\casos-de-uso\encontrarActoresYCasosDeUso\README.md">Actores y casos de uso</a> </li>
       <li> <a href="documents\casos-de-uso\diagramasDeContexto\README.md">Diagramas de contexto</a> </li> 

@@ -1,0 +1,26 @@
+@startuml 
+
+skinparam linetype polyline
+
+state exportarConfiguracionGlobal as "exportarConfiguracionGlobal"
+
+state exportarAsignaturas as "exportarAsignaturas()" {
+
+    state " " as RequiringExport
+    state " " as ProvidingAsignaturas
+
+    [*] -[#green]-> RequiringExport
+    note on link
+    <b>exportarConfiguracionGlobal</b> solicita exportar Asignaturas
+    end note    
+
+    RequiringExport -[#green]-> ProvidingAsignaturas
+    note on link
+    <b>Sistema</b> permite exportar Asignaturas
+    end note
+
+}
+
+exportarConfiguracionGlobal -[#green]-> exportarAsignaturas
+
+@enduml

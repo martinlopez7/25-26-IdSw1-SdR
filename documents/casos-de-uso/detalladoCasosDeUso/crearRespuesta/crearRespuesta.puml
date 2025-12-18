@@ -4,6 +4,8 @@ skinparam linetype polyline
 
 state RESPUESTAS_ABIERTO
 state RESPUESTAS_CONTEXTUALES_ABIERTO
+state RESPUESTAS_ABIERTO2 as "RESPUESTAS_ABIERTO"
+state RESPUESTAS_CONTEXTUALES_ABIERTO2 as "RESPUESTAS_CONTEXTUALES_ABIERTO"
 
 RESPUESTAS_ABIERTO -[#green]-> crearRespuesta
 RESPUESTAS_CONTEXTUALES_ABIERTO -[#green]-> crearRespuesta
@@ -47,12 +49,12 @@ note on link
 editarRespuesta(nuevaRespuesta)
 end note
 
-crearRespuesta -[#blue]-> RESPUESTAS_ABIERTO
+crearRespuesta -[#blue]-> RESPUESTAS_ABIERTO2
 note on link
 cancelar creación
 end note
 
-crearRespuesta -[#blue]-> RESPUESTAS_CONTEXTUALES_ABIERTO
+crearRespuesta -[#blue]-> RESPUESTAS_CONTEXTUALES_ABIERTO2
 note on link
 cancelar creación
 end note

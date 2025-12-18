@@ -1,0 +1,28 @@
+@startsalt cancelarGeneracion_WIREFRAME
+{+
+    <b>GENERACIÓN DE EXÁMENES | <b>VISTA PREVIA</b>
+    Asignatura: <b>Estructura de Datos (GII-24)</b> | Fecha: <b>12/12/2024</b>
+    ===
+    .
+    Generación completada. 
+    .
+    {#
+        <b>ID</b> | <b>Grado</b> | <b>Dificultad</b>
+        EX-MATES2 | II | 15% Facil 35% Medio 50% Difícil
+        EX-MATES2 | IOI | 30% Facil 40% Medio 30% Difícil
+    }
+    .
+    {
+    
+        [ <b>Cancelar generación</b> ] | [ <b>Asignar a alumnos</b> ]
+        
+        ¿Está seguro que desea cancelar la generación actual?
+        .
+        <color:red><b>⚠ ADVERTENCIA:</b></color>
+        Si confirma la cancelación, los exámenes generados se perderán.
+        
+        [Si, cancelar] | [No]
+        
+    }
+}
+@endsalt

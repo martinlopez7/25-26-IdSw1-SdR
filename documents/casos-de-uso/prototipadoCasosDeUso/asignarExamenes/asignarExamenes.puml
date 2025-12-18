@@ -3,49 +3,62 @@
     <b>ASIGNAR EXÁMENES GENERADOS</b>
     ===
     {
-        <b>Selección de exámenes generados:</b>
-        --
-        {
-            Asignatura:      | ^Matemáticas II^
-            Curso académico: | ^2024/2025^
-            Evaluación:      | ^Parcial 1^
-            ..
-        }
-        
-        --
         
         <b>Destinatarios:</b>
+        ..
+        <b>Ingeniería Informática:</b>
         {
-            (X) Grupos | ( ) Alumnos individuales
             ..
-            Grados / Grupos:
-            {SI
-                [X] Ingeniería Informática (35 alumnos)
-                [X] Ingeniería Industrial (50 alumnos)
-                [ ] Medicina (40 alumnos)
-                ...
-            }
+            Búsqueda de alumnos: | "Nombre o DNI    " | [Buscar]
             ..
-            Búsqueda de alumnos: | "Nombre, DNI o ID alumno     " | [Buscar]
+            [X] Seleccionar todos
             ..
             Alumnos seleccionados manualmente:
             {SI
-                [X] Ana Pérez
-                [X] Luis Gómez
-                ...
+              [X] Ana Pérez
+              [X] Luis Gómez
+              [X] María Fernández
+              [X] Javier Torres
+              [X] Elena Rubio
+              [X] Pablo Marín
+              [X] Sofía Castro
+              [X] Daniel Vico
+              [X] Carmen Ruiz
             }
             ..
-            Total de alumnos seleccionados: <b>85</b>
+            Total de alumnos seleccionados: <b>45</b>
+        }
+        --
+        <b>Ingeniería de Organización Industrial:</b>
+        {
+            ..
+            Búsqueda de alumnos: | "Nombre o DNI     " | [Buscar]
+            ..
+            [X] Seleccionar todos
+            ..
+            Alumnos seleccionados manualmente:
+            {SI
+            [X] Marta Soler
+            [X] David Ríos
+            [X] Laura Vega
+            [X] Hugo Sanz
+            [X] Paula Nieto
+            [X] Rubén Castro
+            [X] Andrea Bravo
+            [X] Jorge Peña
+            [X] Clara Díaz
+        }
+            ..
+            Total de alumnos seleccionados: <b>40</b>
         }
         
         ~~
         .
-        <i>El sistema registrará qué examen generado se asigna a cada alumno,
-        generando internamente su clave alfanumérica.
+        <i>El sistema generará una clave alfanumérica al examen de cada alumno.
         
         ~~
         .
-        {[Asignar exámenes] | [Cancelar]}
+        {[Asignar exámenes] | [Salir]}
     }
 }
 @endsalt

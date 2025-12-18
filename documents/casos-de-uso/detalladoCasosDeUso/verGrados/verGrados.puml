@@ -30,6 +30,8 @@ state verGrados as "verGrados()" {
 
 SISTEMA_DISPONIBLE -[#green]-> verGrados
 
+GRADO_ABIERTO -[#green]-> verGrados
+
 verGrados -[#green]-> GRADOS_ABIERTO
 
 

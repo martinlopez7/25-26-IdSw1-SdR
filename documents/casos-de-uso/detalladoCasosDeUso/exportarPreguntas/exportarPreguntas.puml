@@ -1,61 +1,26 @@
-@startuml exportarPreguntas
+@startuml 
 
 skinparam linetype polyline
 
-state PREGUNTAS_CONTEXTUALES_ABIERTO
+state exportarConfiguracionGlobal as "exportarConfiguracionGlobal"
 
 state exportarPreguntas as "exportarPreguntas()" {
 
     state " " as RequiringExport
     state " " as ProvidingPreguntas
-    state " " as ProvidingConfirmation
-    state c <<choice>>
 
     [*] -[#green]-> RequiringExport
     note on link
-    <b>Docente</b> solicita exportar preguntas
+    <b>exportarConfiguracionGlobal</b> solicita exportar Preguntas
     end note    
 
     RequiringExport -[#green]-> ProvidingPreguntas
     note on link
-    <b>Sistema</b> permite introducir
-    • preguntas a exportar
+    <b>Sistema</b> permite exportar Preguntas
     end note
 
-    ProvidingPreguntas -[#green]-> ProvidingConfirmation
-    note on link
-    <b>Docente</b> introduce preguntas a exportar
-    end note
-
-    ProvidingConfirmation -[#green]-> c
-    note on link
-    <b>Docente</b> solicita
-    • confirmar exportación
-    • cancelar exportación
-    end note
-
-    c -[#red]-> ProvidingPreguntas
-    note on link
-    Docente cancela exportación
-    end note
-
-    c -[#red]-> ProvidingPreguntas
-    note on link
-    Docente confirma exportación: error en la exportación
-    end note
-
-    c -[#green]-> [*]
-    note on link
-    Docente confirma exportación: exportación exitosa
-    end note
 }
 
-' Conexiones existentes
-PREGUNTAS_ABIERTO -[#green]-> exportarPreguntas
-exportarPreguntas -[#green]-> PREGUNTAS_ABIERTO
-
-' Conexiones NUEVAS (Contextuales)
-PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> exportarPreguntas
-exportarPreguntas -[#green]-> PREGUNTAS_CONTEXTUALES_ABIERTO
+exportarConfiguracionGlobal -[#green]-> exportarPreguntas
 
 @enduml

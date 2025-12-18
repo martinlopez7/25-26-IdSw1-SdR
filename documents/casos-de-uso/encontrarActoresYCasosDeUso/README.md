@@ -8,19 +8,9 @@
 
 Es el actor que más interactúa con el sistema.
 
-El docente tiene la capacidad de generar evaluaciones personalizadas y asignarlas a cada estudiante mediante una clave de identificación única.
+El docente tiene la capacidad de generar exámenes personalizados y asignarlos a cada alumno mediante una clave de identificación única.
 
-La personalización de estos exámenes incluye la definición de:
-
-- Cantidad de preguntas.
-
-- Número de variantes del exámen.
-
-- Selección específica de tema o temas.
-
-- Proporción de dificultad.
-
-Para la generación, el sistema utiliza una batería de preguntas previamente cargada por el profesor. Adicionalmente, este sistema está equipado para corregir los exámenes realizados por los alumnos. Emplea Inteligencia Artificial basada en detección de imágenes para leer la clave, lo que permite recuperar el modelo de corrección asociado, y proceder a validar las respuestas del estudiante.
+Para la generación, el sistema utiliza una batería de preguntas de la asigantura seleccionada previamente poblada por el profesor. Además, este sistema corrige los exámenes realizados por los alumnos mediante inteligencia artificial basada en detección de imágenes para leer la clave, lo que permite recuperar el modelo de corrección asociado, y proceder a corregir las respuestas del alumno.
 
 Estos son sus casos de uso:
 
@@ -32,7 +22,7 @@ Estos son sus casos de uso:
 
 ### Administrador institucional:
 
-Es el "representante" de la universidad, su función es gestionar las cuentas para los **Docentes**. Son esas las cuentas que usarán los **Docentes** para `iniciarSesion()` y acceder al sistema.
+Es el encargado de la universidad de gestionar las cuentas para los Docentes. Son estas las cuentas que usarán los **Docentes** para `iniciarSesion()` y acceder al sistema.
 
 Estos son sus casos de uso:
 
@@ -44,7 +34,7 @@ Estos son sus casos de uso:
 
 ### Tiempo:
 
-Se encarga únicamente de cerrar sesión cuando hay un tiempo de inactividad determinado.
+Se encarga únicamente de cerrar sesión cuando pasa un tiempo de inactividad concreto.
 
 | ![Casos de Uso Tiempo](actoresYCasosDeUso-tiempo.svg) |
 | :--- |

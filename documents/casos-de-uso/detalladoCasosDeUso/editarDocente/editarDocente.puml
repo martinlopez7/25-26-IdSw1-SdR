@@ -1,7 +1,11 @@
 @startuml
 skinparam linetype polyline
 
-state DOCENTES_ABIERTO
+state DOCENTES_ABIERTO as "DOCENTES_ABIERTO"
+state DOCENTES_ABIERTO2 as "DOCENTES_ABIERTO"
+state DOCENTE_ABIERTO as "DOCENTE_ABIERTO"
+state DOCENTE_ABIERTO2 as "DOCENTE_ABIERTO"
+state DOCENTES_ABIERTO3 as "DOCENTES_ABIERTO"
 
 DOCENTES_ABIERTO -[#green]-> editarDocente
 
@@ -31,6 +35,7 @@ state editarDocente as "editarDocente()" {
     • modificar campos
     • guardar docente
     • cancelar edición
+    • eliminar
     end note
     
     GuardandoDatos -[#green]-> EditandoDatos
@@ -42,6 +47,11 @@ state editarDocente as "editarDocente()" {
     note on link
     <b>Administrador institucional</b> solicita guardar y salir
     end note
+    
+    GuardandoDatos -[#blue]-> [*]
+    note on link
+    <b>Administrador institucional</b> solicita eliminar
+    end note
 
     GuardandoDatos -[#red]-> [*]
     note on link
@@ -49,11 +59,19 @@ state editarDocente as "editarDocente()" {
     end note
 }
 
-editarDocente -[#green]-> DOCENTE_ABIERTO
+editarDocente -[#green]-> DOCENTE_ABIERTO2
+note on link
+guardar
+end note
 
-editarDocente -[#red]-> DOCENTES_ABIERTO
+editarDocente -[#red]-> DOCENTES_ABIERTO2
 note on link
 cancelar edición
+end note
+
+editarDocente -[#blue]-> DOCENTES_ABIERTO3
+note on link
+eliminar
 end note
 
 @enduml

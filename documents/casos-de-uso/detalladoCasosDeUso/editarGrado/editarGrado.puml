@@ -2,6 +2,12 @@
 
 skinparam linetype polyline
 
+state GRADO_ABIERTO as "GRADO_ABIERTO"
+state GRADO_ABIERTO2 as "GRADO_ABIERTO"
+state GRADOS_ABIERTO as "GRADOS_ABIERTO"
+state GRADOS_ABIERTO2 as "GRADOS_ABIERTO"
+state GRADOS_ABIERTO3 as "GRADOS_ABIERTO"
+
 state editarGrado as "editarGrado()" {
 
     state " " as EditandoDatos
@@ -22,6 +28,7 @@ state editarGrado as "editarGrado()" {
     • modificar campos
     • guardar grado
     • cancelar edición
+    • eliminar
     end note
     
     GuardandoDatos -[#green]-> EditandoDatos
@@ -38,6 +45,11 @@ state editarGrado as "editarGrado()" {
     note on link
     <b>Docente</b> solicita cancelar edición
     end note
+    
+    GuardandoDatos -[#blue]-> [*]
+    note on link
+    <b>Docente</b> solicita eliminar
+    end note
 
 }
 
@@ -45,11 +57,19 @@ GRADO_ABIERTO -[#green]-> editarGrado
 
 GRADOS_ABIERTO -[#green]-> editarGrado
 
-editarGrado -[#green]-> GRADO_ABIERTO
+editarGrado -[#green]-> GRADO_ABIERTO2
+note on link
+guardar
+end note
 
-editarGrado -[#red]-> GRADOS_ABIERTO
+editarGrado -[#red]-> GRADOS_ABIERTO2
 note on link
 cancelar edición
+end note
+
+editarGrado -[#blue]-> GRADOS_ABIERTO3
+note on link
+eliminar
 end note
 
 @enduml

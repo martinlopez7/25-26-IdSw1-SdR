@@ -2,6 +2,8 @@
 
 skinparam linetype polyline
 
+state SISTEMA_DISPONIBLE2 as "SISTEMA_DISPONIBLE"
+
 state importarConfiguracionGlobal as "importarConfiguracionGlobal()" {
 
     state " " as RequiringGlobalConfigurationImport
@@ -16,8 +18,9 @@ state importarConfiguracionGlobal as "importarConfiguracionGlobal()" {
     
     RequiringGlobalConfigurationImport -[#green]-> ProvidingGlobalConfiguration
     note on link
-    <b>Sistema</b> permite introducir
-    • configuración global
+    <b>Sistema</b> permite 
+    • importar alumnos, grados, asignaturas, preguntas
+    • salir de importación
     end note
     
     ProvidingGlobalConfiguration -[#green]-> ProvidingConfirmation
@@ -27,7 +30,7 @@ state importarConfiguracionGlobal as "importarConfiguracionGlobal()" {
     
     ProvidingConfirmation -[#green]-> c
     note on link
-    <b>Docente</b> solicita
+    <b>Sistema</b> permite
     • confirmar importación
     • cancelar importación
     end note
@@ -46,10 +49,15 @@ state importarConfiguracionGlobal as "importarConfiguracionGlobal()" {
     note on link
     Docente confirma importación: importación exitosa
     end note
+    
+    ProvidingGlobalConfiguration -[#blue]-> [*]
+    note on link
+    Docente solicita salir de importación
+    end note
 }
 
 SISTEMA_DISPONIBLE -[#green]-> importarConfiguracionGlobal
 
-importarConfiguracionGlobal -[#green]-> SISTEMA_DISPONIBLE
+importarConfiguracionGlobal -[#green]-> SISTEMA_DISPONIBLE2
 
 @enduml

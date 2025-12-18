@@ -4,13 +4,13 @@
 ===
 {+ NOMBRE| APELLIDOS| DNI|  USUARIO| EMAIL| PASSWORD | ACCIÓN
  --|--|--|--|--|--|--
-  Roberto | Castro Chirinos | 12345678Z | rcastro | rcastro@uneatlantico.es | ******** | [Editar]
-  José M. | González López | 87654321X | jgonzalez | jgonz@uneatlantico.es | ******** | [Editar]
-  Elena | Martín Vives | 11223344Y | emartin | emartin@uneatlantico.es | ******** | [Editar]
+  Roberto | Castro Chirinos | 12345678Z | rcastro | rcastro@uneatlantico.es | ******** | [Editar] | [Eliminar]
+  José M. | González López | 87654321X | jgonzalez | jgonz@uneatlantico.es | ******** | [Editar] | [Eliminar]
+  Elena | Martín Vives | 11223344Y | emartin | emartin@uneatlantico.es | ******** | [Editar] | [Eliminar]
 }
 ~~
 {<b>BUSCAR:</b> [                         ] | [Filtrar]}
 ~~
-{[Crear nuevo] | [Borrar seleccionado] | [Salir]}
+{[Crear nuevo] | [Salir]}
 }
 @endsalt

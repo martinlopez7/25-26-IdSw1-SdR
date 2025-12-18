@@ -1,0 +1,12 @@
+@startsalt
+{+
+  <b>IMPORTAR Grados</b>
+  --
+  
+  [ Cargar Grados ]
+  
+  --
+  
+  [ Cancelar Importación ] | [ Confirmar Importación ]
+}
+@endsalt

@@ -11,24 +11,24 @@ state asignarExamenes as "asignarExamenes()" {
 
     [*] -[#green]-> RequiringAssignment
     note on link
-    <b>Docente</b> solicita asignar exámenes
+    <b>Docente</b> solicita asignar exámenes 
     end note    
 
     RequiringAssignment -[#green]-> ProvidingAssignment
     note on link
-    <b>Sistema</b> permite introducir
-    • exámenes a asignar
-    • alumnos o grupos destinatarios
+    <b>Sistema</b> permite 
+    • introducir alumnos destinatarios para los exámenes de cada grado
+    • salir de asignación
     end note
 
     ProvidingAssignment -[#green]-> ProvidingConfirmation
     note on link
-    <b>Docente</b> introduce asignación de exámenes
+    <b>Docente</b> introduce alumnos destinatarios para los exámenes de cada grado
     end note
 
     ProvidingConfirmation -[#green]-> c
     note on link
-    <b>Docente</b> solicita
+    <b>Sistema</b> permite
     • confirmar asignación
     • cancelar asignación
     end note
@@ -47,9 +47,16 @@ state asignarExamenes as "asignarExamenes()" {
     note on link
     Docente confirma asignación: asignación exitosa
     end note
+    
+    ProvidingAssignment -[#blue]-> [*]
+    note on link
+    Docente solicita salir de asignación
+    end note
 }
 
 EXAMENES_GENERADOS -[#green]-> asignarExamenes
+EXAMENES_GENERADOS_CONTEXTUALES -[#green]-> asignarExamenes
 asignarExamenes -[#green]-> EXAMENES_ASIGNADOS
+asignarExamenes -[#green]-> EXAMENES_ASIGNADOS_CONTEXTUALES
 
 @enduml

@@ -6,7 +6,7 @@
     <i>Busque por código oficial o nombre del título</i>
     .
     {
-        Búsqueda: | "                                   " | [Filtrar Lista]
+        Búsqueda: | "                    " | [Filtrar Lista]
     }
     .
     --
@@ -15,15 +15,16 @@
     .
     {#
         <b>Código</b> | <b>Título del Grado</b> | <b>Alumnos Enlistados</b> | <b>Acciones</b>
-        GII-24 | Grado en Ing. Informática | 450 inscritos | [Editar / Ver]
-        GIM-10 | Grado en Ing. Mecánica | 320 inscritos | [Editar / Ver]
-        ADE-19 | Admin. y Dirección Empresas | 600 inscritos | [Editar / Ver]
-        ARC-21 | Grado en Arquitectura | 150 inscritos | [Editar / Ver]
+        GII-24 | Grado en Ing. Informática | 450 inscritos | [Editar] | [Eliminar]
+        GIM-10 | Grado en Ing. Mecánica | 320 inscritos | [Editar] | [Eliminar]
+        ADE-19 | Admin. y Dirección Empresas | 600 inscritos | [Editar] | [Eliminar]
+        ARC-21 | Grado en Arquitectura | 150 inscritos | [Editar] | [Eliminar]
         . | . | . | .
     }
     .
     ~~
     .
-    { [ + Nuevo Grado ] | [ Volver al Inicio ] }
+    "Acciones de Gestión:"
+    { [ Crear Grado ] | [ Importar ] | . | [ Volver al Inicio ] }
 }
 @endsalt

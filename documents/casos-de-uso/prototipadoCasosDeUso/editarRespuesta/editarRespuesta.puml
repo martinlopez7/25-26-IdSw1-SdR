@@ -19,7 +19,7 @@
 
         ~~
 
-        {[Guardar cambios]|[Continuar editanto]|[Cancelar Edición]}
+        {[Guardar cambios]|[Eliminar]|[Cancelar Edición]}
     }
 }
 @endsalt
