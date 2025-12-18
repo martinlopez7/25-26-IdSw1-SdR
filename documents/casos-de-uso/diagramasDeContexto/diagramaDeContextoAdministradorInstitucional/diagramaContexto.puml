@@ -11,7 +11,7 @@ state "DOCENTES_ABIERTO" as ListDocentes
 state "DOCENTE_ABIERTO" as EditDocentes
 
 'Modulo sesion'
-
+[*] --> NoAuth
 NoAuth --> Menu : iniciarSesion()
 Menu --> NoAuth : cerrarSesion()
 
@@ -27,3 +27,8 @@ EditDocentes --> ListDocentes: eliminarDocente()
 ListDocentes --> Menu: completarGestion()
 
 @enduml
+
+
+
+
+

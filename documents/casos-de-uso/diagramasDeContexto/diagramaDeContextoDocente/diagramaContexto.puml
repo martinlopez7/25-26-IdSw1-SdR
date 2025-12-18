@@ -36,12 +36,14 @@ state "RESPUESTA_CONTEXTUAL_ABIERTO" as EditRespuestaContextual
 state "EXAMENES_GENERADOS_CONTEXTUALES" as ExamenesGeneradosContextuales
 state "EXAMENES_ASIGNADOS_CONTEXTUALES" as ExamenesAsignadosContextuales
 
-'Modulo sesion'
 
+'Modulo sesion'
+[*] --> NoAuth
 NoAuth --> Menu : iniciarSesion()
 Menu --> NoAuth : cerrarSesion()
 
 'Modulo grados'
+
 
 Menu --> ListGrados: verGrados()
 ListGrados --> ListGrados: eliminarGrado()
@@ -145,3 +147,22 @@ Menu --> ExamenesCorregidos: corregirExamenes()
 ExamenesCorregidos --> Menu: completarGestion()
 
 @enduml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

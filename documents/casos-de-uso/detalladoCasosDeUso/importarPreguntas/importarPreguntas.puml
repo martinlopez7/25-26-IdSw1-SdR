@@ -62,8 +62,13 @@ state importarPreguntas as "importarPreguntas()" {
 PREGUNTAS_ABIERTO -[#green]-> importarPreguntas
 importarPreguntas -[#green]-> PREGUNTAS_ABIERTO2
 
+
 ' Conexiones NUEVAS (Contextuales)
 PREGUNTAS_CONTEXTUALES_ABIERTO -[#green]-> importarPreguntas
 importarPreguntas -[#green]-> PREGUNTAS_CONTEXTUALES_ABIERTO2
+note on link
+Importado a batería de preguntas concreta
+end note
+
 
 @enduml

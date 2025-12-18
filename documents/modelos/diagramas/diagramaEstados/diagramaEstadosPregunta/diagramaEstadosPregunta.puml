@@ -6,7 +6,7 @@ state "Habilitada" as habilitada
 state "Inhabilitada" as inhabilitada 
 
 [*] --> construccion : Crear
-construccion --> habilitada : Habilitar
+construccion --> habilitada : Guardar
 
 habilitada --> inhabilitada : Deshabilitar
 inhabilitada --> habilitada : Habilitar
@@ -14,3 +14,19 @@ inhabilitada --> habilitada : Habilitar
 habilitada --> habilitada : Editar
 inhabilitada --> inhabilitada : Editar
 @enduml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
