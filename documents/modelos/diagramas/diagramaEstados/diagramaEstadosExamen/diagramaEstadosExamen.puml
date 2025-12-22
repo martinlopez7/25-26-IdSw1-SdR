@@ -3,7 +3,7 @@ title Diagrama de Estados - Entidad Examen
 
  [*] --> Generado : generar
  Generado --> Asignado : asignar
- Asignado --> Resuelto : alumnos realizan el examen
+ Asignado --> Resuelto : alumno realiza el examen
  Resuelto --> Corregido : corregir
 
 @enduml
