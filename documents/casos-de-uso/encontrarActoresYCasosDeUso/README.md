@@ -14,9 +14,13 @@ Para la generación, el sistema utiliza una batería de preguntas de la asigantu
 
 Estos son sus casos de uso:
 
-| ![Casos de Uso Docente](actoresYCasosDeUso-docente.svg) |
+| ![Casos de Uso Docente](actoresYCasosDeUso-docente-maestro.svg) |
 | :--- |
-| [Código UML](actoresYCasosDeUso-docente.puml) |
+| [Código UML](actoresYCasosDeUso-docente-maestro.puml) |
+
+| ![Casos de Uso Docente](actoresYCasosDeUso-docente-extra.svg) |
+| :--- |
+| [Código UML](actoresYCasosDeUso-docente-extra.puml) |
 
 ---
 

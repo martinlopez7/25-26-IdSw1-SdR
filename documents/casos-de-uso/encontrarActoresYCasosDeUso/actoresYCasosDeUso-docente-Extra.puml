@@ -1,0 +1,76 @@
+@startuml actoresYCasosDeUso-docente-extra
+
+left to right direction
+
+actor "Docente" as doc
+
+package "Módulo Configuración General" {
+  usecase "exportarConfiguracionGlobal()" as UC26
+  usecase "importarConfiguracionGlobal()" as UC27
+}
+
+package "Módulo Sesión" {
+  usecase "iniciarSesion()" as UC42
+  usecase "cerrarSesion()" as UC43
+}
+
+package "Módulo Gestión" {
+  usecase "completarGestion()" as UC13
+
+}
+package "Módulo Importación" as MI45{
+  usecase "importarAsignaturas()" as UC38
+  usecase "importarPreguntas()" as UC24
+  usecase "importarAlumnos()" as UC19
+  usecase "importarGrados()" as UC36
+}
+package "Módulo Exportación [Abstracto]" as ME44{
+usecase "exportarPreguntas()" as UC25
+usecase "exportarAlumnos()" as UC17
+usecase "exportarAsignaturas()" as UC39
+usecase "exportarGrados()" as UC37
+}
+
+package "Módulo Crear" {
+  usecase "crearGrado()" as UC1
+  usecase "crearAlumno()" as UC9
+  usecase "crearPregunta()" as UC20
+  usecase "crearAsignatura()" as UC5
+}
+package "Módulo Exámen" {
+  usecase "generarExamenes()" as UC28
+  usecase "asignarExamenes()" as UC29
+  usecase "cancelarGeneracion()" as UC40
+  usecase "corregirExamenes()" as UC31
+  usecase "verExamen()" as UC32
+  usecase "verExamenes()" as UC33
+}
+doc -l->UC5
+doc -l->UC20
+doc -l->UC1
+doc -l->UC9
+doc --> UC13
+doc -u-> UC19
+doc -u-> UC24
+
+doc -d-> UC26
+doc -d-> UC27
+doc -u-> UC36
+doc -u-> UC38
+doc --> UC42
+doc --> UC43
+
+doc -d-> UC28
+doc -d-> UC29
+doc -u-> UC40
+doc -u-> UC31
+doc --> UC32
+doc --> UC33
+ME44<..UC26 : <<extends>>
+MI45<..UC27 : <<extends>>
+UC38 .> UC5 : <<extends>>
+UC36 .> UC1 : <<extends>>
+UC24 .> UC20 : <<extends>>
+UC19 .> UC9 : <<extends>>
+
+@enduml
