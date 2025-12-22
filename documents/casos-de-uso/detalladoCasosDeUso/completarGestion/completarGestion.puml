@@ -27,8 +27,6 @@ PREGUNTAS_ABIERTO -[#green]-> completarGestion
 
 EXAMENES_ASIGNADOS-[#green]-> completarGestion 
 
-EXAMENES_CORREGIDOS -[#green]-> completarGestion 
-
 DOCENTES_ABIERTO -[#green]-> completarGestion 
 
 completarGestion -[#green]-> SISTEMA_DISPONIBLE

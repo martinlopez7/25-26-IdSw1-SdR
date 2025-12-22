@@ -54,7 +54,7 @@ state corregirExamenes as "corregirExamenes()" {
     end note
 }
 
-SISTEMA_DISPONIBLE -[#green]-> corregirExamenes
+ASIGNATURA_ABIERTO -[#green]-> corregirExamenes
 
 corregirExamenes -[#green]-> EXAMENES_CORREGIDOS
 

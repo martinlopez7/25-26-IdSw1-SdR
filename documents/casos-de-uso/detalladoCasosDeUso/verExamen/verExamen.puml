@@ -1,0 +1,64 @@
+@startuml verExamen
+
+skinparam linetype polyline
+
+
+state EXAMENES_CORREGIDOS2 as "EXAMENES_CORREGIDOS"
+state EXAMENES_GENERADOS_CONTEXTUALES2 as "EXAMENES_GENERADOS_CONTEXTUALES"
+state EXAMENES_GENERADOS2 as "EXAMENES_GENERADOS"
+state EXAMENES_CORREGIDOS as "EXAMENES_CORREGIDOS"
+state EXAMENES_GENERADOS_CONTEXTUALES as "EXAMENES_GENERADOS_CONTEXTUALES"
+state EXAMENES_GENERADOS as "EXAMENES_GENERADOS"
+
+
+state verExamen as "verExamen()" {
+
+    state " " as MostrandoExamen
+    state " " as FiltrandoExamen
+    state " " as BuscandoExamen
+    state " " as ExamenEncontrado
+
+    [*] -[#green]-> MostrandoExamen
+    note on link
+    <b>Docente</b> solicita ver examen
+    end note    
+    
+    MostrandoExamen -[#green]-> FiltrandoExamen
+    note on link
+    <b>Sistema</b> permite introducir
+    • Asignatura
+    • Evaluación
+    • Curso académico
+    end note
+    
+    FiltrandoExamen -[#green]-> BuscandoExamen
+    note on link
+    <b>Docente</b> introduce
+    • Asignatura (solo si estás desde ALUMNO_ABIERTO)
+    • Evaluación
+    • Curso académico (solo si estás desde ALUMNO_ABIERTO)
+    • Alumno (si no estás desde ALUMNO_ABIERTO )
+    end note
+    
+    BuscandoExamen -[#green]-> ExamenEncontrado
+    note on link
+    <b>Sistema</b> presenta examen
+    end note
+    
+}
+
+ALUMNO_ABIERTO -[#green]-> verExamen
+
+EXAMENES_CORREGIDOS -[#green]-> verExamen
+
+EXAMENES_GENERADOS_CONTEXTUALES -[#green]-> verExamen
+
+EXAMENES_GENERADOS -[#green]-> verExamen
+
+verExamen -[#green]-> EXAMENES_CORREGIDOS2
+
+verExamen -[#green]-> EXAMENES_GENERADOS_CONTEXTUALES2
+
+verExamen -[#green]-> EXAMENES_GENERADOS2
+
+@enduml

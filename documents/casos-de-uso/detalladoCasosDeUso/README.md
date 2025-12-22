@@ -247,3 +247,15 @@
 | ![Detallado de Exportar Grados](exportarGrados/exportarGrados.svg) |
 | :--- |
 | [Código UML](exportarGrados/exportarGrados.puml) |
+
+### Ver Exámenes [Docente]
+
+| ![Detallado de Ver Exámenes](verExamenes/verExamenes.svg) |
+| :--- |
+| [Código UML](verExamenes/verExamenes.puml) |
+
+### Ver Examen [Docente]
+
+| ![Detallado de Ver Examen](verExamen/verExamen.svg) |
+| :--- |
+| [Código UML](verExamen/verExamen.puml) |

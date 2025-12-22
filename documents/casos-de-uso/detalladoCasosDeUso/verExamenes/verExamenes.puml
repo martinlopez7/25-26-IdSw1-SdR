@@ -1,0 +1,34 @@
+@startuml verExamenes
+
+skinparam linetype polyline
+
+state verExamenes as "verExamenes()" {
+
+    state " " as MostrandoExamenes
+    state " " as FiltrandoDocentes
+
+    [*] -[#green]-> MostrandoExamenes
+    note on link
+    <b>Docente</b> solicita ver examenes
+    end note    
+    
+    MostrandoExamenes -[#green]-> FiltrandoDocentes
+    note on link
+    <b>Sistema</b> presenta lista de exámenes
+    end note
+    
+}
+
+EXAMEN_CORREGIDO -[#green]-> verExamenes
+
+EXAMEN_GENERADO_CONTEXTUAL -[#green]-> verExamenes
+
+EXAMEN_GENERADO -[#green]-> verExamenes
+
+verExamenes -[#green]-> EXAMENES_CORREGIDOS
+
+verExamenes -[#green]-> EXAMENES_GENERADOS_CONTEXTUALES
+
+verExamenes -[#green]-> EXAMENES_GENERADOS
+
+@enduml
