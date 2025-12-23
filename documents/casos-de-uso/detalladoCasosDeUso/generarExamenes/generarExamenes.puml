@@ -28,7 +28,7 @@ state generarExamenes as "generarExamenes()" {
     • Tema/Temas (obligatorio)
     • Número de exámenes para cada grado de la asignatura seleccionada (obligatorio)
     • Número de preguntas (obligatorio)
-    • Cantidad de tipos de exámen para cada grado de la asignatura seleccionada (obligatorio)
+    • Cantidad de tipos de examen para cada grado de la asignatura seleccionada (obligatorio)
     • Proporción de dificultad de cada grado de la asignatura seleccionada (obligatorio)
     • Evaluación (obligatorio)
     end note
@@ -68,12 +68,12 @@ SISTEMA_DISPONIBLE -[#green]-> generarExamenes
 
 generarExamenes -[#green]-> EXAMENES_GENERADOS
 note on link
-vista de examenes generados
+vista de exámenes generados
 end note
 
 generarExamenes -[#green]-> EXAMENES_GENERADOS_CONTEXTUALES
 note on link
-vista de examenes generados
+vista de exámenes generados
 end note
 
 ASIGNATURA_ABIERTO -[#green]-> generarExamenes

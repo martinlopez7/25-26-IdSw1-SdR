@@ -37,7 +37,7 @@ package "Módulo Crear" {
   usecase "crearPregunta()" as UC20
   usecase "crearAsignatura()" as UC5
 }
-package "Módulo Exámen" {
+package "Módulo Examen" {
   usecase "generarExamenes()" as UC28
   usecase "asignarExamenes()" as UC29
   usecase "cancelarGeneracion()" as UC40

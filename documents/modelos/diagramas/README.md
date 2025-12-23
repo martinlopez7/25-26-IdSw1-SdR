@@ -54,8 +54,8 @@ A continuación se muestra un diagrama de objetos parcializado en diferentes sec
 
 ## Diagramas de estados
 
-### Entidad Exámen
-A continuación se muestra el diagrama de estados de la entidad exámen
+### Entidad Examen
+A continuación se muestra el diagrama de estados de la entidad examen
 <p align="center">
   <img src="/documents/modelos/diagramas/diagramaEstados/diagramaEstadosExamen/diagramaEstadosExamen.svg">
 

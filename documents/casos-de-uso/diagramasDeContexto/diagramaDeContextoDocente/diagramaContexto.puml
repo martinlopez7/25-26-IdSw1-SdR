@@ -131,7 +131,7 @@ ListRespuestas --> EditPregunta: editarPregunta()
 Menu --> Menu: importarConfiguracionGlobal()
 Menu --> Menu: exportarConfiguracionGlobal()
 
-'Modulo examenes'
+'Modulo exámenes'
 
 Menu --> ExamenesGenerados: generarExamenes()
 ExamenesGenerados --> ExamenGenerado: verExamen()
@@ -140,7 +140,7 @@ ExamenesGenerados --> ExamenesAsignados: asignarExamenes()
 ExamenesAsignados --> Menu: completarGestion()
 ExamenesGenerados --> Menu: cancelarGeneracion()
 
-'Modulo examenes contextuales'
+'Modulo exámenes contextuales'
 EditAsignatura --> ExamenesGeneradosContextuales: generarExamenes()
 ExamenesGeneradosContextuales --> ExamenGeneradoContextual: verExamen()
 ExamenGeneradoContextual --> ExamenesGeneradosContextuales: verExamenes()

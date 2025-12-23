@@ -9,7 +9,7 @@ state verExamenes as "verExamenes()" {
 
     [*] -[#green]-> MostrandoExamenes
     note on link
-    <b>Docente</b> solicita ver examenes
+    <b>Docente</b> solicita ver exámenes
     end note    
     
     MostrandoExamenes -[#green]-> FiltrandoDocentes
