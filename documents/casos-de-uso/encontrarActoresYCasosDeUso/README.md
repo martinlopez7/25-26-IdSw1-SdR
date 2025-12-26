@@ -20,7 +20,7 @@ Estos son sus casos de uso:
 
 | ![Casos de Uso Docente](actoresYCasosDeUso-docente-extra.svg) |
 | :--- |
-| [Código UML](actoresYCasosDeUso-docente-Extra.puml) |
+| [Código UML](actoresYCasosDeUso-docente-extra.puml) |
 
 ---
 
