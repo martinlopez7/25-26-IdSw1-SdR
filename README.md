@@ -10,7 +10,7 @@
 
 ##  DESCRIPCIÓN GENERAL
 
-_Jorgestor_ es una sistema mediante el cual un docente puede generar exámenes personalizados y asignárselos a cada alumno mediante una clave única para cada uno. Los parámetros de generación de los exámenes incluye: asignatura, selección de tema/temas, selección de evaluación, cantidad de exámenes, número de preguntas, cantidad de tipos de exámenes y proporción de dificultad. Para generar los exámenes el sistema se basa en una batería de preguntas de la asignatura seleccionada que el profesor ha poblado previamente. Este sistema también puede corregir los exámenes ya realizados por los alumnos utilizando inteligencia artificial de detección de imágenes para leer la clave de los exámenes, que guarda, entre otras cosas, el orden concreto de soluciones del examen del alumno.
+_Jorgestor_ es una sistema mediante el cual un docente puede generar exámenes personalizados y asignárselos a cada alumno mediante una clave única para cada uno. Los parámetros de generación de los exámenes incluye: asignatura, selección de tema/temas, selección de evaluación, cantidad de exámenes, número de preguntas, cantidad de tipos de exámenes y proporción de dificultad. Para generar los exámenes el sistema se basa en una batería de preguntas de la asignatura seleccionada que el profesor ha poblado previamente. Este sistema también puede corregir los exámenes ya realizados por los alumnos utilizando inteligencia artificial de detección de imágenes para leer la clave de los exámenes, que guarda, entre otras cosas, el orden concreto de soluciones del exámen del alumno.
 
 <table>
 <tr>
@@ -33,7 +33,7 @@ _Jorgestor_ es una sistema mediante el cual un docente puede generar exámenes p
       <ul>
         <li><a href="documents\modelos\diagramas\README.md#diagrama-de-entidades">Diagrama de Entidades</a></li>
         <li><a href="documents\modelos\diagramas\README.md#diagrama-de-objetos">Diagrama de Objetos</a></li>
-        <li><a href="documents\modelos\diagramas\README.md#entidad-examen">Diagrama de Estados de Examen</a></li>
+        <li><a href="documents\modelos\diagramas\README.md#entidad-exámen">Diagrama de Estados de Exámen</a></li>
         <li><a href="documents\modelos\diagramas\README.md#entidad-pregunta">Diagrama de Estados de Pregunta</a></li>
         <li><a href="documents\modelos\Glosario.md">Glosario</a></li>
       </ul>
