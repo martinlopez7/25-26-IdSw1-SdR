@@ -43,5 +43,3 @@
 | 39. <a href="..\detalladoCasosDeUso\README.md#importar-grados-docente">importarGrados()</a> [Docente]|
 | 40. <a href="..\detalladoCasosDeUso\README.md#exportar-asignaturas-docente">exportarAsignaturas()</a> [Abstracto]|
 | 41. <a href="..\detalladoCasosDeUso\README.md#exportar-grados-docente">exportarGrados()</a> [Abstracto]|
-| 42. <a href="..\detalladoCasosDeUso\README.md#ver-exámenes-docente">verExamenes()</a> [Docente]|
-| 43. <a href="..\detalladoCasosDeUso\README.md#ver-examen-docente">verExamen()</a> [Docente]|
