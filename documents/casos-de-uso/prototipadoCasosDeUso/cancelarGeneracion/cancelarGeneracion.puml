@@ -7,9 +7,9 @@
     Generación completada. 
     .
     {#
-        <b>ID</b> | <b>Grado</b> | <b>Dificultad</b> | <b>Acción</b>
-        EX-MATES2 | II | 15% Facil 35% Medio 50% Difícil | [Ver examen]
-        EX-MATES2 | IOI | 30% Facil 40% Medio 30% Difícil | [Ver examen]
+        <b>ID</b> | <b>Grado</b> | <b>Dificultad</b>
+        EX-MATES2 | II | 15% Facil 35% Medio 50% Difícil
+        EX-MATES2 | IOI | 30% Facil 40% Medio 30% Difícil
     }
     .
     {

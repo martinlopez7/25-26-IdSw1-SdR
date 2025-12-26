@@ -259,9 +259,3 @@
 | ![Prototipado de Importar Grados](importarGrados/importarGrados.svg) |
 | :--- |
 | [Código UML](importarGrados/importarGrados.puml) |
-
-### Ver Examen [Docente]
-
-| ![Prototipado de Ver Examen](verExamen/verExamen.svg) |
-| :--- |
-| [Código UML](verExamen/verExamen.puml) |

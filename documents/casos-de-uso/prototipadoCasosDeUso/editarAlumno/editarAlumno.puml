@@ -12,6 +12,6 @@
     }
     .
     --
-    { [Guardar Cambios] | [ Eliminar ] | [Cancelar] | [Exámenes] }
+    { [Guardar Cambios] | [ Eliminar ] | [Cancelar] }
 }
 @endsalt
